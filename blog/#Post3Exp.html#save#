@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stream &raquo; Max Boll &ndash; Web-Developer &ndash; Speedcuber &ndash; MyXoToD.com</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Max Boll, Frontend and Backend Web-Developer from Mayence" />
+    <meta name="keywords" content="MyXoToD, Max Boll, programming, webdesign, html5, css3, sass, scss, frontend, backend" />
+
+    <!-- Stylesheets -->
+    <link type="text/css" rel="stylesheet" media="all" href="FirstCSS.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="colors.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="syntax.css" />
+
+    <!-- Javascripts -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="application.js"></script>
+  </head>
+  <body class="red">
+<script>hljs.initHighlightingOnLoad();</script>
+
+<section class="page">
+  <div class="toggle-mobile-nav entypo-menu"></div>
+  <aside class="left-col">
+
+    <div class="about">
+      Welcome to my personal Blog. My name is Tamer, I am a network &amp; data analyst and currently I am a PhD candidate in Network Science at the Center for Network Science at the Central European University in Budapest.
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Stream</a>
+        </li>
+        <li>
+          <a href="/about/">Go to Homepage</a>
+        </li>
+
+      </ul>
+    </nav>
+    <div class="phrases hide-landscape">
+      
+    </div>
+  </aside>
+  <div class="right-col">
+    <div class="content">
+      <article>
+        <header>
+          <h1>Basic Concepts in web development </h1>
+          <img style="width:50%" src="datascientist.jpeg"/>
+        </header>
+        
+        <main>
+<p style="text-align:justify">It is a very common practice these days that many people call themselves Data Scientists. The amount of available data and the need for specialists in data analysis, predictive analytics and machine learning have been increasing very fast. For this reason, an increasing number of people has offered themselves to the markets as data scientists. The question here is, what is really a data scientist? 
+<br><br>Programming languages like Python, C++, Java and MySQL are data science tools, however, proficiency in these languages is not what makes someone a good data scientist. Similarly, knowledge in mathematics, statistics and machine learning, while valuable and important, are not sufficient when the problem solving tasks at hand require real world experience.
+<br><br>In my experience, a data scientist is someone who practice science following a specific scientific method. Data science is about the creation and testing of models, methods, hypothesis, simulation techniques and algorithms that provide predictive and practical utility to understand complex real world phenomena. The practical utility lies in helping to solve complex problems. A good data scientist should be able to identify what problems need to be solved, ask the right questions about the data and identify the right scientific and technical methods to be used to analyze such problem.
+</p>
+</main>
+<br>
+
+        <footer>
+          <div class="info">24 September 2014 &ndash; coding</div>
+          <div class="reading-time">
+            3 min &ndash; 169 words
+          </div>
+        </footer>
+      </article>
+    </div>
+    <footer>
+      Handcrafted with <span class="entypo-heart"></span> by Max Boll &ndash; 
+      Powered by <a href="http://www.jekyllrb.com" target="_blank">Jekyll</a> &ndash; 
+      Happy Tuesday &ndash; 
+      <a href="/rss.xml">RSS</a> &ndash; 
+      <a href="/imprint/">Imprint</a>
+    </footer>
+    <div class="to-top entypo-up-bold"></div>
+  </div>
+</section>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-10077192-4']);
+      _gaq.push(['_setDomainName', 'myxotod.de']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_gat._anonymizeIp']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

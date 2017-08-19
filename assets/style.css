@@ -1,0 +1,568 @@
+/*This is the official css file for the website*/
+
+
+.jumbotron {
+   background-size:  cover; 
+   background-repeat:   no-repeat;
+   width: 30%;
+   position: fixed;
+   left: 0px;
+   height: 100%;
+   margin: 0px auto;
+
+}
+
+body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+    }
+
+#SkillsBody{
+	color:grey;
+}
+.jumbotron h1 {
+  font-size:4vw;
+  color:white;
+  font-family:"open sans condensed";
+  text-align:center !important;
+  margin-bottom:13%;
+  margin-top:13%;
+  margin-right:30px;
+}
+
+.icons{
+	margin:0 auto;
+}
+
+.jumbotron p {
+  margin-right:60px;
+  font-size:2.5vw;
+  text-align:center;
+  font-family:"open sans condensed";
+  color:white;
+
+}
+
+
+
+.hide {
+  display: none;
+}
+
+.decal {
+  height: 2px;
+  background-color: #000;
+  border-bottom: 1px solid #333;
+}
+
+
+
+/* EFFECTS
+***************/
+
+.glow {
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    -webkit-transition: text-shadow 1s linear;
+       -moz-transition: text-shadow 1s linear;
+         -o-transition: text-shadow 1s linear;
+            transition: text-shadow 1s linear;
+}
+
+.glow.in {
+  text-shadow: 
+    0.025em 0.025em 0.025em rgba(0, 0, 0, 0.8),
+    0 0 0.5em rgba(255, 255, 255, 0.3);
+}
+
+.fade {
+  opacity: 0;
+    -webkit-transition: opacity 1s linear;
+       -moz-transition: opacity 1s linear;
+         -o-transition: opacity 1s linear;
+            transition: opacity 1s linear;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+
+#righthalf {
+   background-size:  cover; 
+   background-position: center center; 
+   background-repeat:   no-repeat;
+   width: 70%;
+   position: absolute;
+   right: 0px;
+   height: 100%;
+   
+}
+
+.NavBar{
+	position:absolute;
+}
+
+
+@import "bourbon";
+
+#Summary {
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-indent:20px;
+	font-size:1.7vw;
+	margin-right:3vw;
+	margin-left:3vw;
+	text-align: justify;
+}
+
+/* Buttons at the center */
+
+.wrap1 {
+  text-align: center;
+  text-decoration:none;
+  display:block;
+  margin-right:30px;
+}
+
+
+/* General styling for the links */
+
+
+.btn6, .btn6:link, .btn6:visited {
+  padding: 13px 0;
+  border: 1px solid #333;
+  font-family:'Open Sans Condensed';
+  text-decoration:none;
+  color: white;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 20px;
+  letter-spacing: 3px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.btn6:hover, .btn6:link:hover, .btn6:visited:hover {
+  background: transparent;
+  border: 2px solid #333;
+  color: #fefefe;
+  border-radius: 80px;
+}
+
+.icons { 
+	text-align:center;
+	margin-right:30px;
+}
+.Leftbreak{
+    display:none;
+}	
+
+/* the Skill Bar */
+
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin: 15px auto;
+	width:90%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+
+#DataSkills {
+	font-family:'Pangolin';
+	font-size:3em;
+	text-align:center;
+}
+
+
+
+.description {
+    background-color:red;
+    display:block;
+    position:absolute;
+    border:1px solid #000;
+    width:30%;
+    height:300px;
+    z-index:1;
+}
+
+
+
+.tom1 .skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:160px;
+	font-weight:18px;
+	font-family:Pangolin;
+	font-size:20px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+
+.tom2 .skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:210px;
+	font-weight:18px;
+	font-family:Pangolin;
+	font-size:20px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:0px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+
+.fragment {
+  background-color:white;
+    position:absolute;
+    z-index:1;
+    font-size: 12px;
+    font-family: tahoma;
+    height: 250px;
+	width:70%;
+    border: 1px solid #ccc;
+    color: #555;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.fragment:hover {
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+
+}
+
+.fragment img { 
+    float: left;
+    margin-right: 10px;
+	width:100px;
+	height:100px;
+}
+
+
+.fragment h3 {
+    padding: 0;
+    margin: 0;
+    color: #369;
+}
+.fragment h4 {
+    padding: 0;
+    margin: 0;
+    color: #000;
+}
+#close {
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    background:#ccc;
+}
+	
+.skillbar:hover{
+	background-color:black;
+}
+
+img{
+	width:30%;
+	height:90%
+}
+
+#notice {
+	font-family:'Open Sans Condensed';
+	font-size:1.4em;
+	color:darkred;
+	text-decoration: underline;
+	text-align:center;
+}
+
+
+
+
+
+
+.nav2{
+    border:transparent;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav2 li{
+    display:inline;
+}
+.nav2 a{
+    display:inline-block;
+    font-family:'Open Sans Condensed',cursive; 
+    font-size:3.5vw;
+    padding: 1.5vw;
+    text-decoration: none;
+
+}
+
+.nav2 li a:hover {
+  	color: #cc0000;
+	background:none;
+	transition:all 1s;
+	border-bottom: #cc0000 solid 1px;
+	opacity:0.9;
+	filter:alpha (opacity=90)
+}
+
+.clicked {
+	  border-bottom: #cc0000 solid 1px;
+	  color:#cc0000;
+}
+
+.unclicked {
+	  color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.tab {
+    float: left;
+    background-color: inherit;
+    width: 8vw;
+    height: 200px;
+    margin-left:5%;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: #ccc;
+    color: black;
+    font-family:"Open Sans Condensed",cursive; 
+    padding: 22px 16px;
+    width: 17vw;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.5vw;
+    line-height: 2vw; 
+
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color: orange;
+    border:solid grey;
+}
+
+/* Style the tab content */
+.tabcontent {
+    width: 45vw;
+    border-left: none;
+    background-color:#F5F5F5;
+    float:right;
+    margin-right:5%;
+    margin-bottom:2vw;
+}
+
+.tabcontent img {
+	display : block;
+    margin : auto;
+    width:70%;
+    height:15vw;
+}
+
+.tabcontent h3 {
+	color: black; 
+	font-family: "Open Sans Condensed",cursive; 
+	font-size: 2vw;
+	text-align:center;
+	font-weight: normal;
+}
+
+.tabcontent p {
+	color: black; 
+	font-size: 1.2vw; 
+	font-family: "Open Sans Condensed", serif; 
+	line-height: 1.8vw; 
+	text-align: justify; 
+	text-shadow: 0 1px 1px #fff;
+	padding-top: 20px; 
+	margin-right: 10%;
+    margin-left: 10%;
+}
+
+.red{
+	color:yellow
+}
+
+
+
+
+
+/*THE TABLE IN EDUCATION SECTION*/
+
+.EdTable {
+  align:left;	
+  border-collapse: separate;
+  border-spacing: 100px 30px;
+  width:100%;
+}
+
+
+.EdTable img {
+	width:80%
+}
+
+
+#UniversityName {
+	color:#d54d7b;
+	font-size:2em;
+	font-family:'Open Sans Condensed';
+	margin:0;
+}
+
+#CourseName{
+	color:black;
+	font-size:1.5em;
+	font-family:'Open Sans Condensed';
+	margin:0;
+	font-weight:bold;
+}
+
+#CourseDate{
+	color:black;
+	font-size:1.5em;
+	font-family:'Open Sans Condensed';
+	margin:0;
+}
+	
+footer{font-size:40px;color:#999;border-top:1px solid #eee;padding-top:5px}
+
+footer .category{float:left;text-transform:uppercase;font-weight:600}
+
+footer .reading-time{float:right}
+
+footer:after{content:"";display:block;clear:both}
+
+footer{width:100%;padding:15px 30px;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;color:#999;font-size:12px;position:fixed;bottom:0;background-color:#eee;}
+
+footer:before{height:40px;width:100%;position:absolute;content:"";top:-40px;left:0;background:linear-gradient(rgba(238,238,238,0),#eeeeee)}
+
+
+
+.foot{
+font-size:17px;
+
+}
+.heart {
+  content: '&#9829';
+  font-size:40px;
+}
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  color: #e74c3c;
+}
+
+@font-face {
+  font-family: 'entypo';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-90/entypo.woff') format('woff');
+}
+
+.entypo-heart:before{
+  content:"\2665";
+}
+
+.EducationType{
+    font-size:2vw;
+    font-family:'Open Sans Condensed','arial';
+    text-align:center;
+}
+
+
+.TableCap{
+    font-size:2vw;
+    font-family: 'Open Sans Condensed';
+    color: black;
+
+}
