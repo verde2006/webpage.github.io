@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stream &raquo; Max Boll &ndash; Web-Developer &ndash; Speedcuber &ndash; MyXoToD.com</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Max Boll, Frontend and Backend Web-Developer from Mayence" />
+    <meta name="keywords" content="MyXoToD, Max Boll, programming, webdesign, html5, css3, sass, scss, frontend, backend" />
+
+    <!-- Stylesheets -->
+    <link type="text/css" rel="stylesheet" media="all" href="FirstCSS.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="colors.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="syntax.css" />
+	<link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+
+    <!-- Javascripts -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="application.js"></script>
+  </head>
+  <body class="red">
+<script>hljs.initHighlightingOnLoad();</script>
+
+<section class="page">
+  <div class="toggle-mobile-nav entypo-menu"></div>
+  <aside class="left-col">
+
+    <div class="about">
+      Welcome to my personal Blog. My name is Tamer, I am a network &amp; data analyst and currently I am a PhD candidate in Network Science at the Center for Network Science at the Central European University in Budapest.
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Stream</a>
+        </li>
+        <li>
+          <a href="/about/">Go to Homepage</a>
+        </li>
+
+      </ul>
+    </nav>
+    <div class="phrases hide-landscape">
+      
+    </div>
+  </aside>
+  <div class="right-col">
+    <div class="content">
+      <article>
+        <header>
+		<br>
+          <h1>3 Ways to Read Network Data in D3.js Library</h1>
+          <img style="width:50%" src="d3.jpg"/>
+        </header>
+        
+        <main>
+<p style="text-align:justify">
+
+
+
+
+<br>
+An important library in Javascript is the D3.js library (where D3 stands for Data-Driven Documents). 
+To read about this library you can visit the <a hfre="https://d3js.org/#introduction">official website</a>. Among the
+most common visualizations in D3 are networks. Networks are a collection of nodes and links between them.
+In this article, you can find three ways of reading network data in a D3 code. Even if you have already 
+picked your favorite way of doing it, it helps to know some alternatives in order to read other 
+people's code. The examples provided below are taken from the bl.ocks.org website.
+<br><br>
+
+
+1 - Including the data Within the html file
+<br><br>
+
+The first way of reading data in a D3 code is by creating a Javascript array inside the script that 
+should be included in the body of the HTML page that contains the information about the nodes and links
+and any possible attribute. This option results convenient if we have a small number of links.
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+        
+ &lt;body&gt;
+ ..
+ ..
+ &lt;script&gt; # this is the D3 script for our visualization.
+ 
+ var links = [
+   {source: "Node1", target: "Nod2", Weight:10},
+   {source: "Node1", target: "Node3", Weight: 5},
+   {source: "Node4", target: "Node2", Weight: 13},
+   {source: "Node6", target: "Node4", Weight: 1},
+
+ ];
+ .
+ .
+ .
+ ....The remaining D3 code 
+
+ &lt;/script&gt;
+	        </code>
+    </pre>
+<br><br>
+
+
+Basic examples with code could be found 
+<a href="http://bl.ocks.org/mbostock/2706022">here</a> and  <a href="http://bl.ocks.org/mbostock/1153292">here</a>.
+<br><br>
+
+
+2- From a CSV file
+
+<br><br>
+
+The second option is to load data from a CSV file. In my experience, I could find that there are two ways
+to create CSV files for a D3 network visualization, the first is to create a unique CSV files that 
+contains the list of links and their properties and the second is to create one CSV file for nodes and 
+another CSV for links.
+<br><br>
+
+A single CSV would look like this :
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+        
+ source,target,value
+ Harry,Sally,1.2
+ Harry,Mario,1.3
+ Sarah,Alice,0.2
+ Eveie,Alice,0.5
+ Peter,Alice,1.6
+ Mario,Alice,0.4
+ James,Alice,0.6
+ Harry,Carol,0.7
+ Harry,Nicky,0.8
+	        </code>
+    </pre>
+    
+<br><br>
+
+Basic example with code could be found here . Click <a href="http://bl.ocks.org/d3noob/8043434">here</a>.
+
+<br><br>
+
+Separate csv files of the links and nodes. Example from this <a href="https://gist.github.com/ccmcc/5182685">source</a>
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+
+ nodes.csv
+
+ node,group
+ celery,group1
+ peanut butter,group2
+ hummus,group1
+ banana,group1
+ honey,group2
+ ranch dressing,group2
+
+
+ links.csv
+
+ source,target,type
+ banana,peanut butter,type1
+ celery,peanut butter,type1
+ celery,ranch dressing,type2
+ banana,honey,type2
+ hummus,celery,type2
+
+	        </code>
+    </pre>
+<br><br>
+2- Reading data from a JSON file.
+<br><br>
+JSON files are among the most common formats for storing network data. The basic structure of a JSON file
+containing network data is the following :
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+        
+ GraphJson = {
+   	 "nodes": [
+	 	 {"id": "0", "name":"Node1", "group":1,"degree":10}, 
+		 {"id": "1", "name":"Node2", "group":1,"degree":20}, 
+		 {"id": "2", "name":"Node3", "group":3,"degree":15}, 
+		 {"id": "3", "name":"Node4", "group":2,"degree":10}, 
+		 {"id": "4", "name":"Node5", "group":2,"degree":5}, 
+		 {"id": "5", "name":"Node6", "group":3,"degree":20}, 
+		 {"id": "6", "name":"Node7", "group":1,"degree":10}, 
+	 ],
+	 "links": [
+		 {"source": 0, "target": 1, "weight": 6}, 
+		 {"source": 0, "target": 7, "weight": 4},
+		 {"source": 1, "target": 2, "weight": 6}, 
+		 {"source": 2, "target": 7, "weight": 4}
+
+	 ]
+ }
+	        </code>
+    </pre>
+<br><br>
+A good example that uses JSON file to plot data is available <a href="https://bl.ocks.org/mbostock/4062045">here</a> 
+<br><br>
+
+</p>
+</main>
+<br>
+
+        <footer>
+          <div class="info">24 September 2014 &ndash; coding</div>
+          <div class="reading-time">
+            3 min &ndash; 169 words
+          </div>
+        </footer>
+      </article>
+    </div>
+    <footer>
+      Handcrafted with <span class="entypo-heart"></span> by Max Boll &ndash; 
+      Powered by <a href="http://www.jekyllrb.com" target="_blank">Jekyll</a> &ndash; 
+      Happy Tuesday &ndash; 
+      <a href="/rss.xml">RSS</a> &ndash; 
+      <a href="/imprint/">Imprint</a>
+    </footer>
+    <div class="to-top entypo-up-bold"></div>
+  </div>
+</section>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-10077192-4']);
+      _gaq.push(['_setDomainName', 'myxotod.de']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_gat._anonymizeIp']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

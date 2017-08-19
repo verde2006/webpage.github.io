@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stream &raquo; Max Boll &ndash; Web-Developer &ndash; Speedcuber &ndash; MyXoToD.com</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Max Boll, Frontend and Backend Web-Developer from Mayence" />
+    <meta name="keywords" content="MyXoToD, Max Boll, programming, webdesign, html5, css3, sass, scss, frontend, backend" />
+
+    <!-- Stylesheets -->
+    <link type="text/css" rel="stylesheet" media="all" href="FirstCSS.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="colors.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="syntax.css" />
+	<link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+
+    <!-- Javascripts -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="application.js"></script>
+  </head>
+  <body class="red">
+<script>hljs.initHighlightingOnLoad();</script>
+
+<section class="page">
+  <div class="toggle-mobile-nav entypo-menu"></div>
+  <aside class="left-col">
+
+    <div class="about">
+      Welcome to my personal Blog. My name is Tamer, I am a network &amp; data analyst and currently I am a PhD candidate in Network Science at the Center for Network Science at the Central European University in Budapest.
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Stream</a>
+        </li>
+        <li>
+          <a href="/about/">Go to Homepage</a>
+        </li>
+
+      </ul>
+    </nav>
+    <div class="phrases hide-landscape">
+      
+    </div>
+  </aside>
+  <div class="right-col">
+    <div class="content">
+      <article>
+        <header>
+		<br>
+          <h1>Classes and Object-Oriented Programming: Examples from Python, Java and Javascript.
+</h1>
+          <img style="width:50%" src="py-jv-js.jpg"/>
+        </header>
+        
+        <main>
+<p style="text-align:justify">
+
+
+Among the most important programming paradigms is the object-oriented programming. Object oriented is 
+based on the idea of using 'objects' to build different applications. We can think of an object as a 
+container that contains attributes and methods that make a certain type of data useful. Using object-
+oriented programming can make it much easier for application developers and programmers to build, extend, 
+update and maintain programs and applications.
+<br><br>
+
+The core concept in object-oriented programming is classes. classes are the blueprint or set of instructions
+to build an object. Each object is built from a class. A single class is built to perform only one thing
+and therefore a program or application contains several classes that accomplish each a specific task.
+<br><br>
+<h2>CLASSES IN PYTHON</h2>
+<br>
+Compared with other programming languages, Python’s class mechanism adds classes with a minimum of new 
+syntax and semantics.
+<br><br>
+To define a class in Python, the syntax is the following
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ class classname:
+ &lt;statement 1&gt;
+ .
+ .
+ .
+ &lt;statement 2&gt;
+	        </code>
+    </pre>
+<br><br>	
+The code above defines a class called classname without including any statement in it.
+<br><br>
+The statements included in a class are mainly of two types, variables and methods. A variable is a place
+where we store a piece of data. To add a variable inside our class we can use the usual syntax adopted in
+Python to define a variable.
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+  class classname:
+	 x = 20
+	        </code>
+    </pre>
+<br><br>	
+In our class above we define a variable x which assumes the value 20. It is posssible to access the
+variable x by typing classname.x and the compiler would return the value 20
+<br><br>
+We can also add a function inside a class, in which case the function takes the name of <i>method</i>. The
+syntax for adding a function inside a class in Python is also similar to the usual syntax for functions
+in Python however with an additional keyword, 'self'. First let's make an example:
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+  class classname:
+	 x = 20
+	
+	 def Hello(self):
+		 return 'Hello World'
+        </code>
+    </pre>
+<br><br>
+To access the function Hello, we can type classname. Hello and the result will be 'Hello World'.
+You can notice that the function Hello takes as argument the keyword self. To understand the importance of
+the self keyword, we have to understand the conceptof class <i>instance</i> and <i>instantiation</i>. 
+An instance of a class is a specific object built from a specific class. An instance is assigned to a 
+reference variable that is used to access all of the instance's properties and methods. When we create a 
+new instance the process is called instantiation. The keyword self is simply used when defining a method
+in order to refer to the specific instance being construced from one class.
+<br><br>
+For example (considering the above class):
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ First = classname()
+        </code>
+    </pre>
+<br><br>
+creates a new instance of the class and assigns this object to the local variable First.
+<br><br>
+Until now, we have talked about constructing standard instances of our class without any difference in the
+content of each instance(all instances will have the variable x and the function Hello). However, 
+in real applications we are interested in creating instances of a class each having customized attributes.
+For example, we can think of a class as a person who can be female or male, can have an age, height and so
+on. Here comes the role of <i>class constructor</i>. 
+A class constructor is a special function (method) added to a class in order to allow for customizing our
+class instances based on a set of parameters. In Python, the class constructor takes the name of __init__.
+<br><br>
+For example,
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ class classname(parameter1,parameter2,...)
+
+	def __init__(self,parameter1,parameter2):
+		self.var1 = self.parameter1
+		self.var2 = self.parameter2
+		self.data = []
+		x = 10
+	        </code>
+    </pre>	
+<br><br>
+In the example above, the function __init__ will take whatever we pass as parameters in classname and assign
+them respectively to var1 and var2. We will also have an empty list called data and a variable x that will be shared
+automatically by all instances. The correct design of a class should include all the variables inside the
+__init__ function. It should be noticed that, contrary to some otherlanguages like Java, Python does not
+allow for multiple constructors with different signitures (parameters) within a class. Using multiple
+constructors could be useful whenever we want to creates instances for which not all parameters are available
+. To overcome this problem , we can use a default value for the parameters such that if they result 
+available for the instance being created we replace the default values with the parameter values, otherwise
+the parameters assumes the default value. For esample, we can define a class as follows:
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ class length():
+    def __init__(self, initialLength = 0):
+        self.initialLength = initialLength
+        
+ or 
+
+ class length():
+    def __init__(self, initialLength = None):
+        self.initialLength = initialLength
+          </code>
+    </pre>
+ <br><br> 
+In the above examples, if we call the class by not givigin any value to the parameter initialLength, the
+created instance will have a value for initialLength equal to 0 (first example) or None (second example).
+<br><br>
+To acccess the assigned values we can always use the notation instancename.variablename, for example:
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ First = classname(10,20)
+
+ First.var1
+ 10 
+        </code>
+    </pre>
+<br><br>
+It is possible to define methods inside a class that act on variables created by the class constructor,
+
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ class classname(parameter1,parameter2)
+
+	def __init__(self,parameter1,parameter2):
+		self.var1 = self.parameter1
+		self.var2 = self.parameter2
+		self.tricks = []
+		x = 10
+		
+    def add_trick(self, trick):
+        self.tricks.append(trick)		
+
+ X = classname(10,20)
+ 
+ X.add_trick(20) #this will add the value 20 to the list names tricks 
+ 
+ defined for the instance X.
+        </code>
+    </pre>
+<br><br>
+
+Other examples,
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ class classname:
+     def __init__(self):
+         self.items = [] # <p class='CodeComment'> this defines a list called items<p>
+
+     def isEmpty(self):
+         return self.items == [] # <p class='CodeComment'> returns true if items is an empty list<p>
+
+     def push(self, item):
+         self.items.append(item) # <p class='CodeComment'> appends item to items<p>
+
+     def pop(self):
+         return self.items.pop() # <p class='CodeComment'> removes and returns last object from the list.<p>
+
+     def peek(self):
+         return self.items[len(self.items)-1] # <p class='CodeComment'> returns the element before the last one.<p>
+
+     def size(self):
+         return len(self.items) # <p class='CodeComment'> returns the length of items<p>
+        </code>
+    </pre>
+<br><br>
+
+Methods may call other methods by using method attributes of the self argument:
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ class classname :
+
+ def __init__(self,x):
+	 self.x = x
+	 self.items = []
+
+ def	add_number(self,x):
+	 self.items.append(x)
+	
+ def add_twice(self,y):
+	 self.add_number(y)
+	        </code>
+    </pre>
+<br><br>
+	
+	
+<h2>INHERITANCE IN PYTHON</h2>	
+
+<br><br>
+An important feature of classes is inheritance. Inheritance is used when we want to create a subclass of a class that has the
+same features of the parent class with some additional attributes.For example, we can create the following
+class for persons:
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ class Person(name,sport):
+
+    def __init__(self, name, Favoritesport):
+        self.name = name
+        self.Favoritesport = Favoritesport
+
+    def getName(self):
+        return self.name
+
+    def getSport(self):
+        return self.Favoritesport
+
+    def __str__(self):
+        return "%s is a %s" % (self.name, self.Favoritesport)
+             </code>
+    </pre>   
+<br><br>
+Imagine now that we want to see whether a person perfers swimming as sport and in addition whether they like
+to swim in the sea.To not and to do this we create a new 
+class that takes the same attributes as the Person class plus the additional attribute related to swimming.
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ class SeaSwimmers(Person):#the argument is a class
+
+    def __init__(self, name,swim_at_sea):
+        Person.__init__(self, name, "Swimming") # 
+		<p class='CodeComment'> this inherits all attributes defined in the parent class</p>
+	
+        self.swim_at_sea = swim_at_sea # 
+		<p class='CodeComment'> new attribute that specifies whether the person likes to swim or not.</p>
+
+    def SeaSwim(self):
+        return self.swim_at_sea
+        </code>
+    </pre>
+<br><br>		
+To create instance of the class Person and the subclass SeaSwimmers:        
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ x = Person("Tom","Swimming")
+ y = SeaSwimmers("Tom",True)
+        </code>
+    </pre>
+<br><br>
+Iterators in classes
+<br><br>
+In some cases you might notice that a class contains methods called _iter_ and next(). The reason for these
+functions is to add an iterator behavior to the class. For example, the following class includes an iterator
+for looping over a sequence (provided as a parameter to the class) backwards.
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ class Reverse:
+    def __init__(self, data):
+        self.data = data
+        self.index = len(data)
+
+    def __iter__(self):
+        return self
+
+    def next(self):
+        if self.index == 0:
+            raise StopIteration
+        self.index = self.index - 1
+        return self.data[self.index]
+
+
+ x = Reverse([1,2,3])
+ x.next()
+ 3
+ x.next()
+ 2
+ x.next()
+ 1
+        </code>
+    </pre>
+<br><br>
+To read more about iterators in Python check <a href="https://docs.python.org/2/tutorial/classes.html">here</a>
+
+<br>
+<br>
+
+<h2>CLASSES IN JAVA</h2>
+<br><br>
+Among the most important features of the Java programming language is the tendency to declare everything
+in terms of classes or, in other terms, it drives the use of Object-Oriented Programming. 
+<br><br>
+Generally, to define a class in Java you need the following instructions
+<br><br>
+1- Declare the class name preceded with the keyword public
+<br><br>
+2- Declare the variables that will be used in the class constructor and their type. In Java ther are
+usually called fields. Fields can have inital values or not (for examples we can have a fields like 
+"public static int length = 10" or simply public static int length. In some cases programmers prefer
+to use private instead of public for fields.
+<br><br>
+3- Create the class constructor which must take the same name as the name of the class. Notice that, unlike
+Python, with Java you can create multiple constructors for a class.
+<br><br>
+4- Create all the necessary methods. Pay attention to the use of the keyword void when creating a method,
+where if the methods returns something it should not be used.
+<br><br>
+5- Instances are created inside the "main" method in Java. In Java , the instantiation of a class is 
+typically done using the "new" keyword which does not exist in Python.
+<br><br>
+To read more about the basics of Java you can visit my  <a href="https://github.com/TamerKhraisha/BasicsofJava.github.io">Github page</a>
+and you can also check the  <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html"> official Java tutorial</a>
+<br><br>
+
+Next we provide an example of a class called Car. 
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+
+ public class Car {     // <p class='CodeComment'> Declares a public class called Car</p>
+
+     int modelYear;     // <p class='CodeComment'> Declares the parameter and it's type to be used in the constructor</p>
+
+     public Car(int year) {    //<p class='CodeComment'> The constructor</p>
+
+         modelYear = year;     // <p class='CodeComment'> Sets the field modelYeay to year</p>
+
+     }
+
+     public void startEngine() {      // <p class='CodeComment'> This is a method</p>
+         System.out.println("Vroom!");   // <p class='CodeComment'> This prints "Vroom" if the method is called</p>
+     }
+
+     public void drive(int distanceInMiles) {   // <p class='CodeComment'> Another method</p>
+
+         System.out.println("Miles driven: " + distanceInMiles);
+
+     }
+
+     public static void main(String[] args){ // <p class='CodeComment'> Everything inside this function is exectuted</p>
+
+         Car myFastCar = new Car(2007);  // <p class='CodeComment'> Class instantiation</p>
+         myFastCar.startEngine();        // <p class='CodeComment'> This prints "Vroom"</p>
+         myFastCar.drive(1628);         // <p class='CodeComment'> This prints "Miles driven: 1628".</p>
+
+     }
+  }
+
+        </code>
+    </pre>
+<br><br>
+
+<h2>INHERITANCE IN JAVA</h2>
+<br><br>
+Similar to Python, it is possible for one class to share or inherit behavior from another class. This is
+done by using the keyword "extends" in Java. For example, the class for Car defined above could be 
+considered a subclass of Veichle, since cars are a type of veichles.
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+
+ public class Vehicle {
+
+     public void checkBatteryStatus() {
+
+         System.out.println("The battery is fully charged and ready to go!");
+
+     }
+ }
+        </code>
+    </pre>
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ public class Car extends Vehicle { <p class='CodeComment'> // Car extends (inherits) from Veichle</p>
+
+     int modelYear;   <p class='CodeComment'> // Define everything as we did before for car</p>
+
+     public Car(int year) {
+
+         modelYear = year;
+
+     }
+
+     <p class='CodeComment'> //Other methods omitted for brevity...</p>
+     <p class='CodeComment'> //Now we will have automatically the method checkBatteryStatus() inherited 
+	 from Veichle.</p>
+
+     public static void main(String[] args){
+
+         Car myFastCar = new Car(2007)
+         myFastCar.checkBatteryStatus();
+
+     }
+ }
+        </code>
+    </pre>
+<br><br>
+<h2>CLASSES IN JAVASCRIPT</h2>
+<br><br>
+JavaScript is a among the most flexible object-oriented language when it comes to syntax. Interestingly, 
+when defining a class in Javascript we are using the standard Javascript functions to simulate classes,
+since Javascript does not have a specific syntax for classes like Python or Java. It is also possible
+to create and instantiate classes in Javascript using different ways. In this post, I am going to concentrate
+on the the use of functions and prototype to create and manipulates classes.
+<br><br>
+To begin, let's start with the following example:
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ function Person(name,age) {
+  this.name = name;
+  this.age = age;
+ }
+        </code>
+    </pre>
+<br><br>
+
+with the above code, we create a class called Person that takes as arguments name and age. To create an 
+instance of Person, we use the new prefix in Javascript,
+
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ var bob = new Person("Bob Smith", 30); <p class='CodeComment'> // This creates a instance of 
+ Person called bob</p>
+
+ bob.name <p class='CodeComment'> <p class='CodeComment'> // this returns the name of bob</p>
+ bob.age <p class='CodeComment'> <p class='CodeComment'> // this returns the age of bob</p>
+        </code>
+    </pre>
+<br><br>
+
+How to add a method to our class Person ? Imagine we want to add a method to Person that tells the person
+to say "Hello". Here's one way to do it
+
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ var bob = new Person("Bob Smith", 30); 
+
+ bob.SayHello = function() {
+   console.log("Woof");
+ };
+ bob.SayHello(); <p class='CodeComment'>// this is to test that the method works</p>
+        </code>
+    </pre>
+<br><br>
+
+Or if we realize that we forgot to add the nationality to bob, we can type the following:
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+
+ bob.nationality = "English";
+        </code>
+    </pre>
+	<br>
+So far so easy. However, in most cases we want to add a new method or attribute not to an instance (like
+bob) of our class but to the class itself such that all the newly created instances will share the same 
+method or attribute. Here comes the role of 'prototype' in Javascript. It works as follows:
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+
+ Person.prototype.nationality = "English";
+
+ Person.prototype.SayHello = function() {
+   console.log("Woof");
+ };
+        </code>
+    </pre>
+<br><br>
+
+Read more about prototype <a href="https://www.w3schools.com/js/js_object_prototypes.asp">here</a>
+
+<br>
+<br>
+
+<h2>INHERITANCE IN JAVASCRIPT</h2>
+<br><br>
+
+For a class to inherit from another class in Javascript we can use prototype. For example, suppose we 
+want to create an animal class that takes two parameters, name and number of legs. Additionally, we 
+define a method for Animal class that tells returns the name of the animal.
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ function Animal(name, numLegs) {
+     this.name = name;
+     this.numLegs = numLegs;
+     this.Beautiful = "Yes"
+ }
+ Animal.prototype.sayName = function() {
+     console.log("Hi my name is " + this.name);
+ };
+        </code>
+    </pre>
+<br><br>
+Now suppose we want to create another class that is specific for penguins and takes also as arguments 
+name and the number of legs and we want it to have the same method for printing the name as in Animal. 
+Here instead of repeating all the code for Animal again, we can first set the number of legs to 2, and we
+left with the parameter name. In addition, if we type 'NewClass.prototype. = new ParentClass", then the
+compiler will automatically import all the attributes and methods defined in the parent class and include
+them in the new class that inherits from it. Notice that whatever we pass as parameter in the subclass 
+will still depend on what we pass as value to that class, for example in the Penguin class below we still
+have 'name' as an argument and therefore any instance of Penguin will have the name attribute equal to 
+the value the we pass inside Penguin. On the other hand, the attribute 'Beautiful' that was defined in 
+the Animal constructor will be automaticallt inherited by Penguin because we didn't include it as a 
+parameter in the Penguin class.
+<br><br>
+    <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
+        <code style="font-family:Fira Mono;margin-left:10px;">
+ function Penguin(name){
+     this.name = name
+     this.numLegs = 2
+ }
+
+ Penguin.prototype = new Animal()
+
+ Penguin.sayName() \\ this will print the name 
+ Penguin.Beautiful \\ this will print yes.
+        </code>
+    </pre>
+<br><br>
+
+To learn more about Javascript , visit my Github webpage where I have a tutorial to learn the basics of
+Javascript.
+
+</p>
+</main>
+<br>
+
+        <footer>
+          <div class="info">24 September 2014 &ndash; coding</div>
+          <div class="reading-time">
+            3 min &ndash; 169 words
+          </div>
+        </footer>
+      </article>
+    </div>
+    <footer>
+      Handcrafted with <span class="entypo-heart"></span> by Max Boll &ndash; 
+      Powered by <a href="http://www.jekyllrb.com" target="_blank">Jekyll</a> &ndash; 
+      Happy Tuesday &ndash; 
+      <a href="/rss.xml">RSS</a> &ndash; 
+      <a href="/imprint/">Imprint</a>
+    </footer>
+    <div class="to-top entypo-up-bold"></div>
+  </div>
+</section>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-10077192-4']);
+      _gaq.push(['_setDomainName', 'myxotod.de']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_gat._anonymizeIp']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
