@@ -114,6 +114,57 @@ div.tab button {display: block;padding: 22px 16px;width: 28vw;font-size: 4vw;lin
 .wrap1{margin-right:10px}
 }
 
+
+
+
+@media screen and (max-width: 1366px){
+
+#Summary{font-size:1.85vw}
+
+#DataSkills {font-size:30px;}
+
+.foot{font-size:1.1vw}
+
+.tom1 .skillbar-title {width:150px;font-size:17px;font-weight:bold;}
+
+.tom2 .skillbar-title {width:200px;font-size:17px;font-weight:bold;}
+
+.breakMac{display:none;}
+
+#UniversityName {font-size:1.5em;}
+
+#CourseName{font-size:0.9em;}
+
+#CourseDate{font-size:0.9em;}
+
+.jumbotron h1 {
+  font-size:4.5vw;
+  color:white;
+  text-align:center;
+  margin-left:15px;
+  margin-top:65px;
+}
+
+.jumbotron p {
+  margin-left:-15px;
+  font-size:25;
+  text-align:center;
+  font-family:"open sans condensed";
+  color:white;
+  width:100%;
+
+}
+.icons {margin-right:10px}
+
+.Leftbreak{display:none;}
+
+.wrap1{margin-right:10px}
+}
+
+
+
+
+
 @media screen and (min-width: 1280px){
 	
 	.entypo-heart{font-size:20px;}
