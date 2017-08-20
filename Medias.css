@@ -77,6 +77,8 @@ div.tab button {display: block;padding: 22px 16px;width: 28vw;font-size: 4vw;lin
 #DataSkills {font-size:30px;}
 
 .foot{font-size:1.1vw}
+	
+.entypo-heart{font-size:20px !important}	
 
 .tom1 .skillbar-title {width:150px;font-size:17px;font-weight:bold;}
 
@@ -161,7 +163,7 @@ div.tab button {display: block;padding: 22px 16px;width: 28vw;font-size: 4vw;lin
 .wrap1{margin-right:10px}
 }
 
-
+.entypo-heart{font-size:20px !important}
 
 
 
