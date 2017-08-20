@@ -167,7 +167,7 @@ div.tab button {display: block;padding: 22px 16px;width: 28vw;font-size: 4vw;lin
 
 @media screen and (max-width: 1366px){
 	
-	.entypo-heart{font-size:20px;}
+	.entypo-heart{font-size:20px !important}
 }
 
 
