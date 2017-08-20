@@ -2,7 +2,7 @@
 	
 .jumbotron {display:none} /*we don't display the animated division that includes the title and the boucing down subtitle*/ 
 
-.jumbotron2 {display:block !important;max-height:62vh;width:100%;position:relative;overflow:hidden;}
+.jumbotron2 {display:block !important;height:65vh;max-height:65vh;width:100%;position:relative;overflow:hidden;}
 
 #righthalf {height:auto;position:static;right:0;width:100%}
    
