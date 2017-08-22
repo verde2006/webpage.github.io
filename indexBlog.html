@@ -1,34 +1,42 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tamer Khraisha Blog</title>
+    <title>Playing around with max-content and min-content &raquo; Max Boll &ndash; Web-Developer &ndash; Speedcuber &ndash; MyXoToD.com</title>
 
     <!-- Meta -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no">
+    <meta name="description" content="Max Boll, Frontend and Backend Web-Developer from Mayence" />
+    <meta name="keywords" content="MyXoToD, Max Boll, programming, webdesign, html5, css3, sass, scss, frontend, backend" />
+    <link rel="author" href="/humans.txt" />
 
     <!-- Stylesheets -->
-    <link type="text/css" rel="stylesheet" media="all" href="application.css" />
-    <link type="text/css" rel="stylesheet" media="all" href="colors.css" />
-    <link type="text/css" rel="stylesheet" media="all" href="syntax.css" />
-	<link type="text/css" rel="stylesheet" media="all" href="MediaQueries.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="/assets/stylesheets/application.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="/assets/stylesheets/syntax.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="/assets/stylesheets/colors.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="/assets/stylesheets/media-queries.css" />
+
     <!-- Javascripts -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="application.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/application.js"></script>
   </head>
   <body class="red">
-
-
-   <section class="mobile-nav">
+  <section class="mobile-nav">
   <nav>
     <ul>
       <li>
-        <a href="indexBlog.html">Blog Homapage</a>
+        <a href="/">Stream</a>
       </li>
       <li>
-        <a href="index.html">My Website</a>
+        <a href="/about/">About</a>
       </li>
-
+      <li>
+        <a href="/lab/">Lab</a>
+      </li>
+      <li>
+        <a href="/imprint/">Imprint</a>
+      </li>
     </ul>
   </nav>
 </section>
@@ -36,20 +44,22 @@
 <section class="page">
   <div class="toggle-mobile-nav entypo-menu"></div>
   <aside class="left-col">
-    <a class="avatar" href="indexBlog.html">
+    <a class="avatar" href="/">
       
     </a>
     <div class="about">
-    Welcome to my personal blog. I am Tamer Khraisha, Ph.D in Network Science who love to share data and programming knowledge.
-
+      Hello, my name is Max, I am a frontend &amp; backend web-developer from Mayence.
     </div>
     <nav>
       <ul>
         <li>
-          <a href="indexBlog.html">Blog Homapage</a>
+          <a href="/">Stream</a>
         </li>
         <li>
-          <a href="index.html">My Website</a>
+          <a href="/about/">About</a>
+        </li>
+        <li>
+          <a href="/lab/">Lab</a>
         </li>
       </ul>
     </nav>
@@ -57,194 +67,61 @@
       
     </div>
   </aside>
-  
-  
-
   <div class="right-col">
     <div class="content">
-      
-		
-	<article>
-    <header>
-      <h1>
-        <a  href="Post7.html">Visualization of Network Data : The Zachary's karate club</a>
-      </h1>
-      <div class="meta">
-        <div class="date">19 August 2017</div>
-        <div class="author">written by <a href="https://twitter.com/Tamer_Khraisha" target="_blank">Tamer Khraisha</a><div>
-      </div>
-    </header>
-    <div class="teaser">
-      <div >Data visualization is one of the most important steps in analyzing data and presenting it to decision makers or users. </div>
-      <p>
-        <a href="Post6.html">Read more &rarr;</a>
-      </p>
+      <article>
+        <header>
+          <h1>Playing around with max-content and min-content</h1>
+        </header>
+        <main>
+          <p>In todays episode of totally not prepared blog posts we&#39;ll check out <code>max-content</code> and <code>min-content</code>. To make things easier to follow, check this out:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;content-wrapper&quot;</span><span class="nt">&gt;</span>
+  Some content here
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div><div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.content-wrapper</span> <span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="k">max-width</span><span class="o">:</span> <span class="m">960px</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>As you can see this div should be centered. But sometimes it sucks to use a fixed width. There&#39;s no way to centered it which is quite this easy. Here comes <code>max-content</code> and <code>min-content</code>: They adjust the width on either the most narrow object within or the most wide object. You&#39;re still able to center the box with just <code>margin: 0 auto;</code> and there&#39;s no need to use <code>width: 100%;</code> anymore.</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.content-wrapper</span> <span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span> <span class="n">max</span><span class="o">-</span><span class="k">content</span><span class="p">;</span> <span class="c">/* or min-content */</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>The only downside, it doesn&#39;t work in IE browsers (obviously) and in other brothers you still need vendor prefixes:</p>
+
+<ul>
+<li><code>-moz-max-content</code> and <code>-webkit-max-content</code></li>
+<li><code>-moz-min-content</code> and <code>-webkit-min-content</code></li>
+</ul>
+
+<p>Here&#39;s a good example I made on CodePen:</p>
+
+<p data-height="521" data-theme-id="2438" data-slug-hash="BmsdI" data-default-tab="result" data-user="MyXoToD" class='codepen'>See the Pen <a href='http://codepen.io/MyXoToD/pen/BmsdI/'>Width example: max-content & min-content</a> by Max (<a href='http://codepen.io/MyXoToD'>@MyXoToD</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+        </main>
+        <footer>
+          <div class="info">24 September 2014 &ndash; coding</div>
+          <div class="reading-time">
+            3 min &ndash; 169 words
+          </div>
+        </footer>
+      </article>
     </div>
     <footer>
-      <div class="category">data visualization</div>
-      <div class="reading-time">
-        5 min &ndash; 533 words
-      </div>
-    </footer>
-  </article>	
-		
-  <article>
-    <header>
-      <h1>
-        <a  href="Post1.html">Selecting and Manipulating Elements in Javascript  </a>
-      </h1>
-      <div class="meta">
-        <div class="date">8 August 2017</div>
-        <div class="author">written by <a href="https://twitter.com/Tamer_Khraisha" target="_blank">Tamer Khraisha</a><div>
-      </div>
-    </header>
-    <div class="teaser">
-      <div >Among the most important uses of Javascript are content change both in the dynamic and static sense. To select an HTML element, Javascript uses a variety of methods that I will briefly discuss in this post </div>
-      <p>
-        <a href="Post1.html">Read more &rarr;</a>
-      </p>
-    </div>
-    <footer>
-      <div class="category">coding</div>
-      <div class="reading-time">
-        20 min &ndash; 810 words
-      </div>
-    </footer>
-  </article>
-
-
-  
-  <article>
-    <header>
-      <h1>
-        <a  href="Post6.html">3 Ways to Read Network Data in D3.js Library</a>
-      </h1>
-      <div class="meta">
-        <div class="date">1 August 2017</div>
-        <div class="author">written by <a href="https://twitter.com/Tamer_Khraisha" target="_blank">Tamer Khraisha</a><div>
-      </div>
-    </header>
-    <div class="teaser">
-      <div >How webpages are constructed and how they work? what are the different functionalities that websites can have and what programming languages to use when constructing a website?</div>
-      <p>
-        <a href="Post6.html">Read more &rarr;</a>
-      </p>
-    </div>
-    <footer>
-      <div class="category">data visualization</div>
-      <div class="reading-time">
-        5 min &ndash; 300 words
-      </div>
-    </footer>
-  </article>
-
-
-   <article>
-    <header>
-      <h1>
-        <a  href="Post3.html">What Do We Mean When We Use The Title "Data Scientist"?</a>
-      </h1>
-      <div class="meta">
-        <div class="date">20 July 2017</div>
-        <div class="author">written by <a href="https://twitter.com/Tamer_Khraisha" target="_blank">Tamer Khraisha</a><div>
-      </div>
-    </header>
-    <div class="teaser">
-      <div >The amount of available data and the need for specialists in data analysis, predictive analytics and machine learning have been increasing very fast. For this reason, an increasing number of people has offered themselves to the markets as data scientists. The question here is, what is really a data scientist? </div>
-      <p>
-        <a href="Post3.html">Read more &rarr;</a>
-      </p>
-    </div>
-    <footer>
-      <div class="category">Opinion</div>
-      <div class="reading-time">
-        5 min &ndash; 400 words
-      </div>
-    </footer>
-  </article>
-
-   <article>
-    <header>
-      <h1>
-        <a  href="Post4.html">The Idea of Functional Programming</a>
-      </h1>
-      <div class="meta">
-        <div class="date">12 July 2017</div>
-        <div class="author">written by <a href="https://twitter.com/Tamer_Khraisha" target="_blank">Tamer Khraisha</a><div>
-      </div>
-    </header>
-    <div class="teaser">
-      <div >A lot of people these days are talking about the idea of functional programming. The term functional programming refers to a programming paradigm or in simpler words, a style of coding.</div>
-      <p>
-        <a href="Post4.html">Read more &rarr;</a>
-      </p>
-    </div>
-    <footer>
-      <div class="category">Coding</div>
-      <div class="reading-time">
-        15 min &ndash; 629 words
-      </div>
-    </footer>
-  </article>
-  
-     <article>
-    <header>
-      <h1>
-        <a  href="Post5.html">Classes and Object-Oriented Programming: Examples from Python, Java and Javascript.</a>
-      </h1>
-      <div class="meta">
-        <div class="date">24 June 2017</div>
-        <div class="author">written by <a href="https://twitter.com/Tamer_Khraisha" target="_blank">Tamer Khraisha</a><div>
-      </div>
-    </header>
-    <div class="teaser">
-      <div >The core concept in object-oriented programming is classes. Classes are the blueprint or set of instructions to build an object.</div>
-      <p>
-        <a href="Post5.html">Read more &rarr;</a>
-      </p>
-    </div>
-    <footer>
-      <div class="category">coding</div>
-      <div class="reading-time">
-        15 min &ndash; 1000 words
-      </div>
-    </footer>
-  </article>
-  
-      
-        <div class="pagination">
-          
-            <a href="javascript:void(0);" class="entypo-left-open-big disabled"></a>
-          
-          <span>1 / 2</span>
-          
-            <a href="indexBlog2.html" class="entypo-right-open-big"></a>
-          
-        </div>
- 
- <!-- To create a page numbering with both left and right open use
-        <div class="pagination">
-          
-            
-              <a href="LEFT-FILE.html" class="entypo-left-open-big"></a>
-            
-          
-          <span>2 / 3</span>
-          
-            <a href="RIGHT-FILE.html" class="entypo-right-open-big"></a>
-          
-        </div>
-      
-    </div>
-
- -->
- 
-    </div>
-    <footer>
-      Tamer Khraisha &ndash; 
-      <b style="color:#e74c3c">Email</b> : tamer.khraisha2@gmail.com&ndash; 
-      <b style="color:#e74c3c">Address</b> : Na&#769;dor u., Budapest, 1051
-
+      Handcrafted with <span class="entypo-heart"></span> by Max Boll &ndash; 
+      Powered by <a href="http://www.jekyllrb.com" target="_blank">Jekyll</a> &ndash; 
+      Happy Tuesday &ndash; 
+      <a href="/rss.xml">RSS</a> &ndash; 
+      <a href="/imprint/">Imprint</a>
     </footer>
     <div class="to-top entypo-up-bold"></div>
   </div>
