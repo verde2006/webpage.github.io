@@ -34,9 +34,9 @@ a{text-decoration:none;transition:color 0.5s ease;-o-transition:color 0.5s ease;
 
 .page .toggle-mobile-nav{position:fixed;top:20px;left:20px;height:45px;width:45px;line-height:45px;text-align:center;font-size:35px;cursor:pointer;z-index:100;border-radius:5px;color:#fff;display:none;transition:background-color 0.5s ease;-o-transition:background-color 0.5s ease;-ms-transition:background-color 0.5s ease;-moz-transition:background-color 0.5s ease;-webkit-transition:background-color 0.5s ease}
 
-.page .left-col{width:30%;position:fixed;left:0;top:0;height:100%;background-image:url("images/background.jpg");background-size:cover;background-position:50% 50%;box-shadow:inset -15px 0px 15px -15px #000;padding:60px 0;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+.page .left-col{width:30%;position:fixed;left:0;top:0;height:100%;background-image:url(images/background.jpg);background-size:cover;background-position:50% 50%;box-shadow:inset -15px 0px 15px -15px #000;padding:60px 0;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
 
-.page .left-col .avatar{width:30%;background-image:url("images/tamer.jpg");background-size:cover;background-position:50% 50%;border-radius:50%;margin:0 auto 30px auto;display:block;transition:border 0.5s ease;-o-transition:border 0.5s ease;-ms-transition:border 0.5s ease;-moz-transition:border 0.5s ease;-webkit-transition:border 0.5s ease}
+.page .left-col .avatar{width:30%;background-image:url(images/tamer.jpg);background-size:cover;background-position:50% 50%;border-radius:50%;margin:0 auto 30px auto;display:block;transition:border 0.5s ease;-o-transition:border 0.5s ease;-ms-transition:border 0.5s ease;-moz-transition:border 0.5s ease;-webkit-transition:border 0.5s ease}
 
 .page .left-col .about{width:50%;height:auto;margin:0 auto 30px auto;color:#fff;font-size:18px;background:rgba(255,255,255,0.8);border-radius:5px;padding:10px;text-align:center;color:#333;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
 
