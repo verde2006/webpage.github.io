@@ -90,6 +90,18 @@ $(document).ready(function() {
   getHappyDay();
 });
 
+function getHappyDay() {
+  d = new Date();
+  weekdays = new Array(7);
+  weekdays[0] = "Sunday";
+  weekdays[1] = "Monday";
+  weekdays[2] = "Tuesday";
+  weekdays[3] = "Wednesday";
+  weekdays[4] = "Thursday";
+  weekdays[5] = "Friday";
+  weekdays[6] = "Saturday";
+  $("footer .day").html(weekdays[d.getDay()]);
+}
 
 function getAge() {
   var birthday = new Date("02 22, 1993");
@@ -100,7 +112,7 @@ function getAge() {
 
 // List of all phrases
 var Phrases = new Array(
-  "I go by the<br />name <a href='/about/'>Tamer</a>",
+  "I go by the<br />name <a href='/about/'>Max</a>",
   "I go to work<br />at <a href='http://www.opoloo.com' target='_blank'>Opoloo</a>",
   "I push to master<br />on <a href='http://www.github.com/MyXoToD' target='_blank'>Github</a>",
   "I code stuff<br />on <a href='http://www.codepen.io/MyXoToD' target='_blank'>CodePen</a>",
@@ -163,3 +175,15 @@ function initPhrases() {
   }
 }
 
+april = {
+  fool: function() {
+    d = new Date();
+    month = d.getUTCMonth() + 1;
+    day = d.getUTCDate();
+    if (month == 4 && day == 1) {
+      if (window.location.href != "http://harlemify.com/?url=myxotod.com") {
+        window.location.href = "http://harlemify.com/?url=myxotod.com";
+      }
+    }
+  }
+};
