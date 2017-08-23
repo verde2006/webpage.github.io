@@ -116,7 +116,7 @@ var Phrases = new Array(
   "I am a Ph.D <br />at <a href='https://cns.ceu.edu/' target='_blank'>CNS</a>",
   "I code stuff<br />on <a href='https://github.com/TamerKhraisha' target='_blank'>Github</a>",
   "Follow me <br />on <a href='https://twitter.com/Tamer_Khraisha' target='_blank'>Twitter</a>",
-  "I study <br />on <a href='http://www.tamerkhraisha.com/research.html' target='_blank'>Complex Networks</a>",
+  "I study <br /><a href='http://www.tamerkhraisha.com/research.html' target='_blank'>Complex Networks</a>",
   "Visit me<br />on <a href='https://hu.linkedin.com/in/tamer-khraisha-22a11640' target='_blank'>Linkedin</a>"
 );
 
