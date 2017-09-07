@@ -1,0 +1,145 @@
+<html>
+<head>
+<script src="./jquery.min.js"></script>
+<script src="./scripts.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<style type="text/css">
+body{font-family: 'open sans condensed', sans-serif;font-size:12px}
+.axis path,.axis line {fill: none;stroke:#b6b6b6;shape-rendering: crispEdges;}
+/*.tick line{fill:none;stroke:none;}*/
+.tick text{fill:#999;}
+g.journal.active{cursor:pointer;}
+text.label{font-size:16px;font-weight:bold;cursor:pointer}
+text.value{font-size:12px;font-weight:bold}
+</style>
+</head>
+<body>
+<div style="text-align:center">
+<p style="text-align:center;color:#e73e3c;font-size:35px">Visualizing Graph-Related Attributes of a Financial Network</p>
+<a style="margin:0 auto !important;color:olive;font-size:25px" href="http://www.tamerkhraisha.com" >By Tamer Khraisha</a><br><br>	
+<a style="margin:0 auto !important;color:olive;font-size:25px" >Ph.D , Center for Network Science, Central European University (Budapest)</a>	
+<p style="font-size:20px">The following D3 chart is a temporal visualization of 24 attributes of a financial network. The network has banks as nodes and a link exists between two banks whenever they partecipated together in granting a loan. The temporal window is from 1984 until 2011. The size of each circle indicates the normalized value 
+of each attribute where normalization is done with respect to the sum over all years. To see the values in numbers you can hover the mouse over the attribute in the legend.</p>
+</div>
+<br><br>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript">
+function truncate(str, maxLength, suffix) {
+	if(str.length > maxLength) {
+		str = str.substring(0, maxLength + 1); 
+		str = str.substring(0, Math.min(str.length, str.lastIndexOf(" ")));
+		str = str + suffix;
+	}
+	return str;
+}
+
+var margin = {top: 20, right: 240, bottom: 0, left: 20},
+	width = 950,
+	height = 900;
+
+var start_year = 1984,
+	end_year = 2011;
+
+var c = d3.scale.category20c();
+
+//Create the Scale we will use for the Axis
+var x = d3.scale.linear()
+    .domain([new Date(1984), new Date(2011)])
+	.range([0, width])
+
+	
+//Create the Axis
+var xAxis = d3.svg.axis()
+	.scale(x)
+	.orient("top")
+	.ticks(27) //this determines how many ticks to display in the x axis
+	.tickFormat(d3.format("0000"));
+
+
+
+//Create the SVG Viewport selection
+var svg = d3.select("body").append("svg")
+	.attr("width", width + margin.left + margin.right)
+	.attr("height", height + margin.top + margin.bottom)
+	.style("margin-left", margin.left + "px")
+	.append("g")
+	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+	
+d3.json("attData.json", function(data) {
+	x.domain([start_year, end_year]);
+	var xScale = d3.scale.linear()
+		.domain([start_year, end_year])
+		.range([0, width])
+
+	svg.append("g")
+		.attr("class", "x axis")
+		.attr("transform", "translate(0," + 0 + ")")
+		.call(xAxis);
+
+
+	for (var j = 0; j < data.length; j++) {
+		var g = svg.append("g")
+		.attr("class","journal");
+
+		var circles = g.selectAll("circle")
+			.data(data[j]['articles'])
+			.enter()
+			.append("circle")
+
+		var text = g.selectAll("text")
+			.data(data[j]['articles'])
+			.enter()
+			.append("text")
+
+		var rScale = d3.scale.linear()
+			.domain([0, d3.max(data[j]['articles'], function(d) { return d[1]; })])
+			.range([2, 10]);
+
+
+
+		circles
+			.attr("cx", function(d, i) { return xScale(d[0]); })
+			.attr("cy", j*35+25)
+			.attr("r", function(d) { return rScale(d[1])*1.5; })
+			.style("fill", function(d) { return c(j); });
+
+		text
+			.attr("y", j*35+25)
+			.attr("x",function(d, i) { return xScale(d[0])-5; })
+			.attr("class","value")
+			.text(function(d){ return d[1]; })
+			.style("fill", function(d) { return c(j); })
+			.style("display","none");
+
+		g.append("text")
+			.attr("y", j*35+25)
+			.attr("x",width+50)
+			.attr("class","label")
+			.text(truncate(data[j]['name'],60,"..."))
+			.style("fill", function(d) { return c(j); })
+			.on("mouseover", mouseover)
+			.on("mouseout", mouseout);
+	};
+
+	function mouseover(p) {
+		var g = d3.select(this).node().parentNode;
+		d3.select(g).selectAll("circle").style("display","none");
+		d3.select(g).selectAll("text.value").style("display","block");
+	}
+
+	function mouseout(p) {
+		var g = d3.select(this).node().parentNode;
+		d3.select(g).selectAll("circle").style("display","block");
+		d3.select(g).selectAll("text.value").style("display","none");
+	}
+});
+
+</script>
+<br><br>
+<p style="text-align:center;font-size:15">Copyright 2017</p>
+</body>
+</html>
+
+
