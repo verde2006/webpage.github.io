@@ -1,6 +1,6 @@
 
 body{
-background-image: url("SrebImageBig.jpg") !important;
+background-image: url("SrebImageBig.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
