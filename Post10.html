@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <title>Personality Traits</title>
+	<link rel="stylesheet" type="text/css" href="styleSrebVis.css" />
+    <style>
+
+@media screen and (max-width: 1366px) {
+    h1{
+	font-size:40px !important;
+	margin-top:50px !important;
+	text-align:center;
+	width:400px !important; 
+}
+
+.artwork img {
+	width:400px !important;
+}
+
+.explanation{   /* This is the list containining the information below the image */
+
+    font-size:18px !important;
+    width:400px !important;
+}
+
+body{
+background-image: url("background2.png");
+
+}	
+
+}
+	
+	
+	
+
+
+    </style>
+</head>
+<body>
+
+
+    <div id='container'>
+        <div id='graph'><p id='PageTitle'>Network Analysis of Associations Between Psychological Attributes</p>
+		<p class="Authors">Visualization by <a style="color:tomato;font-weight: bold;line-height:0px;" href="http://www.tamerkhraisha.com/">Tamer Khraisha, </a> <a style="color:olive" href="https://cns.ceu.edu/">PhD, Center for Network Science - Central European University (Budapest)</a><br>
+		Research Idea and Analysis by <a style="color:tomato;font-weight: bold;line-height:0px;" href="https://cns.ceu.edu/people/srebrenka-letina">Srebrenka Letina, </a><a style="color:olive" href="https://cns.ceu.edu/">  PhD, Center for Network Science - Central European University (Budapest)</a><br>
+		Data from <a style="color:tomato" href="http://mypersonality.org/wiki/doku.php">My Personality Project</a>, led by <a style="color:tomato" href="http://www.michalkosinski.com/"> Michal Kosinski</a> and <a style="color:tomato" href="http://www.davidstillwell.co.uk/">David Stillwell</a></p>
+		<p class="Authors">Nodes are personality traits and links are the correlations between them. Correlation indicates the effect, negative <br>or positive, that one personality trait has on another.</p>
+		<p class="Authors">Click on each node to see adjacent nodes and a description of the trait<br>Click on edges to see the value of the correlation between two traits</p>
+
+
+		</div>
+        <div id='notes'></div>
+    </div>
+    <script src='http://d3js.org/d3.v3.min.js'></script>
+
+<script>
+if (window.matchMedia("(min-width: 1367px)").matches) {
+  document.write('<script type="text/javascript" src="BigScreen.js"><\/script>');
+} 
+</script> 
+	
+<script>
+if (window.matchMedia("(max-width: 1367px)").matches) {
+  document.write('<script type="text/javascript" src="SmallScreen.js"><\/script>');
+} 
+</script> 
+	
+</body>
+</html>
