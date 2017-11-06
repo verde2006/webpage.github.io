@@ -99,7 +99,6 @@ ul.connection {
 ul.connection:before,
 /*
 This part was uncommented to remove the arrow that appeas on the box showing correlation upon clicking on an edge
-
 ul.connection:after {
     border: 10px solid transparent;
     content: '';

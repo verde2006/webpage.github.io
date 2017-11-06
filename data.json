@@ -1,9 +1,9 @@
 [
-{"artist": " About this trait :  A person with high score on this trait values personal success through demonstrating competence according to social standards",
+{"trait": " About this trait :  A person with high score on this trait values personal success through demonstrating competence according to social standards",
 
   "title": "Achievement",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "http://mediad.publicbroadcasting.net/p/wamc/files/201704/marie-curie-4.jpg",
   
@@ -11,7 +11,7 @@
   
   "text":"black",
   
-  "musicians":  ["Achievement and Power have a correlation of 0.082",
+  "TraitCorrelations":  ["Achievement and Power have a correlation of 0.082",
                 "Achievement and Agreeableness have a correlation of 0.078",
                 "Achievement and Empathy have a correlation of 0.078",
                 "Achievement and Fair Mindedness  have a correlation of 0.12",
@@ -42,11 +42,11 @@
    },
    
    
- {"artist": " About this trait :  A person with high score on this trait values social status and prestige, control or dominance over people and resources.",
+ {"trait": " About this trait :  A person with high score on this trait values social status and prestige, control or dominance over people and resources.",
  
   "title": "Power",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "http://oubliettemagazine.com/wp-content/uploads/Niccol%C3%B2-Machiavelli.jpg",
   
@@ -54,7 +54,7 @@
   
   "text":"black",
   
-  "musicians": ["Achievement and Power have a correlation of 0.082",
+  "TraitCorrelations": ["Achievement and Power have a correlation of 0.082",
                 "Power and Agreeableness have a correlation of 0.253",
                 "Power and Empathy have a correlation of 0.065",
                 "Power and Hedonism have a correlation of 0.041",
@@ -78,11 +78,11 @@
     "Measure": "The measure used is Shwartz's Values Survey"},
    
    
- {"artist": " About this trait :  People with this trait have a tendency to be compassionate and cooperative rather than suspicious and antagonistic towards others.",
+ {"trait": " About this trait :  People with this trait have a tendency to be compassionate and cooperative rather than suspicious and antagonistic towards others.",
  
   "title": "Agreeableness",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "https://upload.wikimedia.org/wikipedia/commons/2/29/William-Adolphe_Bouguereau_-_Agreeable_Burden_1895.jpg",
   
@@ -90,7 +90,7 @@
   
   "text":"black",
   
-  "musicians": ["Achievement and Agreeableness have a correlation of 0.078",
+  "TraitCorrelations": ["Achievement and Agreeableness have a correlation of 0.078",
                 "Power and Agreeableness have a correlation of 0.253",
                 "Agreeableness and Empathy have a correlation of 0.3",
                 "Agreeableness and Fair Mindedness  have a correlation of -0.006",
@@ -116,11 +116,11 @@
     "Measure": "The measure used is 20 to 336-item-long IPIP proxy for Costa and McCrae's NEO-PI-R questionnaire (referred to as Five Factor Model or BIG5"},
    
    
- {"artist": " About this trait :  Self-reported ability to tune into how others are feeling, and to understanding what they may be thinking. It measures  both the affective and cognitive components of empathy.",
+ {"trait": " About this trait :  Self-reported ability to tune into how others are feeling, and to understanding what they may be thinking. It measures  both the affective and cognitive components of empathy.",
  
   "title": "Empathy",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "http://www.healthpolicypartnership.com/wp-content/uploads/MBC-1.png",
   
@@ -128,7 +128,7 @@
   
   "text":"black",
   
-  "musicians": ["Achievement and Empathy have a correlation of 0.078",
+  "TraitCorrelations": ["Achievement and Empathy have a correlation of 0.078",
                 "Power and Empathy have a correlation of 0.065",
                 "Agreeableness and Empathy have a correlation of 0.3",
                 "Empathy and Fair Mindedness  have a correlation of -0.151",
@@ -158,11 +158,11 @@
 				},
    
    
- {"artist": " About this trait :  High score signifies balanced and impartial person is in her decision making.",
+ {"trait": " About this trait :  High score signifies balanced and impartial person is in her decision making.",
  
   "title": "Fair Mindedness",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "https://www.franksonnenbergonline.com/wp-content/uploads/2015/11/image_11-traits-of-a-fair-minded-person.jpg",
   
@@ -170,7 +170,7 @@
   
   "text":"black",
   
-  "musicians":  ["Achievement and Fair Mindedness  have a correlation of 0.12",
+  "TraitCorrelations":  ["Achievement and Fair Mindedness  have a correlation of 0.12",
                 "Agreeableness and Fair Mindedness  have a correlation of -0.006",
                 "Empathy and Fair Mindedness  have a correlation of -0.151",
                 "Fair Mindedness  and Hedonism have a correlation of -0.056",
@@ -197,11 +197,11 @@
 	
 	
    
- {"artist": " About this trait :  A person with high score on this trait values pleasure or sensuous gratification for oneself.",
+ {"trait": " About this trait :  A person with high score on this trait values pleasure or sensuous gratification for oneself.",
  
   "title": "Hedonism",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "https://3j0grh44ocny4a6kcn288izx-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/h1-950x530.jpg",
   
@@ -209,7 +209,7 @@
   
   "text":"black",
   
-  "musicians": ["Achievement and Hedonism have a correlation of -0.133",
+  "TraitCorrelations": ["Achievement and Hedonism have a correlation of -0.133",
                 "Power and Hedonism have a correlation of 0.041",
                 "Agreeableness and Hedonism have a correlation of 0.008",
                 "Empathy and Hedonism have a correlation of 0.11",
@@ -238,11 +238,11 @@
    
    
    
- {"artist": " About this trait :  A high score on this trait describes a person who monitors her self-presentations, expressive behavior, and nonverbal affective displays.",
+ {"trait": " About this trait :  A high score on this trait describes a person who monitors her self-presentations, expressive behavior, and nonverbal affective displays.",
  
   "title": "Self-Monitoring",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "https://thenypost.files.wordpress.com/2015/11/26t-linda_catch1-c-ta.jpg?quality=90&strip=all&w=664&h=441&crop=1",
   
@@ -250,7 +250,7 @@
   
   "text":"black",
   
-  "musicians": ["Achievement and Self-monitoring have a correlation of 0.069",
+  "TraitCorrelations": ["Achievement and Self-monitoring have a correlation of 0.069",
                 "Power and Self-monitoring have a correlation of 0.118",
                 "Empathy and Self-monitoring have a correlation of -0.08",
                 "Fair Mindedness  and Self-monitoring have a correlation of 0.037",
@@ -276,11 +276,11 @@
 				},
    
    
- {"artist": " About this trait :  The tendency NOT to experience negative emotions, such as anger, anxiety, or depression",
+ {"trait": " About this trait :  The tendency NOT to experience negative emotions, such as anger, anxiety, or depression",
  
   "title": "Emotional Stability",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "https://harmonyplace.com/wp-content/uploads/2017/09/Tips-for-Finding-Emotional-Stability-in-Recovery.jpg",
   
@@ -288,7 +288,7 @@
   
   "text":"black",
   
-  "musicians": ["Achievement and Emotional Stability have a correlation of 0.006",
+  "TraitCorrelations": ["Achievement and Emotional Stability have a correlation of 0.006",
                 "Power and Emotional Stability have a correlation of 0.007",
                 "Agreeableness and Emotional Stability have a correlation of -0.205",
                 "Empathy and Emotional Stability have a correlation of 0.062",
@@ -314,11 +314,11 @@
    
    
    
- {"artist": " About this trait :  High score signifies a person’s tendency to notice and report a broad array of physical symptoms and sensations.",
+ {"trait": " About this trait :  High score signifies a person’s tendency to notice and report a broad array of physical symptoms and sensations.",
  
   "title": "Awareness of Physical Symptoms and Sensations",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "http://www.heartki.com/wp-content/uploads/2012/07/human_dna_700.jpg",
   
@@ -326,7 +326,7 @@
   
   "text":"black",
   
-  "musicians": ["Achievement and Awareness of Physical Symptoms and Sensations have a correlation of 0.022",
+  "TraitCorrelations": ["Achievement and Awareness of Physical Symptoms and Sensations have a correlation of 0.022",
                 "Agreeableness and Awareness of Physical Symptoms and Sensations have a correlation of -0.01",
                 "Fair Mindedness  and Awareness of Physical Symptoms and Sensations have a correlation of -0.012",
                 "Hedonism and Awareness of Physical Symptoms and Sensations have a correlation of -0.023",
@@ -356,11 +356,11 @@
 				},
    
    
- {"artist": " About this trait :  Reversed Impression Management, to what extent a person conducts her life transparently.",
+ {"trait": " About this trait :  Reversed Impression Management, to what extent a person conducts her life transparently.",
  
   "title": "Self Disclosure",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "http://i47.tinypic.com/aaj2ph.jpg",
   
@@ -368,7 +368,7 @@
   
   "text":"black",
   
-  "musicians": ["Power and Self Disclosure  have a correlation of -0.067",
+  "TraitCorrelations": ["Power and Self Disclosure  have a correlation of -0.067",
                 "Agreeableness and Self Disclosure  have a correlation of -0.093",
                 "Fair Mindedness  and Self Disclosure  have a correlation of 0.2",
                 "Hedonism and Self Disclosure  have a correlation of -0.122",
@@ -396,11 +396,11 @@
 				},
    
    
- {"artist": " About this trait :  A person with high score on this trait values independent thought and action - choosing, creating, exploring",
+ {"trait": " About this trait :  A person with high score on this trait values independent thought and action - choosing, creating, exploring",
  
   "title": "Self-Direction",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "https://gdcf-0916001bcltd.netdna-ssl.com/wp-content/uploads/2016/07/self-direction.jpg",
   
@@ -408,7 +408,7 @@
   
   "text":"black",
   
-  "musicians": ["Achievement and Self direction have a correlation of 0.016",
+  "TraitCorrelations": ["Achievement and Self direction have a correlation of 0.016",
                 "Power and Self direction have a correlation of -0.139",
                 "Agreeableness and Self direction have a correlation of 0.059",
                 "Empathy and Self direction have a correlation of 0.139",
@@ -439,11 +439,11 @@
 
    
    
- {"artist": " About this trait :  An individual's active interest in cerebral activities (e.g. medicine, philosophy).",
+ {"trait": " About this trait :  An individual's active interest in cerebral activities (e.g. medicine, philosophy).",
  
   "title": "Intellectual Recreation",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "https://i.pinimg.com/736x/3a/e1/8a/3ae18a8a2f1487f1cf03b62933f73538--young-adult-books-young-adults.jpg",
   
@@ -451,7 +451,7 @@
   
   "text":"black",
   
-  "musicians": ["Empathy and Intellectual Recreation have a correlation of 0.09",
+  "TraitCorrelations": ["Empathy and Intellectual Recreation have a correlation of 0.09",
                 "Fair Mindedness  and Intellectual Recreation have a correlation of -0.044",
                 "Awareness of Physical Symptoms and Sensations and Intellectual Recreation have a correlation of -0.03",
                 "Self Disclosure  and Intellectual Recreation have a correlation of -0.012",
@@ -476,11 +476,11 @@
 				},
    
    
- {"artist": " About this trait :  An individual's active interest in militaristic activities (e.g. guns and shooting) would signify high militarism, and vice versa.",
+ {"trait": " About this trait :  An individual's active interest in militaristic activities (e.g. guns and shooting) would signify high militarism, and vice versa.",
  
   "title": "Low Militarism",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "https://i.pinimg.com/originals/1a/09/ac/1a09ac769f8f55d925d3554092a289d4.jpg",
   
@@ -488,7 +488,7 @@
   
   "text":"black",
   
-  "musicians": ["Power and Low Militarism have a correlation of -0.011",
+  "TraitCorrelations": ["Power and Low Militarism have a correlation of -0.011",
                 "Empathy and Low Militarism have a correlation of -0.093",
                 "Hedonism and Low Militarism have a correlation of 0.074",
                 "Self-monitoring and Low Militarism have a correlation of -0.038",
@@ -516,11 +516,11 @@
 				},
    
    
- {"artist": " About this trait :  An individual's active interest in violent or occult activities (e.g. black magic) signify high militarism, and vice versa",
+ {"trait": " About this trait :  An individual's active interest in violent or occult activities (e.g. black magic) signify high militarism, and vice versa",
  
   "title": "Low Violent-Occult",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "https://fthmb.tqn.com/L4G03EPT70Bs2XwReoOlGJw32Ho=/768x0/filters:no_upscale()/The-Rock-vs-Hulk-Hogan-56a78ccd3df78cf77296f67a.jpg",
   
@@ -528,7 +528,7 @@
   
   "text":"black",
   
-  "musicians": [		"Achievement and Low Violent-Occult have a correlation of 0.001",
+  "TraitCorrelations": [		"Achievement and Low Violent-Occult have a correlation of 0.001",
 						"Agreeableness and Low Violent-Occult have a correlation of -0.057",
 						"Fair Mindedness  and Low Violent-Occult have a correlation of 0.013",
 						"Hedonism and Low Violent-Occult have a correlation of -0.12",
@@ -558,11 +558,11 @@
 						},
    
    
- {"artist": " About this trait :  An individual's active interest in active recreation (e.g. camping, hill walking)",
+ {"trait": " About this trait :  An individual's active interest in active recreation (e.g. camping, hill walking)",
  
   "title": "Wholesome Activities",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "http://goeast.ems.com/wp-content/uploads/2017/10/EMS-Burlington-MtMansfield-0955.jpg",
   
@@ -570,7 +570,7 @@
   
   "text":"black",
   
-  "musicians": ["Achievement and Wholesome Activities have a correlation of 0.004",
+  "TraitCorrelations": ["Achievement and Wholesome Activities have a correlation of 0.004",
                 "Power and Wholesome Activities have a correlation of 0.057",
                 "Agreeableness and Wholesome Activities have a correlation of 0.042",
                 "Empathy and Wholesome Activities have a correlation of 0.001",
@@ -601,18 +601,18 @@
    
    
    
- {"artist": " About this trait :  High score signifies high satisfaction with life in general",
+ {"trait": " About this trait :  High score signifies high satisfaction with life in general",
  
   "title": "Life Satisfaction",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "http://expertenough.com/wp-content/uploads/2012/09/thumbs-up.jpg",
   
   "color":  "GoldenRod" ,
   
   "text":"black",
-  "musicians": ["Achievement and Life satisfaction have a correlation of -0.013",
+  "TraitCorrelations": ["Achievement and Life satisfaction have a correlation of -0.013",
                 "Agreeableness and Life satisfaction have a correlation of -0.028",
                 "Fair Mindedness  and Life satisfaction have a correlation of 0.046",
                 "Hedonism and Life satisfaction have a correlation of 0.087",
@@ -641,11 +641,11 @@
 				
 				},
    
- {"artist": " About this trait :  A person with high score on this trait values respect, commitment, and acceptance of the customs and ideas that one's culture or religion provides",
+ {"trait": " About this trait :  A person with high score on this trait values respect, commitment, and acceptance of the customs and ideas that one's culture or religion provides",
  
   "title": "Tradition",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "http://www.royaldoors.net/wp-content/uploads/2017/04/pysanky-1.jpg",
   
@@ -653,7 +653,7 @@
   
   "text":"black",
   
-  "musicians": ["Achievement and Tradition have a correlation of -0.251",
+  "TraitCorrelations": ["Achievement and Tradition have a correlation of -0.251",
                 "Power and Tradition have a correlation of -0.122",
                 "Agreeableness and Tradition have a correlation of -0.048",
                 "Empathy and Tradition have a correlation of 0.08",
@@ -686,11 +686,11 @@
 				},
    
    
- {"artist": " About this trait :  A person with high score on this trait values understanding, appreciation, tolerance, and protection for the welfare of all people and for nature",
+ {"trait": " About this trait :  A person with high score on this trait values understanding, appreciation, tolerance, and protection for the welfare of all people and for nature",
  
   "title": "Universalism",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "https://i.pinimg.com/736x/be/3a/8d/be3a8d943bf071717dc0a979264fd09a--child-art-art-google.jpg",
   
@@ -698,7 +698,7 @@
   
   "text":"black",
   
-  "musicians": ["Achievement and Universalism have a correlation of -0.277",
+  "TraitCorrelations": ["Achievement and Universalism have a correlation of -0.277",
                 "Power and Universalism have a correlation of -0.286",
                 "Empathy and Universalism have a correlation of -0.038",
                 "Hedonism and Universalism have a correlation of -0.172",
@@ -723,11 +723,11 @@
 				},
    
    
- {"artist": " About this trait :  Tendency to show self-discipline, act dutifully, and aim for achievement",
+ {"trait": " About this trait :  Tendency to show self-discipline, act dutifully, and aim for achievement",
  
   "title": "Conscientiousness",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAfcAAAAJDQyYjA4ZWE4LTZkNTktNDk4NS1iZGRjLTM4MGRlZTc1NjVmNg.jpg",
   
@@ -735,7 +735,7 @@
   
   "text":"black",
   
-  "musicians":  ["Achievement and Conscientiousness have a correlation of -0.029",
+  "TraitCorrelations":  ["Achievement and Conscientiousness have a correlation of -0.029",
                 "Agreeableness and Conscientiousness have a correlation of -0.016",
                 "Empathy and Conscientiousness have a correlation of 0.014",
                 "Hedonism and Conscientiousness have a correlation of -0.007",
@@ -762,11 +762,11 @@
 				},
    
    
- {"artist": " About this trait :  Characterized by positive emotions, surgency, and the tendency to seek out stimulation and the company of others",
+ {"trait": " About this trait :  Characterized by positive emotions, surgency, and the tendency to seek out stimulation and the company of others",
  
   "title": "Extroversion",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "https://typevolution.files.wordpress.com/2017/03/carnival-2035021_960_720.jpg?w=723",
   
@@ -774,7 +774,7 @@
   
   "text":"black",
   
-  "musicians": ["Achievement and Extroversion have a correlation of 0.151",
+  "TraitCorrelations": ["Achievement and Extroversion have a correlation of 0.151",
                 "Agreeableness and Extroversion have a correlation of -0.034",
                 "Fair Mindedness  and Extroversion have a correlation of 0.129",
                 "Hedonism and Extroversion have a correlation of -0.103",
@@ -805,11 +805,11 @@
 				},
    
    
- {"artist": " About this trait :  A general appreciation for art, emotion, adventure, unusual ideas, imagination, curiosity, and variety of experience",
+ {"trait": " About this trait :  A general appreciation for art, emotion, adventure, unusual ideas, imagination, curiosity, and variety of experience",
  
   "title": "Openness",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "http://sofii.org/images/Articles/Gender/_scaleTo640/31043-moving-from-fairness-to-openness-pic2.png",
   
@@ -817,7 +817,7 @@
   
   "text":"black",
   
-  "musicians":  ["Achievement and Openness have a correlation of -0.035",
+  "TraitCorrelations":  ["Achievement and Openness have a correlation of -0.035",
                 "Power and Openness have a correlation of -0.025",
                 "Empathy and Openness have a correlation of 0.218",
                 "Fair Mindedness  and Openness have a correlation of -0.013",
@@ -847,11 +847,11 @@
 				},
    
    
- {"artist": " About this trait :  Body competence means that a person has high self-confidence in her own body performance",
+ {"trait": " About this trait :  Body competence means that a person has high self-confidence in her own body performance",
  
   "title": "Body Competence",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   "cover": "http://aofchampionsgym.co.uk/wp-content/uploads/2015/05/slide-new-1.jpg",
   
@@ -859,7 +859,7 @@
   
   "text":"black",
   
-  "musicians": ["Achievement and Body competence have a correlation of -0.028",
+  "TraitCorrelations": ["Achievement and Body competence have a correlation of -0.028",
                 "Power and Body competence have a correlation of 0.075",
                 "Agreeableness and Body competence have a correlation of -0.01",
                 "Empathy and Body competence have a correlation of 0.009",
@@ -889,11 +889,11 @@
 				},
    
    
- {"artist": " About this trait :  High score on scale which measure symptoms of depression in nine different groups as defined by the American Psychiatric Association Diagnostic and Statistical Manual, fifth edition.",
+ {"trait": " About this trait :  High score on scale which measure symptoms of depression in nine different groups as defined by the American Psychiatric Association Diagnostic and Statistical Manual, fifth edition.",
  
   "title": "Low Depression",
   
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   
   
   "cover": "https://dailytimes.com.pk/static/uploads/original/depression-increases-risk-of-cancer-british-medical-journal-2b9efc06eea40b81841808f00de7171d.jpg",
@@ -902,7 +902,7 @@
   
   "text":"black",
   
-  "musicians": ["Achievement and Low Depression have a correlation of -0.037",
+  "TraitCorrelations": ["Achievement and Low Depression have a correlation of -0.037",
                 "Power and Low Depression have a correlation of 0.056",
                 "Empathy and Low Depression have a correlation of -0.006",
                 "Hedonism and Low Depression have a correlation of 0.006",
@@ -931,13 +931,13 @@
    
    
    
- {"artist": " About this trait :  A person with high score on this trait is highly aware of internal sensations.",
+ {"trait": " About this trait :  A person with high score on this trait is highly aware of internal sensations.",
   "title": "Private Body",
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   "cover": "https://www.thestar.com/content/dam/thestar/news/insight/2015/12/28/elena-ferrante-a-private-author-who-caused-a-public-sensation/bodyjpg.jpg.size.custom.crop.771x650.jpg",
   "color": "IndianRed"  ,
   "text":"black",
-  "musicians": ["Achievement and Private body have a correlation of 0.032",
+  "TraitCorrelations": ["Achievement and Private body have a correlation of 0.032",
                 "Agreeableness and Private body have a correlation of -0.011",
                 "Empathy and Private body have a correlation of 0.011",
                 "Fair Mindedness  and Private body have a correlation of 0.055",
@@ -968,13 +968,13 @@
 				
 				
 				
- {"artist": " About this trait :  A person with high score on this trait is highly aware of observable aspects of his/her body.",
+ {"trait": " About this trait :  A person with high score on this trait is highly aware of observable aspects of his/her body.",
   "title": "Public Body",
-  "itunes": "to be deleted",
+  "itunes": "redundant code to be deleted",
   "cover": "https://static1.squarespace.com/static/555b8fb9e4b013d27c81ea8e/5820d5dccd0f684c304d8726/5820d7902e69cf31db25dc83/1478551291183/2016_Artspace_Australia_The_Public_Body_5.jpg",
   "color": "IndianRed"  ,
   "text":"black",
-  "musicians": ["Achievement and Public body have a correlation of -0.003",
+  "TraitCorrelations": ["Achievement and Public body have a correlation of -0.003",
 				"Power and Public body have a correlation of -0.036",
 				"Agreeableness and Public body have a correlation of -0.015",
 				"Empathy and Public body have a correlation of 0.033",
