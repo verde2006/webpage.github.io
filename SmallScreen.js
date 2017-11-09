@@ -259,7 +259,7 @@ d3.json('data.json', function(error, data) {
                 source: link.source,
                 target: link.target,
                 links: [link.link],
-				weight: link.link.substring(link.link.indexOf("0."))*10 // We set the weight of the links to be equal to the correlation multiplied by 10. We substring the string of the form "A and B have a correlation of 0.2" by taking the sbstring starting from 0.
+				weight: link.link.substring(link.link.indexOf("0.")-1)*10 // We set the weight of the links to be equal to the correlation multiplied by 10. We substring the string of the form "A and B have a correlation of 0.2" by taking the sbstring starting from 0. (the -1 is to take the - before the 0 in case there is)
 				
             });
         }
@@ -275,9 +275,13 @@ d3.json('data.json', function(error, data) {
         .append('line')
         .classed('edge', true)
         .style('stroke', edgeStroke)
-		.style('stroke-width', function(d){return d.weight;})
-        .call(positionEdge, nodes);
-
+		.style('stroke-width', function(d){return Math.abs(d.weight);})
+		.style("stroke-dasharray", function(d) { 
+							  if ( d.weight < 0) {
+							  return 5;
+							  } else 
+							  {return 0;}}) // This function makes negative links dashed and positive links full.
+		.call(positionEdge, nodes);
     // Next up are the nodes.
 
     var nodeSelection = svg.selectAll('.node')
@@ -505,7 +509,7 @@ d3.json('data.json', function(error, data) {
             node.incidentEdgeSelection
                 .transition()
                 .style('stroke', node.color)
-                .style('stroke-width',function(d){return d.weight*2;}); // We increase a bit the weight of the incident links when a node is selected 
+                .style('stroke-width',function(d){return Math.abs(d.weight*2);}); // We increase a bit the weight of the incident links when a node is selected 
 
             // Now we transition the adjacent nodes.
 
@@ -613,7 +617,7 @@ d3.json('data.json', function(error, data) {
 			edgeSelection
 				.transition()
 				.style('stroke', edgeStroke)
-				.style('stroke-width',function(d){return d.weight;}); 	
+				.style('stroke-width',function(d){return Math.abs(d.weight);}); 	
 
             // Transition all the labels to their
             // default styles.
