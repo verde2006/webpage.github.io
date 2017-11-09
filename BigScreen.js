@@ -1,5 +1,4 @@
 
-
 // Define the dimensions of the visualization. We're using
 // a size that's convenient for displaying the graphic on
 // http://bl.ocks.org
@@ -17,10 +16,10 @@ var labelFill = '#444';
 var adjLabelFill = '#aaa';
 var edgeStroke = '#aaa';
 var nodeFill = 'gold';
-var nodeRadius = 15;
-var selectedNodeRadius = 40;
+var nodeRadius = 10;
+var selectedNodeRadius = 30;
 
-var linkDistance = Math.min(width,height)/2;
+var linkDistance = Math.min(width,height)/2.5;
 
 // Find the main graph container.
 
@@ -108,7 +107,7 @@ var positionLabelText = function(text, pseudonode, fillColor) {
 d3.json('data.json', function(error, data) {
 
     // Find the graph nodes from the data set. Each
-    // album is a separate node.
+    // trait is a separate node.
 
     var nodes = data.map(function(entry, idx, list) { // The map method creates a new array with the results of calling a provided function on every element in the calling array
 
@@ -117,10 +116,10 @@ d3.json('data.json', function(error, data) {
 
         var node = {}; // this will be a dictionary for all nodes that contains all the features defined below.
 
-        // We retain some of the album's properties.
+        // We retain some of the trait's properties.
 
         node.title    = entry.title;
-        node.subtitle = entry.artist;
+        node.subtitle = entry.trait;
         node.image    = entry.cover;
         node.url      = entry.itunes;
         node.color    = entry.color;
@@ -129,7 +128,7 @@ d3.json('data.json', function(error, data) {
 		node.lowcorr  = entry.LowestCorr;
 		node.measure = entry.Measure;
 
-        // We'll also copy the musicians, again using
+        // We'll also copy the TraitCorrelations, again using
         // a more neutral property. At the risk of
         // some confusion, we're going to use the term
         // "link" to refer to an individual connection
@@ -139,7 +138,7 @@ d3.json('data.json', function(error, data) {
         // (This may be confusing because D3 refers to
         // the latter as "links."
 
-        node.links = entry.musicians.slice(0); // slice(0) copy of the original array by taking a slice from the element at index 0 to the last element.it starts at 0, so if you don't specify an end it will assume that you want a copy until the last element
+        node.links = entry.TraitCorrelations.slice(0); // slice(0) copy of the original array by taking a slice from the element at index 0 to the last element.it starts at 0, so if you don't specify an end it will assume that you want a copy until the last element
 
         // As long as we're iterating through the nodes
         // array, take the opportunity to create an
@@ -166,32 +165,32 @@ d3.json('data.json', function(error, data) {
     // links) "edges" in a nod to the more mathematically
     // minded.
 
-    var links = []; // THE LINKS, WHICH ARE NOT THE ACTUAL EDGES DRAWN, BUT THE NUMBER OF TIMES AN Attribute APPEARED IN THE DIFFERENT ALBUMS. 
+    var links = []; // THE LINKS, WHICH ARE NOT THE ACTUAL EDGES DRAWN, BUT THE NUMBER OF TIMES AN Attribute APPEARED IN THE DIFFERENT traits. 
 
-    // Start by iterating through the albums.
+    // Start by iterating through the traits.
 
-    data.forEach(function(srcNode, srcIdx, srcList) {  // for each album. The first parameter inside the function refer to the datum, the second to the index of the datum and the third creates a list of all datums (not sure about the third)
+    data.forEach(function(srcNode, srcIdx, srcList) {  // for each trait. The first parameter inside the function refer to the datum, the second to the index of the datum and the third creates a list of all datums (not sure about the third)
 
-        // For each album, iterate through the musicians.
+        // For each trait, iterate through the TraitCorrelations.
 
-        srcNode.musicians.forEach(function(srcLink) { // srcLink is used to indicate the elements that will be looped through, which are the elements inside srcNode.musicians
+        srcNode.TraitCorrelations.forEach(function(srcLink) { // srcLink is used to indicate the elements that will be looped through, which are the elements inside srcNode.TraitCorrelations
 
-            // For each musican in the "src" album, iterate
-            // through the remaining albums in the list.srcIdx + 1 is the index of the next album, srcList.length is the length of the entire dataset (number of albums)
+            // For each musican in the "src" trait, iterate
+            // through the remaining traits in the list.srcIdx + 1 is the index of the next trait, srcList.length is the length of the entire dataset (number of traits)
 
-            for (var tgtIdx = srcIdx + 1; tgtIdx < srcList.length;tgtIdx++) {  // iterate through the remaining albums
+            for (var tgtIdx = srcIdx + 1; tgtIdx < srcList.length;tgtIdx++) {  // iterate through the remaining traits
 
                 // Use a variable to refer to the "tgt"
-                // album for convenience.
+                // trait for convenience.
 
-                var tgtNode = srcList[tgtIdx]; // This returns the target album
+                var tgtNode = srcList[tgtIdx]; // This returns the target trait
 
                 // Is there any musician in the "tgt"
-                // album that matches the musican we're
+                // trait that matches the musican we're
                 // currently considering from the "src"
-                // album?
+                // trait?
 
-                if (tgtNode.musicians.some(function(tgtLink){ // The some() method tests whether at least one element in the array passes the test implemented by the provided function. The first parameter is the callback function and the first parameter in the function is the index of the element being processed.
+                if (tgtNode.TraitCorrelations.some(function(tgtLink){ // The some() method tests whether at least one element in the array passes the test implemented by the provided function. The first parameter is the callback function and the first parameter in the function is the index of the element being processed.
                     return tgtLink === srcLink; // === means strick equality, which means they are equal in value and type.
                 })) {
 
@@ -199,8 +198,8 @@ d3.json('data.json', function(error, data) {
                     // link to the links array.
 
                     links.push({
-                        source: srcIdx, // this is the index (number) of the source album 
-                        target: tgtIdx, // this is the index of the target album
+                        source: srcIdx, // this is the index (number) of the source trait 
+                        target: tgtIdx, // this is the index of the target trait
                         link: srcLink // this is the actual link, which is in the form of "Achievement and Power have a correlation of 0.1". So links will contain a huge list of the form [{source:, target:,link :},{source:, target:,link :},.. ]
                     });
                 }
@@ -282,12 +281,9 @@ d3.json('data.json', function(error, data) {
 							  return 5;
 							  } else 
 							  {return 0;}}) // This function makes negative links dashed and positive links full.
-        .call(positionEdge, nodes);
-
+		.call(positionEdge, nodes);
     // Next up are the nodes.
 
-
-	
     var nodeSelection = svg.selectAll('.node')
         .data(nodes)
         .enter()
@@ -493,9 +489,7 @@ d3.json('data.json', function(error, data) {
         edgeSelection
             .transition()
             .style('stroke', edgeStroke)
-            .style('stroke-width',0.1) // this makes the width of the other edges very low so that you see the selected edges better
-			
-	
+            .style('stroke-width',0.1); // this makes the width of the other edges very low so that you see the selected edges better
 
         labelSelection
             .transition()
@@ -516,8 +510,6 @@ d3.json('data.json', function(error, data) {
                 .transition()
                 .style('stroke', node.color)
                 .style('stroke-width',function(d){return Math.abs(d.weight*2);}); // We increase a bit the weight of the incident links when a node is selected 
-
-
 
             // Now we transition the adjacent nodes.
 
@@ -625,8 +617,7 @@ d3.json('data.json', function(error, data) {
 			edgeSelection
 				.transition()
 				.style('stroke', edgeStroke)
-				.style('stroke-width',function(d){return Math.abs(d.weight);});
-				
+				.style('stroke-width',function(d){return Math.abs(d.weight);}); 	
 
             // Transition all the labels to their
             // default styles.
@@ -787,5 +778,3 @@ d3.json('data.json', function(error, data) {
     labelForce.start();
 
 });
-
-
