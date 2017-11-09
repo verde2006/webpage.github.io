@@ -16,10 +16,10 @@ var labelFill = '#444';
 var adjLabelFill = '#aaa';
 var edgeStroke = '#aaa';
 var nodeFill = 'gold';
-var nodeRadius = 10;
-var selectedNodeRadius = 30;
+var nodeRadius = 15;
+var selectedNodeRadius = 40;
 
-var linkDistance = Math.min(width,height)/2.5;
+var linkDistance = Math.min(width,height)/2;
 
 // Find the main graph container.
 
