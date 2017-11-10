@@ -101,15 +101,15 @@ var svg = d3.select("#svg1")
 
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
-var simulation = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function(d) { return d.id; }))
-    .force("charge", d3.forceManyBody())
-    .force("center", d3.forceCenter(width / 2, height / 2));
+var simulation = d3.forceSimulation() // creates an force simulation with empty array (empty in that there are no nodes yet)
+    .force("link", d3.forceLink().id(function(d) { return d.id; })) // Creates a new link force with the specified links and default parameters. If links is not specified, it defaults to the empty array.
+    .force("charge", d3.forceManyBody()) //The many-body (or n-body) force applies mutually amongst all nodes.(it simulates gravity is it takes a positive strength parameters and repulsion if negative (the default is -30)
+    .force("center", d3.forceCenter(width / 2, height / 2)); // Creates a new centering force with the specified x- and y- coordinates. If x and y are not specified, they default to ⟨0,0⟩. The centering force tries to keep the mean node positions close to the specified coordinates. 
 
 d3.json("miserables.json", function(error, graph) {
   if (error) throw error;
 
-  var link = svg.append("g")
+  var link = svg.append("g") // As usual, links are defined before nodes.
       .attr("class", "links")
     .selectAll("line")
     .data(graph.links)
@@ -122,8 +122,8 @@ d3.json("miserables.json", function(error, graph) {
     .data(graph.nodes)
     .enter().append("circle")
       .attr("r", 8)
-      .attr("fill", function(d) { return color(d.group); })
-      .call(d3.drag()
+      .attr("fill", function(d) { return color(d.group); }) // color is the method defined in line 102 and takes integers as parameteres.
+      .call(d3.drag() // the drag method allows to drag nodes around , that's the whole key.
           .on("start", dragstarted)
           .on("drag", dragged)
           .on("end", dragended));
@@ -132,9 +132,19 @@ d3.json("miserables.json", function(error, graph) {
       .text(function(d) { return d.id; });
 
   simulation
-      .nodes(graph.nodes)
-      .on("tick", ticked);
+      .nodes(graph.nodes) // we attach the node array to the force simulation
+      .on("tick", ticked); // show the simulation at each tick
+	
+				/*Each node must be an object. The following properties are assigned by the simulation:
 
+				index - the node’s zero-based index into nodes
+				x - the node’s current x-position
+				y - the node’s current y-position
+				vx - the node’s current x-velocity
+				vy - the node’s current y-velocity
+				
+				the same for links.
+				*/
   simulation.force("link")
       .links(graph.links);
 
@@ -146,20 +156,23 @@ d3.json("miserables.json", function(error, graph) {
         .attr("y2", function(d) { return d.target.y; });
 
     node
-        .attr("cx", function(d) { return d.x; })
+        .attr("cx", function(d) { return d.x; }) // x is automatically added so it can be accessed
         .attr("cy", function(d) { return d.y; });
   }
 });
 
 function dragstarted(d) {
-  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-  d.fx = d.x;
-  d.fy = d.y;
+  if (!d3.event.active) simulation.alphaTarget(0.3).restart(); // alpha is a cooling parameter that cools down the force calculations between each tick in order to finish the simulation. Target alpha is 0 by default. The restart method is used to reheat the simulation (because we are dragging nodes around)
+  d.fx = d.x; // fx is the fixed x position of a node.
+  d.fy = d.y; // fy is the fixed y position of a node.
+	//At the end of each tick, after the application of any forces, a node with a defined node.fx has node.x reset to this value 
+	//and node.vx set to zero; likewise, a node with a defined node.fy has node.y reset to this value and node.vy set to zero.
+	// !d3.event.active checks if another dragging event is not occuring.
 }
 
 function dragged(d) {
-  d.fx = d3.event.x;
-  d.fy = d3.event.y;
+  d.fx = d3.event.x; // d3.event.x gives the position of the x coordinate of the mouse click
+  d.fy = d3.event.y; // d3.event.x gives the position of the y coordinate of the mouse click
 }
 
 function dragended(d) {
