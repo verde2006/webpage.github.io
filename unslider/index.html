@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	
+	<title>Advanced Unslider Demo</title>
+	    <link rel="stylesheet" type="text/css" href="multiline.css">
+
+  <link rel="stylesheet" href="reset.css" /> 
+	<link rel="stylesheet" href="unslider.css" />
+	<link rel="stylesheet" href="unslider-dots.css" />
+	<link rel="stylesheet" href="my-styles.css">
+	
+	<style>
+
+.line {
+  fill: none;
+  stroke: steelblue;
+}
+
+/*This is the general styling of the slider */
+	
+		/* Set the height of your slider to the height of your images */
+		.banner {
+			height: 700px;
+		}
+	
+
+
+		/* Style the text over the slides */
+		.banner {
+			text-align: center;
+		}
+		.banner .slide-text {
+            margin:0 auto;
+			
+			color: white;
+		}
+		a:link, a:visited, a:focus, a:hover, a:active {
+			color: pink;
+			text-decoration: none;
+		}
+
+		
+		/* Style the dots*/
+		.unslider {
+			/* set the positioning context for the dots */
+			position: relative;
+		}
+		.unslider-nav { 
+			/* position the navigation dots over the slides */
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 95%;
+			
+			z-index: 1000; /* Make sure the dots show over the images */
+		}
+		
+		
+		/* Style the arrows*/
+		.unslider {
+			/* set the positioning context for the dots */
+			position: relative;
+		}
+		.unslider-arrow { 
+			/* position the navigation dots over the slides */
+			position: absolute;
+			top: 50%;
+			
+			z-index: 1000; /* Make sure the dots show over the images */
+			
+			font-size: 2em;
+			visibility: hidden;
+		}
+		
+		/* Change the arrow styles
+			You could also use an image instead
+		*/
+		.unslider-arrow { 
+			visibility: hidden;	/* Hide the default arrows */
+		}
+		
+		/* Use dynamic content to add in a different character and show it */
+		.unslider-arrow:before {
+			visibility: visible;
+		}
+		.unslider-arrow.prev:before {
+			content: '<';
+		}
+		.unslider-arrow.next:before {
+			content: '>';
+        }
+        
+
+                /*this is the chart styling 
+
+path { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+*/
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: tomato;
+}
+
+.bar:hover {
+  fill: salmon ;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  z-index:100;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+
+
+	</style>
+	
+</head>
+
+<body>
+<!-- Google Analytics Tracking code -->
+
+<!-- End Google Analytics code -->
+	
+	
+	
+
+	<div class="banner">
+		<ul>
+			<li>
+				<div class="slide-text">
+                        <svg id="test"  width="960" height="500">
+                        </svg>
+                        
+				</div>
+			</li>
+			<li>
+                    <div class="slide-text">
+                            <svg id="test2"  width="960" height="500"></svg>
+                    </div>
+			</li>
+
+		</ul>
+    </div>
+
+
+
+<!-- This includes the Google hosted jQuery framework -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- This includes the actual Galleria code (minified) -->
+	<script src="unslider-min.js"></script>
+	
+	<script>
+		$(function() {
+			$('.banner').unslider({
+				autoplay: false,           //  Automatically start the slideshow 							[default: false]
+				speed: 0,              //  The speed to animate each slide (in milliseconds) 		[default: 750]
+				delay: 10000,              //  The delay between slide animations (in milliseconds)	[default: 3000]
+				nav: true,                //  Generate an automatic clickable navigation for each slide in your slider [default: true]
+				infinite: false,
+				animation: 'fade',        // 	How Unslider animates each slide [default: horizontal]
+				                          //  	'horizontal', which moves the slides from left-to-right
+				                          //  	'vertical', which moves the slides from top-to-bottom
+				                          //  	'fade', which crossfades slides
+				arrows: true             //  Show the nav arrows [default: false]
+			});
+		});
+    </script>
+    
+
+
+
+
+    
+
+
+
+
+
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
+
+ 
+<script>
+
+var margin = {top: 40, right: 20, bottom: 30, left: 40},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var formatPercent = d3.format(".0%");
+
+var x = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .1);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .tickFormat(formatPercent);
+
+var tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .offset([-10, 0])
+  .html(function(d) {
+    return "<strong>Frequency:</strong> <span style='color:gold'>" + d.frequency + "</span>";
+  })
+
+var svg = d3.select("#test")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+svg.call(tip);
+
+d3.tsv("data.tsv", type, function(error, data) {
+  x.domain(data.map(function(d) { return d.letter; }));
+  y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Frequency");
+
+  svg.selectAll(".bar")
+      .data(data)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.letter); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.frequency); })
+      .attr("height", function(d) { return height - y(d.frequency); })
+      .on('mouseover', tip.show)
+      .on('mouseout', tip.hide)
+
+});
+
+function type(d) {
+  d.frequency = +d.frequency;
+  return d;
+}
+
+</script>
+
+
+
+
+
+
+<script>
+        
+        var margin1 = {top: 20, right: 80, bottom: 30, left: 50},
+            width1 = 960 - margin1.left - margin1.right,
+            height1 = 500 - margin1.top - margin1.bottom;
+        
+        var parseDate = d3.time.format("%Y").parse;
+        
+        var x1 = d3.time.scale()
+            .range([0, width1]);
+        
+        var y1 = d3.scale.linear()
+            .range([height1, 0]);
+        
+        var color1 = d3.scale.category10();
+        
+        var xAxis1 = d3.svg.axis()
+            .scale(x1)
+            .orient("bottom");
+        
+        var yAxis1 = d3.svg.axis()
+            .scale(y1)
+            .orient("left");
+        
+        var line1 = d3.svg.line()
+            .interpolate("basis")
+            .x(function(d) { return x1(d.date); })
+            .y(function(d) { return y1(d.frequence); });
+        
+        var svg2 = d3.select("#test2")
+            .attr("width", width1 + margin1.left + margin1.right)
+            .attr("height", height1 + margin1.top + margin1.bottom)
+              .append("g")
+            .attr("transform", "translate(" + margin1.left + "," + margin1.top + ")");
+        
+        d3.tsv("data2.tsv", function(error, data1) {
+          if (error) throw error;
+        
+          color1.domain(d3.keys(data1[0]).filter(function(key) { return key !== "date"; }));
+        
+          data1.forEach(function(d) {
+            d.date = parseDate(d.date);
+          });
+        
+          var emotions = color1.domain().map(function(name) {
+            return {
+              name: name,
+              values: data1.map(function(d) {
+                return {date: d.date, frequence: +d[name]};
+              })
+            };
+          });
+        
+          x1.domain(d3.extent(data1, function(d) { return d.date; }));
+        
+          y1.domain([
+            d3.min(emotions, function(c) { return d3.min(c.values, function(v) { return v.frequence; }); }),
+            d3.max(emotions, function(c) { return d3.max(c.values, function(v) { return v.frequence; }); })
+          ]);
+        
+          svg2.append("g")
+              .attr("class", "x axis")
+              .attr("transform", "translate(0," + height1 + ")")
+              .call(xAxis1);
+        
+          svg2.append("g")
+              .attr("class", "y axis")
+              .call(yAxis1)
+            .append("text")
+              .attr("transform", "rotate(-90)")
+              .attr("y", 6)
+              .attr("dy", ".71em")
+              .style("text-anchor", "end")
+              .text("Frequenza (tf-idf)");
+        
+          var emotion = svg2.selectAll(".emotion")
+              .data(emotions)
+              .enter().append("g")
+              .attr("class", "emotion");
+        
+          emotion.append("path")
+              .attr("class", "line")
+              .attr("d", function(d) { return line1(d.values); })
+              .style("stroke", function(d) { return color1(d.name); });
+        
+          emotion.append("text")
+              .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
+              .attr("transform", function(d) { return "translate(" + x1(d.value.date) + "," + y1(d.value.frequence) + ")"; })
+              .attr("x", 3)
+              .attr("dy", ".35em")
+              .text(function(d) { return d.name; });
+        });
+        
+        </script>
+
+
+
+        
+
