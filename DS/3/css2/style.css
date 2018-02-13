@@ -21,13 +21,13 @@ body {
 #title h2 {
   color: #fff;
   font-size: 45px;
-  font-family: "museo-slab";
+  font-family: "museo-slab" !important;
 }
 
 #title h3 {
   color: #fff;
   font-size: 25px;
-  font-family: "museo-sans";
+  font-family: "museo-sans" !important;
   font-weight: 300
 }
 
