@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<style>
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 960px;
+  height: 500px;
+  position: relative;
+}
+
+form {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+path {
+  fill-rule: evenodd;
+  stroke: #333;
+  stroke-width: 2px;
+}
+
+
+.tex1{
+background-color:red}
+
+
+.annulus path {
+  fill: #c6dbef;
+}
+
+h1{
+	font-family: 'Amatic SC', cursive;
+	font-size:50px;
+	text-align:center;
+	}
+	
+li{
+	font-family: 'Amatic SC', cursive;
+	font-size:33px;
+
+}
+p{
+text-align:justify;
+font-family:'open sans condensed';
+font-size:17px;
+width:60%;
+}	
+
+#wrapper {
+    width: 1800px;
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+#div1 {
+    width: 1000px;
+    float:left; /* add this */
+
+}
+#div2 {
+	width: 800px;
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<div id="div1" theSVG"><h1>The Art of Data Science</h1><svg id="graph"  style="background-color:transparent"></svg></div>
+
+
+<div id="div2">
+
+<ol type="i">
+  <li style="color:tomato;">Starting The Quesiton</li>
+  <hr align='left' style="width:70%">
+<p>Asking the right question is fundamental in order to be able to construct the right model and interpret the results. 
+Different types of questions can be asked about a dataset, like descriptive, exploratory, inferential, predictive, causal, and mechanistic questions.</p>
+<br>
+  <li style="color:PaleVioletRed;">Exploratory Data Analyis</li>
+  <hr align='left' style="width:70%">
+  <p>Exploratory data analysis is the process of exploring your
+data, and it typically includes examining the structure and
+components of your dataset, the distributions of individual
+variables, and the relationships between two or more
+variables.</p>
+  
+  <li style="color:SteelBlue;">Model Building</li>
+  <hr align='left' style="width:70%">
+  <p>Modeling is the process by which a data scientist creates,
+assesses, and refines a model to answer a question. Modeling involves the use of tools like statistics, data mining, theoretical assumptions. 
+It also involves imposing a specific structure on the data and creating
+a summary of the data.</p>
+  
+   <li style="color:gold">Result Interpretation</li>
+  <hr align='left' style="width:70%">
+  <p>Interpreting the results is the process of matching expectations to the data. Interpretation happens after completing the primary and supportive
+analyses and it is helps the data scientist revisit the original question and modify the model.</p>
+  
+  <li style="color:LimeGreen">Communication And Visualization</li>
+  <hr align='left' style="width:70%">
+  <p> Communication is the process of disseminating the final results in a more formal
+setting, often to an external, larger audience. Static and interactive visualizations are among the most used tools to communicate data analysis results.</p>
+</ol>  
+
+
+</div>
+</div>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+// Math about positioning wheels on a circle is taken from here http://mathworld.wolfram.com/Pentagon.html
+
+
+var width = 900,
+    height = 800,
+    radius = 100,
+    x = Math.sin(2 * Math.PI / 3),
+    y = Math.cos(2 * Math.PI / 3);
+
+var distFromOrigin = 400	
+var c1 = Math.cos((2*Math.PI)/5)*distFromOrigin
+var s1 = Math.sin((2*Math.PI)/5)*distFromOrigin
+var c2 = Math.cos(Math.PI/5)*distFromOrigin
+var s2 = Math.sin((4*Math.PI)/5)*distFromOrigin
+
+	
+var offset = 0,
+    speed = 4,
+    start = Date.now();
+
+var svg = d3.select("#graph")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    //.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
+	.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(.60)")
+
+  .append("g");
+
+  /* this was the circle used to position the wheels like a pentagon
+d3.select('#graph')
+	.append('circle')
+	.attr('cx',(width / 2))
+	.attr('cy',(height / 2))
+	.attr('r',distFromOrigin)
+	.attr('stroke-width',3)
+	.attr('stroke','darkred')
+	.attr('fill','none');  
+	*/
+	
+/*	
+d3.select('#graph')
+	.append('line')
+	.attr('x1',(width / 2)-s2)
+	.attr('y1',0)
+	.attr('x2',(width / 2)-s2)
+	.attr('y2',(height / 4))
+	.attr('stroke','black');
+	
+d3.select('#graph')
+	.append('line')
+	.attr('x1',(width / 2)+s2)
+	.attr('y1',0)
+	.attr('x2',(width / 2)+s2)
+	.attr('y2',(height / 4))
+	.attr('stroke','black');
+
+d3.select('#graph')
+	.append('circle')
+	.attr('cx',(width / 2))
+	.attr('cy',(height / 2))
+	.attr('r',20)
+	.attr('stroke-width',3)
+	.attr('stroke','none');
+	
+	
+d3.select('#graph')
+	.append('circle')
+	.attr('cx',500+c1)
+	.attr('cy',500-s1)
+	.attr('r',3)
+	.attr('stroke-width',3)
+	.attr('stroke','none')
+	.attr('fill','red');  
+	*/
+var frame = svg.append("g")
+    .datum({radius: Infinity});
+
+frame.append("g")
+    .attr("class", "annulus")
+    .datum({teeth: 120, radius: -600, annulus: true}) <!-- this is the external ring -->
+  .append("path")
+    .attr("d", gear);
+
+frame.append("g")
+    .attr("class", "sun") <!-- this is the middle wheel -->
+	.style("fill",'grey')
+    .datum({teeth: 40, radius: radius * 2})
+	.append("path")
+    .attr("d", gear);
+	
+	
+d3.select(".sun")
+	.append('circle')
+		.attr('fill','grey')
+		.attr('r',30)
+		.attr("transform", "translate(0,0)");
+
+		
+d3.select(".sun")
+	.append('svg:text')
+		.attr('x', 0)
+		.attr('y', 30)
+		.attr('fill','white')
+		.attr("text-anchor","middle")
+		.attr("font-family",'Amatic SC')
+		.attr("font-size",60)
+  
+	.append('svg:tspan')
+		.attr('x', 0)
+		.attr('dy', -30)
+		.text('Epicycle')
+
+	.append('svg:tspan')
+		.attr('x', 0)
+		.attr('dy', 50)
+		.text('of Analysis');		
+/*	
+d3.select(".sun")
+        .append("text")
+		.attr("class", "annotate")
+		.attr("x", 450)
+		.attr("y", -483)
+		.attr("text-anchor","middle")
+		.text("Because all chords at the arc of Apple have");
+		
+d3.select(".sun")
+        .append("text")
+		.attr("class", "annotate")
+		.attr("x", -450)
+		.attr("y", -483)
+		.attr("text-anchor","middle")
+		.text("Because all chords at the arc of Apple have" );		
+*/		
+frame.append("g")
+    .attr("class", "planet1")
+    .attr("transform", "translate(0," + -distFromOrigin + ")")
+	.style("fill",'tomato')
+    .datum({teeth: 40, radius: -radius * 2})
+	.append("path")
+    .attr("d", gear)
+	//.attr("transform", "translate(0,-150)")
+
+	
+d3.select(".planet1")
+	.append('circle')
+		.attr('fill','tomato')
+		.attr('r',30)
+		.attr("transform", "translate(0,0)");
+
+d3.select(".planet1")
+	.append('svg:text')
+		.attr('x', 0)
+		.attr('y', 30)
+		.attr('fill','white')
+		.attr("text-anchor","middle")
+		.attr("font-family",'Amatic SC')
+		.attr("font-size",60)
+  
+	.append('svg:tspan')
+		.attr('x', 0)
+		.attr('dy', -30)
+		.text('Starting')
+
+	.append('svg:tspan')
+		.attr('x', 0)
+		.attr('dy', 50)
+		.text('The Question');
+  
+
+		
+frame.append("g")
+    .attr("class", "planet2")
+    .attr("transform", "translate(" + s1  + "," + -c1 + ")")
+	.style("fill",'PaleVioletRed')
+    .datum({teeth: 40, radius: -radius * 2})
+	.append("path")
+    .attr("d", gear)
+	
+d3.select(".planet2")
+	.append('circle')
+		.attr('fill','PaleVioletRed')
+		.attr('r',30)
+		.attr("transform", "translate(0,0)");
+
+d3.select(".planet2")
+	.append('svg:text')
+		.attr('x', 0)
+		.attr('y', 30)
+		.attr('fill','white')
+		.attr("text-anchor","middle")
+		.attr("font-family",'Amatic SC')
+		.attr("font-size",60)
+  
+	.append('svg:tspan')
+		.attr('x', 0)
+		.attr('dy', -30)
+		.text('Exploratory')
+
+	.append('svg:tspan')
+		.attr('x', 0)
+		.attr('dy', 50)
+		.text('Data Analysis');
+
+		
+	
+frame.append("g")
+    .attr("class", "planet3")
+    .attr("transform", "translate(" + -s1  + "," + -c1 + ")")
+		.style("fill",'LimeGreen')
+    .datum({teeth: 40, radius: -radius * 2})
+	.append("path")
+    .attr("d", gear);	
+	
+
+
+d3.select(".planet3")
+	.append('circle')
+		.attr('fill','LimeGreen')
+		.attr('r',30)
+		.attr("transform", "translate(0,0)");
+
+d3.select(".planet3")
+	.append('svg:text')
+		.attr('x', 0)
+		.attr('y', 30)
+		.attr('fill','white')
+		.attr("text-anchor","middle")
+		.attr("font-family",'Amatic SC')
+		.attr("font-size",60)
+  
+	.append('svg:tspan')
+		.attr('x', 0)
+		.attr('dy', -30)
+		.text('Communication')
+
+	.append('svg:tspan')
+		.attr('x', 0)
+		.attr('dy', 50)
+		.text('And Visualization');
+	
+
+
+	
+frame.append("g")
+    .attr("class", "planet4")
+    .attr("transform", "translate(" + -s2 + "," + c2 + ")")
+		.style("fill",'gold')
+    .datum({teeth: 40, radius: -radius * 2})
+	.append("path")
+    .attr("d", gear);
+	
+
+d3.select(".planet4")
+	.append('circle')
+		.attr('fill','gold')
+		.attr('r',30)
+		.attr("transform", "translate(0,0)");
+
+d3.select(".planet4")
+	.append('svg:text')
+		.attr('x', 0)
+		.attr('y', 30)
+		.attr('fill','white')
+		.attr("text-anchor","middle")
+		.attr("font-family",'Amatic SC')
+		.attr("font-size",60)
+  
+	.append('svg:tspan')
+		.attr('x', 0)
+		.attr('dy', -30)
+		.text('Result')
+
+	.append('svg:tspan')
+		.attr('x', 0)
+		.attr('dy', 50)
+		.text('Interpretation');
+		
+		
+	
+frame.append("g")
+    .attr("class", "planet5")
+    .attr("transform", "translate(" + s2 + "," + c2 + ")")
+		.style("fill",'SteelBlue')
+    .datum({teeth: 40, radius: -radius * 2})
+	.append("path")
+    .attr("d", gear);		
+	
+d3.select(".planet5")
+	.append('circle')
+		.attr('fill','SteelBlue')
+		.attr('r',30)
+		.attr("transform", "translate(0,0)");
+
+d3.select(".planet5")
+	.append('svg:text')
+		.attr('x', 0)
+		.attr('y', 30)
+		.attr('fill','white')
+		.attr("text-anchor","middle")
+		.attr("font-family",'Amatic SC')
+		.attr("font-size",60)
+  
+	.append('svg:tspan')
+		.attr('x', 0)
+		.attr('dy', -30)
+		.text('Model')
+
+	.append('svg:tspan')
+		.attr('x', 0)
+		.attr('dy', 50)
+		.text('Building');
+
+
+	
+		
+d3.selectAll("input[name=reference]")
+  .data([radius * 5, Infinity, -radius])
+    .on("change", function(radius1) {
+      var radius0 = frame.datum().radius, angle = (Date.now() - start) * speed;
+      frame.datum({radius: radius1});
+      svg.attr("transform", "rotate(" + (offset += angle / radius0 - angle / radius1) + ")");
+    });
+
+d3.selectAll("input[name=speed]")
+    .on("change", function() { speed = +this.value; });
+
+function gear(d) {
+  var n = d.teeth,
+      r2 = Math.abs(d.radius),
+      r0 = r2 - 8,
+      r1 = r2 + 8,
+      r3 = d.annulus ? (r3 = r0, r0 = r1, r1 = r3, r2 + 20) : 20,
+      da = Math.PI / n,
+      a0 = -Math.PI / 2 + (d.annulus ? Math.PI / n : 0),
+      i = -1,
+      path = ["M", r0 * Math.cos(a0), ",", r0 * Math.sin(a0)];
+  while (++i < n) path.push(
+      "A", r0, ",", r0, " 0 0,1 ", r0 * Math.cos(a0 += da), ",", r0 * Math.sin(a0),
+      "L", r2 * Math.cos(a0), ",", r2 * Math.sin(a0),
+      "L", r1 * Math.cos(a0 += da / 3), ",", r1 * Math.sin(a0),
+      "A", r1, ",", r1, " 0 0,1 ", r1 * Math.cos(a0 += da / 3), ",", r1 * Math.sin(a0),
+      "L", r2 * Math.cos(a0 += da / 3), ",", r2 * Math.sin(a0),
+      "L", r0 * Math.cos(a0), ",", r0 * Math.sin(a0));
+  path.push("M0,", -r3, "A", r3, ",", r3, " 0 0,0 0,", r3, "A", r3, ",", r3, " 0 0,0 0,", -r3, "Z");
+  return path.join("");
+}
+
+d3.timer(function() {
+  var angle = (Date.now() - start) * speed,
+      transform = function(d) { return "rotate(" + angle / d.radius + ")"; };
+  frame.selectAll("path").attr("transform", transform);
+  frame.attr("transform", transform); // frame of reference
+});
+
+</script>
+</body>
