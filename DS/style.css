@@ -56,3 +56,7 @@ line {
 .class, .special {
   color: #1181B8;
 }
+
+code{
+	font-family:courier;
+}
