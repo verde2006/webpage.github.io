@@ -20,14 +20,14 @@ body {
 
 #title h2 {
   color: #fff;
-  font-size: 45px;
-  font-family: "museo-slab" !important;
+  font-size: 55px;
+  font-family: 'Handlee', cursive;
 }
 
 #title h3 {
   color: #fff;
-  font-size: 25px;
-  font-family: "museo-sans" !important;
+  font-size: 30px;
+  font-family: 'Handlee', cursive;
   font-weight: 300
 }
 
