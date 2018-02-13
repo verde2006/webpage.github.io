@@ -1,7 +1,6 @@
 body {
   overflow: hidden;
   margin: 0;
-  font: 14px "Helvetica Neue";
 }
 body,html{
 	display:block;
@@ -22,7 +21,6 @@ body,html{
 #header {
   top: 80px;
   left: 140px;
-  font: 300 36px "Helvetica Neue";
 }
 
 rect {
