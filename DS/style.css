@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+
 body {
   overflow: hidden;
   margin: 0;
@@ -58,5 +60,5 @@ line {
 }
 
 code{
-	font-family:courier !important;
+  font-family: 'Cutive Mono', monospace !important;
 }
