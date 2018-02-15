@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+<style>
+
+body{
+font-size:30px;
+font-family: 'Amatic SC', cursive;
+}
+
+.wid{
+color:red;
+}
+.aftereq{
+color:blue;
+}
+.thesvgtag{
+color:brown;
+}
+.svgelement{
+color:brown;
+}
+
+#leftdiv{
+float:left;
+}
+
+#rightdiv{
+float:right;
+}
+
+</style>
+</head>
+<body>
+<h1>SVG is cool</h1>
+<div id='leftdiv'>
+    <pre>
+        <code>
+        
+ &lt;<span class="thesvgtag" >svg</span> <span class="wid">width</span><span class='aftereq'>="100"</span><span class="wid"> height</span><span class='aftereq'>="100"</span>&gt;
+ 
+ &lt;<span class="svgelement">circle</span>&gt;
+ &lt;<span class="svgelement">rectangle</span>&gt;
+ &lt;<span class="svgelement">rectangle</span>&gt;
+ &lt;<span class="svgelement">ellipse</span>&gt;
+ &lt;<span class="svgelement">line</span>&gt;
+ &lt;<span class="svgelement">path</span>&gt; 
+ &lt;<span class="svgelement">polygon</span>&gt; 
+ &lt;<span class="svgelement">text</span>&gt; 
+
+ &lt;/<span class="thesvgtag" >svg</span>&gt;
+ 
+
+        </code>
+    </pre>
+</div>
+
+<div id='rightdiv'>
+
+
+<div>
+<svg style="background-color:none" width="200" height="200">
+   <circle cx="100" cy="100" r="70" stroke="none" stroke-width="4" fill="orangered" />
+   </svg> 
+
+<svg style="background-color:none" width="200" height="200">
+     <rect x="30" y="30" width="130" height="130" style="fill:gold;stroke-width:3;black" />
+
+
+</svg> 
+
+<svg style="background-color:none" width="200" height="200">
+  <ellipse cx="100" cy="100" rx="80" ry="65"
+  style="fill:LightSeaGreen;stroke:none;stroke-width:2" />
+</svg>
+
+<svg width="200" height="200">
+  <rect x="50" y="20" rx="30" ry="30" width="130" height="130" style="fill:limegreen;stroke:none;stroke-width:5;" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<svg height="200" width="200">
+  <ellipse cx="100" cy="80" rx="100" ry="50" style="fill:PaleVioletRed " />
+  <ellipse cx="100" cy="80" rx="70" ry="40" style="fill:white" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<svg height="200" width="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:hotpink;stroke:none;stroke-width:5;fill-rule:nonzero;"/>
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+</div>
+
+<div>
+
+<svg width="200" height="200" fill="BlueViolet" viewBox="0 0 120 120"
+    xmlns="http://www.w3.org/2000/svg">
+
+  <polygon points="60,20 100,40 100,80 60,100 20,80 20,40"/>
+</svg>
+
+
+<svg height="200" width="200" viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
+  <path d="
+    M 630, 425
+    A 195, 195 0 0 1 331, 600
+    A 142, 142 0 0 0 428, 570
+    A  70,  70 0 0 1 370, 523
+    A  70,  70 0 0 0 401, 521
+    A  70,  70 0 0 1 344, 455
+    A  70,  70 0 0 0 372, 460
+    A  70,  70 0 0 1 354, 370
+    A 195, 195 0 0 0 495, 442
+    A  67,  67 0 0 1 611, 380
+    A 117, 117 0 0 0 654, 363
+    A  65,  65 0 0 1 623, 401
+    A 117, 117 0 0 0 662, 390
+    A  65,  65 0 0 1 630, 425
+    Z"
+    style="fill:#3BA9EE"/>
+</svg>
+
+<svg height="200" width="200" fill="olive">
+  <path d="M100 0 L20 200 L200 200 Z" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+
+<svg height="200" width="200">
+  <defs>
+    <filter id="f1" x="0" y="0">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+    </filter>
+  </defs>
+  <rect width="130" height="130" stroke="green" stroke-width="3" fill="LightCoral" filter="url(#f1)" />
+  Sorry, your browser does not support inline SVG.  
+</svg>
+
+<svg height="200" width="200">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+</svg>
+
+<svg height="200" width="200">
+  <polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160" style="fill:white;stroke:red;stroke-width:4" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+
+</div>
+
+<div>
+
+
+<svg height="200" width="200">
+  <g fill="none" stroke="black" stroke-width="4">
+    <path stroke-dasharray="5,5" d="M5 20 l215 0" />
+    <path stroke-dasharray="10,10" d="M5 40 l215 0" />
+    <path stroke-dasharray="20,10,5,5,5,10" d="M5 60 l215 0" />
+  </g>
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<svg height="200" width="200">
+  <g fill="none" stroke="salmon" stroke-width="3">
+    <path stroke-linecap="butt" d="M5 20 l215 0" />
+    <path stroke-linecap="round" d="M5 40 l215 0" />
+    <path stroke-linecap="square" d="M5 60 l215 0" />
+  </g>
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<svg height="200" width="200">
+  <g fill="none" stroke="black">
+    <path stroke-width="2" d="M5 20 l215 0" />
+    <path stroke-width="4" d="M5 40 l215 0" />
+    <path stroke-width="6" d="M5 60 l215 0" />
+  </g>
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+
+
+<svg height="200" width="200">
+  <g fill="none">
+    <path stroke="red" d="M5 20 l215 0" />
+    <path stroke="black" d="M5 40 l215 0" />
+    <path stroke="blue" d="M5 60 l215 0" />
+  </g>
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<svg width="200px" height="200px">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="gold" />
+    </marker>
+  </defs>
+
+  <line x1="50" y1="50" x2="150" y2="50" stroke="#000" stroke-width="5" marker-end="url(#arrow)" />
+</svg>
+
+</div>
+</div>
+
+
+</body>
+</html>

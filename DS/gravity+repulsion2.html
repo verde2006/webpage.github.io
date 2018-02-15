@@ -3,36 +3,35 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Force Layouts - Gravity and Charge</title>
+    <title>Force Layouts - Negative Charge</title>
     <script type="text/javascript" src="d3/d3.js"></script>
     <script type="text/javascript" src="d3/d3.geom.js"></script>
     <script type="text/javascript" src="d3/d3.layout.js"></script>
     <link type="text/css" rel="stylesheet" href="style.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  </head>
+  
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 	
-	<style>
-
-	#header{
-	
+<style>
+#header{
 	font-family: 'Amatic SC', cursive;
 	font-size:50px;
 	text-align:center;
 }
-	</style>
-  </head>
+</style>  
   <body>
     <div id="body">
       <div id="chart"></div>
-      <div id="header">gravity + repulsion</div>
+      <div id="header">mutual repulsion</div>
     </div>
     <script type="text/javascript">
 
-var w = 1600,
+var w = 1800,
 h = 1000;   
 
 var force = d3.layout.force()
-    .gravity(.02)
-    .charge(-10)
+    .gravity(0)
+    .charge(-60)
     .size([w, h]);
 
 var svg = d3.select("#chart").append("svg:svg")
@@ -62,10 +61,10 @@ svg.on("mousemove", function() {
       .attr("class", "node")
       .attr("cx", function(d) { return d.x; })
       .attr("cy", function(d) { return d.y; })
-      .attr("r", 5)
-	  .attr("fill","hotpink")
+      .attr("r", 7)
+	  .attr("fill","black")
     .transition()
-      .delay(30000)
+      .delay(3000)
       .attr("r", 1e-6)
       .each("end", function() { force.nodes().shift(); })
       .remove();

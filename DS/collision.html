@@ -17,7 +17,7 @@ circle {
 }
 #header{
 	font-family: 'Amatic SC', cursive;
-	font-size:40px;
+	font-size:70px;
 	text-align:center;
 }
     </style>
@@ -29,10 +29,10 @@ circle {
     </div>
     <script type="text/javascript">
 
-var w = 1000,
+var w = 1800,
     h = 1000;
 
-var nodes = d3.range(300).map(function() { return {radius: Math.random() * 12 + 4}; }),
+var nodes = d3.range(300).map(function() { return {radius: Math.random() * 12 + 5}; }),
     color = d3.scale.category10();
 
 var force = d3.layout.force()
@@ -83,7 +83,7 @@ svg.on("mousemove", function() {
 });
 
 function collide(node) {
-  var r = node.radius + 16,
+  var r = node.radius + 30,
       nx1 = node.x - r,
       nx2 = node.x + r,
       ny1 = node.y - r,

@@ -13,7 +13,7 @@
 <style>
 #header{
 	font-family: 'Amatic SC', cursive;
-	font-size:40px;
+	font-size:70px;
 	text-align:center;
 }
 </style>
@@ -25,9 +25,9 @@
       <div id="header">link constraints</div>
     </div>
     <script type="text/javascript">
-
-var w = 1600,
-h = 1000;   
+    
+    var w = 1800,
+    h = 1000;   
 
 var force = d3.layout.force()
     .linkDistance(2)
@@ -86,8 +86,8 @@ svg.on("mousemove", function() {
       .data([node])
       .attr("cx", function(d) { return d.x; })
       .attr("cy", function(d) { return d.y; })
-      .attr("r", 4.5)
-	  .attr("fill","hotpink")
+      .attr("r", 7)
+	  .attr("fill","black")
     .transition()
       .delay(3000)
       .attr("r", 1e-6)

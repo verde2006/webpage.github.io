@@ -15,7 +15,7 @@
 <style>
 #header{
 	font-family: 'Amatic SC', cursive;
-	font-size:45px;
+	font-size:70px;
 	text-align:center;
 }
 </style>
@@ -36,7 +36,7 @@ for (var i = 0; i < nodes.length; i++) {
     </div>
     <script type="text/javascript">
 
-var w = 1600,
+var w = 1800,
     h = 1000;   
 
 var force = d3.layout.force()
@@ -71,8 +71,8 @@ svg.on("mousemove", function() {
       .attr("class", "node")
       .attr("cx", function(d) { return d.x; })
       .attr("cy", function(d) { return d.y; })
-      .attr("r", 5)
-	  .attr("fill","hotpink")
+      .attr("r", 7)
+	  .attr("fill","black")
     .transition()
       .ease(Math.sqrt)
       .delay(3000)

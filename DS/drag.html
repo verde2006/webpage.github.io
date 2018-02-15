@@ -10,7 +10,7 @@
 <style>
 #header{
 	font-family: 'Amatic SC', cursive;
-	font-size:50px;
+	font-size:70px;
 	text-align:center;
 }
 
@@ -24,16 +24,16 @@
 
 <body>
 <div id="header">circle dragging</div>
-<svg width="2000" height="2000"></svg>
+<svg width="1800" height="1000"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height"),
-    radius = 15;
+    radius = 20;
 
-var circles = d3.range(300).map(function() {
+var circles = d3.range(200).map(function() {
   return {
     x: Math.round(Math.random() * (width - radius * 2) + radius),
     y: Math.round(Math.random() * (height - radius * 2) + radius)
