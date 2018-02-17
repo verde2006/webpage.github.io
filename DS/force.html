@@ -13,7 +13,7 @@
 <style>
 #header{
 	font-family: 'Amatic SC', cursive;
-	font-size:40px;
+	font-size:70px;
 	text-align:center;
 }
 </style>
@@ -29,13 +29,15 @@
     </div>
     <script type="text/javascript">
 
-var w = 1500,
+var w = 1800,
     h = 1000;
     z = d3.scale.category20c();
 
+	
 var force = d3.layout.force()
     .size([w, h])
-	.distance(30);
+	.distance(90)
+	.charge(-120);
 
 var svg = d3.select("#chart").append("svg:svg")
     .attr("width", w)
@@ -63,7 +65,7 @@ d3.json("flare.json", function(root) {
   var node = svg.selectAll("circle.node")
       .data(nodes)
     .enter().append("svg:circle")
-      .attr("r", 6)
+      .attr("r", 10)
       .style("fill", function(d) { return z(d.parent && d.parent.name); })
       .style("stroke", "#000")
       .call(force.drag);
