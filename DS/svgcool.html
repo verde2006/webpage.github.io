@@ -1,0 +1,71 @@
+<head>
+  
+<script src="https://d3js.org/d3.v3.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+<style>
+
+body{
+font-size:30px;
+font-family: 'Amatic SC', cursive;
+
+}
+
+.title{
+font-size:70px;
+font-family: 'Amatic SC', cursive;
+}
+
+
+div{
+text-align:left;
+}
+</style>
+ </head>
+
+<body>
+<br>
+  <div class="title">SVG is cool</div>
+
+  <svg style="background-color:none" id='tamer' width='1800' height='800' ></svg>
+  <script>
+
+ var rg = d3.range(100,1800,100);
+ 
+
+var myArray=['gold','hotpink','tomato','salmon','Crimson','DodgerBlue','gold','gold','GreenYellow','PaleVioletRed','LightSeaGreen','Teal','GoldenRod'];
+
+
+
+
+for (i=0;i<rg.length;i++){
+  
+ d3.select("#tamer").append("line")
+         .attr("stroke", 'grey')
+         .attr("x1", rg[i])
+         .attr('y1',300)
+         .attr('x2',rg[i])
+         .attr('y2',600);  
+
+  
+ d3.select("#tamer").append("circle")
+         .attr("fill",myArray[Math.floor(Math.random() * myArray.length)] )
+         .attr("r", 25)
+         .attr('cx',rg[i])
+        .attr('cy',200)
+		.attr('stroke','black')		
+		.attr('stroke-width',2);
+  
+  d3.select("#tamer").append("circle")
+         .attr("fill", myArray[Math.floor(Math.random() * myArray.length)])
+         .attr("r", 25)
+         .attr('cx',rg[i])
+        .attr('cy',700)
+		.attr('stroke','black')
+		.attr('stroke-width',2);
+
+} ;
+
+
+    
+  </script>
+</body>
