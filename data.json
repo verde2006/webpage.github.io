@@ -1,1004 +1,682 @@
 [
-{"trait": " About this trait :  A person with high score on this trait values personal success through demonstrating competence according to social standards",
+{  "trait" : " About this trait :  A high score on this trait describes a person who monitors her self-presentations, expressive behavior, and nonverbal affective displays.",
 
-  "title": "Achievement",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "http://mediad.publicbroadcasting.net/p/wamc/files/201704/marie-curie-4.jpg",
-  
-  "color": "Teal",
-  
-  "text":"black",
-  
-  "TraitCorrelations":  ["Achievement and Power have a correlation of 0.082",
-                "Achievement and Agreeableness have a correlation of 0.078",
-                "Achievement and Empathy have a correlation of 0.078",
-                "Achievement and Fair Mindedness  have a correlation of 0.12",
-                "Achievement and Hedonism have a correlation of -0.133",
-                "Achievement and Self-monitoring have a correlation of 0.069",
-                "Achievement and Emotional Stability have a correlation of 0.006",
-                "Achievement and Awareness of Physical Symptoms and Sensations have a correlation of 0.022",
-                "Achievement and Self direction have a correlation of 0.016",
-                "Achievement and Low Violent-Occult have a correlation of 0.001",
-                "Achievement and Wholesome Activities have a correlation of 0.004",
-                "Achievement and Life satisfaction have a correlation of -0.013",
-                "Achievement and Tradition have a correlation of -0.251",
-                "Achievement and Universalism have a correlation of -0.277",
-                "Achievement and Conscientiousness have a correlation of -0.029",
-                "Achievement and Extroversion have a correlation of 0.151",
-                "Achievement and Openness have a correlation of -0.035",
-                "Achievement and Body competence have a correlation of -0.028",
-                "Achievement and Low Depression have a correlation of -0.037",
-                "Achievement and Private body have a correlation of 0.032",
-                "Achievement and Public body have a correlation of -0.003"],
-   
-  "HighestCorr":"Achievement has the strongest positive correlation (0.151) with Extroversion",
-  
-  "LowestCorr": "Achievement has the strongest negative correlation (-0.277) with Universalism",
-  
-  "Measure": "The measure used is Shwartz's Values Survey"
-   
-   },
-   
-   
- {"trait": " About this trait :  A person with high score on this trait values social status and prestige, control or dominance over people and resources.",
- 
-  "title": "Power",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "http://oubliettemagazine.com/wp-content/uploads/Niccol%C3%B2-Machiavelli.jpg",
-  
-  "color": "Teal",
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Achievement and Power have a correlation of 0.082",
-                "Power and Agreeableness have a correlation of 0.253",
-                "Power and Empathy have a correlation of 0.065",
-                "Power and Hedonism have a correlation of 0.041",
-                "Power and Self-monitoring have a correlation of 0.118",
-                "Power and Emotional Stability have a correlation of 0.007",
-                "Power and Self Disclosure  have a correlation of -0.067",
-                "Power and Self direction have a correlation of -0.139",
-                "Power and Low Militarism have a correlation of -0.011",
-                "Power and Wholesome Activities have a correlation of 0.057",
-                "Power and Tradition have a correlation of -0.122",
-                "Power and Universalism have a correlation of -0.286",
-                "Power and Openness have a correlation of -0.025",
-                "Power and Body competence have a correlation of 0.075",
-                "Power and Low Depression have a correlation of 0.056",
-                "Power and Public body have a correlation of -0.036"],
-				
-	"HighestCorr": "Power has the strongest positive correlation (0.253) with Agreeableness",
-	
-    "LowestCorr": "Power has the strongest negative correlation (-0.286) with Universalism",
-	
-    "Measure": "The measure used is Shwartz's Values Survey"},
-   
-   
- {"trait": " About this trait :  People with this trait have a tendency to be compassionate and cooperative rather than suspicious and antagonistic towards others.",
- 
-  "title": "Agreeableness",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "https://upload.wikimedia.org/wikipedia/commons/2/29/William-Adolphe_Bouguereau_-_Agreeable_Burden_1895.jpg",
-  
-  "color":  "GoldenRod" ,
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Achievement and Agreeableness have a correlation of 0.078",
-                "Power and Agreeableness have a correlation of 0.253",
-                "Agreeableness and Empathy have a correlation of 0.3",
-                "Agreeableness and Fair Mindedness  have a correlation of -0.006",
-                "Agreeableness and Hedonism have a correlation of 0.008",
-                "Agreeableness and Emotional Stability have a correlation of -0.205",
-                "Agreeableness and Awareness of Physical Symptoms and Sensations have a correlation of -0.01",
-                "Agreeableness and Self Disclosure  have a correlation of -0.093",
-                "Agreeableness and Self direction have a correlation of 0.059",
-                "Agreeableness and Low Violent-Occult have a correlation of -0.057",
-                "Agreeableness and Wholesome Activities have a correlation of 0.042",
-                "Agreeableness and Life satisfaction have a correlation of -0.028",
-                "Agreeableness and Tradition have a correlation of -0.048",
-                "Agreeableness and Conscientiousness have a correlation of -0.016",
-                "Agreeableness and Extroversion have a correlation of -0.034",
-                "Agreeableness and Body competence have a correlation of -0.01",
-                "Agreeableness and Private body have a correlation of -0.011",
-                "Agreeableness and Public body have a correlation of -0.015"],
-				
-	"HighestCorr": "Agreeableness has the strongest positive correlation (0.3) with Empathy",
-	
-    "LowestCorr": "Agreeableness has the strongest negative correlation (-0.205) with Emotional Stability",
-	
-    "Measure": "The measure used is 20 to 336-item-long IPIP proxy for Costa and McCrae's NEO-PI-R questionnaire (referred to as Five Factor Model or BIG5"},
-   
-   
- {"trait": " About this trait :  Self-reported ability to tune into how others are feeling, and to understanding what they may be thinking. It measures  both the affective and cognitive components of empathy.",
- 
-  "title": "Empathy",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "http://www.healthpolicypartnership.com/wp-content/uploads/MBC-1.png",
-  
-  "color": "IndianRed"  ,
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Achievement and Empathy have a correlation of 0.078",
-                "Power and Empathy have a correlation of 0.065",
-                "Agreeableness and Empathy have a correlation of 0.3",
-                "Empathy and Fair Mindedness  have a correlation of -0.151",
-                "Empathy and Hedonism have a correlation of 0.11",
-                "Empathy and Self-monitoring have a correlation of -0.08",
-                "Empathy and Emotional Stability have a correlation of 0.062",
-                "Empathy and Self direction have a correlation of 0.139",
-                "Empathy and Intellectual Recreation have a correlation of 0.09",
-                "Empathy and Low Militarism have a correlation of -0.093",
-                "Empathy and Wholesome Activities have a correlation of 0.001",
-                "Empathy and Tradition have a correlation of 0.08",
-                "Empathy and Universalism have a correlation of -0.038",
-                "Empathy and Conscientiousness have a correlation of 0.014",
-                "Empathy and Openness have a correlation of 0.218",
-                "Empathy and Body competence have a correlation of 0.009",
-                "Empathy and Low Depression have a correlation of -0.006",
-                "Empathy and Private body have a correlation of 0.011",
-                "Empathy and Public body have a correlation of 0.033"],
-				
-	"HighestCorr": "Empathy has the strongest positive correlation (0.3) with Agreeableness",
-	
-    "LowestCorr": "Empathy has the strongest negative correlation (-0.151) with Fair Mindedness",
-	
-    "Measure": "The measure used is Empathy quotient scale by  Baron-Cohen & Wheelwright (2004)"
-				
-				
-				},
-   
-   
- {"trait": " About this trait :  High score signifies balanced and impartial person is in her decision making.",
- 
-  "title": "Fair Mindedness",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "https://www.franksonnenbergonline.com/wp-content/uploads/2015/11/image_11-traits-of-a-fair-minded-person.jpg",
-  
-  "color": "IndianRed"  ,
-  
-  "text":"black",
-  
-  "TraitCorrelations":  ["Achievement and Fair Mindedness  have a correlation of 0.12",
-                "Agreeableness and Fair Mindedness  have a correlation of -0.006",
-                "Empathy and Fair Mindedness  have a correlation of -0.151",
-                "Fair Mindedness  and Hedonism have a correlation of -0.056",
-                "Fair Mindedness  and Self-monitoring have a correlation of 0.037",
-                "Fair Mindedness  and Emotional Stability have a correlation of 0.17",
-                "Fair Mindedness  and Awareness of Physical Symptoms and Sensations have a correlation of -0.012",
-                "Fair Mindedness  and Self Disclosure  have a correlation of 0.2",
-                "Fair Mindedness  and Self direction have a correlation of 0.053",
-                "Fair Mindedness  and Intellectual Recreation have a correlation of -0.044",
-                "Fair Mindedness  and Low Violent-Occult have a correlation of 0.013",
-                "Fair Mindedness  and Life satisfaction have a correlation of 0.046",
-                "Fair Mindedness  and Tradition have a correlation of -0.028",
-                "Fair Mindedness  and Extroversion have a correlation of 0.129",
-                "Fair Mindedness  and Openness have a correlation of -0.013",
-                "Fair Mindedness  and Body competence have a correlation of -0.09",
-                "Fair Mindedness  and Private body have a correlation of 0.055"],
-				
-    "HighestCorr": "Fair Mindedness  has the strongest positive correlation (0.2) with Self Disclosure ",
-	
-    "LowestCorr": "Fair Mindedness  has the strongest negative correlation (-0.151) with Empathy",
-	
-    "Measure": "The measure used is Orpheus questionnaire" 
-	},
-	
-	
-   
- {"trait": " About this trait :  A person with high score on this trait values pleasure or sensuous gratification for oneself.",
- 
-  "title": "Hedonism",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "https://3j0grh44ocny4a6kcn288izx-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/h1-950x530.jpg",
-  
-  "color": "Teal ",
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Achievement and Hedonism have a correlation of -0.133",
-                "Power and Hedonism have a correlation of 0.041",
-                "Agreeableness and Hedonism have a correlation of 0.008",
-                "Empathy and Hedonism have a correlation of 0.11",
-                "Fair Mindedness  and Hedonism have a correlation of -0.056",
-                "Hedonism and Awareness of Physical Symptoms and Sensations have a correlation of -0.023",
-                "Hedonism and Self Disclosure  have a correlation of -0.122",
-                "Hedonism and Low Militarism have a correlation of 0.074",
-                "Hedonism and Low Violent-Occult have a correlation of -0.12",
-                "Hedonism and Wholesome Activities have a correlation of 0.0",
-                "Hedonism and Life satisfaction have a correlation of 0.087",
-                "Hedonism and Tradition have a correlation of -0.33",
-                "Hedonism and Universalism have a correlation of -0.172",
-                "Hedonism and Conscientiousness have a correlation of -0.007",
-                "Hedonism and Extroversion have a correlation of -0.103",
-                "Hedonism and Openness have a correlation of -0.072",
-                "Hedonism and Low Depression have a correlation of 0.006"],
-				
-				
-    "HighestCorr": "Hedonism has the strongest positive correlation (0.11) with Empathy",
-	
-    "LowestCorr": "Hedonism has the strongest negative correlation (-0.33) with Tradition",
-	
-    "Measure": "The measure used is Shwartz's Values Survey"
-			  },
-   
-   
-   
-   
- {"trait": " About this trait :  A high score on this trait describes a person who monitors her self-presentations, expressive behavior, and nonverbal affective displays.",
- 
-  "title": "Self-Monitoring",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "https://thenypost.files.wordpress.com/2015/11/26t-linda_catch1-c-ta.jpg?quality=90&strip=all&w=664&h=441&crop=1",
-  
-  "color": "IndianRed"  ,
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Achievement and Self-monitoring have a correlation of 0.069",
-                "Power and Self-monitoring have a correlation of 0.118",
-                "Empathy and Self-monitoring have a correlation of -0.08",
-                "Fair Mindedness  and Self-monitoring have a correlation of 0.037",
-                "Self-monitoring and Awareness of Physical Symptoms and Sensations have a correlation of 0.021",
-                "Self-monitoring and Self Disclosure  have a correlation of -0.254",
-                "Self-monitoring and Low Militarism have a correlation of -0.038",
-                "Self-monitoring and Low Violent-Occult have a correlation of -0.005",
-                "Self-monitoring and Wholesome Activities have a correlation of 0.005",
-                "Self-monitoring and Tradition have a correlation of 0.047",
-                "Self-monitoring and Conscientiousness have a correlation of -0.019",
-                "Self-monitoring and Extroversion have a correlation of -0.055",
-                "Self-monitoring and Openness have a correlation of -0.267",
-                "Self-monitoring and Body competence have a correlation of -0.061",
-                "Self-monitoring and Low Depression have a correlation of -0.048",
-                "Self-monitoring and Public body have a correlation of -0.022"],
-				
-  "HighestCorr": "Self-monitoring has the strongest positive correlation (0.118) with Power",
-  
-  "LowestCorr":"Self-monitoring has the strongest negative correlation (-0.267) with Openness",
-  
-   "Measure": "The measure used is Snyder's Self-Monitoring Scale"
-				
-				},
-   
-   
- {"trait": " About this trait :  The tendency NOT to experience negative emotions, such as anger, anxiety, or depression",
- 
-  "title": "Emotional Stability",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "https://harmonyplace.com/wp-content/uploads/2017/09/Tips-for-Finding-Emotional-Stability-in-Recovery.jpg",
-  
-  "color":  "GoldenRod" ,
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Achievement and Emotional Stability have a correlation of 0.006",
-                "Power and Emotional Stability have a correlation of 0.007",
-                "Agreeableness and Emotional Stability have a correlation of -0.205",
-                "Empathy and Emotional Stability have a correlation of 0.062",
-                "Fair Mindedness  and Emotional Stability have a correlation of 0.17",
-                "Emotional Stability and Awareness of Physical Symptoms and Sensations have a correlation of -0.18",
-                "Emotional Stability and Self Disclosure  have a correlation of 0.045",
-                "Emotional Stability and Self direction have a correlation of 0.04",
-                "Emotional Stability and Low Militarism have a correlation of -0.124",
-                "Emotional Stability and Life satisfaction have a correlation of 0.282",
-                "Emotional Stability and Tradition have a correlation of -0.007",
-                "Emotional Stability and Conscientiousness have a correlation of -0.001",
-                "Emotional Stability and Extroversion have a correlation of 0.015",
-                "Emotional Stability and Openness have a correlation of -0.148",
-                "Emotional Stability and Low Depression have a correlation of 0.268"],
-				
-	"HighestCorr": "Emotional Stability has the strongest positive correlation (0.282) with Life satisfaction",
-	
-    "LowestCorr": "Emotional Stability has the strongest negative correlation (-0.205) with Agreeableness",
-	
-    "Measure": "The measure used is 20 to 336-item-long IPIP proxy for Costa and McCrae's NEO-PI-R questionnaire (referred to as Five Factor Model or BIG5)"
-				},
-   
-   
-   
-   
- {"trait": " About this trait :  High score signifies a person’s tendency to notice and report a broad array of physical symptoms and sensations.",
- 
-  "title": "Awareness of Physical Symptoms and Sensations",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "http://www.heartki.com/wp-content/uploads/2012/07/human_dna_700.jpg",
-  
-  "color": "IndianRed"  ,
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Achievement and Awareness of Physical Symptoms and Sensations have a correlation of 0.022",
-                "Agreeableness and Awareness of Physical Symptoms and Sensations have a correlation of -0.01",
-                "Fair Mindedness  and Awareness of Physical Symptoms and Sensations have a correlation of -0.012",
-                "Hedonism and Awareness of Physical Symptoms and Sensations have a correlation of -0.023",
-                "Self-monitoring and Awareness of Physical Symptoms and Sensations have a correlation of 0.021",
-                "Emotional Stability and Awareness of Physical Symptoms and Sensations have a correlation of -0.18",
-                "Awareness of Physical Symptoms and Sensations and Self Disclosure  have a correlation of -0.009",
-                "Awareness of Physical Symptoms and Sensations and Self direction have a correlation of -0.029",
-                "Awareness of Physical Symptoms and Sensations and Intellectual Recreation have a correlation of -0.03",
-                "Awareness of Physical Symptoms and Sensations and Low Militarism have a correlation of 0.074",
-                "Awareness of Physical Symptoms and Sensations and Low Violent-Occult have a correlation of -0.109",
-                "Awareness of Physical Symptoms and Sensations and Wholesome Activities have a correlation of 0.004",
-                "Awareness of Physical Symptoms and Sensations and Life satisfaction have a correlation of -0.041",
-                "Awareness of Physical Symptoms and Sensations and Tradition have a correlation of 0.01",
-                "Awareness of Physical Symptoms and Sensations and Extroversion have a correlation of -0.05",
-                "Awareness of Physical Symptoms and Sensations and Openness have a correlation of 0.018",
-                "Awareness of Physical Symptoms and Sensations and Body competence have a correlation of -0.035",
-                "Awareness of Physical Symptoms and Sensations and Low Depression have a correlation of -0.249",
-                "Awareness of Physical Symptoms and Sensations and Private body have a correlation of -0.073",
-                "Awareness of Physical Symptoms and Sensations and Public body have a correlation of 0.014"],
-				
-	"HighestCorr": "Awareness of Physical Symptoms and Sensations has the strongest positive correlation (0.074) with Low Militarism",
-	
-    "LowestCorr": "Awareness of Physical Symptoms and Sensations has the strongest negative correlation (-0.249) with Low Depression",
-	
-    "Measure": "The measure used is PILL Pennebaker Inventory of Limbic Languidness "
-				
-				},
-   
-   
- {"trait": " About this trait :  Reversed Impression Management, to what extent a person conducts her life transparently.",
- 
-  "title": "Self Disclosure",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "http://i47.tinypic.com/aaj2ph.jpg",
-  
-  "color": "IndianRed"  ,
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Power and Self Disclosure  have a correlation of -0.067",
-                "Agreeableness and Self Disclosure  have a correlation of -0.093",
-                "Fair Mindedness  and Self Disclosure  have a correlation of 0.2",
-                "Hedonism and Self Disclosure  have a correlation of -0.122",
-                "Self-monitoring and Self Disclosure  have a correlation of -0.254",
-                "Emotional Stability and Self Disclosure  have a correlation of 0.045",
-                "Awareness of Physical Symptoms and Sensations and Self Disclosure  have a correlation of -0.009",
-                "Self Disclosure  and Self direction have a correlation of -0.001",
-                "Self Disclosure  and Intellectual Recreation have a correlation of -0.012",
-                "Self Disclosure  and Low Violent-Occult have a correlation of 0.031",
-                "Self Disclosure  and Wholesome Activities have a correlation of -0.082",
-                "Self Disclosure  and Life satisfaction have a correlation of 0.032",
-                "Self Disclosure  and Tradition have a correlation of 0.083",
-                "Self Disclosure  and Extroversion have a correlation of 0.176",
-                "Self Disclosure  and Openness have a correlation of -0.113",
-                "Self Disclosure  and Body competence have a correlation of 0.03",
-                "Self Disclosure  and Private body have a correlation of -0.05"],
-				
-	"HighestCorr": "Self Disclosure  has the strongest positive correlation (0.2) with Fair Mindedness ",
-	
-    "LowestCorr": "Self Disclosure  has the strongest negative correlation (-0.254) with Self-monitoring",
-	
-    "Measure": "The measure used is Orpheus questionnaire"
-				
-				
-				},
-   
-   
- {"trait": " About this trait :  A person with high score on this trait values independent thought and action - choosing, creating, exploring",
- 
-  "title": "Self-Direction",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "https://gdcf-0916001bcltd.netdna-ssl.com/wp-content/uploads/2016/07/self-direction.jpg",
-  
-  "color": "Teal",
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Achievement and Self direction have a correlation of 0.016",
-                "Power and Self direction have a correlation of -0.139",
-                "Agreeableness and Self direction have a correlation of 0.059",
-                "Empathy and Self direction have a correlation of 0.139",
-                "Fair Mindedness  and Self direction have a correlation of 0.053",
-                "Emotional Stability and Self direction have a correlation of 0.04",
-                "Awareness of Physical Symptoms and Sensations and Self direction have a correlation of -0.029",
-                "Self Disclosure  and Self direction have a correlation of -0.001",
-                "Self direction and Low Militarism have a correlation of 0.047",
-                "Self direction and Low Violent-Occult have a correlation of -0.08",
-                "Self direction and Wholesome Activities have a correlation of 0.053",
-                "Self direction and Life satisfaction have a correlation of -0.011",
-                "Self direction and Tradition have a correlation of -0.351",
-                "Self direction and Conscientiousness have a correlation of 0.009",
-                "Self direction and Extroversion have a correlation of -0.048",
-                "Self direction and Openness have a correlation of 0.071",
-                "Self direction and Body competence have a correlation of -0.225",
-                "Self direction and Private body have a correlation of 0.002",
-                "Self direction and Public body have a correlation of 0.035"],
-				
-	"HighestCorr": "Self-Direction has the strongest positive correlation (0.139) with Empathy",
-	
-    "LowestCorr": "Self-Direction has the strongest negative correlation (-0.351) with Tradition",
-	
-    "Measure": "The measure used is Shwartz's Values Survey"
-				
-				
-				},   
+   "title": "Self-Monitoring",
 
-   
-   
- {"trait": " About this trait :  An individual's active interest in cerebral activities (e.g. medicine, philosophy).",
+"itunes": "redundant code to be deleted",
+
+"cover": "https://thenypost.files.wordpress.com/2015/11/26t-linda_catch1-c-ta.jpg?quality=90&strip=all&w=664&h=441&crop=1",
+
+"color": "IndianRed",
+
+"text": "black",
+
+"TraitCorrelations": 
+
+["Public Body and Self-Monitoring have a correlation of 0.02",
  
-  "title": "Intellectual Recreation",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "https://i.pinimg.com/736x/3a/e1/8a/3ae18a8a2f1487f1cf03b62933f73538--young-adult-books-young-adults.jpg",
-  
-  "color": "CornflowerBlue",
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Empathy and Intellectual Recreation have a correlation of 0.09",
-                "Fair Mindedness  and Intellectual Recreation have a correlation of -0.044",
-                "Awareness of Physical Symptoms and Sensations and Intellectual Recreation have a correlation of -0.03",
-                "Self Disclosure  and Intellectual Recreation have a correlation of -0.012",
-                "Intellectual Recreation and Low Violent-Occult have a correlation of 0.062",
-                "Intellectual Recreation and Wholesome Activities have a correlation of 0.287",
-                "Intellectual Recreation and Life satisfaction have a correlation of -0.008",
-                "Intellectual Recreation and Universalism have a correlation of -0.1",
-                "Intellectual Recreation and Conscientiousness have a correlation of 0.009",
-                "Intellectual Recreation and Extroversion have a correlation of -0.005",
-                "Intellectual Recreation and Openness have a correlation of 0.004",
-                "Intellectual Recreation and Body competence have a correlation of 0.277",
-                "Intellectual Recreation and Low Depression have a correlation of 0.01",
-                "Intellectual Recreation and Private body have a correlation of 0.031",
-                "Intellectual Recreation and Public body have a correlation of 0.084"],
-	
-	"HighestCorr": "Intellectual Recreation has the strongest positive correlation (0.287) with Wholesome Activities",
-	
-    "LowestCorr": "Intellectual Recreation has the strongest negative correlation (-0.1) with Universalism",
-	
-    "Measure": "The measure used is Sensational interests questionnaire scores"
-				
-				},
-   
-   
- {"trait": " About this trait :  An individual's active interest in militaristic activities (e.g. guns and shooting) would signify high militarism, and vice versa.",
+"Body Competence and Self-Monitoring have a correlation of 0.01",
+"Openness and Self-Monitoring have a correlation of 0.04",
+"Conscientiousness and Self-Monitoring have a correlation of -0.01",
+"Extroversion and Self-Monitoring have a correlation of 0.24",
+"Awareness of Physical Symptoms and Sensations and Self-Monitoring have a correlation of 0.01",
+"Self Disclosure and Self-Monitoring have a correlation of -0.22",
+"Low Militarism and Self-Monitoring have a correlation of -0.01",
+"Low Violent-Occult and Self-Monitoring have a correlation of -0.0",
+"Self-Monitoring and Achievement have a correlation of 0.04",
+"Self-Monitoring and Power have a correlation of 0.11",
+"Self-Monitoring and Empathy have a correlation of 0.05"], 
+
+"HighestCorr": "Self-Monitoring has the strongest positive correlation (0.24) with Self Disclosure",
+"LowestCorr": "Self-Monitoring has the strongest negative  correlation (-0.22) with Extroversion",
+"Measure": "The measure used is Snyder'sSelf-Monitoring Scale"
+
+},
+
+
+
+
+{"trait" : " About this trait :  A person with high score on this trait is highly aware of internal sensations.",
+ "title": "Private Body",
+ "itunes": "redundant code to be deleted",
+ "cover": "https://www.thestar.com/content/dam/thestar/news/insight/2015/12/28/elena-ferrante-a-private-author-who-caused-a-public-sensation/bodyjpg.jpg.size.custom.crop.771x650.jpg",
+ "color": "IndianRed",
+ "text": "black",
+ "TraitCorrelations": ["Private Body and Public Body have a correlation of 0.29",
+ "Private Body and Body Competence have a correlation of 0.24",
+ "Private Body and Conscientiousness have a correlation of 0.02",
+ "Private Body and Extroversion have a correlation of 0.02",
+ "Private Body and Agreeableness have a correlation of -0.01",
+ "Private Body and Intelligence have a correlation of -0.07",
+ "Private Body and Awareness of Physical Symptoms and Sensations have a correlation of 0.06",
+ "Private Body and Fair Mindedness have a correlation of -0.02",
+ "Private Body and Low Militarism have a correlation of -0.02",
+ "Private Body and Low Violent-Occult have a correlation of -0.02",
+ "Private Body and Intellectual Recreation have a correlation of 0.01",
+ "Private Body and Wholesome Activities have a correlation of 0.02",
+ "Private Body and Low Depression have a correlation of -0.04",
+ "Private Body and Empathy have a correlation of 0.1"], 
  
-  "title": "Low Militarism",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "https://i.pinimg.com/originals/1a/09/ac/1a09ac769f8f55d925d3554092a289d4.jpg",
-  
-  "color": "CornflowerBlue",
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Power and Low Militarism have a correlation of -0.011",
-                "Empathy and Low Militarism have a correlation of -0.093",
-                "Hedonism and Low Militarism have a correlation of 0.074",
-                "Self-monitoring and Low Militarism have a correlation of -0.038",
-                "Emotional Stability and Low Militarism have a correlation of -0.124",
-                "Awareness of Physical Symptoms and Sensations and Low Militarism have a correlation of 0.074",
-                "Self direction and Low Militarism have a correlation of 0.047",
-                "Low Militarism and Low Violent-Occult have a correlation of 0.473",
-                "Low Militarism and Wholesome Activities have a correlation of 0.342",
-                "Low Militarism and Life satisfaction have a correlation of 0.005",
-                "Low Militarism and Tradition have a correlation of -0.039",
-                "Low Militarism and Universalism have a correlation of 0.198",
-                "Low Militarism and Extroversion have a correlation of -0.018",
-                "Low Militarism and Openness have a correlation of 0.005",
-                "Low Militarism and Body competence have a correlation of -0.036",
-                "Low Militarism and Private body have a correlation of 0.01",
-                "Low Militarism and Public body have a correlation of 0.078"],
-				
-	"HighestCorr": "Low Militarism has the strongest positive correlation (0.473) with Low Violent-Occult",
-	
-    "LowestCorr": "Low Militarism has the strongest negative correlation (-0.124) with Emotional Stability",
-	
-    "Measure": "The measure used is Sensational interests questionnaire scores"
-				
-			
-				},
-   
-   
- {"trait": " About this trait :  An individual's active interest in violent or occult activities (e.g. black magic) signify high militarism, and vice versa",
+ "HighestCorr": "Private Body has the strongest positive correlation (0.29) with Intelligence",
+ "LowestCorr": "Private Body has the strongest negative  correlation (-0.07) with Public Body",
+ "Measure": "The measure used is Body Consciousness Questionnaire (BCQ)"},
+
+
+
+{"trait" : " About this trait :  An individual's active interest in cerebral activities (e.g. medicine, philosophy).",
+ "title": "Intellectual Recreation",
+ "itunes": "redundant code to be deleted",
+ "cover": "https://i.pinimg.com/736x/3a/e1/8a/3ae18a8a2f1487f1cf03b62933f73538--young-adult-books-young-adults.jpg",
+ "color": "CornflowerBlue",
+ "text": "black",
+ "TraitCorrelations": ["Private Body and Intellectual Recreation have a correlation of 0.01",
+ "Public Body and Intellectual Recreation have a correlation of 0.08",
+ "Openness and Intellectual Recreation have a correlation of 0.27",
+ "Awareness of Physical Symptoms and Sensations and Intellectual Recreation have a correlation of 0.02",
+ "Fair Mindedness and Intellectual Recreation have a correlation of 0.03",
+ "Low Violent-Occult and Intellectual Recreation have a correlation of -0.04",
+ "Intellectual Recreation and Wholesome Activities have a correlation of 0.27",
+ "Intellectual Recreation and Universalism have a correlation of 0.11",
+ "Intellectual Recreation and Empathy have a correlation of 0.11"], "HighestCorr": "Intellectual Recreation has the strongest positive correlation (0.27) with Low Violent-Occult",
+ "LowestCorr": "Intellectual Recreation has the strongest negative  correlation (-0.04) with Wholesome Activities",
+ "Measure": "The measure used is Sensational interests questionnaire scores"},
+
+
+
+{"trait" : " About this trait :  High score signifies a person's tendency to notice and report a broad array of physical symptoms and sensations.",
+ "title": "Awareness of Physical Symptoms and Sensations",
+ "itunes": "redundant code to be deleted",
+ "cover": "http://www.heartki.com/wp-content/uploads/2012/07/human_dna_700.jpg",
+ "color": "IndianRed",
+ "text": "black",
+ "TraitCorrelations": ["Private Body and Awareness of Physical Symptoms and Sensations have a correlation of 0.06",
+ "Openness and Awareness of Physical Symptoms and Sensations have a correlation of 0.02",
+ "Conscientiousness and Awareness of Physical Symptoms and Sensations have a correlation of -0.04",
+ "Emotional Stability and Awareness of Physical Symptoms and Sensations have a correlation of -0.18",
+ "Awareness of Physical Symptoms and Sensations and Low Militarism have a correlation of 0.03",
+ "Awareness of Physical Symptoms and Sensations and Low Violent-Occult have a correlation of -0.08",
+ "Awareness of Physical Symptoms and Sensations and Intellectual Recreation have a correlation of 0.02",
+ "Awareness of Physical Symptoms and Sensations and Self-Monitoring have a correlation of 0.01",
+ "Awareness of Physical Symptoms and Sensations and Life Satisfaction have a correlation of -0.02",
+ "Awareness of Physical Symptoms and Sensations and Low Depression have a correlation of -0.18",
+ "Awareness of Physical Symptoms and Sensations and Empathy have a correlation of 0.01"], "HighestCorr": "Awareness of Physical Symptoms and Sensations has the strongest positive correlation (0.06) with Emotional Stability",
+ "LowestCorr": "Awareness of Physical Symptoms and Sensations has the strongest negative  correlation (-0.18) with Private Body",
+ "Measure": "The measure used is PILL Pennebaker Inventory of Limbic Languidness "},
+
+
+{"trait" : " About this trait :  People with this trait have a tendency to be compassionate and cooperative rather than suspicious and antagonistic towards others.",
+ "title": "Agreeableness",
+ "itunes": "redundant code to be deleted",
+ "cover": "https://upload.wikimedia.org/wikipedia/commons/2/29/William-Adolphe_Bouguereau_-_Agreeable_Burden_1895.jpg",
+ "color": "GoldenRod",
+ "text": "black",
+ "TraitCorrelations": ["Private Body and Agreeableness have a correlation of -0.01",
+ "Public Body and Agreeableness have a correlation of -0.01",
+ "Body Competence and Agreeableness have a correlation of -0.02",
+ "Conscientiousness and Agreeableness have a correlation of 0.01",
+ "Agreeableness and Emotional Stability have a correlation of 0.16",
+ "Agreeableness and Self Disclosure have a correlation of 0.09",
+ "Agreeableness and Fair Mindedness have a correlation of 0.01",
+ "Agreeableness and Low Violent-Occult have a correlation of 0.06",
+ "Agreeableness and Wholesome Activities have a correlation of 0.04",
+ "Agreeableness and Tradition have a correlation of 0.04",
+ "Agreeableness and Self-Direction have a correlation of -0.06",
+ "Agreeableness and Hedonism have a correlation of -0.01",
+ "Agreeableness and Achievement have a correlation of -0.09",
+ "Agreeableness and Power have a correlation of -0.23",
+ "Agreeableness and Life Satisfaction have a correlation of 0.04",
+ "Agreeableness and Empathy have a correlation of 0.26"], 
  
-  "title": "Low Violent-Occult",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "https://fthmb.tqn.com/L4G03EPT70Bs2XwReoOlGJw32Ho=/768x0/filters:no_upscale()/The-Rock-vs-Hulk-Hogan-56a78ccd3df78cf77296f67a.jpg",
-  
-  "color": "CornflowerBlue",
-  
-  "text":"black",
-  
-  "TraitCorrelations": [		"Achievement and Low Violent-Occult have a correlation of 0.001",
-						"Agreeableness and Low Violent-Occult have a correlation of -0.057",
-						"Fair Mindedness  and Low Violent-Occult have a correlation of 0.013",
-						"Hedonism and Low Violent-Occult have a correlation of -0.12",
-						"Self-monitoring and Low Violent-Occult have a correlation of -0.005",
-						"Awareness of Physical Symptoms and Sensations and Low Violent-Occult have a correlation of -0.109",
-						"Self Disclosure  and Low Violent-Occult have a correlation of 0.031",
-						"Self direction and Low Violent-Occult have a correlation of -0.08",
-						"Intellectual Recreation and Low Violent-Occult have a correlation of 0.062",
-						"Low Militarism and Low Violent-Occult have a correlation of 0.473",
-						"Low Violent-Occult and Wholesome Activities have a correlation of -0.086",
-						"Low Violent-Occult and Life satisfaction have a correlation of 0.075",
-						"Low Violent-Occult and Tradition have a correlation of 0.042",
-						"Low Violent-Occult and Universalism have a correlation of -0.077",
-						"Low Violent-Occult and Conscientiousness have a correlation of -0.003",
-						"Low Violent-Occult and Extroversion have a correlation of 0.071",
-						"Low Violent-Occult and Body competence have a correlation of 0.092",
-						"Low Violent-Occult and Low Depression have a correlation of 0.024",
-						"Low Violent-Occult and Private body have a correlation of 0.045",
-						"Low Violent-Occult and Public body have a correlation of -0.021"],
-						
-	"HighestCorr": "Low Violent-Occult has the strongest positive correlation (0.473) with Low Militarism",
-	
-    "LowestCorr": "Low Violent-Occult has the strongest negative correlation (-0.12) with Hedonism",
-	
-    "Measure": "The measure used is Sensational interests questionnaire scores"
-						
-						},
-   
-   
- {"trait": " About this trait :  An individual's active interest in active recreation (e.g. camping, hill walking)",
+ "HighestCorr": "Agreeableness has the strongest positive correlation (0.26) with Power",
+ "LowestCorr": "Agreeableness has the strongest negative  correlation (-0.23) with Empathy",
+ "Measure": "The measure used is 20 to 336-item-long IPIP proxy for Costa and McCrae'sNEO-PI-R questionnaire (referred to as Five Factor Model or BIG5"},
+
+
+{"trait" : " About this trait :  High score signifies high satisfaction with life in general",
+ "title": "Life Satisfaction",
+ "itunes": "redundant code to be deleted",
+ "cover": "http://expertenough.com/wp-content/uploads/2012/09/thumbs-up.jpg",
+ "color": "GoldenRod",
+ "text": "black",
+ "TraitCorrelations": ["Conscientiousness and Life Satisfaction have a correlation of 0.1",
+ "Extroversion and Life Satisfaction have a correlation of 0.11",
+ "Agreeableness and Life Satisfaction have a correlation of 0.04",
+ "Emotional Stability and Life Satisfaction have a correlation of 0.23",
+ "Awareness of Physical Symptoms and Sensations and Life Satisfaction have a correlation of -0.02",
+ "Self Disclosure and Life Satisfaction have a correlation of 0.04",
+ "Fair Mindedness and Life Satisfaction have a correlation of 0.04",
+ "Low Violent-Occult and Life Satisfaction have a correlation of 0.06",
+ "Wholesome Activities and Life Satisfaction have a correlation of 0.02",
+ "Tradition and Life Satisfaction have a correlation of 0.0",
+ "Hedonism and Life Satisfaction have a correlation of 0.02",
+ "Life Satisfaction and Low Depression have a correlation of 0.14"], 
  
-  "title": "Wholesome Activities",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "http://goeast.ems.com/wp-content/uploads/2017/10/EMS-Burlington-MtMansfield-0955.jpg",
-  
-  "color": "CornflowerBlue",
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Achievement and Wholesome Activities have a correlation of 0.004",
-                "Power and Wholesome Activities have a correlation of 0.057",
-                "Agreeableness and Wholesome Activities have a correlation of 0.042",
-                "Empathy and Wholesome Activities have a correlation of 0.001",
-                "Hedonism and Wholesome Activities have a correlation of 0.0",
-                "Self-monitoring and Wholesome Activities have a correlation of 0.005",
-                "Awareness of Physical Symptoms and Sensations and Wholesome Activities have a correlation of 0.004",
-                "Self Disclosure  and Wholesome Activities have a correlation of -0.082",
-                "Self direction and Wholesome Activities have a correlation of 0.053",
-                "Intellectual Recreation and Wholesome Activities have a correlation of 0.287",
-                "Low Militarism and Wholesome Activities have a correlation of 0.342",
-                "Low Violent-Occult and Wholesome Activities have a correlation of -0.086",
-                "Wholesome Activities and Life satisfaction have a correlation of -0.02",
-                "Wholesome Activities and Tradition have a correlation of -0.033",
-                "Wholesome Activities and Universalism have a correlation of -0.125",
-                "Wholesome Activities and Extroversion have a correlation of -0.038",
-                "Wholesome Activities and Low Depression have a correlation of 0.018",
-                "Wholesome Activities and Private body have a correlation of 0.033",
-                "Wholesome Activities and Public body have a correlation of 0.002"],
-				
-	"HighestCorr": "Wholesome Activities has the strongest positive correlation (0.342) with Low Militarism",
-	
-    "LowestCorr": "Wholesome Activities has the strongest negative correlation (-0.125) with Universalism",
-	
-    "Measure": "The measure used is Sensational interests questionnaire scores"
-				
-				},
-   
-   
-   
-   
- {"trait": " About this trait :  High score signifies high satisfaction with life in general",
+ "HighestCorr": "Life Satisfaction has the strongest positive correlation (0.23) with Awareness of Physical Symptoms and Sensations",
+ "LowestCorr": "Life Satisfaction has the strongest negative  correlation (-0.02) with Emotional Stability",
+ "Measure": "The measure used is The satisfaction with life scale is from Diener (1985)"},
+
+
+{"trait" : " About this trait :  High score on scale which measure symptoms of depression in nine different groups as defined by the American Psychiatric Association Diagnostic and Statistical Manual, fifth edition.",
+ "title": "Low Depression",
+ "itunes": "redundant code to be deleted",
+ "cover": "https://dailytimes.com.pk/static/uploads/original/depression-increases-risk-of-cancer-british-medical-journal-2b9efc06eea40b81841808f00de7171d.jpg",
+ "color": "IndianRed",
+ "text": "black",
+ "TraitCorrelations": ["Private Body and Low Depression have a correlation of -0.04",
+ "Conscientiousness and Low Depression have a correlation of 0.07",
+ "Extroversion and Low Depression have a correlation of 0.06",
+ "Emotional Stability and Low Depression have a correlation of 0.33",
+ "Intelligence and Low Depression have a correlation of 0.02",
+ "Awareness of Physical Symptoms and Sensations and Low Depression have a correlation of -0.18",
+ "Low Violent-Occult and Low Depression have a correlation of 0.01",
+ "Universalism and Low Depression have a correlation of -0.03",
+ "Achievement and Low Depression have a correlation of -0.0",
+ "Life Satisfaction and Low Depression have a correlation of 0.14",
+ "Low Depression and Empathy have a correlation of -0.01"], 
  
-  "title": "Life Satisfaction",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "http://expertenough.com/wp-content/uploads/2012/09/thumbs-up.jpg",
-  
-  "color":  "GoldenRod" ,
-  
-  "text":"black",
-  "TraitCorrelations": ["Achievement and Life satisfaction have a correlation of -0.013",
-                "Agreeableness and Life satisfaction have a correlation of -0.028",
-                "Fair Mindedness  and Life satisfaction have a correlation of 0.046",
-                "Hedonism and Life satisfaction have a correlation of 0.087",
-                "Emotional Stability and Life satisfaction have a correlation of 0.282",
-                "Awareness of Physical Symptoms and Sensations and Life satisfaction have a correlation of -0.041",
-                "Self Disclosure  and Life satisfaction have a correlation of 0.032",
-                "Self direction and Life satisfaction have a correlation of -0.011",
-                "Intellectual Recreation and Life satisfaction have a correlation of -0.008",
-                "Low Militarism and Life satisfaction have a correlation of 0.005",
-                "Low Violent-Occult and Life satisfaction have a correlation of 0.075",
-                "Wholesome Activities and Life satisfaction have a correlation of -0.02",
-                "Life satisfaction and Tradition have a correlation of 0.064",
-                "Life satisfaction and Universalism have a correlation of 0.02",
-                "Life satisfaction and Extroversion have a correlation of 0.126",
-                "Life satisfaction and Openness have a correlation of -0.125",
-                "Life satisfaction and Body competence have a correlation of -0.025",
-                "Life satisfaction and Low Depression have a correlation of 0.025",
-                "Life satisfaction and Private body have a correlation of 0.009",
-                "Life satisfaction and Public body have a correlation of 0.019"],
-				
-	"HighestCorr": "Life satisfaction has the strongest positive correlation (0.282) with Emotional Stability",
-	
-    "LowestCorr": "Life satisfaction has the strongest negative correlation (-0.125) with Openness",
-	
-    "Measure": "The measure used is The satisfaction with life scale is from Diener (1985)"
-				
-				},
-   
- {"trait": " About this trait :  A person with high score on this trait values respect, commitment, and acceptance of the customs and ideas that one's culture or religion provides",
+ "HighestCorr": "Low Depression has the strongest positive correlation (0.33) with Awareness of Physical Symptoms and Sensations",
+ "LowestCorr": "Low Depression has the strongest negative  correlation (-0.18) with Emotional Stability",
+ "Measure": "The measure used is Center for epidemiologic studies depression scale CES-D."},
+
+
+{"trait" : " About this trait :  A person with high score on this trait values social status and prestige, control or dominance over people and resources.",
+ "title": "Power",
+ "itunes": "redundant code to be deleted",
+ "cover": "http://oubliettemagazine.com/wp-content/uploads/Niccol%C3%B2-Machiavelli.jpg",
+ "color": "Teal",
+ "text": "black",
+ "TraitCorrelations": ["Public Body and Power have a correlation of 0.03",
+ "Openness and Power have a correlation of -0.03",
+ "Extroversion and Power have a correlation of 0.03",
+ "Agreeableness and Power have a correlation of -0.23",
+ "Self Disclosure and Power have a correlation of -0.04",
+ "Low Militarism and Power have a correlation of -0.0",
+ "Wholesome Activities and Power have a correlation of -0.05",
+ "Self-Monitoring and Power have a correlation of 0.11",
+ "Tradition and Power have a correlation of -0.07",
+ "Universalism and Power have a correlation of -0.29",
+ "Self-Direction and Power have a correlation of -0.09",
+ "Hedonism and Power have a correlation of 0.05",
+ "Achievement and Power have a correlation of 0.09",
+ "Power and Empathy have a correlation of -0.09"], 
  
-  "title": "Tradition",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "http://www.royaldoors.net/wp-content/uploads/2017/04/pysanky-1.jpg",
-  
-  "color": "Teal ",
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Achievement and Tradition have a correlation of -0.251",
-                "Power and Tradition have a correlation of -0.122",
-                "Agreeableness and Tradition have a correlation of -0.048",
-                "Empathy and Tradition have a correlation of 0.08",
-                "Fair Mindedness  and Tradition have a correlation of -0.028",
-                "Hedonism and Tradition have a correlation of -0.33",
-                "Self-monitoring and Tradition have a correlation of 0.047",
-                "Emotional Stability and Tradition have a correlation of -0.007",
-                "Awareness of Physical Symptoms and Sensations and Tradition have a correlation of 0.01",
-                "Self Disclosure  and Tradition have a correlation of 0.083",
-                "Self direction and Tradition have a correlation of -0.351",
-                "Low Militarism and Tradition have a correlation of -0.039",
-                "Low Violent-Occult and Tradition have a correlation of 0.042",
-                "Wholesome Activities and Tradition have a correlation of -0.033",
-                "Life satisfaction and Tradition have a correlation of 0.064",
-                "Tradition and Universalism have a correlation of -0.266",
-                "Tradition and Conscientiousness have a correlation of -0.026",
-                "Tradition and Extroversion have a correlation of -0.068",
-                "Tradition and Openness have a correlation of 0.126",
-                "Tradition and Body competence have a correlation of 0.037",
-                "Tradition and Low Depression have a correlation of -0.009",
-                "Tradition and Private body have a correlation of -0.008",
-                "Tradition and Public body have a correlation of 0.051"],
-				
-	"HighestCorr": "Tradition has the strongest positive correlation (0.126) with Openness",
-	
-    "LowestCorr": "Tradition has the strongest negative correlation (-0.351) with Self-Direction",
-	
-    "Measure": "The measure used is Shwartz's Values Survey"
-				
-				},
-   
-   
- {"trait": " About this trait :  A person with high score on this trait values understanding, appreciation, tolerance, and protection for the welfare of all people and for nature",
+ "HighestCorr": "Power has the strongest positive correlation (0.11) with Universalism",
+ "LowestCorr": "Power has the strongest negative  correlation (-0.29) with Self-Monitoring",
+ "Measure": "The measure used is Shwartz'sValues Survey"},
+
+
+{"trait" : " About this trait :  Tendency to show self-discipline, act dutifully, and aim for achievement",
+ "title": "Conscientiousness",
+ "itunes": "redundant code to be deleted",
+ "cover": "https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAfcAAAAJDQyYjA4ZWE4LTZkNTktNDk4NS1iZGRjLTM4MGRlZTc1NjVmNg.jpg",
+ "color": "GoldenRod",
+ "text": "black",
+ "TraitCorrelations": ["Private Body and Conscientiousness have a correlation of 0.02",
+ "Public Body and Conscientiousness have a correlation of 0.07",
+ "Body Competence and Conscientiousness have a correlation of 0.05",
+ "Conscientiousness and Agreeableness have a correlation of 0.01",
+ "Conscientiousness and Emotional Stability have a correlation of 0.02",
+ "Conscientiousness and Awareness of Physical Symptoms and Sensations have a correlation of -0.04",
+ "Conscientiousness and Self Disclosure have a correlation of 0.19",
+ "Conscientiousness and Fair Mindedness have a correlation of 0.13",
+ "Conscientiousness and Low Militarism have a correlation of -0.01",
+ "Conscientiousness and Low Violent-Occult have a correlation of 0.06",
+ "Conscientiousness and Wholesome Activities have a correlation of 0.03",
+ "Conscientiousness and Self-Monitoring have a correlation of -0.01",
+ "Conscientiousness and Tradition have a correlation of -0.0",
+ "Conscientiousness and Universalism have a correlation of -0.06",
+ "Conscientiousness and Self-Direction have a correlation of -0.01",
+ "Conscientiousness and Hedonism have a correlation of -0.06",
+ "Conscientiousness and Achievement have a correlation of 0.15",
+ "Conscientiousness and Life Satisfaction have a correlation of 0.1",
+ "Conscientiousness and Low Depression have a correlation of 0.07"], 
  
-  "title": "Universalism",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "https://i.pinimg.com/736x/be/3a/8d/be3a8d943bf071717dc0a979264fd09a--child-art-art-google.jpg",
-  
-  "color": "Teal",
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Achievement and Universalism have a correlation of -0.277",
-                "Power and Universalism have a correlation of -0.286",
-                "Empathy and Universalism have a correlation of -0.038",
-                "Hedonism and Universalism have a correlation of -0.172",
-                "Intellectual Recreation and Universalism have a correlation of -0.1",
-                "Low Militarism and Universalism have a correlation of 0.198",
-                "Low Violent-Occult and Universalism have a correlation of -0.077",
-                "Wholesome Activities and Universalism have a correlation of -0.125",
-                "Life satisfaction and Universalism have a correlation of 0.02",
-                "Tradition and Universalism have a correlation of -0.266",
-                "Universalism and Conscientiousness have a correlation of 0.01",
-                "Universalism and Extroversion have a correlation of -0.093",
-                "Universalism and Openness have a correlation of 0.081",
-                "Universalism and Body competence have a correlation of -0.2",
-                "Universalism and Low Depression have a correlation of -0.026"],
-				
-	"HighestCorr": "Universalism has the strongest positive correlation (0.198) with Low Militarism",
-	
-    "LowestCorr": "Universalism has the strongest negative correlation (-0.286) with Power",
-	
-    "Measure": "The measure used is Shwartz's Values Survey"
-				
-				},
-   
-   
- {"trait": " About this trait :  Tendency to show self-discipline, act dutifully, and aim for achievement",
+ "HighestCorr": "Conscientiousness has the strongest positive correlation (0.19) with Hedonism",
+ "LowestCorr": "Conscientiousness has the strongest negative  correlation (-0.06) with Self Disclosure",
+ "Measure": "The measure used is 20 to 336-item-long IPIP proxy for Costa and McCrae'sNEO-PI-R questionnaire (referred to as Five Factor Model or BIG5)"},
+
+
+{"trait" : " About this trait :  A person with high score on this trait values pleasure or sensuous gratification for oneself.",
+ "title": "Hedonism",
+ "itunes": "redundant code to be deleted",
+ "cover": "https://3j0grh44ocny4a6kcn288izx-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/h1-950x530.jpg",
+ "color": "Teal ",
+ "text": "black",
+ "TraitCorrelations": ["Conscientiousness and Hedonism have a correlation of -0.06",
+ "Extroversion and Hedonism have a correlation of 0.05",
+ "Agreeableness and Hedonism have a correlation of -0.01",
+ "Self Disclosure and Hedonism have a correlation of -0.12",
+ "Fair Mindedness and Hedonism have a correlation of -0.04",
+ "Low Militarism and Hedonism have a correlation of 0.02",
+ "Low Violent-Occult and Hedonism have a correlation of -0.08",
+ "Wholesome Activities and Hedonism have a correlation of -0.02",
+ "Tradition and Hedonism have a correlation of -0.29",
+ "Universalism and Hedonism have a correlation of -0.09",
+ "Hedonism and Achievement have a correlation of -0.05",
+ "Hedonism and Power have a correlation of 0.05",
+ "Hedonism and Life Satisfaction have a correlation of 0.02",
+ "Hedonism and Empathy have a correlation of -0.07"], 
  
-  "title": "Conscientiousness",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAfcAAAAJDQyYjA4ZWE4LTZkNTktNDk4NS1iZGRjLTM4MGRlZTc1NjVmNg.jpg",
-  
-  "color":  "GoldenRod" ,
-  
-  "text":"black",
-  
-  "TraitCorrelations":  ["Achievement and Conscientiousness have a correlation of -0.029",
-                "Agreeableness and Conscientiousness have a correlation of -0.016",
-                "Empathy and Conscientiousness have a correlation of 0.014",
-                "Hedonism and Conscientiousness have a correlation of -0.007",
-                "Self-monitoring and Conscientiousness have a correlation of -0.019",
-                "Emotional Stability and Conscientiousness have a correlation of -0.001",
-                "Self direction and Conscientiousness have a correlation of 0.009",
-                "Intellectual Recreation and Conscientiousness have a correlation of 0.009",
-                "Low Violent-Occult and Conscientiousness have a correlation of -0.003",
-                "Tradition and Conscientiousness have a correlation of -0.026",
-                "Universalism and Conscientiousness have a correlation of 0.01",
-                "Conscientiousness and Extroversion have a correlation of -0.052",
-                "Conscientiousness and Openness have a correlation of 0.048",
-                "Conscientiousness and Body competence have a correlation of 0.005",
-                "Conscientiousness and Low Depression have a correlation of -0.013",
-                "Conscientiousness and Private body have a correlation of 0.251",
-                "Conscientiousness and Public body have a correlation of 0.405"],
-				
-	"HighestCorr": "Conscientiousness has the strongest positive correlation (0.405) with Public body",
-	
-    "LowestCorr": "Conscientiousness has the strongest negative correlation (-0.052) with Extroversion",
-	
-    "Measure": "The measure used is 20 to 336-item-long IPIP proxy for Costa and McCrae's NEO-PI-R questionnaire (referred to as Five Factor Model or BIG5)"
-				
-				},
-   
-   
- {"trait": " About this trait :  Characterized by positive emotions, surgency, and the tendency to seek out stimulation and the company of others",
+ "HighestCorr": "Hedonism has the strongest positive correlation (0.05) with Tradition",
+ "LowestCorr": "Hedonism has the strongest negative  correlation (-0.29) with Power",
+ "Measure": "The measure used is Shwartz'sValues Survey"},
+
+
+{"trait" : " About this trait :  The tendency NOT to experience negative emotions, such as anger, anxiety, or depression",
+ "title": "Emotional Stability",
+ "itunes": "redundant code to be deleted",
+ "cover": "https://harmonyplace.com/wp-content/uploads/2017/09/Tips-for-Finding-Emotional-Stability-in-Recovery.jpg",
+ "color": "GoldenRod",
+ "text": "black",
+ "TraitCorrelations": ["Conscientiousness and Emotional Stability have a correlation of 0.02",
+ "Extroversion and Emotional Stability have a correlation of 0.12",
+ "Agreeableness and Emotional Stability have a correlation of 0.16",
+ "Emotional Stability and Intelligence have a correlation of 0.06",
+ "Emotional Stability and Awareness of Physical Symptoms and Sensations have a correlation of -0.18",
+ "Emotional Stability and Self Disclosure have a correlation of 0.05",
+ "Emotional Stability and Fair Mindedness have a correlation of 0.15",
+ "Emotional Stability and Low Militarism have a correlation of -0.11",
+ "Emotional Stability and Life Satisfaction have a correlation of 0.23",
+ "Emotional Stability and Low Depression have a correlation of 0.33",
+ "Emotional Stability and Empathy have a correlation of -0.01"], 
  
-  "title": "Extroversion",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "https://typevolution.files.wordpress.com/2017/03/carnival-2035021_960_720.jpg?w=723",
-  
-  "color":  "GoldenRod" ,
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Achievement and Extroversion have a correlation of 0.151",
-                "Agreeableness and Extroversion have a correlation of -0.034",
-                "Fair Mindedness  and Extroversion have a correlation of 0.129",
-                "Hedonism and Extroversion have a correlation of -0.103",
-                "Self-monitoring and Extroversion have a correlation of -0.055",
-                "Emotional Stability and Extroversion have a correlation of 0.015",
-                "Awareness of Physical Symptoms and Sensations and Extroversion have a correlation of -0.05",
-                "Self Disclosure  and Extroversion have a correlation of 0.176",
-                "Self direction and Extroversion have a correlation of -0.048",
-                "Intellectual Recreation and Extroversion have a correlation of -0.005",
-                "Low Militarism and Extroversion have a correlation of -0.018",
-                "Low Violent-Occult and Extroversion have a correlation of 0.071",
-                "Wholesome Activities and Extroversion have a correlation of -0.038",
-                "Life satisfaction and Extroversion have a correlation of 0.126",
-                "Tradition and Extroversion have a correlation of -0.068",
-                "Universalism and Extroversion have a correlation of -0.093",
-                "Conscientiousness and Extroversion have a correlation of -0.052",
-                "Extroversion and Body competence have a correlation of -0.016",
-                "Extroversion and Low Depression have a correlation of 0.075",
-                "Extroversion and Private body have a correlation of -0.043",
-                "Extroversion and Public body have a correlation of -0.076"],
-				
-	"HighestCorr": "Extroversion has the strongest positive correlation (0.176) with Self Disclosure ",
-	
-    "LowestCorr": "Extroversion has the strongest negative correlation (-0.103) with Hedonism",
-	
-    "Measure": "The measure used is 20 to 336-item-long IPIP proxy for Costa and McCrae's NEO-PI-R questionnaire (referred to as Five Factor Model or BIG5)"
-				
-				},
-   
-   
- {"trait": " About this trait :  A general appreciation for art, emotion, adventure, unusual ideas, imagination, curiosity, and variety of experience",
+ "HighestCorr": "Emotional Stability has the strongest positive correlation (0.33) with Awareness of Physical Symptoms and Sensations",
+ "LowestCorr": "Emotional Stability has the strongest negative  correlation (-0.18) with Low Depression",
+ "Measure": "The measure used is 20 to 336-item-long IPIP proxy for Costa and McCrae'sNEO-PI-R questionnaire (referred to as Five Factor Model or BIG5)"},
+
+
+{"trait" : " About this trait :  A person with high score on this trait values respect, commitment, and acceptance of the customs and ideas that one's culture or religion provides",
+ "title": "Tradition",
+ "itunes": "redundant code to be deleted",
+ "cover": "http://www.royaldoors.net/wp-content/uploads/2017/04/pysanky-1.jpg",
+ "color": "Teal ",
+ "text": "black",
+ "TraitCorrelations": ["Public Body and Tradition have a correlation of -0.02",
+ "Openness and Tradition have a correlation of -0.06",
+ "Conscientiousness and Tradition have a correlation of -0.0",
+ "Extroversion and Tradition have a correlation of -0.1",
+ "Agreeableness and Tradition have a correlation of 0.04",
+ "Intelligence and Tradition have a correlation of -0.02",
+ "Self Disclosure and Tradition have a correlation of 0.05",
+ "Fair Mindedness and Tradition have a correlation of -0.02",
+ "Low Militarism and Tradition have a correlation of -0.04",
+ "Low Violent-Occult and Tradition have a correlation of 0.04",
+ "Wholesome Activities and Tradition have a correlation of 0.02",
+ "Tradition and Universalism have a correlation of -0.19",
+ "Tradition and Self-Direction have a correlation of -0.34",
+ "Tradition and Hedonism have a correlation of -0.29",
+ "Tradition and Achievement have a correlation of -0.22",
+ "Tradition and Power have a correlation of -0.07",
+ "Tradition and Life Satisfaction have a correlation of 0.0"], 
  
-  "title": "Openness",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "http://sofii.org/images/Articles/Gender/_scaleTo640/31043-moving-from-fairness-to-openness-pic2.png",
-  
-  "color":  "GoldenRod" ,
-  
-  "text":"black",
-  
-  "TraitCorrelations":  ["Achievement and Openness have a correlation of -0.035",
-                "Power and Openness have a correlation of -0.025",
-                "Empathy and Openness have a correlation of 0.218",
-                "Fair Mindedness  and Openness have a correlation of -0.013",
-                "Hedonism and Openness have a correlation of -0.072",
-                "Self-monitoring and Openness have a correlation of -0.267",
-                "Emotional Stability and Openness have a correlation of -0.148",
-                "Awareness of Physical Symptoms and Sensations and Openness have a correlation of 0.018",
-                "Self Disclosure  and Openness have a correlation of -0.113",
-                "Self direction and Openness have a correlation of 0.071",
-                "Intellectual Recreation and Openness have a correlation of 0.004",
-                "Low Militarism and Openness have a correlation of 0.005",
-                "Life satisfaction and Openness have a correlation of -0.125",
-                "Tradition and Openness have a correlation of 0.126",
-                "Universalism and Openness have a correlation of 0.081",
-                "Conscientiousness and Openness have a correlation of 0.048",
-                "Openness and Body competence have a correlation of 0.068",
-                "Openness and Low Depression have a correlation of -0.01",
-                "Openness and Private body have a correlation of 0.069",
-                "Openness and Public body have a correlation of 0.041"],
-				
-	"HighestCorr": "Openness has the strongest positive correlation (0.218) with Empathy",
-	
-    "LowestCorr": "Openness has the strongest negative correlation (-0.267) with Self-monitoring",
-	
-    "Measure": "The measure used is 20 to 336-item-long IPIP proxy for Costa and McCrae's NEO-PI-R questionnaire (referred to as Five Factor Model or BIG5)"
-				
-				},
-   
-   
- {"trait": " About this trait :  Body competence means that a person has high self-confidence in her own body performance",
+ "HighestCorr": "Tradition has the strongest positive correlation (0.05) with Self-Direction",
+ "LowestCorr": "Tradition has the strongest negative  correlation (-0.34) with Self Disclosure",
+ "Measure": "The measure used is Shwartz'sValues Survey"},
+
+
+{"trait" : " About this trait :  A person with high score on this trait values personal success through demonstrating competence according to social standards",
+ "title": "Achievement",
+ "itunes": "redundant code to be deleted",
+ "cover": "http://mediad.publicbroadcasting.net/p/wamc/files/201704/marie-curie-4.jpg",
+ "color": "Teal",
+ "text": "black",
+ "TraitCorrelations": ["Body Competence and Achievement have a correlation of 0.0",
+ "Openness and Achievement have a correlation of 0.0",
+ "Conscientiousness and Achievement have a correlation of 0.15",
+ "Extroversion and Achievement have a correlation of 0.02",
+ "Agreeableness and Achievement have a correlation of -0.09",
+ "Fair Mindedness and Achievement have a correlation of 0.09",
+ "Self-Monitoring and Achievement have a correlation of 0.04",
+ "Tradition and Achievement have a correlation of -0.22",
+ "Universalism and Achievement have a correlation of -0.24",
+ "Hedonism and Achievement have a correlation of -0.05",
+ "Achievement and Power have a correlation of 0.09",
+ "Achievement and Low Depression have a correlation of -0.0"], 
+ "HighestCorr": "Achievement has the strongest positive correlation (0.15) with Universalism",
+ "LowestCorr": "Achievement has the strongest negative  correlation (-0.24) with Conscientiousness",
+ "Measure": "The measure used is Shwartz'sValues Survey"},
+
+
+{"trait" : " About this trait :  Self-reported ability to tune into how others are feeling, and to understanding what they may be thinking. It measures  both the affective and cognitive components of empathy.",
+ "title": "Empathy",
+ "itunes": "redundant code to be deleted",
+ "cover": "http://www.healthpolicypartnership.com/wp-content/uploads/MBC-1.png",
+ "color": "IndianRed",
+ "text": "black",
+ "TraitCorrelations": ["Private Body and Empathy have a correlation of 0.1",
+ "Public Body and Empathy have a correlation of 0.03",
+ "Body Competence and Empathy have a correlation of 0.06",
+ "Openness and Empathy have a correlation of 0.09",
+ "Extroversion and Empathy have a correlation of 0.25",
+ "Agreeableness and Empathy have a correlation of 0.26",
+ "Emotional Stability and Empathy have a correlation of -0.01",
+ "Awareness of Physical Symptoms and Sensations and Empathy have a correlation of 0.01",
+ "Self Disclosure and Empathy have a correlation of 0.05",
+ "Fair Mindedness and Empathy have a correlation of 0.12",
+ "Low Militarism and Empathy have a correlation of 0.06",
+ "Intellectual Recreation and Empathy have a correlation of 0.11",
+ "Self-Monitoring and Empathy have a correlation of 0.05",
+ "Universalism and Empathy have a correlation of 0.04",
+ "Self-Direction and Empathy have a correlation of -0.07",
+ "Hedonism and Empathy have a correlation of -0.07",
+ "Power and Empathy have a correlation of -0.09",
+ "Low Depression and Empathy have a correlation of -0.01"], 
  
-  "title": "Body Competence",
-  
-  "itunes": "redundant code to be deleted",
-  
-  "cover": "http://aofchampionsgym.co.uk/wp-content/uploads/2015/05/slide-new-1.jpg",
-  
-  "color": "IndianRed"  ,
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Achievement and Body competence have a correlation of -0.028",
-                "Power and Body competence have a correlation of 0.075",
-                "Agreeableness and Body competence have a correlation of -0.01",
-                "Empathy and Body competence have a correlation of 0.009",
-                "Fair Mindedness  and Body competence have a correlation of -0.09",
-                "Self-monitoring and Body competence have a correlation of -0.061",
-                "Awareness of Physical Symptoms and Sensations and Body competence have a correlation of -0.035",
-                "Self Disclosure  and Body competence have a correlation of 0.03",
-                "Self direction and Body competence have a correlation of -0.225",
-                "Intellectual Recreation and Body competence have a correlation of 0.277",
-                "Low Militarism and Body competence have a correlation of -0.036",
-                "Low Violent-Occult and Body competence have a correlation of 0.092",
-                "Life satisfaction and Body competence have a correlation of -0.025",
-                "Tradition and Body competence have a correlation of 0.037",
-                "Universalism and Body competence have a correlation of -0.2",
-                "Conscientiousness and Body competence have a correlation of 0.005",
-                "Extroversion and Body competence have a correlation of -0.016",
-                "Openness and Body competence have a correlation of 0.068",
-                "Body competence and Private body have a correlation of 0.001",
-                "Body competence and Public body have a correlation of 0.045"],
-				
-	"HighestCorr": "Body competence has the strongest positive correlation (0.277) with Intellectual Recreation",
-	
-    "LowestCorr": "Body competence has the strongest negative correlation (-0.225) with Self direction",
-	
-    "Measure": "The measure used is Body Consciousness Questionnaire (BCQ)"
-				
-				},
-   
-   
- {"trait": " About this trait :  High score on scale which measure symptoms of depression in nine different groups as defined by the American Psychiatric Association Diagnostic and Statistical Manual, fifth edition.",
+ "HighestCorr": "Empathy has the strongest positive correlation (0.26) with Power",
+ "LowestCorr": "Empathy has the strongest negative  correlation (-0.09) with Agreeableness",
+ "Measure": "The measure used is Empathy quotient scale by  Baron-Cohen & Wheelwright (2004)"},
+
+
+{"trait" : " About this trait :  Body competence means that a person has high self-confidence in her own body performance",
+ "title": "Body Competence",
+ "itunes": "redundant code to be deleted",
+ "cover": "http://aofchampionsgym.co.uk/wp-content/uploads/2015/05/slide-new-1.jpg",
+ "color": "IndianRed",
+ "text": "black",
+ "TraitCorrelations": ["Private Body and Body Competence have a correlation of 0.24",
+ "Public Body and Body Competence have a correlation of 0.39",
+ "Body Competence and Conscientiousness have a correlation of 0.05",
+ "Body Competence and Extroversion have a correlation of 0.04",
+ "Body Competence and Agreeableness have a correlation of -0.02",
+ "Body Competence and Self-Monitoring have a correlation of 0.01",
+ "Body Competence and Universalism have a correlation of -0.01",
+ "Body Competence and Self-Direction have a correlation of -0.01",
+ "Body Competence and Achievement have a correlation of 0.0",
+ "Body Competence and Empathy have a correlation of 0.06"], 
  
-  "title": "Low Depression",
-  
-  "itunes": "redundant code to be deleted",
-  
-  
-  "cover": "https://dailytimes.com.pk/static/uploads/original/depression-increases-risk-of-cancer-british-medical-journal-2b9efc06eea40b81841808f00de7171d.jpg",
-  
-  "color": "IndianRed"  ,
-  
-  "text":"black",
-  
-  "TraitCorrelations": ["Achievement and Low Depression have a correlation of -0.037",
-                "Power and Low Depression have a correlation of 0.056",
-                "Empathy and Low Depression have a correlation of -0.006",
-                "Hedonism and Low Depression have a correlation of 0.006",
-                "Self-monitoring and Low Depression have a correlation of -0.048",
-                "Emotional Stability and Low Depression have a correlation of 0.268",
-                "Awareness of Physical Symptoms and Sensations and Low Depression have a correlation of -0.249",
-                "Intellectual Recreation and Low Depression have a correlation of 0.01",
-                "Low Violent-Occult and Low Depression have a correlation of 0.024",
-                "Wholesome Activities and Low Depression have a correlation of 0.018",
-                "Life satisfaction and Low Depression have a correlation of 0.025",
-                "Tradition and Low Depression have a correlation of -0.009",
-                "Universalism and Low Depression have a correlation of -0.026",
-                "Conscientiousness and Low Depression have a correlation of -0.013",
-                "Extroversion and Low Depression have a correlation of 0.075",
-                "Openness and Low Depression have a correlation of -0.01",
-                "Low Depression and Private body have a correlation of 0.06",
-                "Low Depression and Public body have a correlation of 0.042"],
-				
-	"HighestCorr": "Low Depression has the strongest positive correlation (0.268) with Emotional Stability",
-	
-    "LowestCorr": "Low Depression has the strongest negative correlation (-0.249) with Awareness of Physical Symptoms and Sensations",
-	
-    "Measure": "The measure used is Center for epidemiologic studies depression scale CES-D."
-				
-				},
-   
-   
-   
- {"trait": " About this trait :  A person with high score on this trait is highly aware of internal sensations.",
-  "title": "Private Body",
-  "itunes": "redundant code to be deleted",
-  "cover": "https://www.thestar.com/content/dam/thestar/news/insight/2015/12/28/elena-ferrante-a-private-author-who-caused-a-public-sensation/bodyjpg.jpg.size.custom.crop.771x650.jpg",
-  "color": "IndianRed"  ,
-  "text":"black",
-  "TraitCorrelations": ["Achievement and Private body have a correlation of 0.032",
-                "Agreeableness and Private body have a correlation of -0.011",
-                "Empathy and Private body have a correlation of 0.011",
-                "Fair Mindedness  and Private body have a correlation of 0.055",
-                "Awareness of Physical Symptoms and Sensations and Private body have a correlation of -0.073",
-                "Self Disclosure  and Private body have a correlation of -0.05",
-                "Self direction and Private body have a correlation of 0.002",
-                "Intellectual Recreation and Private body have a correlation of 0.031",
-                "Low Militarism and Private body have a correlation of 0.01",
-                "Low Violent-Occult and Private body have a correlation of 0.045",
-                "Wholesome Activities and Private body have a correlation of 0.033",
-                "Life satisfaction and Private body have a correlation of 0.009",
-                "Tradition and Private body have a correlation of -0.008",
-                "Conscientiousness and Private body have a correlation of 0.251",
-                "Extroversion and Private body have a correlation of -0.043",
-                "Openness and Private body have a correlation of 0.069",
-                "Body competence and Private body have a correlation of 0.001",
-                "Low Depression and Private body have a correlation of 0.06",
-                "Private body and Public body have a correlation of 0.301"],
-				
-	"HighestCorr": "Private body has the strongest positive correlation (0.301) with Public body",
-	
-    "LowestCorr": "Private body has the strongest negative correlation (-0.073) with Awareness of Physical Symptoms and Sensations",
-	
-    "Measure": "The measure used is Body Consciousness Questionnaire (BCQ)"
-				
-				},
-				
-				
-				
-				
- {"trait": " About this trait :  A person with high score on this trait is highly aware of observable aspects of his/her body.",
-  "title": "Public Body",
-  "itunes": "redundant code to be deleted",
-  "cover": "https://static1.squarespace.com/static/555b8fb9e4b013d27c81ea8e/5820d5dccd0f684c304d8726/5820d7902e69cf31db25dc83/1478551291183/2016_Artspace_Australia_The_Public_Body_5.jpg",
-  "color": "IndianRed"  ,
-  "text":"black",
-  "TraitCorrelations": ["Achievement and Public body have a correlation of -0.003",
-				"Power and Public body have a correlation of -0.036",
-				"Agreeableness and Public body have a correlation of -0.015",
-				"Empathy and Public body have a correlation of 0.033",
-				"Self-monitoring and Public body have a correlation of -0.022",
-				"Awareness of Physical Symptoms and Sensations and Public body have a correlation of 0.014",
-				"Self direction and Public body have a correlation of 0.035",
-				"Intellectual Recreation and Public body have a correlation of 0.084",
-				"Low Militarism and Public body have a correlation of 0.078",
-				"Low Violent-Occult and Public body have a correlation of -0.021",
-				"Wholesome Activities and Public body have a correlation of 0.002",
-				"Life satisfaction and Public body have a correlation of 0.019",
-				"Tradition and Public body have a correlation of 0.051",
-				"Conscientiousness and Public body have a correlation of 0.405",
-				"Extroversion and Public body have a correlation of -0.076",
-				"Openness and Public body have a correlation of 0.041",
-				"Body competence and Public body have a correlation of 0.045",
-				"Low Depression and Public body have a correlation of 0.042",
-				"Private body and Public body have a correlation of 0.301"],
-				
-	"HighestCorr":"Public body has the strongest positive correlation (0.405) with Conscientiousness",
-	  
-	"LowestCorr": "Public body has the strongest negative correlation (-0.076) with Extroversion",
-	   
-	"Measure": "The measure used is Body Consciousness Questionnaire (BCQ)"
-				
-				}
-   ]
+ "HighestCorr": "Body Competence has the strongest positive correlation (0.39) with Agreeableness",
+ "LowestCorr": "Body Competence has the strongest negative  correlation (-0.02) with Public Body",
+ "Measure": "The measure used is Body Consciousness Questionnaire (BCQ)"},
+
+
+{"trait" : " About this trait :  An individual's active interest in militaristic activities (e.g. guns and shooting) would signify high militarism, and vice versa.",
+ "title": "Low Militarism",
+ "itunes": "redundant code to be deleted",
+ "cover": "https://i.pinimg.com/originals/1a/09/ac/1a09ac769f8f55d925d3554092a289d4.jpg",
+ "color": "CornflowerBlue",
+ "text": "black",
+ "TraitCorrelations": ["Private Body and Low Militarism have a correlation of -0.02",
+ "Public Body and Low Militarism have a correlation of -0.07",
+ "Conscientiousness and Low Militarism have a correlation of -0.01",
+ "Extroversion and Low Militarism have a correlation of -0.0",
+ "Emotional Stability and Low Militarism have a correlation of -0.11",
+ "Awareness of Physical Symptoms and Sensations and Low Militarism have a correlation of 0.03",
+ "Low Militarism and Low Violent-Occult have a correlation of 0.4",
+ "Low Militarism and Wholesome Activities have a correlation of -0.29",
+ "Low Militarism and Self-Monitoring have a correlation of -0.01",
+ "Low Militarism and Tradition have a correlation of -0.04",
+ "Low Militarism and Universalism have a correlation of 0.17",
+ "Low Militarism and Self-Direction have a correlation of 0.03",
+ "Low Militarism and Hedonism have a correlation of 0.02",
+ "Low Militarism and Power have a correlation of -0.0",
+ "Low Militarism and Empathy have a correlation of 0.06"], 
+ 
+ "HighestCorr": "Low Militarism has the strongest positive correlation (0.4) with Wholesome Activities",
+ "LowestCorr": "Low Militarism has the strongest negative  correlation (-0.29) with Low Violent-Occult",
+ "Measure": "The measure used is Sensational interests questionnaire scores"},
+
+
+{"trait" : " About this trait :  Characterized by positive emotions, surgency, and the tendency to seek out stimulation and the company of others",
+ "title": "Extroversion",
+ "itunes": "redundant code to be deleted",
+ "cover": "https://typevolution.files.wordpress.com/2017/03/carnival-2035021_960_720.jpg?w=723",
+ "color": "GoldenRod",
+ "text": "black",
+ "TraitCorrelations": ["Private Body and Extroversion have a correlation of 0.02",
+ "Public Body and Extroversion have a correlation of 0.05",
+ "Body Competence and Extroversion have a correlation of 0.04",
+ "Openness and Extroversion have a correlation of 0.02",
+ "Extroversion and Emotional Stability have a correlation of 0.12",
+ "Extroversion and Intelligence have a correlation of -0.03",
+ "Extroversion and Self Disclosure have a correlation of 0.06",
+ "Extroversion and Fair Mindedness have a correlation of 0.03",
+ "Extroversion and Low Militarism have a correlation of -0.0",
+ "Extroversion and Self-Monitoring have a correlation of 0.24",
+ "Extroversion and Tradition have a correlation of -0.1",
+ "Extroversion and Universalism have a correlation of -0.05",
+ "Extroversion and Self-Direction have a correlation of -0.04",
+ "Extroversion and Hedonism have a correlation of 0.05",
+ "Extroversion and Achievement have a correlation of 0.02",
+ "Extroversion and Power have a correlation of 0.03",
+ "Extroversion and Life Satisfaction have a correlation of 0.11",
+ "Extroversion and Low Depression have a correlation of 0.06",
+ "Extroversion and Empathy have a correlation of 0.25"], 
+ 
+ "HighestCorr": "Extroversion has the strongest positive correlation (0.25) with Tradition",
+ "LowestCorr": "Extroversion has the strongest negative  correlation (-0.1) with Empathy",
+ "Measure": "The measure used is 20 to 336-item-long IPIP proxy for Costa and McCrae'sNEO-PI-R questionnaire (referred to as Five Factor Model or BIG5)"},
+
+
+{"trait" : " About this trait :  High score signifies balanced and impartial person is in her decision making.",
+ "title": "Fair Mindedness",
+ "itunes": "redundant code to be deleted",
+ "cover": "https://www.franksonnenbergonline.com/wp-content/uploads/2015/11/image_11-traits-of-a-fair-minded-person.jpg",
+ "color": "IndianRed",
+ "text": "black",
+ "TraitCorrelations": ["Private Body and Fair Mindedness have a correlation of -0.02",
+ "Openness and Fair Mindedness have a correlation of 0.07",
+ "Conscientiousness and Fair Mindedness have a correlation of 0.13",
+ "Extroversion and Fair Mindedness have a correlation of 0.03",
+ "Agreeableness and Fair Mindedness have a correlation of 0.01",
+ "Emotional Stability and Fair Mindedness have a correlation of 0.15",
+ "Intelligence and Fair Mindedness have a correlation of 0.09",
+ "Self Disclosure and Fair Mindedness have a correlation of 0.18",
+ "Fair Mindedness and Intellectual Recreation have a correlation of 0.03",
+ "Fair Mindedness and Tradition have a correlation of -0.02",
+ "Fair Mindedness and Self-Direction have a correlation of 0.01",
+ "Fair Mindedness and Hedonism have a correlation of -0.04",
+ "Fair Mindedness and Achievement have a correlation of 0.09",
+ "Fair Mindedness and Life Satisfaction have a correlation of 0.04",
+ "Fair Mindedness and Empathy have a correlation of 0.12"], 
+ 
+ "HighestCorr": "Fair Mindedness has the strongest positive correlation (0.18) with Hedonism",
+ "LowestCorr": "Fair Mindedness has the strongest negative  correlation (-0.04) with Self Disclosure",
+ "Measure": "The measure used is Orpheus questionnaire"},
+
+
+{"trait" : " About this trait :  An individual's active interest in active recreation (e.g. camping, hill walking)",
+ "title": "Wholesome Activities",
+ "itunes": "redundant code to be deleted",
+ "cover": "http://goeast.ems.com/wp-content/uploads/2017/10/EMS-Burlington-MtMansfield-0955.jpg",
+ "color": "CornflowerBlue",
+ "text": "black",
+ "TraitCorrelations": ["Private Body and Wholesome Activities have a correlation of 0.02",
+ "Conscientiousness and Wholesome Activities have a correlation of 0.03",
+ "Agreeableness and Wholesome Activities have a correlation of 0.04",
+ "Self Disclosure and Wholesome Activities have a correlation of 0.08",
+ "Low Militarism and Wholesome Activities have a correlation of -0.29",
+ "Low Violent-Occult and Wholesome Activities have a correlation of 0.02",
+ "Intellectual Recreation and Wholesome Activities have a correlation of 0.27",
+ "Wholesome Activities and Tradition have a correlation of 0.02",
+ "Wholesome Activities and Universalism have a correlation of 0.08",
+ "Wholesome Activities and Self-Direction have a correlation of -0.05",
+ "Wholesome Activities and Hedonism have a correlation of -0.02",
+ "Wholesome Activities and Power have a correlation of -0.05",
+ "Wholesome Activities and Life Satisfaction have a correlation of 0.02"], 
+ 
+ "HighestCorr": "Wholesome Activities has the strongest positive correlation (0.27) with Low Militarism",
+ "LowestCorr": "Wholesome Activities has the strongest negative  correlation (-0.29) with Intellectual Recreation",
+ "Measure": "The measure used is Sensational interests questionnaire scores"},
+
+
+{"trait" : " About this trait :  A person with high score on this trait values independent thought and action - choosing, creating, exploring",
+ "title": "Self-Direction",
+ "itunes": "redundant code to be deleted",
+ "cover": "https://gdcf-0916001bcltd.netdna-ssl.com/wp-content/uploads/2016/07/self-direction.jpg",
+ "color": "Teal",
+ "text": "black",
+ "TraitCorrelations": ["Public Body and Self-Direction have a correlation of -0.01",
+ "Body Competence and Self-Direction have a correlation of -0.01",
+ "Openness and Self-Direction have a correlation of 0.21",
+ "Conscientiousness and Self-Direction have a correlation of -0.01",
+ "Extroversion and Self-Direction have a correlation of -0.04",
+ "Agreeableness and Self-Direction have a correlation of -0.06",
+ "Intelligence and Self-Direction have a correlation of 0.06",
+ "Fair Mindedness and Self-Direction have a correlation of 0.01",
+ "Low Militarism and Self-Direction have a correlation of 0.03",
+ "Low Violent-Occult and Self-Direction have a correlation of -0.07",
+ "Wholesome Activities and Self-Direction have a correlation of -0.05",
+ "Tradition and Self-Direction have a correlation of -0.34",
+ "Universalism and Self-Direction have a correlation of 0.01",
+ "Self-Direction and Power have a correlation of -0.09",
+ "Self-Direction and Empathy have a correlation of -0.07"], 
+ 
+ "HighestCorr": "Self-Direction has the strongest positive correlation (0.21) with Tradition",
+ "LowestCorr": "Self-Direction has the strongest negative  correlation (-0.34) with Openness",
+ "Measure": "The measure used is Shwartz'sValues Survey"},
+
+
+{"trait" : " About this trait :  A person with high score on this trait is highly aware of observable aspects of his/her body.",
+ "title": "Public Body",
+ "itunes": "redundant code to be deleted",
+ "cover": "https://static1.squarespace.com/static/555b8fb9e4b013d27c81ea8e/5820d5dccd0f684c304d8726/5820d7902e69cf31db25dc83/1478551291183/2016_Artspace_Australia_The_Public_Body_5.jpg",
+ "color": "IndianRed",
+ "text": "black",
+ "TraitCorrelations": ["Private Body and Public Body have a correlation of 0.29",
+ "Public Body and Body Competence have a correlation of 0.39",
+ "Public Body and Openness have a correlation of 0.01",
+ "Public Body and Conscientiousness have a correlation of 0.07",
+ "Public Body and Extroversion have a correlation of 0.05",
+ "Public Body and Agreeableness have a correlation of -0.01",
+ "Public Body and Low Militarism have a correlation of -0.07",
+ "Public Body and Intellectual Recreation have a correlation of 0.08",
+ "Public Body and Self-Monitoring have a correlation of 0.02",
+ "Public Body and Tradition have a correlation of -0.02",
+ "Public Body and Self-Direction have a correlation of -0.01",
+ "Public Body and Power have a correlation of 0.03",
+ "Public Body and Empathy have a correlation of 0.03"], 
+ 
+ "HighestCorr": "Public Body has the strongest positive correlation (0.39) with Low Militarism",
+ "LowestCorr": "Public Body has the strongest negative  correlation (-0.07) with Body Competence",
+ "Measure": "The measure used is Body Consciousness Questionnaire (BCQ)"},
+
+
+{"trait" : " About this trait : measure of cognitive skills and clear-thinking ability",
+ "title": "Intelligence",
+ "itunes": "redundant code to be deleted",
+ "cover": "https://www.espreso.rs/data/images/2017/12/05/11/295725_umiljata-beba_ff.jpg?ver=1512469863",
+ "color": "Teal",
+ "text": "black",
+ "TraitCorrelations": ["Private Body and Intelligence have a correlation of -0.07",
+ "Openness and Intelligence have a correlation of 0.03",
+ "Extroversion and Intelligence have a correlation of -0.03",
+ "Emotional Stability and Intelligence have a correlation of 0.06",
+ "Intelligence and Self Disclosure have a correlation of -0.06",
+ "Intelligence and Fair Mindedness have a correlation of 0.09",
+ "Intelligence and Low Violent-Occult have a correlation of 0.04",
+ "Intelligence and Tradition have a correlation of -0.02",
+ "Intelligence and Self-Direction have a correlation of 0.06",
+ "Intelligence and Low Depression have a correlation of 0.02"], 
+ 
+ "HighestCorr": "Intelligence has the strongest positive correlation (0.09) with Private Body",
+ "LowestCorr": "Intelligence has the strongest negative  correlation (-0.07) with Fair Mindedness",
+ "Measure": "Developed by Fiona Chan of the University of Cambridge Psychometrics Centre and Michal Kosinski of the Stanford Graduate School of Business"},
+
+
+{"trait" : " About this trait :  A person with high score on this trait values understanding, appreciation, tolerance, and protection for the welfare of all people and for nature",
+ "title": "Universalism",
+ "itunes": "redundant code to be deleted",
+ "cover": "https://i.pinimg.com/736x/be/3a/8d/be3a8d943bf071717dc0a979264fd09a--child-art-art-google.jpg",
+ "color": "Teal",
+ "text": "black",
+ "TraitCorrelations": ["Body Competence and Universalism have a correlation of -0.01",
+ "Openness and Universalism have a correlation of 0.19",
+ "Conscientiousness and Universalism have a correlation of -0.06",
+ "Extroversion and Universalism have a correlation of -0.05",
+ "Low Militarism and Universalism have a correlation of 0.17",
+ "Low Violent-Occult and Universalism have a correlation of -0.04",
+ "Intellectual Recreation and Universalism have a correlation of 0.11",
+ "Wholesome Activities and Universalism have a correlation of 0.08",
+ "Tradition and Universalism have a correlation of -0.19",
+ "Universalism and Self-Direction have a correlation of 0.01",
+ "Universalism and Hedonism have a correlation of -0.09",
+ "Universalism and Achievement have a correlation of -0.24",
+ "Universalism and Power have a correlation of -0.29",
+ "Universalism and Low Depression have a correlation of -0.03",
+ "Universalism and Empathy have a correlation of 0.04"], 
+ 
+ "HighestCorr": "Universalism has the strongest positive correlation (0.19) with Power",
+ "LowestCorr": "Universalism has the strongest negative  correlation (-0.29) with Openness",
+ "Measure": "The measure used is Shwartz'sValues Survey"},
+
+
+{"trait" : " About this trait :  A general appreciation for art, emotion, adventure, unusual ideas, imagination, curiosity, and variety of experience",
+ "title": "Openness",
+ "itunes": "redundant code to be deleted",
+ "cover": "http://sofii.org/images/Articles/Gender/_scaleTo640/31043-moving-from-fairness-to-openness-pic2.png",
+ "color": "GoldenRod",
+ "text": "black",
+ "TraitCorrelations": ["Public Body and Openness have a correlation of 0.01",
+ "Openness and Extroversion have a correlation of 0.02",
+ "Openness and Intelligence have a correlation of 0.03",
+ "Openness and Awareness of Physical Symptoms and Sensations have a correlation of 0.02",
+ "Openness and Fair Mindedness have a correlation of 0.07",
+ "Openness and Low Violent-Occult have a correlation of -0.08",
+ "Openness and Intellectual Recreation have a correlation of 0.27",
+ "Openness and Self-Monitoring have a correlation of 0.04",
+ "Openness and Tradition have a correlation of -0.06",
+ "Openness and Universalism have a correlation of 0.19",
+ "Openness and Self-Direction have a correlation of 0.21",
+ "Openness and Achievement have a correlation of 0.0",
+ "Openness and Power have a correlation of -0.03",
+ "Openness and Empathy have a correlation of 0.09"], 
+ 
+ "HighestCorr": "Openness has the strongest positive correlation (0.27) with Low Violent-Occult",
+ "LowestCorr": "Openness has the strongest negative  correlation (-0.08) with Intellectual Recreation",
+ "Measure": "The measure used is 20 to 336-item-long IPIP proxy for Costa and McCrae'sNEO-PI-R questionnaire (referred to as Five Factor Model or BIG5)"},
+
+
+{"trait" : " About this trait :  An individual's active interest in violent or occult activities (e.g. black magic) signify high militarism, and vice versa",
+ "title": "Low Violent-Occult",
+ "itunes": "redundant code to be deleted",
+ "cover": "https://fthmb.tqn.com/L4G03EPT70Bs2XwReoOlGJw32Ho=/768x0/filters:no_upscale()/The-Rock-vs-Hulk-Hogan-56a78ccd3df78cf77296f67a.jpg",
+ "color": "CornflowerBlue",
+ "text": "black",
+ "TraitCorrelations": ["Private Body and Low Violent-Occult have a correlation of -0.02",
+ "Openness and Low Violent-Occult have a correlation of -0.08",
+ "Conscientiousness and Low Violent-Occult have a correlation of 0.06",
+ "Agreeableness and Low Violent-Occult have a correlation of 0.06",
+ "Intelligence and Low Violent-Occult have a correlation of 0.04",
+ "Awareness of Physical Symptoms and Sensations and Low Violent-Occult have a correlation of -0.08",
+ "Self Disclosure and Low Violent-Occult have a correlation of 0.04",
+ "Low Militarism and Low Violent-Occult have a correlation of 0.4",
+ "Low Violent-Occult and Intellectual Recreation have a correlation of -0.04",
+ "Low Violent-Occult and Wholesome Activities have a correlation of 0.02",
+ "Low Violent-Occult and Self-Monitoring have a correlation of -0.0",
+ "Low Violent-Occult and Tradition have a correlation of 0.04",
+ "Low Violent-Occult and Universalism have a correlation of -0.04",
+ "Low Violent-Occult and Self-Direction have a correlation of -0.07",
+ "Low Violent-Occult and Hedonism have a correlation of -0.08",
+ "Low Violent-Occult and Life Satisfaction have a correlation of 0.06",
+ "Low Violent-Occult and Low Depression have a correlation of 0.01"], 
+ 
+ "HighestCorr": "Low Violent-Occult has the strongest positive correlation (0.4) with Awareness of Physical Symptoms and Sensations",
+ "LowestCorr": "Low Violent-Occult has the strongest negative  correlation (-0.08) with Low Militarism",
+ "Measure": "The measure used is Sensational interests questionnaire scores"},
+
+
+{"trait" : " About this trait :  Reversed Impression Management, to what extent a person conducts her life transparently.",
+ "title": "Self Disclosure",
+ "itunes": "redundant code to be deleted",
+ "cover": "http://i47.tinypic.com/aaj2ph.jpg",
+ "color": "IndianRed",
+ "text": "black",
+ "TraitCorrelations": ["Conscientiousness and Self Disclosure have a correlation of 0.19",
+ "Extroversion and Self Disclosure have a correlation of 0.06",
+ "Agreeableness and Self Disclosure have a correlation of 0.09",
+ "Emotional Stability and Self Disclosure have a correlation of 0.05",
+ "Intelligence and Self Disclosure have a correlation of -0.06",
+ "Self Disclosure and Fair Mindedness have a correlation of 0.18",
+ "Self Disclosure and Low Violent-Occult have a correlation of 0.04",
+ "Self Disclosure and Wholesome Activities have a correlation of 0.08",
+ "Self Disclosure and Self-Monitoring have a correlation of -0.22",
+ "Self Disclosure and Tradition have a correlation of 0.05",
+ "Self Disclosure and Hedonism have a correlation of -0.12",
+ "Self Disclosure and Power have a correlation of -0.04",
+ "Self Disclosure and Life Satisfaction have a correlation of 0.04",
+ "Self Disclosure and Empathy have a correlation of 0.05"], 
+ 
+ "HighestCorr": "Self Disclosure has the strongest positive correlation (0.19) with Self-Monitoring",
+ "LowestCorr": "Self Disclosure has the strongest negative  correlation (-0.22) with Conscientiousness",
+ "Measure": "The measure used is Orpheus questionnaire"}
+ ]
