@@ -27,8 +27,8 @@
 "Self-Monitoring and Power have a correlation of 0.11",
 "Self-Monitoring and Empathy have a correlation of 0.05"], 
 
-"HighestCorr": "Self-Monitoring has the strongest positive correlation (0.24) with Self Disclosure",
-"LowestCorr": "Self-Monitoring has the strongest negative  correlation (-0.22) with Extroversion",
+"LowestCorr": "Self-Monitoring has the strongest positive correlation (0.24) with Self Disclosure",
+"HighestCorr": "Self-Monitoring has the strongest negative  correlation (-0.22) with Extroversion",
 "Measure": "The measure used is Snyder'sSelf-Monitoring Scale"
 
 },
@@ -57,8 +57,8 @@
  "Private Body and Low Depression have a correlation of -0.04",
  "Private Body and Empathy have a correlation of 0.1"], 
  
- "HighestCorr": "Private Body has the strongest positive correlation (0.29) with Intelligence",
- "LowestCorr": "Private Body has the strongest negative  correlation (-0.07) with Public Body",
+ "LowestCorr": "Private Body has the strongest positive correlation (0.29) with Intelligence",
+ "HighestCorr": "Private Body has the strongest negative  correlation (-0.07) with Public Body",
  "Measure": "The measure used is Body Consciousness Questionnaire (BCQ)"},
 
 
@@ -77,8 +77,8 @@
  "Low Violent-Occult and Intellectual Recreation have a correlation of -0.04",
  "Intellectual Recreation and Wholesome Activities have a correlation of 0.27",
  "Intellectual Recreation and Universalism have a correlation of 0.11",
- "Intellectual Recreation and Empathy have a correlation of 0.11"], "HighestCorr": "Intellectual Recreation has the strongest positive correlation (0.27) with Low Violent-Occult",
- "LowestCorr": "Intellectual Recreation has the strongest negative  correlation (-0.04) with Wholesome Activities",
+ "Intellectual Recreation and Empathy have a correlation of 0.11"], "LowestCorr": "Intellectual Recreation has the strongest positive correlation (0.27) with Low Violent-Occult",
+ "HighestCorr": "Intellectual Recreation has the strongest negative  correlation (-0.04) with Wholesome Activities",
  "Measure": "The measure used is Sensational interests questionnaire scores"},
 
 
@@ -99,8 +99,8 @@
  "Awareness of Physical Symptoms and Sensations and Self-Monitoring have a correlation of 0.01",
  "Awareness of Physical Symptoms and Sensations and Life Satisfaction have a correlation of -0.02",
  "Awareness of Physical Symptoms and Sensations and Low Depression have a correlation of -0.18",
- "Awareness of Physical Symptoms and Sensations and Empathy have a correlation of 0.01"], "HighestCorr": "Awareness of Physical Symptoms and Sensations has the strongest positive correlation (0.06) with Emotional Stability",
- "LowestCorr": "Awareness of Physical Symptoms and Sensations has the strongest negative  correlation (-0.18) with Private Body",
+ "Awareness of Physical Symptoms and Sensations and Empathy have a correlation of 0.01"], "LowestCorr": "Awareness of Physical Symptoms and Sensations has the strongest positive correlation (0.06) with Emotional Stability",
+ "HighestCorr": "Awareness of Physical Symptoms and Sensations has the strongest negative  correlation (-0.18) with Private Body",
  "Measure": "The measure used is PILL Pennebaker Inventory of Limbic Languidness "},
 
 
@@ -127,8 +127,8 @@
  "Agreeableness and Life Satisfaction have a correlation of 0.04",
  "Agreeableness and Empathy have a correlation of 0.26"], 
  
- "HighestCorr": "Agreeableness has the strongest positive correlation (0.26) with Power",
- "LowestCorr": "Agreeableness has the strongest negative  correlation (-0.23) with Empathy",
+ "LowestCorr": "Agreeableness has the strongest positive correlation (0.26) with Power",
+ "HighestCorr": "Agreeableness has the strongest negative  correlation (-0.23) with Empathy",
  "Measure": "The measure used is 20 to 336-item-long IPIP proxy for Costa and McCrae'sNEO-PI-R questionnaire (referred to as Five Factor Model or BIG5"},
 
 
@@ -151,8 +151,8 @@
  "Hedonism and Life Satisfaction have a correlation of 0.02",
  "Life Satisfaction and Low Depression have a correlation of 0.14"], 
  
- "HighestCorr": "Life Satisfaction has the strongest positive correlation (0.23) with Awareness of Physical Symptoms and Sensations",
- "LowestCorr": "Life Satisfaction has the strongest negative  correlation (-0.02) with Emotional Stability",
+ "LowestCorr": "Life Satisfaction has the strongest positive correlation (0.23) with Awareness of Physical Symptoms and Sensations",
+ "HighestCorr": "Life Satisfaction has the strongest negative  correlation (-0.02) with Emotional Stability",
  "Measure": "The measure used is The satisfaction with life scale is from Diener (1985)"},
 
 
@@ -174,8 +174,8 @@
  "Life Satisfaction and Low Depression have a correlation of 0.14",
  "Low Depression and Empathy have a correlation of -0.01"], 
  
- "HighestCorr": "Low Depression has the strongest positive correlation (0.33) with Awareness of Physical Symptoms and Sensations",
- "LowestCorr": "Low Depression has the strongest negative  correlation (-0.18) with Emotional Stability",
+ "LowestCorr": "Low Depression has the strongest positive correlation (0.33) with Awareness of Physical Symptoms and Sensations",
+ "HighestCorr": "Low Depression has the strongest negative  correlation (-0.18) with Emotional Stability",
  "Measure": "The measure used is Center for epidemiologic studies depression scale CES-D."},
 
 
@@ -200,15 +200,15 @@
  "Achievement and Power have a correlation of 0.09",
  "Power and Empathy have a correlation of -0.09"], 
  
- "HighestCorr": "Power has the strongest positive correlation (0.11) with Universalism",
- "LowestCorr": "Power has the strongest negative  correlation (-0.29) with Self-Monitoring",
+ "LowestCorr": "Power has the strongest positive correlation (0.11) with Universalism",
+ "HighestCorr": "Power has the strongest negative  correlation (-0.29) with Self-Monitoring",
  "Measure": "The measure used is Shwartz'sValues Survey"},
 
 
 {"trait" : " About this trait :  Tendency to show self-discipline, act dutifully, and aim for achievement",
  "title": "Conscientiousness",
  "itunes": "redundant code to be deleted",
- "cover": "https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAfcAAAAJDQyYjA4ZWE4LTZkNTktNDk4NS1iZGRjLTM4MGRlZTc1NjVmNg.jpg",
+ "cover": "http://canacopegdl.com/images/conscientiousness/conscientiousness-12.jpg",
  "color": "GoldenRod",
  "text": "black",
  "TraitCorrelations": ["Private Body and Conscientiousness have a correlation of 0.02",
@@ -231,8 +231,8 @@
  "Conscientiousness and Life Satisfaction have a correlation of 0.1",
  "Conscientiousness and Low Depression have a correlation of 0.07"], 
  
- "HighestCorr": "Conscientiousness has the strongest positive correlation (0.19) with Hedonism",
- "LowestCorr": "Conscientiousness has the strongest negative  correlation (-0.06) with Self Disclosure",
+ "LowestCorr": "Conscientiousness has the strongest positive correlation (0.19) with Hedonism",
+ "HighestCorr": "Conscientiousness has the strongest negative  correlation (-0.06) with Self Disclosure",
  "Measure": "The measure used is 20 to 336-item-long IPIP proxy for Costa and McCrae'sNEO-PI-R questionnaire (referred to as Five Factor Model or BIG5)"},
 
 
@@ -257,8 +257,8 @@
  "Hedonism and Life Satisfaction have a correlation of 0.02",
  "Hedonism and Empathy have a correlation of -0.07"], 
  
- "HighestCorr": "Hedonism has the strongest positive correlation (0.05) with Tradition",
- "LowestCorr": "Hedonism has the strongest negative  correlation (-0.29) with Power",
+ "LowestCorr": "Hedonism has the strongest positive correlation (0.05) with Tradition",
+ "HighestCorr": "Hedonism has the strongest negative  correlation (-0.29) with Power",
  "Measure": "The measure used is Shwartz'sValues Survey"},
 
 
@@ -280,8 +280,8 @@
  "Emotional Stability and Low Depression have a correlation of 0.33",
  "Emotional Stability and Empathy have a correlation of -0.01"], 
  
- "HighestCorr": "Emotional Stability has the strongest positive correlation (0.33) with Awareness of Physical Symptoms and Sensations",
- "LowestCorr": "Emotional Stability has the strongest negative  correlation (-0.18) with Low Depression",
+ "LowestCorr": "Emotional Stability has the strongest positive correlation (0.33) with Awareness of Physical Symptoms and Sensations",
+ "HighestCorr": "Emotional Stability has the strongest negative  correlation (-0.18) with Low Depression",
  "Measure": "The measure used is 20 to 336-item-long IPIP proxy for Costa and McCrae'sNEO-PI-R questionnaire (referred to as Five Factor Model or BIG5)"},
 
 
@@ -309,8 +309,8 @@
  "Tradition and Power have a correlation of -0.07",
  "Tradition and Life Satisfaction have a correlation of 0.0"], 
  
- "HighestCorr": "Tradition has the strongest positive correlation (0.05) with Self-Direction",
- "LowestCorr": "Tradition has the strongest negative  correlation (-0.34) with Self Disclosure",
+ "LowestCorr": "Tradition has the strongest positive correlation (0.05) with Self-Direction",
+ "HighestCorr": "Tradition has the strongest negative  correlation (-0.34) with Self Disclosure",
  "Measure": "The measure used is Shwartz'sValues Survey"},
 
 
@@ -332,8 +332,8 @@
  "Hedonism and Achievement have a correlation of -0.05",
  "Achievement and Power have a correlation of 0.09",
  "Achievement and Low Depression have a correlation of -0.0"], 
- "HighestCorr": "Achievement has the strongest positive correlation (0.15) with Universalism",
- "LowestCorr": "Achievement has the strongest negative  correlation (-0.24) with Conscientiousness",
+ "LowestCorr": "Achievement has the strongest positive correlation (0.15) with Universalism",
+ "HighestCorr": "Achievement has the strongest negative  correlation (-0.24) with Conscientiousness",
  "Measure": "The measure used is Shwartz'sValues Survey"},
 
 
@@ -362,8 +362,8 @@
  "Power and Empathy have a correlation of -0.09",
  "Low Depression and Empathy have a correlation of -0.01"], 
  
- "HighestCorr": "Empathy has the strongest positive correlation (0.26) with Power",
- "LowestCorr": "Empathy has the strongest negative  correlation (-0.09) with Agreeableness",
+ "LowestCorr": "Empathy has the strongest positive correlation (0.26) with Power",
+ "HighestCorr": "Empathy has the strongest negative  correlation (-0.09) with Agreeableness",
  "Measure": "The measure used is Empathy quotient scale by  Baron-Cohen & Wheelwright (2004)"},
 
 
@@ -384,8 +384,8 @@
  "Body Competence and Achievement have a correlation of 0.0",
  "Body Competence and Empathy have a correlation of 0.06"], 
  
- "HighestCorr": "Body Competence has the strongest positive correlation (0.39) with Agreeableness",
- "LowestCorr": "Body Competence has the strongest negative  correlation (-0.02) with Public Body",
+ "LowestCorr": "Body Competence has the strongest positive correlation (0.39) with Agreeableness",
+ "HighestCorr": "Body Competence has the strongest negative  correlation (-0.02) with Public Body",
  "Measure": "The measure used is Body Consciousness Questionnaire (BCQ)"},
 
 
@@ -411,8 +411,8 @@
  "Low Militarism and Power have a correlation of -0.0",
  "Low Militarism and Empathy have a correlation of 0.06"], 
  
- "HighestCorr": "Low Militarism has the strongest positive correlation (0.4) with Wholesome Activities",
- "LowestCorr": "Low Militarism has the strongest negative  correlation (-0.29) with Low Violent-Occult",
+ "LowestCorr": "Low Militarism has the strongest positive correlation (0.4) with Wholesome Activities",
+ "HighestCorr": "Low Militarism has the strongest negative  correlation (-0.29) with Low Violent-Occult",
  "Measure": "The measure used is Sensational interests questionnaire scores"},
 
 
@@ -442,8 +442,8 @@
  "Extroversion and Low Depression have a correlation of 0.06",
  "Extroversion and Empathy have a correlation of 0.25"], 
  
- "HighestCorr": "Extroversion has the strongest positive correlation (0.25) with Tradition",
- "LowestCorr": "Extroversion has the strongest negative  correlation (-0.1) with Empathy",
+ "LowestCorr": "Extroversion has the strongest positive correlation (0.25) with Tradition",
+ "HighestCorr": "Extroversion has the strongest negative  correlation (-0.1) with Empathy",
  "Measure": "The measure used is 20 to 336-item-long IPIP proxy for Costa and McCrae'sNEO-PI-R questionnaire (referred to as Five Factor Model or BIG5)"},
 
 
@@ -469,8 +469,8 @@
  "Fair Mindedness and Life Satisfaction have a correlation of 0.04",
  "Fair Mindedness and Empathy have a correlation of 0.12"], 
  
- "HighestCorr": "Fair Mindedness has the strongest positive correlation (0.18) with Hedonism",
- "LowestCorr": "Fair Mindedness has the strongest negative  correlation (-0.04) with Self Disclosure",
+ "LowestCorr": "Fair Mindedness has the strongest positive correlation (0.18) with Hedonism",
+ "HighestCorr": "Fair Mindedness has the strongest negative  correlation (-0.04) with Self Disclosure",
  "Measure": "The measure used is Orpheus questionnaire"},
 
 
@@ -494,8 +494,8 @@
  "Wholesome Activities and Power have a correlation of -0.05",
  "Wholesome Activities and Life Satisfaction have a correlation of 0.02"], 
  
- "HighestCorr": "Wholesome Activities has the strongest positive correlation (0.27) with Low Militarism",
- "LowestCorr": "Wholesome Activities has the strongest negative  correlation (-0.29) with Intellectual Recreation",
+ "LowestCorr": "Wholesome Activities has the strongest positive correlation (0.27) with Low Militarism",
+ "HighestCorr": "Wholesome Activities has the strongest negative  correlation (-0.29) with Intellectual Recreation",
  "Measure": "The measure used is Sensational interests questionnaire scores"},
 
 
@@ -521,8 +521,8 @@
  "Self-Direction and Power have a correlation of -0.09",
  "Self-Direction and Empathy have a correlation of -0.07"], 
  
- "HighestCorr": "Self-Direction has the strongest positive correlation (0.21) with Tradition",
- "LowestCorr": "Self-Direction has the strongest negative  correlation (-0.34) with Openness",
+ "LowestCorr": "Self-Direction has the strongest positive correlation (0.21) with Tradition",
+ "HighestCorr": "Self-Direction has the strongest negative  correlation (-0.34) with Openness",
  "Measure": "The measure used is Shwartz'sValues Survey"},
 
 
@@ -546,8 +546,8 @@
  "Public Body and Power have a correlation of 0.03",
  "Public Body and Empathy have a correlation of 0.03"], 
  
- "HighestCorr": "Public Body has the strongest positive correlation (0.39) with Low Militarism",
- "LowestCorr": "Public Body has the strongest negative  correlation (-0.07) with Body Competence",
+ "LowestCorr": "Public Body has the strongest positive correlation (0.39) with Low Militarism",
+ "HighestCorr": "Public Body has the strongest negative  correlation (-0.07) with Body Competence",
  "Measure": "The measure used is Body Consciousness Questionnaire (BCQ)"},
 
 
@@ -568,8 +568,8 @@
  "Intelligence and Self-Direction have a correlation of 0.06",
  "Intelligence and Low Depression have a correlation of 0.02"], 
  
- "HighestCorr": "Intelligence has the strongest positive correlation (0.09) with Private Body",
- "LowestCorr": "Intelligence has the strongest negative  correlation (-0.07) with Fair Mindedness",
+ "LowestCorr": "Intelligence has the strongest positive correlation (0.09) with Private Body",
+ "HighestCorr": "Intelligence has the strongest negative  correlation (-0.07) with Fair Mindedness",
  "Measure": "Developed by Fiona Chan of the University of Cambridge Psychometrics Centre and Michal Kosinski of the Stanford Graduate School of Business"},
 
 
@@ -595,8 +595,8 @@
  "Universalism and Low Depression have a correlation of -0.03",
  "Universalism and Empathy have a correlation of 0.04"], 
  
- "HighestCorr": "Universalism has the strongest positive correlation (0.19) with Power",
- "LowestCorr": "Universalism has the strongest negative  correlation (-0.29) with Openness",
+ "LowestCorr": "Universalism has the strongest positive correlation (0.19) with Power",
+ "HighestCorr": "Universalism has the strongest negative  correlation (-0.29) with Openness",
  "Measure": "The measure used is Shwartz'sValues Survey"},
 
 
@@ -621,8 +621,8 @@
  "Openness and Power have a correlation of -0.03",
  "Openness and Empathy have a correlation of 0.09"], 
  
- "HighestCorr": "Openness has the strongest positive correlation (0.27) with Low Violent-Occult",
- "LowestCorr": "Openness has the strongest negative  correlation (-0.08) with Intellectual Recreation",
+ "LowestCorr": "Openness has the strongest positive correlation (0.27) with Low Violent-Occult",
+ "HighestCorr": "Openness has the strongest negative  correlation (-0.08) with Intellectual Recreation",
  "Measure": "The measure used is 20 to 336-item-long IPIP proxy for Costa and McCrae'sNEO-PI-R questionnaire (referred to as Five Factor Model or BIG5)"},
 
 
@@ -650,8 +650,8 @@
  "Low Violent-Occult and Life Satisfaction have a correlation of 0.06",
  "Low Violent-Occult and Low Depression have a correlation of 0.01"], 
  
- "HighestCorr": "Low Violent-Occult has the strongest positive correlation (0.4) with Awareness of Physical Symptoms and Sensations",
- "LowestCorr": "Low Violent-Occult has the strongest negative  correlation (-0.08) with Low Militarism",
+ "LowestCorr": "Low Violent-Occult has the strongest positive correlation (0.4) with Awareness of Physical Symptoms and Sensations",
+ "HighestCorr": "Low Violent-Occult has the strongest negative  correlation (-0.08) with Low Militarism",
  "Measure": "The measure used is Sensational interests questionnaire scores"},
 
 
@@ -676,7 +676,7 @@
  "Self Disclosure and Life Satisfaction have a correlation of 0.04",
  "Self Disclosure and Empathy have a correlation of 0.05"], 
  
- "HighestCorr": "Self Disclosure has the strongest positive correlation (0.19) with Self-Monitoring",
- "LowestCorr": "Self Disclosure has the strongest negative  correlation (-0.22) with Conscientiousness",
+ "LowestCorr": "Self Disclosure has the strongest positive correlation (0.19) with Self-Monitoring",
+ "HighestCorr": "Self Disclosure has the strongest negative  correlation (-0.22) with Conscientiousness",
  "Measure": "The measure used is Orpheus questionnaire"}
  ]
