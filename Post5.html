@@ -164,11 +164,11 @@ For example,
 <br><br>
     <pre style="background-color:#F0F0F0;color:black;font-weight:1px bold;font-family:arial;">
         <code style="font-family:Fira Mono;margin-left:10px;">
- class classname(parameter1,parameter2,...)
+ class classname:
 
 	def __init__(self,parameter1,parameter2):
-		self.var1 = self.parameter1
-		self.var2 = self.parameter2
+		self.var1 = parameter1
+		self.var2 = parameter2
 		self.data = []
 		x = 10
 	        </code>
@@ -192,7 +192,7 @@ the parameters assumes the default value. For esample, we can define a class as 
         
  or 
 
- class length():
+ class length:
     def __init__(self, initialLength = None):
         self.initialLength = initialLength
           </code>
