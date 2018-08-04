@@ -113,12 +113,12 @@ function getAge() {
 // List of all phrases
 var Phrases = new Array(
   "I go by the<br />name <a href='http://www.tamerkhraisha.com'>Tamer</a>",
-  "I am a Ph.D <br />at <a href='https://cns.ceu.edu/' target='_blank'>CNS</a>",
-  "I code stuff<br />on <a href='https://github.com/TamerKhraisha' target='_blank'>Github</a>",
+  "I am a <br /><a href='https://medium.com/@tamer.khraisha2/the-master-data-scientist-5b9132d271c0' target='_blank'>Data Scientist!</a>",
+  "I work for<br /><a href='https://alphacruncher.com/' target='_blank'>Alphacruncher</a>",
   "Follow me <br />on <a href='https://twitter.com/Tamer_Khraisha' target='_blank'>Twitter</a>",
-  "I study <br /><a href='http://www.tamerkhraisha.com/research.html' target='_blank'>Complex Networks</a>",
   "Visit me<br />on <a href='https://hu.linkedin.com/in/tamer-khraisha-22a11640' target='_blank'>Linkedin</a>"
 );
+
 
 // Phases settings
 var currentPhrase = 0;
