@@ -1,0 +1,93 @@
+
+
+
+main {
+	padding: 0px;
+	margin: 0px;
+
+	height: 100%;
+
+	text-align: center;
+
+	margin: 0 auto;
+
+	font: 20px "Open Sans", Helvetica, Arial, sans-serif;
+
+}
+
+
+
+main p{
+
+	padding: 0px;
+	margin: 0px;
+	
+
+}
+
+@font-face{
+
+	font-family: 'Fabrica';
+	src: url('Fabrica.otf');
+
+}
+
+/*MAIN*/
+
+main{
+
+	display: table;
+
+	width:80%;
+	text-align: center;
+
+
+	background-color: white;
+}
+
+main h2{
+
+	display: inline-block;
+
+	margin: 50px auto 0px auto;
+	padding: 0 0.3em 0.3em 0.3em;
+	font-family:open sans condensed;
+	font-size: 2em;
+	font-weight: 300;
+	text-align: center;
+	color: black;
+
+	letter-spacing: 2px;
+
+	text-transform: uppercase;
+
+	text-shadow: 0px 1px 0px #ffffff;
+
+}
+
+
+.section{
+
+	width:80%;
+
+	margin: 1em auto 2em auto;
+
+	display: table;
+
+	background-color: #F8F8F8;
+
+	border-right: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+
+}
+
+.skills .column{
+
+	float: left;
+
+	width:80%;
+
+	padding: 1em;
+	margin-top: 0em;
+
+}

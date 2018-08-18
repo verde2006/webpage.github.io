@@ -1,49 +1,7 @@
 /*This is the official css file for the website*/
 
 
-.jumbotron {
-   background-size:  cover; 
-   background-repeat:   no-repeat;
-   width: 30%;
-   position: fixed;
-   left: 0px;
-   height: 100%;
-   margin: 0px auto;
 
-}
-
-body {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-    }
-
-#SkillsBody{
-	color:grey;
-}
-.jumbotron h1 {
-  font-size:4vw;
-  color:white;
-  font-family:"open sans condensed";
-  text-align:center !important;
-  margin-bottom:13%;
-  margin-top:13%;
-  margin-right:30px;
-}
-
-.icons{
-	margin:0 auto;
-}
-
-.jumbotron p {
-  margin-right:60px;
-  font-size:2.5vw;
-  text-align:center;
-  font-family:"open sans condensed";
-  color:white;
-
-}
 
 
 
@@ -97,7 +55,6 @@ body {
    position: absolute;
    right: 0px;
    height: 100%;
-   
 }
 
 .NavBar{
@@ -113,6 +70,7 @@ body {
 	font-size:1.7vw;
 	margin-right:3vw;
 	margin-left:3vw;
+	margin-top:1vw;
 	text-align: justify;
 }
 
@@ -341,7 +299,7 @@ img{
 
 
 
-
+/* This is the styling of the menu bar */
 
 .nav2{
     border:transparent;
@@ -358,10 +316,12 @@ img{
     display:inline-block;
     font-family:'Open Sans Condensed',cursive; 
     font-size:3.5vw;
-    padding: 1.5vw;
+    padding: 1.7vw;
     text-decoration: none;
 
 }
+
+
 
 .nav2 li a:hover {
   	color: #cc0000;
@@ -373,7 +333,7 @@ img{
 }
 
 .clicked {
-	  border-bottom: #cc0000 solid 1px;
+	  border-bottom: orangered solid 1px;
 	  color:#cc0000;
 }
 
@@ -470,9 +430,7 @@ div.tab button.active {
     margin-left: 10%;
 }
 
-.red{
-	color:yellow
-}
+
 
 
 
@@ -492,6 +450,28 @@ div.tab button.active {
 	width:80%
 }
 
+
+.jobtitle {
+	color:black;
+	font-size:2em;
+	font-family:'Open Sans Condensed';
+	font-weight:20px;
+	margin:0;
+}
+
+.jobdescription{
+	color:black;
+	font-size:1.5em;
+	font-family:'Open Sans Condensed';
+	margin:0;
+}
+
+.joblist{
+	margin-left:1.5em;
+	font-family:'Open Sans Condensed';
+	font-size:1.3em;
+
+}
 
 #UniversityName {
 	color:#d54d7b;
@@ -515,7 +495,7 @@ div.tab button.active {
 	margin:0;
 }
 	
-footer{font-size:40px;color:#999;border-top:1px solid #eee;padding-top:5px}
+footer{font-size:50px;color:#999;border-top:1px solid #eee;padding-top:5px;font-family:open sans condensed}
 
 footer .category{float:left;text-transform:uppercase;font-weight:600}
 
@@ -530,7 +510,7 @@ footer:before{height:40px;width:100%;position:absolute;content:"";top:-40px;left
 
 
 .foot{
-font-size:17px;
+font-size:20px;
 
 }
 .heart {
@@ -568,3 +548,37 @@ font-size:17px;
     color: black;
 
 }
+
+
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:black;
+  margin:0 auto;
+  height: 1px;
+}
+
+.jobhr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;     
+  margin-left:0px;
+  background-color:black;
+  height: 1px;
+}
+
+.joblocation{
+	font-size:20px;
+}
+
+.company, .companylocation{
+	font-size:1.1vw;
+    font-family: 'Open Sans Condensed';
+    color: black;
+}
+
+
