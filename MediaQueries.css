@@ -41,7 +41,7 @@
 
 	.page .right-col{width:100%;height:auto;left:0;position:relative}
 	
-	.page .right-col .content{padding:20px}
+	.page .right-col .content{padding:20px;width:100%}
 	
 	.page .right-col .content article{margin-bottom:34px}
 	

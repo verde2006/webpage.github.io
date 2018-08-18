@@ -18,19 +18,21 @@
 
 .wrap1{margin:0 auto} /*center the cv box*/
 
-#Summary{font-size:15px }
+#Summary{font-size:3vw }
+
+.fa-home ,.fa-file {display:none !important;}
 	
 .EdTable {border-spacing: 10px}
 
-#UniversityName {font-size:1em;}
+#UniversityName {font-size:1.2em;text-align:center}
 
-#CourseName{font-size:0.75em;}
+#CourseName{font-size:0.75em;text-align:center}
 
-#CourseDate{font-size:0.75em;}
+#CourseDate{font-size:0.75em;text-align:center}
 
 #Uni {display:none;}
 
-.TableCap {font-size:15px}
+.TableCap {font-size:3vw}
 
 .icon-link {width: 30px;height: 30px;background-color: transparent;}
 
@@ -66,7 +68,16 @@ div.tab button {display: block;padding: 22px 16px;width: 28vw;font-size: 4vw;lin
 
 .tom2 .skillbar-title {width:110px;font-size:8px;}
 
+.company, .companylocation{ font-size:3vw;font-family: 'Open Sans Condensed';color: black;}
+
+.jobtitle{font-size:4vw}
+
+.jobdescription, .joblist {font-size:3vw}
+
+#skills{font-size:4vw}
+
 }
+
 
 /* 1280 is the width of the Mac Pro 13 inches , include min width of the phones otherwise it will apply these specifications instead of the above ones*/
 

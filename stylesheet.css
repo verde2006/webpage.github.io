@@ -25,6 +25,7 @@ body {
    position: absolute;
    right: 0px;
    height: 100%;
+   background-color:white;
 }
 
 #Head-Title {
@@ -454,6 +455,33 @@ img{
 	font-family:'Open Sans Condensed';
 	margin:0;
 }
+
+
+
+
+blockquote p {
+  padding: 0px 15px 0px 0px;
+  font-size: 1.2em;    
+  float: left;
+  background: url(../images/quote_down.png) bottom right no-repeat;
+}
+
+blockquote {
+  padding: 20px;
+  font-size: 1.8em;    
+  background: url(../images/quote_up.png) top left no-repeat;
+}
+
+cite {
+  font-size: 1.2em;
+  float: right;    
+}
+
+
+
+
+
+
 	
 	
 	

@@ -1,3 +1,4 @@
+
 .red .section-color{color:#e74c3c}
 
 .red .mobile-nav ul li a:hover{background:rgba(231,76,60,0.3)}
@@ -10,8 +11,14 @@
 
 .red .page .left-col .avatar:hover{border:5px solid #a82315}
 
-.red .page .left-col nav ul li a{background-color:#e74c3c}
-
+.red .page .left-col nav ul li a {
+    background-color: #e74c3c;
+    opacity: 0.9;
+    border-radius: 5px;
+    font-family: open sans condensed;
+    font-size: 25px;
+    color: white;
+}
 .red .page .left-col nav ul li a:hover{background-color:#a82315}
 
 .red .page .left-col .phrases h1 a:hover{color:#e74c3c}
@@ -109,4 +116,8 @@
 .articleimage {
 	float: left;
 	width:30%;
+}
+
+.mySummary{
+	color:black;
 }
