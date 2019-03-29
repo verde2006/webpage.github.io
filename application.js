@@ -124,7 +124,7 @@ var Phrases = new Array(
 var currentPhrase = 0;
 var direction = "left";
 var countPhrases = Phrases.length - 1;
-var phrasesSpeed = 500;
+var phrasesSpeed = 300;
 
 // Animate phrases
 function initPhrases() {
