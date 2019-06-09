@@ -1,0 +1,76 @@
+
+ .left {
+   float: right;
+ }
+ 
+
+ .help {
+   position: fixed;
+   top: 350px;
+   right: 0;
+   width: 30px;
+   overflow-x: hidden;
+   padding: 10px 0;
+   text-align: middle;
+ }
+ 
+ .help .tab {
+   position: absolute;
+   margin: auto;
+   background-image: url("../images/visualizations.png");
+   background-position: center left;
+   background-repeat: no-repeat;
+   cursor: pointer;
+   width: 30px;
+   text-indent: -9000px;
+ }
+ 
+ .help .help-content {
+   background-color: white;
+   width: 480px;
+   border: 1px solid #E3E2E2;
+   padding: 30px;
+   margin-left: 30px;
+ }
+ 
+ .help.active .help-content {
+   -moz-box-shadow:    0 0 15px #bbb;
+   -webkit-box-shadow: 0 0 15px #bbb;
+   box-shadow:         0 0 15px #bbb;
+ }
+ 
+ .help h3 {
+   margin: 0 0 2px 0;
+   font-size: 15px;
+   font-weight: bold;
+   background-repeat: no-repeat;
+   background-position: left top;
+   height: 30px;
+ }
+
+ .help h3 a{
+    color:#e74c3c
+ }
+
+ .help h3 a i{
+  font-size:15px
+}
+
+ .help p {
+   font-size: 13px;
+   line-height: 1.4em;
+   color: #6D6B6B;
+   text-align: justify
+ }
+ 
+ .help img {
+   padding: 0 20px 20px 20px;
+ }
+
+ .help i {
+     font-size:20px;
+     color: #6D6B6B;
+     margin:0;
+     padding:5px
+ }
+

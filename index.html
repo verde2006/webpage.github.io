@@ -1,139 +1,218 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
   <title>Tamer Khraisha | Personal Webpage</title>
   <link href="assets/animate.css" rel="stylesheet">
   <link href="assets/style.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet" >
-  <link href="Medias.css" rel="stylesheet" >
+  <link href="css/style.css" rel="stylesheet">
+  <link href="Medias.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link type="text/css" rel="stylesheet" media="all" href="FirstCSS.css" />
   <link type="text/css" rel="stylesheet" media="all" href="colors.css" />
   <link type="text/css" rel="stylesheet" media="all" href="syntax.css" />
-  <link type="text/css" rel="stylesheet" media="all" href="MediaQueries.css" />  
-  
+  <link type="text/css" rel="stylesheet" media="all" href="MediaQueries.css" />
+  <link href="dist/sideBar.css" rel="stylesheet" media="all">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="application.js"></script>
-  
+  <script src="https://d3js.org/d3.v5.js"></script>
 
 </head>
+
 <body class="red">
-   <section class="mobile-nav">
-  <nav>
-    <ul>
-      <li>
-        <a href="indexBlog.html">Blog Homepage</a>
-      </li>
-      <li>
-        <a href="index.html">My Website</a>
-      </li>
-
-    </ul>
-  </nav>
-</section>
-
-<section class="page">
-  <div class="toggle-mobile-nav entypo-menu"></div>
-  <aside class="left-col">
-    <a class="avatar" href="indexBlog.html">
-      
-    </a>
-    <div class="about">
-    <i class="fa fa-quote-left" style="margin-left:2px;color:darkgray"></i> We build our computer (systems) the way we build our cities: over time, without a plan, on top of ruins.<i style="margin-left:2px;color:darkgray" class="fa fa-quote-right"></i> <br>- 
-	<span style="font-weight:bold">Ellen Ullman</span>           
-
-    </div>
+  <section class="mobile-nav">
     <nav>
       <ul>
         <li>
-          <a href="index.html"><i style="margin-right:10px;font-size:120%;" class="fa fa-home"></i>Homepage</a>
+          <a href="indexBlog.html">Blog Homepage</a>
         </li>
         <li>
-          <a href="CV/TamerKhraishaCV20180217.pdf"><i style="margin-right:10px;font-size:100%" class="fa fa-file"></i>Download My CV</a>
+          <a href="index.html">My Website</a>
         </li>
+
       </ul>
     </nav>
-    <div class="phrases hide-landscape">
-      
-    </div>
-  </aside>
-	  
+  </section>
 
-	
-	
-	  
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src="assets/jquery.fittext.js"></script>
-<script src="assets/jquery.lettering.js"></script>
-<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
-<script src="jquery.textillate.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+  <section class="page">
+    <div class="toggle-mobile-nav entypo-menu"></div>
+    <aside class="left-col">
+      <a class="avatar" href="indexBlog.html">
 
-<script>
-$(document).ready(function(){
-    $(".btn1").click(function(){
-		$(".left-col").css('width','0%');
-		$("#righthalf").css('width','100%');
-		$(".left-col").fadeOut(1000);
-    });
-    $(".btn2").click(function(){
-        $(".left-col").fadeIn(1000);
-		$("#righthalf").css('width','70%');
-		$(".left-col").css('width','30%');
-    });
-});
-</script>
+      </a>
+      <div class="about">
+        <i class="fa fa-quote-left" style="margin-left:2px;color:darkgray"></i> We build our computer (systems) the way
+        we build our cities: over time, without a plan, on top of ruins.<i style="margin-left:2px;color:darkgray"
+          class="fa fa-quote-right"></i> <br>-
+        <span style="font-weight:bold">Ellen Ullman</span>
+
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><i style="margin-right:10px;font-size:120%;" class="fa fa-home"></i>Homepage</a>
+          </li>
+          <li>
+            <a href="CV/TamerKhraishaCV20180217.pdf"><i style="margin-right:10px;font-size:100%"
+                class="fa fa-file"></i>Download My CV</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="phrases hide-landscape">
+
+      </div>
+    </aside>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="assets/jquery.fittext.js"></script>
+    <script src="assets/jquery.lettering.js"></script>
+    <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+    <script src="jquery.textillate.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script>
+      $(document).ready(function () {
+        $(".btn1").click(function () {
+          $(".left-col").css('width', '0%');
+          $("#righthalf").css('width', '100%');
+          $(".left-col").fadeOut(1000);
+        });
+        $(".btn2").click(function () {
+          $(".left-col").fadeIn(1000);
+          $("#righthalf").css('width', '70%');
+          $(".left-col").css('width', '30%');
+        });
+      });
+    </script>
 
 
 
-<div id="righthalf">
-<!--
+    <div id="righthalf">
+      <!--
 <button class="btn1">Fade out</button>
 <button class="btn2">Fade in</button>
 -->
-<br id="break">
-<br id="break">
-<br >
+      <br id="break">
+      <br id="break">
+      <br>
 
-<ul class="nav2">
-		<li><a class ="clicked" id="onlink" href="index.html" >About</a><li>
-		<li><a class ="unclicked" href="experience.html" id="onlink">Work Experience</a></li>
-		<li><a class ="unclicked" href="skills.html" id="onlink">Skills</a></li>
-		<li><a class ="unclicked" href="education.html" id="onlink">Education</a></li>
-		<li><a class ="unclicked" href="indexBlog.html" id="onlink">Blog</a></li>
-</ul>
+      <ul class="nav2">
+        <li><a class="clicked" id="onlink" href="index.html">About</a>
+        <li>
+        <li><a class="unclicked" href="experience.html" id="onlink">Work Experience</a></li>
+        <li><a class="unclicked" href="skills.html" id="onlink">Skills</a></li>
+        <li><a class="unclicked" href="education.html" id="onlink">Education</a></li>
+        <li><a class="unclicked" href="indexBlog.html" id="onlink">Blog</a></li>
+      </ul>
 
-<br id="break"><br id="break">
-<div class="mySummary">
-<p id="Summary">Welcome to my personal Webpage! My name is Tamer and I am a currently a data scientist at Alphacruncher. I am also a PhD candidate at the Department of Network and Data Science at the Central European University in Budapest.</p><br>
-<p id="Summary">My short term career goal is to gain industry experience in data science and data engineering with a particular focus on financial applications. My current learning experience is focusing on understanding the nature and particularities of financial data, mastering Extract-Transform-Load tasks, working with cloud platforms, the construction of machine learning pipelines and the development of data products. In the medium-long run, I am more interested in pursuing a career which combines research with industrial applications. I have a particular interest in the topic of fraud detection and would be interested to work and do research in this field. I am also interested in research and applications related to the field of technological innovation which I explored during my PhD studies. I am open to discussing job-offers from industry and academia.</p><br>
-<p id="Summary">I am a social person who aims to build and strengthen contacts with many people with different expertise, and I believe in the power of knowledge sharing as an important factor in solving nowadays complex problems. I share some of my articles and ideas on my blog which you can reach from the above navigation bar.</p>
+      <div class="help" id="help">
+        <div class="tab">Check my interactive</div>
+        <div class="help-content">
+          <div>
+              <h3><a href="">Psychological Attributes Network<i class="fas fa-search-plus"></i></a></h3>
+          <img src="images/vis3.png" class="left">
+          <p>
+            sssOrigins and destinations are represented by the circle’s segments.
+            Each region/country is assigned a colour.
+            Flows have the same colour as their origin and the width indicates their size.
+            The direction of the flow is also shown by the gap between flow and country/region: small gap indicates
+            origin; large gap indicates destination.
+            <b>Click on a segment to switch between country and region view.</b>
+          </p>
+        </div>
+          <br>
+          <h3><a href="">Financial Network Metrics <i class="fas fa-search-plus"></i></a></h3>
+          <img src="images/vis2.png" class="left">
+
+          <p>
+            This D3.js chart is a temporal visualization of 24 attributes of a financial network. The network has banks
+            as nodes and a link exists between two banks whenever they partecipated together in granting a loan. The
+            temporal window is from 1984 until 2011. The size of each circle indicates the normalized value of each
+            attribute where normalization is done with respect to the sum over all years. To see the values in numbers
+            you can hover the mouse over the attribute in the legend.
+          </p>
+          <br>
+          <h3><a href="">Weapon Trade Network<i class="fas fa-search-plus"></i></a></h3>
+          <img src="images/vis1.png" class="left">
+          <p>
+            sssOrigins and destinations are represented by the circle’s segments.
+            Each region/country is assigned a colour.
+            Flows have the same colour as their origin and the width indicates their size.
+            The direction of the flow is also shown by the gap between flow and country/region: small gap indicates
+            origin; large gap indicates destination.
+            <b>Click on a segment to switch between country and region view.</b>
+          </p>
+        </div>
+      </div>
+      <br id="break"><br id="break">
+      <div class="mySummary">
+        <p id="Summary">Welcome to my personal Webpage! My name is Tamer and I am a currently a data scientist at
+          Alphacruncher. I have a PhD in Network Science at the Department of Network and Data Science at the Central European
+          University in Budapest.</p><br>
+        <p id="Summary">My short term career goal is to gain industry experience in data science and data engineering
+          with a particular focus on financial applications. My current learning experience is focusing on understanding
+          the nature and particularities of financial data, mastering Extract-Transform-Load tasks, working with cloud
+          platforms, the construction of machine learning pipelines and the development of data products. In the
+          medium-long run, I am more interested in pursuing a career which combines research with industrial
+          applications. I have a particular interest in the topic of fraud detection and would be interested to work and
+          do research in this field. I am also interested in research and applications related to the field of
+          technological innovation which I explored during my PhD studies. I am open to discussing job-offers from
+          industry and academia.</p><br>
+        <p id="Summary">I am a social person who aims to build and strengthen contacts with many people with different
+          expertise, and I believe in the power of knowledge sharing as an important factor in solving nowadays complex
+          problems. I share some of my articles and ideas on my blog which you can reach from the above navigation bar.
+        </p>
 
 
 
-</div>
-<br >
-<br >
-<br class="spaceBreak">
-<br class="spaceBreak">
-    <footer class="foot">
-    Handcrafted with <span class="entypo-heart"></span> by Tamer Khraisha &ndash; 
-      <b style="color:#e74c3c">Email</b> : tamer.khraisha2@gmail.com&ndash; 
-      <b style="color:#e74c3c">Address</b> : Na&#769;dor u.11, Budapest, 1051&ndash;
-	  <b style="color:#e74c3c">Phone</b> : +36 70 590 1083
-    </footer>
-	
-<script>
-$('li').click(function(){
-     $(this).removeClass('active');
-     $(this).addClass('active');
-});
-</script>
+      </div>
+      <br>
+      <br>
+      <br class="spaceBreak">
+      <br class="spaceBreak">
+      <footer class="foot">
+        Handcrafted with <span class="entypo-heart"></span> by Tamer Khraisha &ndash;
+        <b style="color:#e74c3c">Email</b> : tamer.khraisha2@gmail.com&ndash;
+        <b style="color:#e74c3c">Address</b> : Na&#769;dor u.11, Budapest, 1051&ndash;
+        <b style="color:#e74c3c">Phone</b> : +36 70 590 1083
+      </footer>
 
-</div>  
-  
+
+    </div>
+    <script>
+      // help
+      (function () {
+        var help = d3.select('#help');
+        help.on('click', function () {
+          var isActive = help.classed('active');
+          help
+            .classed('active', !isActive)
+            .transition()
+            .style('width', isActive ? '30px' : '572px');
+        });
+        function helpOffset() {
+          var offset = Math.max((document.body.clientWidth - document.getElementById('container').clientWidth) / 2, 0);
+          help.style('right', offset + 'px');
+        }
+        d3.select(window).on('resize.help-resize', helpOffset);
+        helpOffset();
+      })();
+    </script>
+
+    <script>
+      $('li').click(function () {
+        $(this).removeClass('active');
+        $(this).addClass('active');
+      });
+    </script>
+
+    </div>
+
 </body>
+
 </html>

@@ -78,6 +78,11 @@ div.tab button {display: block;padding: 22px 16px;width: 28vw;font-size: 4vw;lin
 
 }
 
+@media screen and (max-height: 900px){
+.help {
+  display:none
+}
+}
 
 /* 1280 is the width of the Mac Pro 13 inches , include min width of the phones otherwise it will apply these specifications instead of the above ones*/
 
@@ -172,8 +177,6 @@ div.tab button {display: block;padding: 22px 16px;width: 28vw;font-size: 4vw;lin
 
 .wrap1{margin-right:10px}
 }
-
-
 
 
 @media screen and (min-width: 1367px){
