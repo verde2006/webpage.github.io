@@ -56,7 +56,7 @@ var pack = d3.pack()
     .size([width, height])
     .padding(1.5);
 
-d3.csv("SyndLoans.csv", function(d) {
+d3.csv("../SyndLoans.csv", function(d) {
   d.value = +d.value;
   d.emotion=d.emotion;
   

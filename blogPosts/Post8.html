@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang=en>
 <head>
@@ -6,11 +7,11 @@
 	<meta name=description content="International Weapon Trade.">
 	<meta name=viewport content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="favicon.png" type="image/png">
-	<link href="dist/app-v1.css" rel="stylesheet" media="all">
+	<link href="../dist/app-v1.css" rel="stylesheet" media="all">
 	 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 
 	<!--[if lt IE 9]><script src=javascripts/html5shiv-printshiv.js></script><![endif]-->
-  <script src="dist/app-v1.js"></script>
+  <script src="../dist/app-v1.js"></script>
 </head>
 <body>
   <div id=container class="container">
@@ -26,7 +27,7 @@
   	<header role="banner">
   		<h1 style="color: #e74c3c">The International Network of Weapon Trade</h1>
       <div class="badge">
-        <a href="https://cns.ceu.edu/" target=_blank><img src="images/color_logo_cns.jpg" alt="Published in Science / free access"></a>
+        <a href="https://cns.ceu.edu/" target=_blank><img src="../images/color_logo_cns.jpg" alt="Published in Science / free access"></a>
       </div>
       <div class="lead-in">
         Explore who buys and who sells weapons at the global level. Estimates of trade flows between and within regions for in the period 1955 to 2005 with five-year intervalls. Initially the data is shown by region and if you click on a region you will see the trade flows country-by-country. Values are in US dollars.
@@ -90,10 +91,10 @@
           <h3>Credits</h3>
           <p>
             Provided by<br>
-            <a href="http://www.wittgensteincentre.org"><img src="images/wittgenstein.png"></a>
-            <a href="http://www.oeaw.ac.at/vid/"><img src="images/vid.png"></a>
+            <a href="http://www.wittgensteincentre.org"><img src="../images/wittgenstein.png"></a>
+            <a href="http://www.oeaw.ac.at/vid/"><img src="../images/vid.png"></a>
           </p>
-          <p>Coded by <a href="http://null2.net"><img src="images/null2.png"></a></p>
+          <p>Coded by <a href="http://null2.net"><img src="../images/null2.png"></a></p>
           <p>Screendesign by <a href="http://elvirastein.com/">Elvira Stein</a></p>
           <p>Inspired by Martin Krzywinski's <a href="http://circos.ca/">Circos</a> and Mike Bostock’s <a href="http://d3js.org/">D3.js library</a>.</p>
         </div>
@@ -107,7 +108,7 @@
       <div class="license">
         Version <span class="version">1.0.19 (Febuary 2014)</span>. 
         This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License.</a>
-        <a href="http://creativecommons.org/licenses/by-nc/3.0/"><img src="images/by-nc.png"></a>
+        <a href="http://creativecommons.org/licenses/by-nc/3.0/"><img src="../images/by-nc.png"></a>
       </div>
 
 
@@ -121,7 +122,7 @@
         <div class="tab">How to read the plot</div>
         <div class="help-content">
           <h3>How to read the plot</h3>
-          <img src="images/help.png" class="left">
+          <img src="../images/help.png" class="left">
           <p>
             Origins and destinations are represented by the circle’s segments. 
             Each region/country is assigned a colour. 
@@ -162,7 +163,7 @@
 
   <script>
     (function() {
-      var datafile = 'json/migrations.json';
+      var datafile = '../json/migrations.json';
       var aLittleBit = Math.PI / 100000;
 
       d3.json(datafile, function(data) {

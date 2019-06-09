@@ -67,7 +67,7 @@ var svg = d3.select("body").append("svg")
 
 
 	
-d3.json("attData.json", function(data) {
+d3.json("../attData.json", function(data) {
 	x.domain([start_year, end_year]);
 	var xScale = d3.scale.linear()
 		.domain([start_year, end_year])
