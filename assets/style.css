@@ -315,25 +315,21 @@ img{
 .nav2 a{
     display:inline-block;
     font-family:'Open Sans Condensed',cursive; 
-    font-size:3.5vw;
-    padding: 1.7vw;
+    font-size:3.2vw;
+    padding: 1.4vw;
     text-decoration: none;
 
 }
 
-
-
 .nav2 li a:hover {
-  	color: #cc0000;
+  color: #cc0000;
 	background:none;
 	transition:all 1s;
-	border-bottom: #cc0000 solid 1px;
 	opacity:0.9;
 	filter:alpha (opacity=90)
 }
 
 .clicked {
-	  border-bottom: orangered solid 1px;
 	  color:#cc0000;
 }
 
@@ -607,3 +603,47 @@ hr {
   font-size:4.5vw !important;
 }
 
+
+
+
+/* this divider below the menu bar */
+
+.wrapper
+{
+	padding-bottom: 20px;
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 5px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+
+.div-arrow-down:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -7px;
+	left: calc(50% - 7px);
+	width: 14px;
+	height: 14px;
+	transform: rotate(45deg);
+	background-color: white;
+	border-bottom: 1px solid rgb(48,49,51);
+	border-right: 1px solid rgb(48,49,51);
+}
