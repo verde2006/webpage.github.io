@@ -472,19 +472,25 @@ div.tab button.active {
 
 }
 
-#UniversityName {
+#CourseName {
 	color:#d54d7b;
 	font-size:2em;
 	font-family:'Open Sans Condensed';
 	margin:0;
 }
 
-#CourseName{
+#UniversityName{
 	color:black;
 	font-size:1.5em;
 	font-family:'Open Sans Condensed';
 	margin:0;
-	font-weight:bold;
+}
+
+#DepartmentName{
+	color:black;
+	font-size:1.7em;
+	font-family:'Open Sans Condensed';
+	margin:0;  
 }
 
 #CourseDate{
@@ -580,4 +586,11 @@ hr {
     color: black;
 }
 
+.educationIcon {
+  width:20%
+}
+
+.EdTable i {
+  font-size:4.5vw !important;
+}
 
