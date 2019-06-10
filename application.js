@@ -24,7 +24,7 @@ $(document).ready(function() {
 
   // Mobile Navigation
   var navOpen = false;
-  var navSpeed = 200;
+  var navSpeed = 600;
   $(document).on("click", ".toggle-mobile-nav", function() {
     if (navOpen) {
       // Close
@@ -61,14 +61,14 @@ $(document).ready(function() {
 
   // Init Phrases + Start Loop
   $('.phrases').html("<h1>" + Phrases[0] + "</h1>");
-  var intervalPhrases = setInterval("initPhrases()", 3500);
+  var intervalPhrases = setInterval("initPhrases()", 8000);
 
   // Stop and start phrases animation on mouseover/leave
   $(document).on("mouseover", ".phrases", function() {
     clearInterval(intervalPhrases);
   });
   $(document).on("mouseleave", ".phrases", function() {
-    intervalPhrases = setInterval("initPhrases()", 3500);
+    intervalPhrases = setInterval("initPhrases()", 8000);
   });
 
   // Lab articles
@@ -124,7 +124,7 @@ var Phrases = new Array(
 var currentPhrase = 0;
 var direction = "left";
 var countPhrases = Phrases.length - 1;
-var phrasesSpeed = 300;
+var phrasesSpeed = 1500;
 
 // Animate phrases
 function initPhrases() {
