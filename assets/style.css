@@ -473,10 +473,17 @@ div.tab button.active {
 }
 
 #CourseName {
-	color:#d54d7b;
+	color:#d84434;
 	font-size:2em;
 	font-family:'Open Sans Condensed';
 	margin:0;
+}
+
+#certificateLink{
+  color:rgb(73, 152, 184);
+	font-size:1.5em;
+	font-family:'Open Sans Condensed';
+	margin:0; 
 }
 
 #UniversityName{
@@ -579,11 +586,17 @@ hr {
 .joblocation{
 	font-size:20px;
 }
-
-.company, .companylocation{
+.company a{
+  color:rgb(73, 152, 184);
+}
+.company, .companylocation {
 	font-size:1.1vw;
     font-family: 'Open Sans Condensed';
     color: black;
+}
+.jobDuration{
+	font-size:1.1vw;
+    font-family: 'Open Sans Condensed';
 }
 
 .educationIcon {
