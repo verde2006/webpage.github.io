@@ -20,6 +20,10 @@
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+  .tooltip:hover {
+    color:rgb(73, 152, 184);
+    cursor: pointer;
+  }
 
   .tooltiptext {
     font-size:0.8vw;
