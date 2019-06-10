@@ -12,6 +12,7 @@
    overflow-x: hidden;
    padding: 10px 0;
    text-align: middle;
+   z-index: 1000;
  }
  
  .help .tab {

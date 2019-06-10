@@ -13,12 +13,14 @@
   <link type="text/css" rel="stylesheet" media="all" href="colors.css" />
   <link type="text/css" rel="stylesheet" media="all" href="syntax.css" />
   <link type="text/css" rel="stylesheet" media="all" href="MediaQueries.css" />
-
+  <link href="dist/sideBar.css" rel="stylesheet" media="all">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="application.js"></script>
-
+  <script src="https://d3js.org/d3.v5.js"></script>
 </head>
 
 <body class="red">
@@ -82,7 +84,50 @@
       <br id="break">
       <br id="break">
       <br>
+      <div class="help" id="help">
+					<div class="tab"></div>
+					<div class="help-content">
+						<div>
+							<h3><a href="blogPosts/Post10.html" target=_blank>Psychological Attributes Network<i
+										class="fas fa-search-plus"></i></a></h3>
+							<img src="images/vis3.png" class="left">
+							<p>
+								Explore how personality traits are correlated with each other based on an empirical
+								analysis be Srebrenka Letina.
+								Nodes are personality traits and links are the correlations between them.
+								Correlation indicates the linear association, negative (dashed)
+								or positive (solid), that one personality trait has with another.
+							</p>
+						</div>
+						<br>
+						<h3><a href="blogPosts/Post9.html" target=_blank>Financial Network Metrics <i
+									class="fas fa-search-plus"></i></a></h3>
+						<img src="images/vis2.png" class="left">
 
+						<p>
+							This D3.js chart is a temporal visualization of 24 attributes of a financial network. The
+							network has banks
+							as nodes and a link exists between two banks whenever they partecipated together in granting
+							a loan. The
+							temporal window is from 1984 until 2011. The size of each circle indicates the normalized
+							value of each
+							attribute where normalization is done with respect to the sum over all years. To see the
+							values in numbers
+							you can hover the mouse over the attribute in the legend.
+						</p>
+						<br>
+						<h3><a href="blogPosts/Post8.html" target=_blank>Weapon Trade Network<i
+									class="fas fa-search-plus"></i></a>
+						</h3>
+						<img src="images/vis1.png" class="left">
+						<p>
+							Explore who buys and who sells weapons at the global level. estimates of trade flows between
+							and within regions for one-year periods, 1955 to 2005 with five year interval. Initially the
+							data is shown by region and if you click on a region you will see the trade flows
+							country-by-country. Values are in US dollars.
+						</p>
+					</div>
+				</div>
       <ul class="nav2">
         <li><a class="unclicked" id="onlink" href="index.html">About</a>
         <li>
@@ -251,6 +296,25 @@
         <b style="color:#e74c3c">Address</b> : Na&#769;dor u., Budapest, 1051&ndash;
         <b style="color:#e74c3c">Phone</b> : +36 70 590 1083
       </footer>
+      <script>
+          // help
+          (function () {
+            var help = d3.select('#help');
+            help.on('click', function () {
+              var isActive = help.classed('active');
+              help
+                .classed('active', !isActive)
+                .transition()
+                .style('width', isActive ? '30px' : '572px');
+            });
+            function helpOffset() {
+              var offset = Math.max((document.body.clientWidth - document.getElementById('container').clientWidth) / 2, 0);
+              help.style('right', offset + 'px');
+            }
+            d3.select(window).on('resize.help-resize', helpOffset);
+            helpOffset();
+          })();
+        </script>
       <div class="to-top entypo-up-bold"></div>
 
 
