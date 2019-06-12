@@ -103,7 +103,8 @@ position: relative;
 z-index: 100;
 float: left;
 height: 10px;
-background-color: salmon ;
+background-color: #e74c3c ;
+opacity: 0.9;
 border-right: 1px solid white;
 -webkit-animation: create-full 0.5s 1;
 -moz-animation: create-full 0.5s 1;
@@ -170,11 +171,24 @@ font-weight: 400;
 font-size: 1.1em;
 }
 
-.section {
-    width: 100%;
-    margin: 1em auto 2em auto;
-    display: table;
-    background-color: #F8F8F8;
-    border-right: 1px solid #eaeaea;
-    border-bottom: 1px solid #eaeaea;
+
+.section{
+
+	width:100%;
+	margin: 1em auto 2em auto;
+	display: table;
+	border-radius: 1px;
+	background-color: #F8F8F8;
+	-webkit-box-shadow: 0px 0px 36px 15px #F8F8F8; 
+    box-shadow: 0px 0px 10px 20px #F8F8F8;
+	/*box-shadow: 25px 25px 50px 0 #F8F8F8 inset, -25px -25px 50px 0 #F8F8F8 inset;*/
+}
+
+ .column{
+
+	float: left;
+	width:80%;
+	padding: 1em;
+	margin-top: 0em;
+
 }

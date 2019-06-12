@@ -74,7 +74,7 @@ div.tab button {display: block;padding: 22px 16px;width: 28vw;font-size: 4vw;lin
 
 .jobdescription, .joblist {font-size:3vw}
 
-#skills{font-size:4vw}
+#skills{font-size:2vw}
 
 }
 
@@ -188,6 +188,11 @@ div.tab button {display: block;padding: 22px 16px;width: 28vw;font-size: 4vw;lin
 @media screen and (min-width: 500px){
 .jumbotron2 {display:none}
 }
+
+
+
+
+
 
 
 

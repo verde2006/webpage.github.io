@@ -18,10 +18,11 @@
 	<link type="text/css" rel="stylesheet" media="all" href="MediaQueries.css" />
 	<link href="dist/sideBar.css" rel="stylesheet" media="all">
 	<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+		integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="application.js"></script>
@@ -133,7 +134,8 @@
 					</div>
 				</div>
 				<ul class="nav2">
-					<li><a class="unclicked" id="onlink" href="index.html">About</a><li>
+					<li><a class="unclicked" id="onlink" href="index.html">About</a>
+					<li>
 					<li><a class="unclicked" href="experience.html" id="onlink">Experience</a></li>
 					<li><a class="clicked" href="skills.html" id="onlink">Skills</a></li>
 					<li><a class="unclicked" href="" id="onlink">Research</a></li>
@@ -141,8 +143,8 @@
 					<li><a class="unclicked" href="indexBlog.html" id="onlink">Blog</a></li>
 				</ul>
 				<div class="wrapper">
-						<div class="divider div-transparent div-arrow-down"></div>
-					  </div>
+					<div class="divider div-transparent div-arrow-down"></div>
+				</div>
 				<br class="breakMac" id="break"><br class="breakMac" id="break">
 
 				<main>
@@ -154,14 +156,18 @@
 
 
 						<h2 id="skills">Software Skills</h2>
-						
-						<hr style="width:70%;">
+
+						<div class="wrapper">
+							<div class="divider div-transparent"></div>
+						</div>
 
 						<div id="div1" class="section skills">
 							<div id="skillset" class="column"> </div>
 						</div>
 						<h2 id="skills">Analytical Skills</h2>
-						<hr style="width:70%;">
+						<div class="wrapper">
+							<div class="divider div-transparent"></div>
+						</div>
 						<div id="div2" class="section skills">
 							<div id="skillset2" class="column"> </div>
 						</div>
@@ -178,7 +184,7 @@
 						},
 						{
 
-							'headline': 'Python',
+							'headline': 'Python programming and development',
 							'value': 7,
 							'length': 9,
 							'description': ['Advanced knowledge of Numpy,Scipy, and Matplotlib',
@@ -190,7 +196,7 @@
 						},
 						{
 
-							'headline': 'SQL',
+							'headline': 'SQL and database concepts',
 							'value': 5,
 							'length': 9,
 							'description': ['Intermediate knowledge of the standard SQL-92 lauguage',
@@ -279,6 +285,7 @@
 							'description': [
 								'Exploratory analysis of network data',
 								'Social Network Analysis',
+								'Application of network science in organizational mapping problems',
 								'Financial and economic network modelling',
 								'Network data manipulation and filtering',
 								'Static and dynamic modeling of complex systems',

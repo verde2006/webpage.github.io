@@ -1,14 +1,16 @@
 .checkmarklist {
   margin-bottom: 10px;
   list-style-type: none;
+  font-size:1.1vw;
 }
 .checkmarklist:before {
   font-family: FontAwesome;
   content: '\f00c';
+  font-size:1vw;
   color: #e74c3c;
   display: inline-block;
   margin-right: 10px;
-  padding: 2px;
+  padding: 1px;
   border: 1px solid lightgray;
   border-radius: 60%;
 }

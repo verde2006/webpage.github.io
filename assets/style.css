@@ -437,7 +437,7 @@ div.tab button.active {
 .EdTable {
   align:left;	
   border-collapse: separate;
-  border-spacing: 100px 30px;
+  border-spacing: 55px 30px;
   width:100%;
 }
 
@@ -557,8 +557,6 @@ font-size:20px;
 
 }
 
-
-
 hr {
   border: 0;
   clear:both;
@@ -611,6 +609,10 @@ hr {
 .wrapper
 {
 	padding-bottom: 20px;
+}
+
+.educationUnderline {
+	width:70%
 }
 
 .divider

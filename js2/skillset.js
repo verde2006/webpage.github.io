@@ -89,7 +89,6 @@
 					console.log(options[i]['description']);
 					var a = "<ul id='skillDescription'>"
 					options[i]['description'].forEach(function(item){
-						console.log('tamer')
 						a = a + "<li>- "+item +"</li>"
 					});
 					a = a + "</ul>"
