@@ -438,9 +438,14 @@ div.tab button.active {
 
 
 
+/*Experience.html table */
 
 
-
+.experienceTable {
+  border-collapse: separate;
+  border-spacing: 55px 5px;
+  width:85%;
+}
 
 /*THE TABLE IN EDUCATION SECTION*/
 
