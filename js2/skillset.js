@@ -86,7 +86,6 @@
 				start = $(element).find(options[0]['listID']);
 				console.log(options[i]['description'].length)
 				if (options[i]['description'].length > 1){
-					console.log(options[i]['description']);
 					var a = "<ul id='skillDescription'>"
 					options[i]['description'].forEach(function(item){
 						a = a + "<li>- "+item +"</li>"
@@ -94,7 +93,7 @@
 					a = a + "</ul>"
 					
 					//var a = "<ul id='skillDescription'><li>- "+options[i]['description'][0] +"</li><li>"+options[i]['description'][1] +"</li></ul>"
-					var html = '<li class="skill-'+(i+1)+'""><p class="skillName"><i style="margin-right:20px;" class="' + options[i]['icon'] + '"></i>'+ options[i]['headline']+' <span class="icon-info-circled" data-info="'+a+'"></span></p><div class="bar"></div></li>';
+					var html = '<li class="skill-'+(i+1)+'""><p class="skillName">' + options[i]['icon'] + options[i]['headline']+' <span class="icon-info-circled" data-info="'+a+'"></span></p><div class="bar"></div></li>';
 				}
 				else{
 				var html = '<li class="skill-'+(i+1)+'""><p class="skillName">'+options[i]['headline']+' <span class="icon-info-circled" data-info="'+options[i]['description']+'"></span></p><div class="bar"></div></li>';
