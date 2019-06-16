@@ -445,10 +445,11 @@ div.tab button.active {
 /*THE TABLE IN EDUCATION SECTION*/
 
 .EdTable {
-  align:left;	
+	display:block;
+	margin: 0 auto;
   border-collapse: separate;
   border-spacing: 55px 5px;
-  width:100%;
+  width:80%;
 }
 
 
@@ -603,14 +604,18 @@ hr {
     font-family: 'Open Sans Condensed';
 }
 
-.educationIcon {
-  width:20%
+.educationIcon i{
+	font-size:3vw !important;
+	color:rgb(77, 73, 73)
 }
 
-.EdTable i {
-  font-size:4.5vw !important;
+.educationIcon{
+	width:7%
 }
 
+.contentRow{
+	width:50%
+}
 
 
 
