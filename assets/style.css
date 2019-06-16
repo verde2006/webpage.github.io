@@ -67,11 +67,21 @@
 #Summary {
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-indent:20px;
-	font-size:1.7vw;
+	font-size:1.5vw;
 	margin-right:3vw;
 	margin-left:3vw;
 	margin-top:1vw;
 	text-align: justify;
+}
+
+.homeHeading {
+
+	font-family: 'Rakkas', cursive;
+	font-size: 1.6vw;
+	text-indent:20px;
+	margin-right:3vw;
+	margin-left:3vw;
+	margin-left:50px;color:gray
 }
 
 /* Buttons at the center */
@@ -437,7 +447,7 @@ div.tab button.active {
 .EdTable {
   align:left;	
   border-collapse: separate;
-  border-spacing: 55px 30px;
+  border-spacing: 55px 5px;
   width:100%;
 }
 
@@ -449,21 +459,21 @@ div.tab button.active {
 
 .jobtitle {
 	color:black;
-	font-size:2em;
-	font-family:'Open Sans Condensed';
+	font-size:1.5vw;
+	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	font-weight:20px;
 	margin:0;
 }
 
 .jobdescription{
 	color:black;
-	font-size:1.5em;
-	font-family:'Open Sans Condensed';
+	font-size:1.2vw;
+	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	margin:0;
 }
 
 .joblist{
-	font-family:'Open Sans Condensed';
+	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	font-size:1.3em;
 
 }

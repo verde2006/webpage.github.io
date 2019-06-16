@@ -2,6 +2,7 @@
   margin-bottom: 10px;
   list-style-type: none;
   font-size:1.1vw;
+  font-family: Lato, sans-serif;
 }
 .checkmarklist:before {
   font-family: FontAwesome;

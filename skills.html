@@ -7,6 +7,8 @@
 	<link href="assets/style.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="Medias.css" rel="stylesheet">
+	<link href="css/buttonsStyle.css" rel="stylesheet">
+	<link href="css/quoteStyle.css" rel="stylesheet">
 	<link rel="stylesheet" href="css2/style.css">
 	<link rel="stylesheet" href="js2/skillset.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
@@ -18,16 +20,23 @@
 	<link type="text/css" rel="stylesheet" media="all" href="MediaQueries.css" />
 	<link href="dist/sideBar.css" rel="stylesheet" media="all">
 	<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
-	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
-		integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet"
-		href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300'>
+	  <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Rakkas&display=swap" rel="stylesheet">
+  
+	  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	  <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+	  
 	<script type="text/javascript" src="application.js"></script>
-	<script src="js2/skillset.js"></script>
+	<script type="text/javascript" src="scripts/quoteAnimation.js"></script>
 	<script src="https://d3js.org/d3.v5.js"></script>
+	<script src="js2/skillset.js"></script>
+  
 
 
 </head>
@@ -57,27 +66,21 @@
 				<a class="avatar" href="indexBlog.html">
 
 				</a>
-				<div class="about">
-					<i class="fa fa-quote-left" style="margin-left:2px;color:darkgray"></i> Debugging is like being the
-					detective
-					in a crime movie where you are also the murderer<i style="margin-left:2px;color:darkgray"
-						class="fa fa-quote-right"></i> <br>-
-					<span style="font-weight:bold">Filipe Fortes</span>
-
+				<div class="quoteBox">
+						<div class="cover-heading"><i style="color:white; font-size: 0.8vw;" class="fa fa-quote-left" aria-hidden="true"></i>
+						  <span id="quote">Write shy code - modules that don't reveal anything unnecessary to other modules and that don't rely on other modules' implementations.</span>
+						  <i style="color:white; font-size: 0.8vw;" class="fa fa-quote-right" aria-hidden="true"></i>
+						</div>
+						<p id="speaker" class="lead">-Dave Thomas</p>
+						<button id="quote-button" class="btn btn--border btn-lg btn-default">View Another<span></span></button>
+					  </div> 
+					  
+					  <br>
+				<div>
+						<button class="btn btn--border"><i  style="margin-right: 6px" class="fas fa-home"></i><a href="index.html">HOMEPAGE</a><span></span></button><br>
+						<button class="btn btn--swap"><i style="margin-right: 6px" class="fas fa-download"></i><a target="_blank" href="files/curriculum.pdf">CURRICULUM VITAE<span>DOWNLOAD MY CV</span></a></button>
+						
 				</div>
-				<nav>
-					<ul>
-						<li>
-						<li>
-							<a href="index.html"><i style="margin-right:10px;font-size:120%;"
-									class="fa fa-home"></i>Homepage</a>
-						</li>
-						<li>
-							<a href="CV/TamerKhraishaCV20180217.pdf"><i style="margin-right:10px;font-size:100%"
-									class="fa fa-file"></i>Download My CV</a>
-						</li>
-					</ul>
-				</nav>
 				<div class="phrases hide-landscape">
 
 				</div>
@@ -138,7 +141,7 @@
 					<li>
 					<li><a class="unclicked" href="experience.html" id="onlink">Experience</a></li>
 					<li><a class="clicked" href="skills.html" id="onlink">Skills</a></li>
-					<li><a class="unclicked" href="" id="onlink">Research</a></li>
+					<li><a class="unclicked" href="research.html" id="onlink">Research</a></li>
 					<li><a class="unclicked" href="education.html" id="onlink">Education</a></li>
 					<li><a class="unclicked" href="indexBlog.html" id="onlink">Blog</a></li>
 				</ul>
@@ -185,34 +188,39 @@
 						{
 
 							'headline': 'Python programming and development',
+							'icon':'devicon-python-plain colored',
 							'value': 7,
 							'length': 9,
-							'description': ['Advanced knowledge of Numpy,Scipy, and Matplotlib',
-								'Imtermediate knowledge of advanced topics like generators, iterators, decorators, and closures',
-								'Intermediate knowledge of SQLAlchemy',
+							'description': ['Advanced knowledge of Numpy, Scipy, and Matplotlib',
+								'Advanced knowledge of data manipulation and analysis using Pandas',
+								'Advanced knowledge of network data analysis using networkx',
+								'Imtermediate-advanced knowledge of generators, iterators, decorators, and closures',
+								'Intermediate knowledge of and Object-Relational Mappiing and SQLAlchemy',
 								'Intermediate knowledge of scikit-learn for machine learning',
 								'Basic knowledge of BeautifulSoup']
 
 						},
 						{
 
-							'headline': 'SQL and database concepts',
+							'headline': 'SQL langauge and database management systems and design',
+							'icon':'devicon-postgresql-plain colored',
 							'value': 5,
 							'length': 9,
 							'description': ['Intermediate knowledge of the standard SQL-92 lauguage',
-								'Intermediate knowledge of relational database management systems (RDBMS), in particular MySQL',
-								'Basic theoretical knowledge of non-RDBMS NoSQL',
+								'Intermediate knowledge of relational database management systems (RDBMS), in particular PostGres',
+								'Basic theoretical knowledge of non-RDBMS like NoSQL',
 							]
 
 						},
 						{
 
 							'headline': 'HTML & CSS',
+							'icon':'devicon-html5-plain colored',
 							'value': 6,
 							'length': 9,
 							'description': ['Intermediate-advanced knowledge with long experience with HTML(5) and CSS',
-								'Intermediate knowledge of Responsive Design',
-								'Intermediate knowledge of website deployment with Amazon, GoDaddy',
+								'Intermediate-advanced knowledge of Responsive Design',
+								'Intermediate knowledge of website deployment with Amazon Web Services and GoDaddy',
 								'Intermediate knowledge of content-management systems like WordPress and Weebly',
 								'Avdanced knowledge of SVG'
 							]
@@ -221,53 +229,78 @@
 						{
 
 							'headline': 'JavaScript',
+							'icon':'devicon-javascript-plain colored',
 							'value': 6,
 							'length': 9,
-							'description': ['Experience with object-oriented JavaScript.',
-								'Extended knowlage of DOM manipulation in aiding and extending the UI.',
+							'description': ['Experience with the standard object-oriented JavaScript language.',
+								'Extended knowlage of DOM manipulation',
 								'Advanced knowledge of element selection and manipulation',
-								'Intermediate knowledge of closures, prototypes, and javascript classes']
+								'very good knowledge of closures, prototypes, and javascript classes']
 
 						},
 						{
 
 							'headline': 'JQuery.js',
+							'icon':'devicon-jquery-plain colored',
 							'value': 8,
 							'length': 9,
 							'description': ['Advanced knowledge of DOM element selection and manipulation with JQuery',
-								'Advanced knowledge of transitions, onclick functions, and event methods']
+								'Advanced knowledge of JQuery transitions, onclick functions, and event methods']
 
 						},
 						{
 
 							'headline': 'D3.js',
+							'icon':'devicon-d3js-plain colored',
 							'value': 6,
 							'length': 9,
 							'description': ['Advanced knowledge of D3 graph construction and online visualizations',
-								'Advanced knowledge of SVG manupulation with D3',
+								'Advanced knowledge of SVG manupulation with D3 methods',
 								'Avdanced knowledge with reading JSON, CSV, TSV, and other data formats with D3',
 								'Advanced knowledge with transitions and geometric measures with D3',
 								'Advanced understanding of the force-layout',
-								'Worked with chart types like graphs, bar charts, multi-barcharts, line charts, time-series charts, chord diagrams, network graphs,bubble charts, and other']
+								'Worked with chart types like graphs, bar charts, multi-barcharts, line charts, time-series charts, chord diagrams, network graphs, and bubble charts']
 
 						},
 						{
 
-							'headline': 'R',
+							'headline': 'Amazon Web Services',
+							'icon':'devicon-amazonwebservices-original colored',
 							'value': 5,
 							'length': 9,
-							'description': ['Intermediate experience with knowledge of the basic object structures.',
-								'basic knowledge of Gggplot2'
-							]
+							'description': ['Good knowledge working with virtual machines on Amazon Elastic Compute cloud EC2',
+							'Good knowledge of Amazon Simple Storage Service (S3), in particular using python boto3 package',
+							'Good knowledge working with databases with Amazon Relational Database Service RDS']
+							},
+							{
 
-						},
+							'headline': 'Vue.js',
+							'icon':'devicon-vuejs-plain colored',
+							'value': 7,
+							'length': 9,
+							'description': ['Advanced knowledge of app development and modular design using Vue, Vuex, and axios', 
+							'Advanced knowledge of the Material Design Component Framework Veutify',
+							]
+							},
 						{
 
-							'headline': 'Docker',
+							'headline': 'OS virtualization with Docker',
+							'icon':'devicon-docker-plain-wordmark colored',
 							'value': 5,
 							'length': 9,
 							'description': ['Very Good knowledge of Dockerfiles, docker run and docker compose.', 'Basic experience with Docker swarm']
-						}
+						},
+						{
+
+							'headline': 'R programming',
+							'icon':'',
+							'value': 5,
+							'length': 9,
+							'description': ['Intermediate experience with R data structures such as matrices and dataframes',
+								'basic knowledge of data visualization using ggplot2'
+							]
+
+							},
 
 					];
 
@@ -280,6 +313,7 @@
 						{
 
 							'headline': 'Networks and Complex Systems Analysis',
+							'icon':'devicon-yii-plain colored',
 							'value': 6,
 							'length': 9,
 							'description': [
@@ -288,20 +322,19 @@
 								'Application of network science in organizational mapping problems',
 								'Financial and economic network modelling',
 								'Network data manipulation and filtering',
-								'Static and dynamic modeling of complex systems',
-								'Community detection in networks',
-								'Network formation models',
-								'Solution space (fitness landscape) modling for complex problems']
+								'Advanced knowledge of graph algorithms such as path finding, centrality measurement, and community detection',
+								'Network formation models']
 
 						},
 						{
 
-							'headline': 'Financial Theory',
+							'headline': 'Financial Data Analysis and Modelling',
+							'icon':'devicon-yii-plain colored',
 							'value': 5,
 							'length': 9,
 							'description': [
 								'Time-series, cross-section, and panel data analysis',
-								'Good knowledge of corporate finance',
+								'Good knowledge of the concepts of corporate finance',
 								'Financial network and contagion modelling',
 								'Financial data preparation, filtering, and manipulation',
 								'Value-at-Risk, Expected Shortfall',
@@ -313,17 +346,18 @@
 						},
 						{
 							'headline': 'Technological innovation analysis',
+							'icon':'devicon-yii-plain colored',
 							'value': 8,
 							'length': 10,
-							'description': ['Experience with the processes of technological development such as emergence, diffusion, and evolution',
-								'Analysis of the dynamics of exploration and exploitation',
+							'description': ['Good experience analyzing processes of technological development such as emergence, diffusion, and evolution',
+								'Analysis of the dynamics of exploration and exploitation in organizations',
 								'Analysis of solution spaces and technological fitness landscapes',
 								'Analysis of technological collaboration and alliances using networks',
 							]
 						},
 						{
-
-							'headline': 'Data Mining (Data Science)',
+							'headline': 'Data Mining/Machine Learning Algorithms and Techniques',
+							'icon':'devicon-yii-plain colored',
 							'value': 6,
 							'length': 9,
 							'description': ['Data preparation, feature extraction, and data filtering',
@@ -331,32 +365,24 @@
 								'Dimensionality Reduction and Transformation',
 								'Similarity and distances measures',
 								'Good knowledge of data structures and algorithms',
-								'Good knowledge of the basics of data product development'
-							]
-
-						},
-						{
-
-							'headline': 'Machine Learning',
-							'value': 6,
-							'length': 9,
-							'description': ['Good knowledge of the linear regression, regularization, cross-validation, and interpretation',
-								'Good knowledge of linear regression the logistic regression model, regularization, cross-validation, and interpretation',
-								'Good knowledge of Support vector machines',
+								'Good knowledge of the linear regression model, its assumptions, and results interpretation',
+								'Good knowledge of concepts such as regularization, cross-validation, training and testing datasets',
+								'Good knowledge of the basic Support vector machines model',
 								'Good knowledge of of the standard neural networks model',
-								'Good knowledge of of k-means',
-								'Good knowledge of the basics of reccomender systems']
+								'Good knowledge of of k-means algorithm',
+								'Good knowledge of the basics of reccomender systems'
+							]
 
 						},
 						{
 
 							'headline': 'Computer Simulations',
+							'icon':'devicon-yii-plain colored',
 							'value': 7,
 							'length': 8,
 							'description': ['Experience with agent-based and multi-agent simulations',
 								'Good knowledge of evolutionary computing methods including Ant Colony Optimization, Genetic Algorithms, Genetic Programming, and Differential Evolution',
 							]
-
 						},
 
 					];

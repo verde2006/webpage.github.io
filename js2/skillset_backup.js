@@ -121,7 +121,7 @@
 			$(this).css('color','#222222');
 			$(this).parent().parent().append('<div id="list-info" ><p>'+$(this).data('info')+'</p></div>');
 			setTimeout( function(){
-				$('#list-info').css({'opacity':0.9, 'bottom':50});
+				$('#list-info').css({'opacity':0.99, 'bottom':50});
 			},100);
 		}, function(){
 			$(this).css('color','auto');
@@ -134,7 +134,7 @@
 			$(this).css('color','#222222');
 			$(this).parent().parent().append('<div id="list-info" ><p>'+$(this).data('info')+'</p></div>');
 			setTimeout( function(){
-				$('#list-info').css({'opacity':0.9, 'bottom':50});
+				$('#list-info').css({'opacity':0.99, 'bottom':50});
 			},100);
 		}, function(){
 			$(this).css('color','auto');

@@ -1,0 +1,97 @@
+
+  
+
+
+.researchHeading  {
+  font-family: Lato, sans-serif;
+    text-align: center;
+    font-size:2vw;
+    font-weight: normal;
+    margin-top:15px;
+  }
+#researchDivision{
+  margin-top:15px;
+}
+.publicationsHeading {
+  font-family: Lato, sans-serif;
+  text-align: center;
+  font-size:2vw;
+  font-weight: normal;
+}
+.researchInterest{
+  text-transform: none;
+  font-family: Lato, sans-serif;
+  text-align: center;
+  font-size:1.5vw;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+  
+.researchDescription{
+  font-family: Lato, sans-serif;
+  font-size:1.2vw;
+  text-align: justify;
+  text-indent: 30px;
+  width:85%;
+  display:block;
+  margin: 0 auto
+}
+
+  
+.publicationList {
+  width:80%;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  display:block;
+  margin:0 auto;
+  font-weight: normal;
+}
+.publicationList li {
+  counter-increment: my-awesome-counter;
+  position: relative;
+  font-family: Lato, sans-serif;
+  margin-top:20px;
+  font-size:0.8vw;
+  text-align: justify;
+}
+.publicationList li h2{
+  font-weight: normal;
+}
+.publicationList li::before {
+  content: counter(my-awesome-counter);
+  color: #e74c3c;
+  font-size: 1vw;
+  font-family: Lato, sans-serif;
+  position: absolute;
+  --size: 1.5vw;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  transform: rotate(-10deg);
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px 0 #999;
+}
+
+.publicationLink{
+  color:rgb(73, 152, 184)
+}
+
+.publicationLink:hover{
+  color:rgb(208, 90, 54)
+}
+
+.thesis{
+  font-weight: normal;
+  font-family: Lato, sans-serif;
+  font-size:1.2vw;
+  text-align: justify;
+  width:85%;
+  display:block;
+  margin:0 auto;
+
+}

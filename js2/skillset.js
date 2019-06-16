@@ -94,11 +94,10 @@
 					a = a + "</ul>"
 					
 					//var a = "<ul id='skillDescription'><li>- "+options[i]['description'][0] +"</li><li>"+options[i]['description'][1] +"</li></ul>"
-					var html = '<li class="skill-'+(i+1)+'""><p>'+options[i]['headline']+' <span class="icon-info-circled" data-info="'+a+'"></span></p><div class="bar"></div></li>';
-				console.log(a)
+					var html = '<li class="skill-'+(i+1)+'""><p class="skillName"><i style="margin-right:20px;" class="' + options[i]['icon'] + '"></i>'+ options[i]['headline']+' <span class="icon-info-circled" data-info="'+a+'"></span></p><div class="bar"></div></li>';
 				}
 				else{
-				var html = '<li class="skill-'+(i+1)+'""><p>'+options[i]['headline']+' <span class="icon-info-circled" data-info="'+options[i]['description']+'"></span></p><div class="bar"></div></li>';
+				var html = '<li class="skill-'+(i+1)+'""><p class="skillName">'+options[i]['headline']+' <span class="icon-info-circled" data-info="'+options[i]['description']+'"></span></p><div class="bar"></div></li>';
 				}
 				//var html = '<li class="skill-'+(i+1)+'""><p>'+options[i]['headline']+' <span class="icon-info-circled" data-info="'+options[i]['description']+'"></span></p><div class="bar"></div></li>';
 				html = $(html).appendTo(start).find('.bar');
@@ -116,23 +115,18 @@
 			if($(_this).isOnScreen() && !$(_this).checkRun()){
 				
 							
-			if($('#list1')){
-				console.log('list1 is there')
-				
+			if($('#list1')){				
 				options = object2			
-
 			}
-				
 				create_trigger(_this)
-
 		$('.icon-info-circled').hover(function(){
 			$(this).css('color','#222222');
 			$(this).parent().parent().append('<div id="list-info" ><p>'+$(this).data('info')+'</p></div>');
 			setTimeout( function(){
-				$('#list-info').css({'opacity':0.9, 'bottom':50});
-			},100);
+				$('#list-info').css({'opacity':1, 'bottom':70});
+			},10);
 		}, function(){
-			$(this).css('color','auto');
+			$(this).css('color','#666666');
 			$('#list-info').remove();
 		});
 			}
@@ -142,10 +136,10 @@
 			$(this).css('color','#222222');
 			$(this).parent().parent().append('<div id="list-info" ><p>'+$(this).data('info')+'</p></div>');
 			setTimeout( function(){
-				$('#list-info').css({'opacity':0.9, 'bottom':50});
-			},100);
+				$('#list-info').css({'opacity':1, 'bottom':70});
+			},10);
 		}, function(){
-			$(this).css('color','auto');
+			$(this).css('color','#666666');
 			$('#list-info').remove();
 		});
 

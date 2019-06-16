@@ -6,6 +6,8 @@
   <link href="assets/style.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="Medias.css" rel="stylesheet">
+  <link href="css/buttonsStyle.css" rel="stylesheet">
+  <link href="css/quoteStyle.css" rel="stylesheet">
   <link href="customlist.css" rel="stylesheet" >
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -15,12 +17,18 @@
   <link type="text/css" rel="stylesheet" media="all" href="MediaQueries.css" />
   <link href="dist/sideBar.css" rel="stylesheet" media="all">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300'>
+    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rakkas&display=swap" rel="stylesheet">
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+    
   <script type="text/javascript" src="application.js"></script>
+  <script type="text/javascript" src="scripts/quoteAnimation.js"></script>
   <script src="https://d3js.org/d3.v5.js"></script>
 
 
@@ -46,21 +54,21 @@
     <a class="avatar" href="indexBlog.html">
       
     </a>
-    <div class="about">
-    <i class="fa fa-quote-left" style="margin-left:2px;color:darkgray"></i> Without requirements or design, programming is the art of adding bugs to an empty text file <i style="margin-left:2px;color:darkgray" class="fa fa-quote-right"></i> <br>- 
-	<span style="font-weight:bold">Louis Srygley</span>           
-
-    </div>
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html"><i style="margin-right:10px;font-size:120%;" class="fa fa-home"></i>Homepage</a>
-        </li>
-        <li>
-          <a href="CV/TamerKhraishaCV20180217.pdf"><i style="margin-right:10px;font-size:100%" class="fa fa-file"></i>Download My CV</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="quoteBox">
+        <div class="cover-heading"><i style="color:white; font-size: 0.8vw;" class="fa fa-quote-left" aria-hidden="true"></i>
+          <span id="quote">Write shy code - modules that don't reveal anything unnecessary to other modules and that don't rely on other modules' implementations.</span>
+          <i style="color:white; font-size: 0.8vw;" class="fa fa-quote-right" aria-hidden="true"></i>
+        </div>
+        <p id="speaker" class="lead">-Dave Thomas</p>
+        <button id="quote-button" class="btn btn--border btn-lg btn-default">View Another<span></span></button>
+      </div> 
+      
+      <br>
+<div>
+    <button class="btn btn--border"><i  style="margin-right: 6px" class="fas fa-home"></i><a href="index.html">HOMEPAGE</a><span></span></button><br>
+  <button class="btn btn--swap"><i style="margin-right: 6px" class="fas fa-download"></i><a target="_blank" href="files/curriculum.pdf">CURRICULUM VITAE<span>DOWNLOAD MY CV</span></a></button>
+  
+</div>
     <div class="phrases hide-landscape">
       
     </div>
@@ -68,8 +76,6 @@
 		  
 
 	
-	
-	  
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="assets/jquery.fittext.js"></script>
 <script src="assets/jquery.lettering.js"></script>
@@ -121,7 +127,7 @@
 		<li><a class ="unclicked" id="onlink" href="index.html" >About</a><li>
 		<li><a class ="clicked" href="experience.html" id="onlink">Experience</a></li>
     <li><a class ="unclicked" href="skills.html" id="onlink">Skills</a></li>
-    <li><a class ="unclicked" href="" id="onlink">Research</a></li>
+    <li><a class ="unclicked" href="research.html" id="onlink">Research</a></li>
 		<li><a class ="unclicked" href="education.html" id="onlink">Education</a></li>
 		<li><a class ="unclicked" href="indexBlog.html" id="onlink">Blog</a></li>
 </ul>
@@ -135,16 +141,23 @@
 <table  class="EdTable">
   <tr>
     <td>
-	<div class="jobinfo" style="width:90%;display:inline-block;">
-		<div class='jobtitlefirm' style=" float:left">
-			<p class='jobtitle' >Data Engineer and Developer</p>
-			<p class="company"><a href="http://alphacruncher.com/" target="_blank">Alphacruncher - The Cloud Platform for Scientific Research</a></p>
-			<p class="companylocation">Budapest, Révay köz 4, 1065 (Hungary)</p>
-			<br>
-			<p class="jobDuration"><i style="font-size:1vw !important; margin-right: 10px; color:gray" class="fa fa-calendar" aria-hidden="true"></i>January 2017 - Present</p>
-		</div>
-	</div>
-	<hr class='jobhr'>
+        <div class="border-wrapper">
+            <div class="top-border-position">
+               <div class="top-left"><br></div>
+            </div>
+            <div class="content">
+               <p class='jobtitle' >Data Engineer and Developer</p>
+               <p class="company"><a href="http://alphacruncher.com/" target="_blank">Alphacruncher - The Cloud Platform for Scientific Research</a></p>
+               <p class="companylocation">Budapest, Révay köz 4, 1065 (Hungary)</p>
+               <br>
+            </div>
+            <div class="bottom-border-posistion">
+               <div class="bottom-right"><br></div>
+            </div>
+         </div>
+         <div class="wrapper">
+            <div class="divider div-transparent"></div>
+          </div>
 <div style="display:block">
 	<br><p class="jobdescription">Alphacruncher provides an online platform for data management and data-driven education using well-known and large financial datasets.</p><br>
 	<ul class="joblist">

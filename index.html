@@ -6,6 +6,8 @@
   <link href="assets/animate.css" rel="stylesheet">
   <link href="assets/style.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/buttonsStyle.css" rel="stylesheet">
+  <link href="css/quoteStyle.css" rel="stylesheet">
   <link href="Medias.css" rel="stylesheet">
   <link href="tooltip.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
@@ -18,27 +20,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300'>
+    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rakkas&display=swap" rel="stylesheet">
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+    
   <script type="text/javascript" src="application.js"></script>
+  <script type="text/javascript" src="scripts/quoteAnimation.js"></script>
   <script src="https://d3js.org/d3.v5.js"></script>
 
 </head>
 
 <body class="red">
-  <section class="mobile-nav">
-    <nav>
-      <ul>
-        <li>
-          <a href="indexBlog.html">Blog Homepage</a>
-        </li>
-        <li>
-          <a href="index.html">My Website</a>
-        </li>
-
-      </ul>
-    </nav>
+    <section class="mobile-nav">
+        <a class="btn" data-js="btn">
+            <span class="btn-inr">
+              <span class="txt-a">HOMEPAGE</span>
+              <span class="txt-b">Go to homepage</span>
+            </span>
+          </a><br><br>
+          <a class="btn" data-js="btn">
+              <span class="btn-inr">
+                <span class="txt-a">CURRICULUM VITAE</span>
+                <span class="txt-b">Download my CV</span>
+              </span>
+            </a>
   </section>
 
   <section class="page">
@@ -47,23 +55,21 @@
       <a class="avatar" href="indexBlog.html">
 
       </a>
-      <div class="about">
-        <i class="fa fa-quote-left" style="margin-left:2px;color:darkgray"></i> We build our computer (systems) the way
-        we build our cities: over time, without a plan, on top of ruins.<i style="margin-left:2px;color:darkgray"
-          class="fa fa-quote-right"></i> <br>-
-        <span style="font-weight:bold">Ellen Ullman</span>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html"><i style="margin-right:10px;font-size:120%;" class="fa fa-home"></i>Homepage</a>
-          </li>
-          <li>
-            <a href="CV/TamerKhraishaCV20180217.pdf"><i style="margin-right:10px;font-size:100%"
-                class="fa fa-file"></i>Download My CV</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="quoteBox">
+        <div class="cover-heading"><i style="color:white; font-size: 0.8vw;" class="fa fa-quote-left" aria-hidden="true"></i>
+          <span id="quote">Write shy code - modules that don't reveal anything unnecessary to other modules and that don't rely on other modules' implementations.</span>
+          <i style="color:white; font-size: 0.8vw;" class="fa fa-quote-right" aria-hidden="true"></i>
+        </div>
+        <p id="speaker" class="lead">-Dave Thomas</p>
+        <button id="quote-button" class="btn btn--border btn-lg btn-default">View Another<span></span></button>
+      </div> 
+      
+      <br>
+<div>
+    <button class="btn btn--border"><i  style="margin-right: 6px" class="fas fa-home"></i><a href="index.html">HOMEPAGE</a><span></span></button><br>
+  <button class="btn btn--swap"><i style="margin-right: 6px" class="fas fa-download"></i><a target="_blank" href="files/curriculum.pdf">CURRICULUM VITAE<span>DOWNLOAD MY CV</span></a></button>
+  
+</div>
       <div class="phrases hide-landscape">
       </div>
     </aside>
@@ -101,7 +107,7 @@
         <li>
         <li><a class="unclicked" href="experience.html" id="onlink">Experience</a></li>
         <li><a class="unclicked" href="skills.html" id="onlink">Skills</a></li>
-        <li><a class="unclicked" href="skills.html" id="onlink">Research</a></li>
+        <li><a class="unclicked" href="research.html" id="onlink">Research</a></li>
         <li><a class="unclicked" href="education.html" id="onlink">Education</a></li>
         <li><a class="unclicked" href="indexBlog.html" id="onlink">Blog</a></li>
       </ul>
@@ -145,6 +151,7 @@
       </div>
       <br id="break"><br id="break">
       <div class="mySummary">
+        <p class="homeHeading">Hi, I'am Tamer Khraisha.</p>
         <p id="Summary">Welcome to my personal Webpage! My name is Tamer and I am a currently a data engineer &
           developer at
           Alphacruncher. I have a PhD in
@@ -166,7 +173,8 @@
           with a particular focus on financial applications. My current learning experience is focusing on understanding
           the nature and particularities of financial data, mastering Extract-Transform-Load tasks, working with cloud
           platforms, the construction of machine learning pipelines and the development of data products. 
-          <br><br>
+        </p><br>
+          <p id="Summary">
           In the medium-long run, I am more interested in pursuing a career which combines research with industrial
           applications. I have a particular interest in the topic of fraud detection and would be interested to work and
           do research in this field. I am also interested in research and applications related to the field of
@@ -217,7 +225,6 @@
         $(this).addClass('active');
       });
     </script>
-
     </div>
 
 </body>

@@ -48,7 +48,6 @@ main{
 main h2{
 
 	display: inline-block;
-
 	margin: 50px auto 0px auto;
 	padding: 0 0.3em 0.3em 0.3em;
 	font-family:open sans condensed;
@@ -56,38 +55,7 @@ main h2{
 	font-weight: 300;
 	text-align: center;
 	color: black;
-
 	letter-spacing: 2px;
-
-	text-transform: uppercase;
-
 	text-shadow: 0px 1px 0px #ffffff;
-
-}
-
-
-.section{
-
-	width:100%;
-
-	margin: 1em auto 2em auto;
-
-	display: table;
-	border-radius: 1px;
-	background-color: #F8F8F8;
-	-webkit-box-shadow: 0px 0px 36px 15px #F8F8F8; 
-box-shadow: 0px 0px 36px 15px #F8F8F8;
-	/* box-shadow: 25px 25px 50px 0 #F8F8F8 inset, -25px -25px 50px 0 #F8F8F8 inset;*/
-	border-right: 1px solid #eaeaea;
-	border-bottom: 1px solid #eaeaea;
-
-}
-
-.skills .column{
-
-	float: left;
-	width:80%;
-	padding: 1em;
-	margin-top: 0em;
 
 }

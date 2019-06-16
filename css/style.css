@@ -134,3 +134,42 @@
   background-color: green;
   padding: 5px 0;
 }
+
+
+/* styling for the titles in experience */
+
+.content {
+  display: block;
+  text-align: center;
+}
+
+.border-wrapper {
+  width:60vw;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  padding: 5px 5px;
+}
+.border-wrapper::before {
+  content: "";
+  text-align: right;
+  position: absolute;
+  top: 30px;
+  display: inline-block;
+  border-top: solid 0.12vw rgb(243, 112, 83);
+  border-left: solid 0.12vw rgb(243, 112, 83);
+  height: 2vw;
+  width: 2vw;
+}
+.border-wrapper::after {
+  content: "";
+  text-align: left;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: inline-block;
+  border-bottom: solid 0.12vw rgb(243, 112, 83);
+  border-right: solid 0.12vw rgb(243, 112, 83);
+  height: 2vw;
+  width: 2vw;
+}

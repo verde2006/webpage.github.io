@@ -1,0 +1,70 @@
+
+#quote{
+  font-family: 'Handlee', cursive;
+  font-weight: normal;
+  color:white;
+  font-size:1vw;
+  width:95%;
+}
+
+#quote-button{
+  width:6vw;
+  height:1.5vw;
+  font-size:0.8vw;
+  padding:0;
+  opacity:0.6;
+  color:black;
+  background-color: white;
+  font-family: 'Handlee', cursive;
+}
+#speaker{
+  color:white;
+  font-size:0.7vw;
+}
+
+#quote-button:hover{
+  background-color:white;
+  border: 2px solid white;
+  color:black;
+}
+
+
+
+.btn-lg{
+  margin-right: 0;
+  background-color:rgba(78, 84, 91, 0.5);
+  box-shadow: none;
+  border-radius: 5px;
+}
+
+
+
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #EDF2ED;
+  border-color: #EDF2ED !important;
+}
+
+
+/* Padding for spacing */
+.inner {
+  padding: 1.5em 5em;
+}
+
+.lead{
+  margin-bottom:0
+}
+.quoteBox {
+  background-color: rgba(78, 84, 91, 0.5);
+  padding: 10px;
+  width:85%;
+  display:block;
+  margin: 0 auto
+}
+
+
+
+
+
