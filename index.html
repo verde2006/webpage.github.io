@@ -10,6 +10,7 @@
   <link href="css/quoteStyle.css" rel="stylesheet">
   <link href="Medias.css" rel="stylesheet">
   <link href="tooltip.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link type="text/css" rel="stylesheet" media="all" href="FirstCSS.css" />
@@ -21,15 +22,13 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300'>
-    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rakkas&display=swap" rel="stylesheet">
-
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
     
   <script type="text/javascript" src="application.js"></script>
   <script type="text/javascript" src="scripts/quoteAnimation.js"></script>
   <script src="https://d3js.org/d3.v5.js"></script>
+
 
 </head>
 
@@ -57,11 +56,13 @@
       </a>
       <div class="quoteBox">
         <div class="cover-heading"><i style="color:white; font-size: 0.8vw;" class="fa fa-quote-left" aria-hidden="true"></i>
-          <span id="quote">Write shy code - modules that don't reveal anything unnecessary to other modules and that don't rely on other modules' implementations.</span>
-          <i style="color:white; font-size: 0.8vw;" class="fa fa-quote-right" aria-hidden="true"></i>
+          <span id="quote">In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them.</span>
+          <i style="color:white; font-size: 0.8vw;margin-top:10px;" class="fa fa-quote-right" aria-hidden="true"></i>
         </div>
-        <p id="speaker" class="lead">-Dave Thomas</p>
-        <button id="quote-button" class="btn btn--border btn-lg btn-default">View Another<span></span></button>
+        <div style="margin-top:5px;">
+        <div style="display:inline-block;height:1.5vw;margin-top:0.15vw"><p id="speaker" class="lead">-Pragmatic Programmer</p></div>
+        <div style="display:inline-block;float:right"><button id="quote-button" class="btn btn--border btn-lg btn-default">View Another<span></span></button></div>
+          </div>
       </div> 
       
       <br>
@@ -151,10 +152,8 @@
       </div>
       <br id="break"><br id="break">
       <div class="mySummary">
-        <!--<p class="homeHeading">Hi, I'am Tamer Khraisha.</p>-->
-        <p id="Summary">Welcome to my personal Webpage! My name is Tamer and I am a currently a data engineer &
-          developer at
-          Alphacruncher. I have a PhD in
+        <p id="firstHeading" class="homeHeading">Hi, I'am Tamer Khraisha.</p>
+        <p id="Summary">I am originally from the Middle East, but I have been living in Europe for the past 12 years, and currently, I am based in Budapest, Hungary. I did my undergraduate studies in finance and economics, which constitute my primary domain of knowledge. After that, I earned a Ph.D. cum laude in 
           <span class="tooltip">Network Science
             <span class="tooltiptext">
               <span class="tooltiptitle">What is Network Science?</span>
@@ -167,13 +166,15 @@
               between persons, technological transfers between firms, hyperlinks between websites, and chemical interactions between proteins.
               Network science employs an extensive array of analytical methods and data science techniques borrowed from
               sociology, mathematics, physics, computer science, and economics.</span>
-          </span>from the Department of Network and Data Science at the Central European
-          University in Budapest.</p><br>
-        <p id="Summary">My short term career goal is to gain industry experience in data science and data engineering
+          </span>from the Department of Network and Data Science at the Central European University in Budapest. During my Ph.D., I worked on the problem of collective technological innovation as well as on a variety of computational and data-driven projects.</p>
+          <br>
+        <p id="Summary">For the past two years, I have been working as a full-time software developer and data engineer at Alphacruncher in Budapest. 
+          My short term career goal is to gain industry experience in data science and data engineering
           with a particular focus on financial applications. My current learning experience is focusing on understanding
           the nature and particularities of financial data, mastering Extract-Transform-Load tasks, working with cloud
-          platforms, the construction of machine learning pipelines and the development of data products. 
-        </p><br>
+          platforms, the construction of machine learning pipelines, and the development of data products. 
+        </p><br><br>
+        <p class="homeHeading">As a data scientist and developer, I like to work on creating products derived from scientific analysis of data</p>
           <p id="Summary">
           In the medium-long run, I am more interested in pursuing a career which combines research with industrial
           applications. I have a particular interest in the topic of fraud detection and would be interested to work and
@@ -200,7 +201,7 @@
 
     </div>
     <script>
-      // help
+      // visualizations
       (function () {
         var help = d3.select('#help');
         help.on('click', function () {

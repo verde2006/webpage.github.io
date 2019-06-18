@@ -1,10 +1,11 @@
 
 #quote{
-  font-family: 'Handlee', cursive;
-  font-weight: normal;
+  font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-weight: 550;
   color:white;
   font-size:1vw;
   width:95%;
+  text-align: justify;
 }
 
 #quote-button{
@@ -12,14 +13,16 @@
   height:1.5vw;
   font-size:0.8vw;
   padding:0;
-  opacity:0.6;
+  opacity:0.7;
   color:black;
   background-color: white;
-  font-family: 'Handlee', cursive;
+  font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }
 #speaker{
   color:white;
-  font-size:0.7vw;
+  font-size:0.8vw;
+  font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+
 }
 
 #quote-button:hover{
@@ -27,6 +30,9 @@
   border: 2px solid white;
   color:black;
 }
+
+
+
 
 
 
@@ -57,9 +63,10 @@
   margin-bottom:0
 }
 .quoteBox {
-  background-color: rgba(78, 84, 91, 0.5);
-  padding: 10px;
-  width:85%;
+  background-color: rgba(41, 44, 48, 0.5);
+  padding: 0.8vw;
+  padding-bottom:0.2vw;
+  width:83%;
   display:block;
   margin: 0 auto
 }

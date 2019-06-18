@@ -110,7 +110,7 @@ var simulation = d3.forceSimulation() // creates an force simulation with empty 
     .force("charge", d3.forceManyBody()) //The many-body (or n-body) force applies mutually amongst all nodes.(it simulates gravity is it takes a positive strength parameters and repulsion if negative (the default is -30)
     .force("center", d3.forceCenter(width / 2, height / 2)); // Creates a new centering force with the specified x- and y- coordinates. If x and y are not specified, they default to ⟨0,0⟩. The centering force tries to keep the mean node positions close to the specified coordinates. 
 
-d3.json("miserables.json", function(error, graph) {
+d3.json("../data/miserables.json", function(error, graph) {
   if (error) throw error;
 
   var link = svg.append("g") // As usual, links are defined before nodes.
@@ -118,7 +118,7 @@ d3.json("miserables.json", function(error, graph) {
     .selectAll("line")
     .data(graph.links)
     .enter().append("line")
-      .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+      .attr("stroke-width", function(d) { console.log(d) });
 
   var node = svg.append("g")
       .attr("class", "nodes")
@@ -221,7 +221,7 @@ var simulation4 = d3.forceSimulation()
     .force("charge", d3.forceManyBody(500))
     .force("center", d3.forceCenter(width / 4, height / 4));
 
-d3.json("output1.json", function(error, graph) {
+d3.json("../data/output1.json", function(error, graph) {
   if (error) throw error;
 
   var link = svg4.append("g")
@@ -300,7 +300,7 @@ var simulation5 = d3.forceSimulation()
     .force("charge", d3.forceManyBody(500))
      .force("center", d3.forceCenter(width / 4, height / 4));
 
-d3.json("output1.json", function(error, graph) {
+d3.json("../data/output1.json", function(error, graph) {
   if (error) throw error;
 
   var link = svg5.append("g")
@@ -379,7 +379,7 @@ var simulation3 = d3.forceSimulation()
     .force("charge", d3.forceManyBody(500))
      .force("center", d3.forceCenter(width / 4, height / 4));
 
-d3.json("output1.json", function(error, graph) {
+d3.json("../data/output1.json", function(error, graph) {
   if (error) throw error;
 
   var link = svg3.append("g")
@@ -469,7 +469,7 @@ var simulation2 = d3.forceSimulation()
 		}))
      .force("center", d3.forceCenter(width / 3, height / 4));
 
-d3.json("output1.json", function(error, graph) {
+d3.json("../data/output1.json", function(error, graph) {
   if (error) throw error;
 
   var link = svg2.append("g")

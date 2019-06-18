@@ -65,23 +65,27 @@
 @import "bourbon";
 
 #Summary {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	text-indent:20px;
-	font-size:1.5vw;
+	font-size:1.2vw;
 	margin-right:3vw;
 	margin-left:3vw;
 	margin-top:1vw;
 	text-align: justify;
 }
 
+#firstHeading{
+	margin-top:0.9vh;
+}
 .homeHeading {
 
-	font-family: 'Rakkas', cursive;
-	font-size: 1.6vw;
+	font-family: 'Acme', sans-serif;
+	font-size: 1.7vw;
 	text-indent:20px;
 	margin-right:3vw;
 	margin-left:3vw;
-	margin-left:50px;color:gray
+	margin-left:50px;
+	color:rgb(133, 131, 131);
 }
 
 /* Buttons at the center */
@@ -458,10 +462,14 @@ div.tab button.active {
 }
 
 
+
 .EdTable img {
 	width:80%
 }
 
+.EdTable i {
+	margin-top:1vw;
+}
 
 .jobtitle {
 	color:black;
@@ -485,38 +493,37 @@ div.tab button.active {
 }
 
 #CourseName {
-	color:#d84434;
-	font-size:2em;
-	font-family:'Open Sans Condensed';
-	margin:0;
+	color:#cc0000;
+	font-size:1.2vw;
+	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	margin-top:1vw;
 }
 
 #certificateLink{
   color:rgb(73, 152, 184);
-	font-size:1.5em;
-	font-family:'Open Sans Condensed';
+	font-size:1.1vw;
+	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	margin:0; 
 }
 
 #UniversityName{
 	color:black;
-	font-size:1.5em;
-	font-family:'Open Sans Condensed';
+	font-size:1.1vw;
+	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	margin:0;
 }
 
 #DepartmentName{
 	color:black;
-	font-size:1.7em;
-	font-family:'Open Sans Condensed';
+	font-size:1.1vw;
+	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	margin:0;  
 }
 
 #CourseDate{
 	color:black;
-	font-size:1.5em;
-	font-family:'Open Sans Condensed';
-	margin:0;
+	font-size:1.2em;
+	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }
 	
 footer{font-size:50px;color:#999;border-top:1px solid #eee;padding-top:5px;font-family:open sans condensed}
@@ -632,7 +639,7 @@ hr {
 }
 
 .educationUnderline {
-	width:70%
+	width:100%
 }
 
 .divider
