@@ -474,7 +474,7 @@ div.tab button.active {
 .jobtitle {
 	color:black;
 	font-size:1.5vw;
-	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-family: "Lato", 'Open Sans Condensed', "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	font-weight:20px;
 	margin:0;
 }
@@ -482,12 +482,12 @@ div.tab button.active {
 .jobdescription{
 	color:black;
 	font-size:1.2vw;
-	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-family: "Lato", 'Open Sans Condensed', "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	margin:0;
 }
 
 .joblist{
-	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-family: "Lato", 'Open Sans Condensed', "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	font-size:1.3em;
 
 }
@@ -495,35 +495,35 @@ div.tab button.active {
 #CourseName {
 	color:#cc0000;
 	font-size:1.2vw;
-	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-family: "Lato", 'Open Sans Condensed', "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	margin-top:1vw;
 }
 
 #certificateLink{
   color:rgb(73, 152, 184);
 	font-size:1.1vw;
-	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-family: "Lato", "Open Sans Condensed", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	margin:0; 
 }
 
 #UniversityName{
 	color:black;
 	font-size:1.1vw;
-	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-family: "Lato", "Open Sans Condensed", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	margin:0;
 }
 
 #DepartmentName{
 	color:black;
 	font-size:1.1vw;
-	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-family: "Lato", "Open Sans Condensed", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	margin:0;  
 }
 
 #CourseDate{
 	color:black;
 	font-size:1.2em;
-	font-family: "Lato", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-family: "Lato", "Open Sans Condensed", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }
 	
 footer{font-size:50px;color:#999;border-top:1px solid #eee;padding-top:5px;font-family:open sans condensed}
