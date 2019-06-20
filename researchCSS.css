@@ -3,9 +3,9 @@
 
 
 .researchHeading  {
-  font-family: Lato, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
     text-align: center;
-    font-size:2vw;
+    font-size:2.2vw;
     font-weight: normal;
     margin-top:15px;
   }
@@ -13,14 +13,14 @@
   margin-top:15px;
 }
 .publicationsHeading {
-  font-family: Lato, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
-  font-size:2vw;
+  font-size:2.2vw;
   font-weight: normal;
 }
 .researchInterest{
   text-transform: none;
-  font-family: Lato, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
   font-size:1.5vw;
   margin-bottom: 10px;
@@ -29,8 +29,8 @@
 
   
 .researchDescription{
-  font-family: Lato, sans-serif;
-  font-size:1.2vw;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:1.4vw;
   text-align: justify;
   text-indent: 30px;
   width:85%;
@@ -50,9 +50,9 @@
 .publicationList li {
   counter-increment: my-awesome-counter;
   position: relative;
-  font-family: Lato, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   margin-top:20px;
-  font-size:0.8vw;
+  font-size:0.9vw;
   text-align: justify;
 }
 .publicationList li h2{
@@ -62,7 +62,7 @@
   content: counter(my-awesome-counter);
   color: #e74c3c;
   font-size: 1vw;
-  font-family: Lato, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   position: absolute;
   --size: 1.5vw;
   left: calc(-1 * var(--size) - 10px);
@@ -87,8 +87,8 @@
 
 .thesis{
   font-weight: normal;
-  font-family: Lato, sans-serif;
-  font-size:1.2vw;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:1.4vw;
   text-align: justify;
   width:85%;
   display:block;
