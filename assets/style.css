@@ -65,7 +65,7 @@
 @import "bourbon";
 
 #Summary {
-	font-family: Lato, 'Open Sans Condensed',sans-serif !important;
+	font-family: 'Lato', 'Open Sans Condensed', sans-serif;
 	text-indent:20px;
 	font-size:1.2vw;
 	margin-right:3vw;
