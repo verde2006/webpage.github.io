@@ -1,11 +1,5 @@
 /*This is the official css file for the website*/
 
-html{
-	font-family:'Open Sans Condensed' !important
-}
-
-
-
 
 .hide {
   display: none;
@@ -65,9 +59,9 @@ html{
 
 
 #Summary {
-	font-family: 'Lato', 'Open Sans Condensed', sans-serif !important;
+	font-family:'Open Sans Condensed', sans-serif !important;
 	text-indent:20px;
-	font-size:1.2vw;
+	font-size:1.35vw;
 	margin-right:3vw;
 	margin-left:3vw;
 	margin-top:1vw;
@@ -79,13 +73,12 @@ html{
 }
 .homeHeading {
 
-	font-family: 'Acme','Open Sans Condensed', sans-serif;
-	font-size: 1.7vw;
+	font-family: 'Mouse Memoirs', sans-serif;
+	font-size: 1.9vw;
 	text-indent:20px;
 	margin-right:3vw;
-	margin-left:3vw;
-	margin-left:50px;
-	color:rgb(133, 131, 131);
+	margin-left:2.6vw;
+	color:rgb(136, 132, 132);
 }
 
 /* Buttons at the center */
