@@ -25,7 +25,65 @@
   <script type="text/javascript" src="application.js"></script>
   <script type="text/javascript" src="scripts/quoteAnimation.js"></script>
   <script src="https://d3js.org/d3.v5.js"></script>
+<style>
 
+.box {
+  display: flex;
+  width: 100%;
+  height: 2px;
+}
+
+.box-sm {
+  height: 3px;
+  margin: 0;
+  flex-grow: 1;
+  transition: all .8s ease-in-out;
+  cursor: pointer;
+}
+
+.box-sm:hover {
+  flex-grow: 12;
+}
+
+.post {
+  margin-bottom: 50px;
+}
+.post h2,
+.post p {
+  text-align: center;
+  margin-bottom: 0px;
+}
+.post h2 {
+  font-size: 60px;
+  color: #E0E0E0;
+  text-shadow: 0px 1px 1px black;
+}
+
+.orangeRed {
+  background-color: #FF5852;
+}
+
+.orange {
+  background-color: #FF9000;
+}
+
+.yellow {
+  background-color: gold;
+}
+
+.green {
+  background-color: #3DCD49;
+}
+
+.blue {
+  background-color: rgb(22, 144, 148);
+}
+
+.hotpink {
+  background-color: hotpink;
+}
+
+</style>
 
 </head>
 <body class="red">
@@ -138,36 +196,33 @@
 <table  class="experienceTable">
   <tr>
     <td>
-        <div class="border-wrapper">
-            <div class="top-border-position">
-               <div class="top-left"><br></div>
-            </div>
-            <div class="content">
-               <p class='jobtitle' >Data Engineer and Developer</p>
+
+               <p class='jobtitle' >Data and Software Developer</p>
                <p class="company"><a href="http://alphacruncher.com/" target="_blank">Alphacruncher - The Cloud Platform for Scientific Research</a></p>
                <p class="companylocation">Budapest, Revay koz 4, 1065 (Hungary)</p>
                <br>
-            </div>
-            <div class="bottom-border-posistion">
-               <div class="bottom-right"><br></div>
-            </div>
-         </div>
-         <div class="wrapper">
-            <div class="divider div-transparent"></div>
-          </div>
+               <div class="box">
+                <div class="box-sm orangeRed"></div>
+                <div class="box-sm orange"></div>
+                <div class="box-sm yellow "></div>
+                <div class="box-sm green "></div>
+                <div class="box-sm blue "></div>
+                <div class="box-sm hotpink"></div>
+              </div>
 <div style="display:block">
 	<br><p class="jobdescription">Alphacruncher provides an online platform for data management and data-driven education using well-known and large financial datasets.</p><br>
 	<ul class="joblist">
-  <li class="checkmarklist">Creating metadata for financial data models and supporting online documentation</li>
-	<li class="checkmarklist">Creating interactive web visualizations and dashboards for financial datasets using D3.js and Apache Superset</li>
-	<li class="checkmarklist">Creating a Jquery QueryBuilder application to create complex SQL queries and filters</li>
-	<li class="checkmarklist">Researching methods employed in the extant literature for filtering and manipulating the financial datasets offered with citations</li>
-	<li class="checkmarklist">Writing complex SQL code for implementing the various methods for filtering and manipulating the datasets</li>
-	<li class="checkmarklist">Adding advanced functionalities to the Comprehensive Knowledge Archive Network (CKAN) for data management</li>
-	<li class="checkmarklist">Creating a Python library for automating the identification and correction of date formats in the datasets</li>
-	<li class="checkmarklist">Automating Extract, Transform, Load tasks by creating Directed Acyclic Graphs (DAGS) scripts in Apache Airflow</li>
-	<li class="checkmarklist">Worked on data matching for reproducing datasets used in scientific papers</li>
-	<li class="checkmarklist">Creating dockerized environment for testing web applications using Selenium</li>
+    <li class="checkmarklist">Creating metadata for financial data models and supporting online documentation for datasets sych as TAQ, CRSP, COMPUSTAT, IVYDB OptionMetrics, RavenPack, DealScan, Mergent, and Abel Noser Ancerno.</li>
+    <li class="checkmarklist">Creating interactive web visualizations and dashboards for financial datasets using D3.js and Apache Superset.</li>
+    <li class="checkmarklist">Creating a Jquery QueryBuilder application to generate SQL queries and filters.</li>
+    <li class="checkmarklist">Substantially contributing  in the development of a Vue.js front-end user interface for interacting with data, code, and computational tools.</li>
+    <li class="checkmarklist">Researching methods employed in the extant literature for filtering errors and biases in financial datasets offered with citations.</li>
+    <li class="checkmarklist">Writing complex SQL code for implementing the various methods for filtering and manipulating the datasets.</li>
+    <li class="checkmarklist">Adding new backend functionalities to the Comprehensive Knowledge Archive Network (CKAN) for data management.</li>
+    <li class="checkmarklist">Creating a Python library for automating the identification and correction of date formats in the datasets.</li>
+    <li class="checkmarklist">Automating Extract, Transform, Load tasks by creating Directed Acyclic Graphs (DAGS) scripts in Apache Airflow.</li>
+    <li class="checkmarklist">Worked on data matching for reproducing datasets used in scientific papers.</li>
+  <li class="checkmarklist">Creating dockerized environment for testing web applications using Selenium.</li>
 	</ul>
 	</div>
 	

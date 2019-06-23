@@ -65,7 +65,7 @@
 	text-indent:20px;
 	font-size:1.35vw;
 	margin-right:3vw;
-	margin-left:3vw;
+	margin-left:2.5vw;
 	margin-top:1vw;
 	text-align: justify;
 }
@@ -76,10 +76,10 @@
 .homeHeading {
 
 	font-family: 'Mouse Memoirs', sans-serif;
-	font-size: 1.9vw;
-	text-indent:20px;
+	font-size: 2.1vw;
+	text-indent:15px;
 	margin-right:3vw;
-	margin-left:2.6vw;
+	margin-left:2.5vw;
 	color:rgb(136, 132, 132);
 }
 
@@ -443,7 +443,7 @@ div.tab button.active {
 .experienceTable {
   border-collapse: separate;
   border-spacing: 55px 5px;
-  width:85%;
+  width:95%;
 }
 
 /*THE TABLE IN EDUCATION SECTION*/

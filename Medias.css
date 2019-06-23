@@ -18,11 +18,56 @@
 
 .wrap1{margin:0 auto} /*center the cv box*/
 
-#Summary{font-size:3vw }
+.homeHeading {font-size:3vw }
+
+#Summary{
+  font-size:2.5vw;
+}
 
 .fa-home ,.fa-file {display:none !important;}
 	
 .EdTable {border-spacing: 10px}
+
+.btn--border{
+  display:none !important
+}
+
+#quote{
+  font-size:2.2vw !important;
+}
+
+#speaker{
+  font-size:1.5vw;
+}
+
+.btn--swap{
+  display:block !important;
+  margin:0 auto !important;
+  font-size: 3vw !important;
+}
+.btn{
+  width:30vw !important;
+}
+
+.skillName{
+  font-size:2.6vw !important
+}
+.skillName svg{
+  width:2.2vw !important;
+  height:2.2vw !important
+}
+
+#skills{
+  font-size:3vw !important;
+}
+
+.checkmarklist{
+  font-size:2vw !important;
+}
+
+.checkmarklist:before {
+  font-size:1.5vw !important;
+}
 
 #UniversityName {font-size:1.2em;text-align:center}
 
@@ -68,13 +113,17 @@ div.tab button {display: block;padding: 22px 16px;width: 28vw;font-size: 4vw;lin
 
 .tom2 .skillbar-title {width:110px;font-size:8px;}
 
-.company, .companylocation{ font-size:3vw;font-family: 'Open Sans Condensed';color: black;}
+.company, .companylocation{ font-size:2vw;font-family: 'Open Sans Condensed';color: black;}
 
-.jobtitle{font-size:4vw}
+.jobtitle{font-size:3vw}
 
-.jobdescription, .joblist {font-size:3vw}
+.jobdescription, .joblist {font-size:2vw}
 
 #skills{font-size:2vw}
+
+.joblist{
+  width:100% !important
+}
 
 }
 
@@ -88,7 +137,6 @@ div.tab button {display: block;padding: 22px 16px;width: 28vw;font-size: 4vw;lin
 
 @media screen and (max-width: 1280px) and (min-width: 800px){
 
-#Summary{font-size:1.85vw}
 
 #DataSkills {font-size:30px;}
 
@@ -136,7 +184,6 @@ div.tab button {display: block;padding: 22px 16px;width: 28vw;font-size: 4vw;lin
 
 @media screen and (max-width: 1366px) and (min-width: 1281px){
 
-#Summary{font-size:1.85vw}
 
 #DataSkills {font-size:30px;}
 
