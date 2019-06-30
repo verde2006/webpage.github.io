@@ -23,9 +23,22 @@
 
 @media screen and (max-width: 800px){
 	
-	.page .left-col{height:auto;width:100%;position:relative;padding:20px 0}
+	.page .left-col{height:auto;width:100%;position:relative; padding:0}
+
+    .page .left-col img {
+		-webkit-transition: opacity 1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-o-transition: opacity 1s ease-in-out;
+		transition: opacity 1s ease-in-out;
+		position: absolute !important;
+		width:100% !important;
+		height:100% !important;
+		z-index:-10000;
+		object-fit: cover;
+		padding:0 !important;
+	  }
 	
-	.page .left-col .avatar{width:33.3%;margin:0 auto 20px auto}
+	.page .left-col .avatar{width:23.3%;margin:0 auto 20px auto;}
 	
 	.page .left-col .about{width:60%;margin-bottom:20px}
 	
@@ -33,7 +46,7 @@
 	
 	.page .left-col nav ul{list-style:none}
 	
-	.page .left-col nav ul li {display:inline;width:50%}
+	.page .left-col nav ul li {display:inline;width:50%;}
 	
 	.page .left-col nav ul li a{display:inline-block;float:center;width:45%;border-radius:0;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;padding:0 15px}
 	

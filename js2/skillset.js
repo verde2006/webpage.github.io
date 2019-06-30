@@ -1,12 +1,5 @@
 (function ( $ ) {
-	
-
-
-
 	$.fn.skillset = function( options ) {
-		
-
-
 		
 		var duration = 50;
 
@@ -105,6 +98,7 @@
 				var length = options[i]['length'];
 
 				bar_loop(html,value,length);
+				console.log(html)
 
 			}
 		}
@@ -141,9 +135,6 @@
 			$(this).css('color','#666666');
 			$('#list-info').remove();
 		});
-
 	};
 	
-
-
 }( jQuery ));

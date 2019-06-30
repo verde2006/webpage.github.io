@@ -112,11 +112,12 @@ function getAge() {
 
 // List of all phrases
 var Phrases = new Array(
-  "I go by the<br />name <a href='http://www.tamerkhraisha.com'>Tamer</a>",
-  "I am a <br /><a href='https://medium.com/@tamer.khraisha2/the-master-data-scientist-5b9132d271c0' target='_blank'>Data Scientist!</a>",
-  "I work for<br /><a href='https://alphacruncher.com/' target='_blank'>Alphacruncher</a>",
-  "Follow me <br />on <a href='https://twitter.com/Tamer_Khraisha' target='_blank'>Twitter</a>",
-  "Visit me<br />on <a href='https://hu.linkedin.com/in/tamer-khraisha-22a11640' target='_blank'>Linkedin</a>"
+  "<ul class='services'> <li><div class='facebook'><a href='https://facebook.com/colorlib/'><i class='fa fa-facebook'></i></a></div><span>Facebook</span>    </li>    <li>      <div class='twitter'>        <a href='https://twitter.com/colorlib/'>          <i class='fa fa-twitter' aria-hidden='true'></i></a></div><span>Twitter</span>    </li>    <li>      <div class='linkedin'>        <a href='https://www.linkedin.com/company/colorlib'>          <i class='fa fa-linkedin' aria-hidden='true'></i>        </a>      </div>      <span>LinkedIn</span>    </li>    <li>      <div class='github'>        <a href='https://github.com/puikinsh/'>          <i class='fa fa-github' aria-hidden='true'></i>        </a>      </div>      <span>Github</span>    </li>  </ul>",
+  "<div class='services'>I go by the<br />name<a href='http://www.tamerkhraisha.com'>Tamer</a></div>",
+  "<ul class='services'> <li><div class='facebook'><a href='https://facebook.com/colorlib/'><i class='fa fa-facebook' aria-hidden='true'></i>        </a>      </div>      <span>Facebook</span>    </li>    <li>      <div class='twitter'>        <a href='https://twitter.com/colorlib/'>          <i class='fa fa-twitter' aria-hidden='true'></i></a></div><span>Twitter</span>    </li>    <li>      <div class='linkedin'>        <a href='https://www.linkedin.com/company/colorlib'>          <i class='fa fa-linkedin' aria-hidden='true'></i>        </a>      </div>      <span>LinkedIn</span>    </li>    <li>      <div class='github'>        <a href='https://github.com/puikinsh/'>          <i class='fa fa-github' aria-hidden='true'></i>        </a>      </div>      <span>Github</span>    </li>  </ul>",
+  "<div class='services'>I am a <br /><a href='https://medium.com/@tamer.khraisha2/the-master-data-scientist-5b9132d271c0' target='_blank'>Network & Data Scientist!</a></div>",
+  "<ul class='services'> <li><div class='facebook'><a href='https://facebook.com/colorlib/'>          <i class='fa fa-facebook' aria-hidden='true'></i>        </a>      </div>      <span>Facebook</span>    </li>    <li>      <div class='twitter'>        <a href='https://twitter.com/colorlib/'>          <i class='fa fa-twitter' aria-hidden='true'></i></a></div><span>Twitter</span>    </li>    <li>      <div class='linkedin'>        <a href='https://www.linkedin.com/company/colorlib'>          <i class='fa fa-linkedin' aria-hidden='true'></i>        </a>      </div>      <span>LinkedIn</span>    </li>    <li>      <div class='github'>        <a href='https://github.com/puikinsh/'>          <i class='fa fa-github' aria-hidden='true'></i>        </a>      </div>      <span>Github</span>    </li>  </ul>",
+  "<div class='services'>I work for<br /><a href='https://alphacruncher.com/' target='_blank'>Alphacruncher</a>",
 );
 
 

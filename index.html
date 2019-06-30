@@ -8,8 +8,13 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/buttonsStyle.css" rel="stylesheet">
   <link href="css/quoteStyle.css" rel="stylesheet">
+  <link href="css/phraseSlider.css" rel="stylesheet">
+  <link href="researchCSS.css" rel="stylesheet" media="all">
   <link href="Medias.css" rel="stylesheet">
   <link href="tooltip.css" rel="stylesheet">
+  <link rel="stylesheet" href="css2/style.css">
+  <link href="customlist.css" rel="stylesheet" >
+  <link rel="stylesheet" href="js2/skillset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link type="text/css" rel="stylesheet" media="all" href="FirstCSS.css" />
   <link type="text/css" rel="stylesheet" media="all" href="colors.css" />
@@ -20,12 +25,11 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">    
   <script type="text/javascript" src="application.js"></script>
   <script type="text/javascript" src="scripts/quoteAnimation.js"></script>
   <script src="https://d3js.org/d3.v5.js"></script>
-
+  <script type="text/javascript" src="scripts/skillsData.js"></script>
   <style>    
     .text-block {
       position: absolute;
@@ -40,16 +44,72 @@
       box-shadow: 0 0 8px 8px rgba(41, 44, 48, 0.5);
       font-family: 'Mouse Memoirs', sans-serif;
     }
+    .page .left-col img {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  position: absolute !important;
+  width:100% !important;
+  height:100% !important;
+  z-index:-10000;
+  object-fit: cover;
+  padding:0 !important;
+}
+
+.disabled {
+opacity:0;
+}
+.enabled{
+  opacity:1;
+}
+
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    z-index:10000000;
+    cursor:pointer;
+    width:30px;
+    height:30px;
+    background-color:#e74c3c;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:gold;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
     </style>
 </head>
 
 <body class="red">
-
   <section class="page">
     <aside class="left-col">
-      <a class="avatar" href="indexBlog.html">
-
-      </a>
+        <img class="experienceBackground"  src="images/background4.jpg" />
+        <img class="skillsBackground"  src="images/background6.jpg" />
+        <img class="researchBackground"  src="images/background3.jpg" />
+        <img class="educationBackground"  src="images/background10.jpg" />
+        <img class="blogBackground"  src="images/background11.jpg" />
+        <img class="aboutBackground" src="images/background.jpg" />
+      
+      <a class="avatar"></a>
       <div class="quoteBox">
         <div class="cover-heading"><i style="color:white; font-size: 0.8vw;" class="fa fa-quote-left" aria-hidden="true"></i>
           <span id="quote">In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them.</span>
@@ -63,7 +123,7 @@
       
       <br>
 <div>
-    <button class="btn btn--border"><i  style="margin-right: 6px" class="fas fa-home"></i><a href="index.html">HOMEPAGE</a><span></span></button><br>
+    <button class="btn btn--border"><i  style="margin-right: 6px" class="fas fa-envelope"></i><a  target="_blank" href = "mailto: tamer.khraisha2@gmail.com">CONTACT ME</a><span></span></button><br>
   <button class="btn btn--swap"><i style="margin-right: 6px" class="fas fa-download"></i><a target="_blank" href="files/curriculum.pdf">CURRICULUM VITAE<span>DOWNLOAD MY CV</span></a></button>
   
 </div>
@@ -76,37 +136,20 @@
     <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
     <script src="jquery.textillate.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script>
-      $(document).ready(function () {
-        $(".btn1").click(function () {
-          $(".left-col").css('width', '0%');
-          $("#righthalf").css('width', '100%');
-          $(".left-col").fadeOut(1000);
-        });
-        $(".btn2").click(function () {
-          $(".left-col").fadeIn(1000);
-          $("#righthalf").css('width', '70%');
-          $(".left-col").css('width', '30%');
-        });
-      });
-    </script>
+
     <div id="righthalf">
-      <!--
-<button class="btn1">Fade out</button>
-<button class="btn2">Fade in</button>
--->
+
       <br id="break">
       <br id="break">
       <br>
 
-      <ul class="nav2">
-        <li><a class="clicked" id="onlink" href="index.html">About</a>
-        <li>
-        <li><a class="unclicked" href="experience.html" id="onlink">Experience</a></li>
-        <li><a class="unclicked" href="skills.html" id="onlink">Skills</a></li>
-        <li><a class="unclicked" href="research.html" id="onlink">Research</a></li>
-        <li><a class="unclicked" href="education.html" id="onlink">Education</a></li>
-        <li><a class="unclicked" href="indexBlog.html" id="onlink">Blog</a></li>
+      <ul class="nav2" style="cursor: pointer">
+        <li><a onclick="getContent('about')" class='aboutItem clicked'>About</a></li>
+        <li><a onclick="getContent('experience')" class='experienceItem'>Experience</a></li>
+        <li><a onclick="getContent('skills')" class='skillsItem'>Skills</a></li>
+        <li><a onclick="getContent('research')" class="researchItem">Research</a></li>
+        <li><a onclick="getContent('education')" class="educationItem">Education</a></li>
+        <li><a onclick="getContent('blog')"  class="blogItem">Blog</a></li>
       </ul>
       <div class="wrapper">
           <div class="divider div-transparent div-arrow-down"></div>
@@ -146,6 +189,7 @@
           </p>
         </div>
       </div>
+      <div id="mainContainer">
       <br id="break"><br id="break">
       <div class="mySummary">
         <p id="firstHeading" class="homeHeading">Hi, I'am Tamer Khraisha.</p>
@@ -185,10 +229,12 @@
       <br>
       <br class="spaceBreak">
       <br class="spaceBreak">
+    </div>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
       <footer class="foot">
         Handcrafted with <span class="entypo-heart"></span> by Tamer Khraisha &ndash;
         <b style="color:#e74c3c">Email</b> : tamer.khraisha2@gmail.com&ndash;
-        <b style="color:#e74c3c">Address</b> : Na&#769;dor u.11, Budapest, 1051&ndash;
+        <b style="color:#e74c3c">Address</b> : Budapest, Hungary;
         <b style="color:#e74c3c">Phone</b> : +36 70 590 1083
       </footer>
 
@@ -214,6 +260,147 @@
       })();
     </script>
 
+<script>
+(function ( $ ) {
+	$.fn.skillset = function( options ) {
+		
+		var duration = 50;
+
+		_this = this;
+
+		$.fn.extend({
+
+			isOnScreen: function(){
+
+				var win = $(window);
+				var viewport = {
+					top : win.scrollTop(),
+					left : win.scrollLeft()
+				};
+				viewport.right = viewport.left + win.width();
+				viewport.bottom = viewport.top + win.height();
+				var bounds = this.offset();
+				bounds.right = bounds.left + this.outerWidth();
+				bounds.bottom = bounds.top + this.outerHeight();
+
+				return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+			},
+
+			setRun: function(option){
+				hasRun = option;
+			},
+			checkRun: function(){
+				return hasRun;
+			}
+
+		});
+
+
+		$(this).setRun(false);
+		if($(this).isOnScreen() && !$(this).checkRun() ){
+			create_trigger($(this));
+		}
+
+		function bar_loop(start,value,length){
+
+			var j=0;
+			for(var i = 0; i < length; i++){
+
+				setTimeout(function(){
+
+					if(j < value){
+						var html = '<div class="full"></div>';
+						$(html).appendTo(start).css('width',100/length+'%');
+					}else{
+						var html = '<div class="empty"></div>';
+						$(html).appendTo(start).css('width',100/length+'%');
+					}
+					j++;
+
+				},duration*i/(length/10));
+
+			}
+
+		}
+
+		function create_trigger(element){
+
+		
+			var key, count = 0;
+			for(key in options) {
+				if(options.hasOwnProperty(key)) {
+					count++;
+				}
+			}
+			$(element).setRun(true);
+			start = $(element).append('<ul id=' +options[0]['listname']+ ' class="skillset-list"></ul>');
+
+			for(var i = 1; i < count; i++){
+
+				start = $(element).find(options[0]['listID']);
+				console.log(options[i]['description'].length)
+				if (options[i]['description'].length > 1){
+					var a = "<ul id='skillDescription'>"
+					options[i]['description'].forEach(function(item){
+						a = a + "<li>- "+item +"</li>"
+					});
+					a = a + "</ul>"
+					
+					//var a = "<ul id='skillDescription'><li>- "+options[i]['description'][0] +"</li><li>"+options[i]['description'][1] +"</li></ul>"
+					var html = '<li class="skill-'+(i+1)+'""><p class="skillName">' + options[i]['icon'] + options[i]['headline']+' <span class="icon-info-circled" data-info="'+a+'"></span></p><div class="bar"></div></li>';
+				}
+				else{
+				var html = '<li class="skill-'+(i+1)+'""><p class="skillName">'+options[i]['headline']+' <span class="icon-info-circled" data-info="'+options[i]['description']+'"></span></p><div class="bar"></div></li>';
+				}
+				//var html = '<li class="skill-'+(i+1)+'""><p>'+options[i]['headline']+' <span class="icon-info-circled" data-info="'+options[i]['description']+'"></span></p><div class="bar"></div></li>';
+				html = $(html).appendTo(start).find('.bar');
+
+				var value = options[i]['value'];
+				var length = options[i]['length'];
+
+				bar_loop(html,value,length);
+				console.log(html)
+
+			}
+		}
+
+		$(document).scroll(function(){
+
+			if($(_this).isOnScreen() && !$(_this).checkRun()){
+				
+							
+			if($('#list1')){				
+				options = object2			
+			}
+				create_trigger(_this)
+		$('.icon-info-circled').hover(function(){
+			$(this).css('color','#222222');
+			$(this).parent().parent().append('<div id="list-info" ><p>'+$(this).data('info')+'</p></div>');
+			setTimeout( function(){
+				$('#list-info').css({'opacity':1, 'bottom':70});
+			},10);
+		}, function(){
+			$(this).css('color','#666666');
+			$('#list-info').remove();
+		});
+			}
+		});
+
+		$('.icon-info-circled').hover(function(){
+			$(this).css('color','#222222');
+			$(this).parent().parent().append('<div id="list-info" ><p>'+$(this).data('info')+'</p></div>');
+			setTimeout( function(){
+				$('#list-info').css({'opacity':1, 'bottom':70});
+			},10);
+		}, function(){
+			$(this).css('color','#666666');
+			$('#list-info').remove();
+		});
+	};
+	
+}( jQuery ));
+</script>
+
     <script>
       $('li').click(function () {
         $(this).removeClass('active');
@@ -221,7 +408,71 @@
       });
 
       var x = '<svg style="width:2vw;height:2vw" viewBox="0 0 128 128"><path  fill-rule="evenodd" clip-rule="evenodd" fill="#3A4D54" d="M20 96.9v-8.1c0-1.1.7-1.9 1.8-1.9h.3c1.1 0 1.8.9 1.8 1.9v17c0 4.1-2 7.4-5.6 9.5-1.7 1-3.5 1.5-5.4 1.5h-.8c-4.1 0-7.4-2-9.5-5.6-1-1.7-1.5-3.5-1.5-5.4v-.8c0-4.1 2-7.4 5.6-9.5 1.7-1 3.5-1.5 5.4-1.5h.8c2.7.1 5.1 1.1 7.1 2.9zm-15.1 8.5c0 3 1.5 5.2 4.1 6.7 1.1.6 2.2.9 3.4.9 2.9 0 5.1-1.4 6.6-3.9.7-1.2 1-2.4 1-3.8 0-2.6-1.2-4.6-3.3-6.1-1.3-.9-2.7-1.4-4.2-1.4-3.2 0-5.5 1.6-6.9 4.5-.5 1-.7 2.1-.7 3.1zm32.2-11.3h.5c4.4 0 7.8 2.1 9.9 6 .9 1.5 1.3 3.2 1.3 5v.8c0 4.1-2 7.4-5.6 9.5-1.7 1-3.5 1.5-5.4 1.5h-.8c-4.1 0-7.4-2-9.5-5.6-1-1.7-1.5-3.5-1.5-5.4v-.8c0-4.1 2.1-7.4 5.6-9.5 1.7-1.1 3.6-1.5 5.5-1.5zm-7.2 11.3c0 2.9 1.4 5 3.9 6.5 1.2.7 2.4 1 3.8 1 2.9 0 5-1.5 6.5-3.9.7-1.2 1-2.4 1-3.8 0-2.7-1.3-4.8-3.5-6.3-1.2-.8-2.6-1.2-4-1.2-3.2 0-5.5 1.6-6.9 4.5-.6 1.1-.8 2.2-.8 3.2zm34.8-7.2c-.6-.3-1.7-.4-2.3-.4-3.2-.1-5.5 1.7-6.9 4.5-.5 1-.7 2-.7 3.1 0 3.3 1.7 5.6 4.6 7 1.1.5 2.4.6 3.6.6 1 0 2.5-.6 3.4-1.1l.2-.1h.7999999999999999c.9.2 1.5.7 1.5 1.7v.4c0 2.3-4.3 2.9-5.9 3-5.7.4-10-2.7-11.6-8.2-.3-.9-.4-1.9-.4-2.9v-.8c0-4.1 2.1-7.4 5.6-9.5 1.7-1 3.5-1.5 5.4-1.5h.8c2 0 3.9.6 5.6 1.7l.1.1.1.1c.2.3.3.6.3 1v.4c0 1-.7 1.5-1.6 1.7h-.30000000000000004c-.5 0-1.8-.6-2.3-.8zm12.4 2.6c1.5-1.5 3-3 4.5-4.4.4-.4 2-2.1 2.6-2.1h.7999999999999999c.9.2 1.5.7 1.5 1.7v.4c0 .6-.7 1.4-1.2 1.8l-2.7 2.7-4.6 4.7c2 2 4 4 5.9 6l1.6 1.7c.2.2.5.4.6.7.2.3.3.6.3.9v.5c-.2.9-.8 1.6-1.7 1.6h-.3c-.6 0-1.3-.7-1.8-1.1-.9-.8-1.8-1.7-2.6-2.6l-2.9-2.9v4.6c0 1.1-.7 1.9-1.8 1.9h-.3c-1.1 0-1.8-.9-1.8-1.9v-26.1c0-1.1.7-1.9 1.8-1.9h.3c1.1 0 1.8.8 1.8 1.9v11.9zm47.6-6.6h.4c1.1 0 1.9.8 1.9 1.9 0 1.6-1.5 2-2.8 2-1.7 0-3.4 1-4.5 2.2-1.5 1.5-2.1 3.3-2.1 5.4v9.2c0 1.1-.7 1.9-1.8 1.9h-.3c-1.1 0-1.8-.9-1.8-1.9v-9.8c0-3.8 1.8-6.8 4.9-9 1.8-1.2 3.9-1.9 6.1-1.9zm-27.1 18.3c1.4.5 3 .4 4.4.2.7-.3 2.6-1.1 3.3-1h.2c.4.2.8.5 1 .9.5 1 .3 2-.7 2.6l-.3.2c-3.6 2.1-7.5 1.8-11.1-.2-1.7-.9-3-2.3-4-4l-.2-.4c-2.3-4-2-8.3.6-12.1.9-1.3 2.1-2.3 3.5-3.1l.5-.3c3.4-2 7.1-1.8 10.6-.1 1.9.9 3.4 2.3 4.5 4.1l.2.3c.8 1.3-.2 2.5-1.2 3.3-1.2.9-2.4 2-3.5 3-2.7 2.2-5.3 4.4-7.8 6.6zm-3.3-2.3l8.5-7.3c1-.8 2-1.7 3-2.6-.8-1-2.1-1.7-3.1-2.1-2.2-.8-4.4-.6-6.4.6-2.6 1.5-3.8 4-3.7 7 0 1.2.4 2.3 1 3.4.2.4.4.7.7 1"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#3A4D54" d="M73.7 33.7h11.3v11.5h5.7c2.6 0 5.3-.5 7.8-1.3 1.2-.4 2.6-1 3.8-1.7-1.6-2.1-2.4-4.7-2.6-7.3-.3-3.5.4-8.1 2.8-10.8l1.2-1.4 1.4 1.1c3.6 2.9 6.5 6.8 7.1 11.4 4.3-1.3 9.3-1 13.1 1.2l1.5.9-.8 1.6c-3.2 6.2-9.9 8.2-16.4 7.8-9.8 24.3-31 35.8-56.8 35.8-13.3 0-25.5-5-32.5-16.8l-.1-.2-1-2.1c-2.4-5.2-3.1-10.9-2.6-16.6l.2-1.7h9.6v-11.4h11.3v-11.3h22.5v-11.3h13.5v22.6z"></path><path fill="#00AADA" d="M110.2 37.9c.8-5.9-3.6-10.5-6.4-12.7-3.1 3.6-3.6 13.2 1.3 17.2-2.8 2.4-8.5 4.7-14.5 4.7h-72.2c-.6 6.2.5 11.9 3 16.8l.8 1.5c.5.9 1.1 1.7 1.7 2.6 3 .2 5.7.3 8.2.2 4.9-.1 8.9-.7 12-1.7.5-.2.9.1 1.1.5.2.5-.1.9-.5 1.1-.4.1-.8.3-1.3.4-2.4.7-5 1.1-8.3 1.3h-.6000000000000001c-1.3.1-2.7.1-4.2.1-1.6 0-3.1 0-4.9-.1 6 6.8 15.4 10.8 27.2 10.8 25 0 46.2-11.1 55.5-35.9 6.7.7 13.1-1 16-6.7-4.5-2.6-10.5-1.8-13.9-.1z"></path><path fill="#28B8EB" d="M110.2 37.9c.8-5.9-3.6-10.5-6.4-12.7-3.1 3.6-3.6 13.2 1.3 17.2-2.8 2.4-8.5 4.7-14.5 4.7h-68c-.3 9.5 3.2 16.7 9.5 21 4.9-.1 8.9-.7 12-1.7.5-.2.9.1 1.1.5.2.5-.1.9-.5 1.1-.4.1-.8.3-1.3.4-2.4.7-5.2 1.2-8.5 1.4l-.1-.1c8.5 4.4 20.8 4.3 35-1.1 15.8-6.1 30.6-17.7 40.9-30.9-.2.1-.3.2-.5.2z"></path><path fill="#028BB8" d="M18.5 54.6c.4 3.3 1.4 6.4 2.9 9.3l.8 1.5c.5.9 1.1 1.7 1.7 2.6 3 .2 5.7.3 8.2.2 4.9-.1 8.9-.7 12-1.7.5-.2.9.1 1.1.5.2.5-.1.9-.5 1.1-.4.1-.8.3-1.3.4-2.4.7-5.2 1.2-8.5 1.4h-.4c-1.3.1-2.7.1-4.1.1-1.6 0-3.2 0-4.9-.1 6 6.8 15.5 10.8 27.3 10.8 21.4 0 40-8.1 50.8-26h-85.1v-.1z"></path><path fill="#019BC6" d="M23.3 54.6c1.3 5.8 4.3 10.4 8.8 13.5 4.9-.1 8.9-.7 12-1.7.5-.2.9.1 1.1.5.2.5-.1.9-.5 1.1-.4.1-.8.3-1.3.4-2.4.7-5.2 1.2-8.6 1.4 8.5 4.4 20.8 4.3 34.9-1.1 8.5-3.3 16.8-8.2 24.2-14.1h-70.6z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#00ACD3" d="M28.2 35.5h9.8v9.8h-9.8v-9.8zm.8.9h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zM39.5 24.3h9.8v9.7h-9.8v-9.7zm.8.8h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#23C2EE" d="M39.5 35.5h9.8v9.8h-9.8v-9.8zm.8.9h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#00ACD3" d="M50.8 35.5h9.8v9.8h-9.8v-9.8zm.8.9h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#23C2EE" d="M50.8 24.3h9.8v9.7h-9.8v-9.7zm.8.8h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zM62 35.5h9.8v9.8h-9.8v-9.8zm.9.9h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#00ACD3" d="M62 24.3h9.8v9.7h-9.8v-9.7zm.9.8h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#23C2EE" d="M62 13h9.8v9.8h-9.8v-9.8zm.9.8h.8v8.2h-.8v-8.2zm1.4 0h.8v8.2h-.8v-8.2zm1.5 0h.8v8.2h-.8v-8.2zm1.5 0h.8v8.2h-.8v-8.2zm1.4 0h.8v8.2h-.8v-8.2zm1.5 0h.8v8.2h-.8v-8.2z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#00ACD3" d="M73.3 35.5h9.8v9.8h-9.8v-9.8zm.8.9h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#D4EEF1" d="M48.6 61.2c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7-1.5 0-2.7-1.2-2.7-2.7.1-1.5 1.3-2.7 2.7-2.7"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#3A4D54" d="M48.6 61.9c.2 0 .5 0 .7.1-.2.1-.4.4-.4.7 0 .4.4.8.8.8.3 0 .6-.2.7-.4.1.2.1.5.1.7 0 1.1-.9 1.9-1.9 1.9-1.1 0-1.9-.9-1.9-1.9 0-1 .9-1.9 1.9-1.9M1 55.6h125.3c-2.7-.7-8.6-1.6-7.7-5.2-5 5.7-16.9 4-20 1.2-3.4 4.9-23 3-24.3-.8-4.2 5-17.3 5-21.5 0-1.4 3.8-21 5.7-24.3.8-3 2.8-15 4.5-20-1.2 1.1 3.5-4.8 4.5-7.5 5.2"></path><path fill="#BFDBE0" d="M55.8 80.6c-6.7-3.2-10.3-7.5-12.4-12.2-2.5.7-5.5 1.2-8.9 1.4-1.3.1-2.7.1-4.1.1-1.7 0-3.4 0-5.2-.1 6.1 6.1 13.7 10.8 27.6 10.9 1-.1 2-.1 3-.1z"></path><path fill="#D4EEF1" d="M45.9 72.7c-.9-1.3-1.8-2.8-2.5-4.3-2.5.7-5.5 1.2-8.9 1.4 2.4 1.3 5.8 2.5 11.4 2.9z"></path></svg>'
+   
+      $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+   
     </script>
+ 
+    <script>
+      function getContent(str) {
+        $( ".page .left-col img" ).addClass('disabled');
+        $( ".page .left-col .enabled" ).removeClass('enabled');
+        $('.nav2 .clicked').removeClass('clicked')
+        if (str === 'experience'){
+          $( ".page .left-col .experienceBackground" ).addClass('enabled')
+          $( ".page .left-col .experienceBackground a" ).addClass('clicked')
+          $('#mainContainer').replaceWith( "<div id='mainContainer'><br><br><table  class='experienceTable'>  <tr>    <td>               <p class='jobtitle' >Data and Software Developer</p>               <p class='company'><a href='http://alphacruncher.com/' target='_blank'>Alphacruncher - The Cloud Platform for Scientific Research</a></p>               <p class='companylocation'>Budapest, Revay koz 4, 1065 (Hungary)</p>               <br>               <div class='box'>                <div class='box-sm orangeRed'></div>                <div class='box-sm orange'></div>                <div class='box-sm yellow '></div>                <div class='box-sm green '></div>                <div class='box-sm blue '></div>                <div class='box-sm hotpink'></div>              </div><div style='display:block'>	<br><p class='jobdescription'>Alphacruncher provides an online platform for data management and data-driven education using well-known and large financial datasets.</p><br>	<ul class='joblist'>    <li class='checkmarklist'>Creating metadata for financial data models and supporting online documentation for datasets sych as TAQ, CRSP, COMPUSTAT, IVYDB OptionMetrics, RavenPack, DealScan, Mergent, and Abel Noser Ancerno.</li>    <li class='checkmarklist'>Creating interactive web visualizations and dashboards for financial datasets using D3.js and Apache Superset.</li>    <li class='checkmarklist'>Creating a Jquery QueryBuilder application to generate SQL queries and filters.</li>    <li class='checkmarklist'>Substantially contributing  in the development of a Vue.js front-end user interface for interacting with data, code, and computational tools.</li>    <li class='checkmarklist'>Researching methods employed in the extant literature for filtering errors and biases in financial datasets offered with citations.</li>    <li class='checkmarklist'>Writing complex SQL code for implementing the various methods for filtering and manipulating the datasets.</li>    <li class='checkmarklist'>Adding new backend functionalities to the Comprehensive Knowledge Archive Network (CKAN) for data management.</li>    <li class='checkmarklist'>Creating a Python library for automating the identification and correction of date formats in the datasets.</li>    <li class='checkmarklist'>Automating Extract, Transform, Load tasks by creating Directed Acyclic Graphs (DAGS) scripts in Apache Airflow.</li>    <li class='checkmarklist'>Worked on data matching for reproducing datasets used in scientific papers.</li>  <li class='checkmarklist'>Creating dockerized environment for testing web applications using Selenium.</li>	</ul>	</div>		</td>  </tr></table></div>" );
+          $('.experienceItem').addClass('clicked')
+        }
+        else if (str === 'about'){
+
+          $( ".page .left-col .aboutBackground" ).addClass('enabled');
+          $('#mainContainer').replaceWith( "<div id='mainContainer'><div id='mainContainer'>      <br id='break'><br id='break'>      <div class='mySummary'>        <p id='firstHeading' class='homeHeading'>Hi, I'am Tamer Khraisha.</p>        <p id='Summary'>I am originally from the Middle East, but I have been living in Europe for the past 12 years, and currently, I am based in Budapest, Hungary. I did my undergraduate studies in finance and economics, which constitute my primary domain of knowledge. After that, I earned a Ph.D. cum laude in           <span class='tooltip'>Network Science            <span class='tooltiptext'>              <span class='tooltiptitle'>What is Network Science?</span>              <br>              Network science is an interdisciplinary field of research that leverages the increasing availability of              network data to investigate a wide range of complex phenomena such as collective social behavior,              technological development, financial stability, biological interactions, and many more. Network data              consists of many units known as nodes and relationships between these nodes known as links. Nodes              can be persons, organizations, URLs, or proteins. Links can represent relationships such as friendship              between persons, technological transfers between firms, hyperlinks between websites, and chemical interactions between proteins.              Network science employs an extensive array of analytical methods and data science techniques borrowed from              sociology, mathematics, physics, computer science, and economics.</span>          </span>from the Department of Network and Data Science at the Central European University in Budapest. During my Ph.D., I worked on the problem of collective technological innovation as well as on a variety of computational and data-driven projects.</p>          <br>        <p id='Summary'>For the past two years, I have been working as a full-time software developer and data engineer at Alphacruncher in Budapest.           At Alphacruncher, I work on a variety of tasks including the automation of Extract, Transform, Load (ETL) jobs, documenting and implementing techniques for filtering errors and biases in datasets,           writing complex queries for generating SQL views and data filtering, matching datasets between different sources, and developing the front-end UI for a data management application.            I have worked with well-known financial datasets such as TAQ, CRSP, COMPUSTAT, IVYDB OptionMetrics, RavenPack, DealScan, and others.        </p><br><br>        <p class='homeHeading'>As a data scientist and developer, I like to work on creating products derived from scientific analysis of data</p>          <p id='Summary'>          In the medium-long run, I am interested in pursuing a career which combines scientific research with industrial          applications. I have a particular interest in the topic of fraud detection and would be interested to work and          do research in this field. I am also interested in research and applications related to the field of          technological innovation which I explored during my PhD studies. I am open to discussing job-offers from          industry and academia        </p><br>        <p id='Summary'>I believe in the power of knowledge sharing as an important factor in solving nowadays complex          problems. I share some of my articles and ideas on my blog which you can reach from the above navigation bar.        </p>      </div>      <br>      <br>      <br class='spaceBreak'>      <br class='spaceBreak'>    </div></div>" );
+          $('.nav2 .clicked').removeClass('clicked')
+          $('.aboutItem').addClass('clicked')
+        }
+        else if (str === 'skills'){
+
+          $( ".page .left-col .skillsBackground" ).addClass('enabled');
+          $('#mainContainer').replaceWith( "<div id='mainContainer'><main><div><h2 id='skills'>Software Skills</h2><br><!--<h2 style='font-size: 1vw'>I like to learn new technologies, software is an art, I believe in best practices. programming is good and I think that everyone should learn it<h2>--><div class='wrapper'><div class='divider div-transparent'></div></div><div id='div1' class='section skills'><div id='skillset' class='column'> </div></div><h2 id='skills'>Analytical Skills</h2><div class='wrapper'><div class='divider div-transparent'></div></div><div id='div2' class='section skills'><div id='skillset2' class='column'> </div></div></div><br><br><br></main></div>");       
+          $("#div1 #skillset").skillset(object);
+          $("#div2 #skillset2").skillset(object2);
+          $('.skillsItem').addClass('clicked')
+        }
+        else if (str === 'research') {
+          $( ".page .left-col .researchBackground" ).addClass('enabled');
+          $('#mainContainer').replaceWith( "<div id='mainContainer'><br class='breakMac' id='break'><br class='breakMac' id='break'><h1 class='researchHeading'>Research Interests</h1><div class='wrapper'><div class='divider div-transparent'></div></div><br><h2 id='researchDivision' class='researchInterest'>Understanding Technological Innovation</h2><p class='researchDescription'>Technological innovation is an essential problem with significant consequences for economic development and quality of life. I have a particular interest in understanding how and why technological innovations are initially developed, how and why particular technologies diffuse and gain popularity while others do not, and how to understand the evolutionary dynamics of technological innovations. One particular research topic I am working on concerns is analyzing those situations in which the development of technology is conducted by a community of searching agents rather than a single one. A particular research topic I am interested in is the modeling and construction of technological landscapes of solutions which are often called Fitness Landscapes. Additionally, I have an interest in the study of financial innovations, its distinguishing features and its development process. To have more details of what is technological innovation and what are the main areas of research consider having a look at my thesis, which you can find down in this page.</p>	<br><h2 class='researchInterest'>Financial Data Science</h2><p class='researchDescription'>Traditionally, financial modeling and analysis have primarily relied on the use of quantitative tools for exploring and analyzing a wide range of datasets. The field of financial econometrics has been extensively used to forecast financial times series, model financial risks, and investigate financial market dynamics. Recently, the field of financial analysis has witnessed the emergence of novel and alternative data sets and new technologies made possible through recent advances in data mining and computer science. In this project, I would argue that a financial data science paradigm is needed in order to combine these novelties with the traditional financial econometrics. A financial data science paradigm is to be seen as a complementary approach to financial econometrics that can help to produce more accurate and robust models from empirical data. Financial data science is thus positioned at the interaction between financial econometrics, computer science, and data mining </p>  </li><br><br><h1 class='publicationsHeading'>Publications</h1><div class='wrapper'><div class='divider div-transparent'></div></div><ol class='publicationList'><li>				<h2>Khraisha, T. (2019). <a class='publicationLink' target='_blank' href='https://www.sciencedirect.com/science/article/abs/pii/S0954349X18303485'>Complex economic problems and fitness landscapes: Assessment and methodological perspectives.</a> Structural Change and Economic Dynamics.</h2></li><li><h2>Khraisha, T., & Arthur, K. (2018). <a class='publicationLink' target='_blank' href='https://jfin-swufe.springeropen.com/articles/10.1186/s40854-018-0088-y'>Can we have a general theory of financial innovation processes? A conceptual review.</a> Financial Innovation, 4(1), 4.</h2></li><li><h2>Khraisha, T., & Mantegna, R. N. (2019). <a class='publicationLink' target='_blank' href='https://academic.oup.com/comnet/advance-article-abstract/doi/10.1093/comnet/cnz020/5512541'>Network structure and optimal technological innovation.</a> Journal of Complex Networks.</h2></li></ol><br><br><h1 class='publicationsHeading'>PhD Thesis</h1><div class='wrapper'><div class='divider div-transparent'></div></div><h2 class='thesis'>Khraisha, T. (2019). <a class='publicationLink' target='_blank' href='files/phdThesis.pdf'>Network structure and optimal technological innovation</h2></div>");       
+          $('.researchItem').addClass('clicked')
+          }
+        else if (str === 'education') {
+
+          $( ".page .left-col .educationBackground" ).addClass('enabled');
+          $('#mainContainer').replaceWith( "<div id='mainContainer'><br id='break'><br id='break'><br><br><br><table class='EdTable'><caption class='TableCap'>UNIVERSITY DEGREES<br><div class='wrapper educationUnderline'><div class='divider div-transparent'></div></div></caption><tr><td class='educationIcon'><i class='fa fa-graduation-cap' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Ph.D in Network Science<p><p id='UniversityName'> Central European University, Budapest (Hungary)</p><p id='DepartmentName'>Department of Network and Data Science</p><p id='CourseDate'>September 2015 - May 2019</p></td></tr><tr><td class='educationIcon'><i class='fa fa-graduation-cap' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Masters in Economics and Economic Policy<p><p id='UniversityName'> University of Bologna, Bologna (Italy)</p><p id='DepartmentName'>School of Economics, Management and Statistics</p><p id='CourseDate'>September 2012 - November 2014</p></td></tr><tr><td class='educationIcon'><i  class='fa fa-graduation-cap' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Bachelor of Science in Financial Economics<p><p id='UniversityName'>University of Bologna, Bologna (Italy)</p><p id='DepartmentName'>School of Economics, Management and Statistics</p><p id='CourseDate'>September 2008 - March 2012</p></td></tr></table><br class='spaceBreak'><table class='EdTable'><caption class='TableCap'>VISITING FELLOWSHIPS<br><div class='wrapper educationUnderline'><div class='divider div-transparent'></div></div></caption><tr><td  class='educationIcon'><i  class='fa fa-university' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>University of Oxford, Oxford (UK)<p><p id='DepartmentName'>Recognized Student at the Institute for New Economic Thinking at the Oxford MartinSchool</p><p id='CourseDate'>January 2017 - April 2017</p></td></tr><tr><td class='educationIcon'><i  class='fa fa-university' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Complexity Science Hub, Vienna (Austria)<p><p id='DepartmentName'>Visiting researcher in complex systems</p><p id='CourseDate'>September 2017 - October 2017</p></td></tr><tr><td class='educationIcon'><i  class='fa fa-university' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Observatory of Complex Systems, Palermo (Italy)<p><p id='DepartmentName'>Visiting researcher in complex systems</p><p id='CourseDate'>June 2017 - July 2017</p></td></tr></table><br class='spaceBreak'><br><br><table class='EdTable'><caption class='TableCap'>CONFERENCES AND SCHOOLS<br><div class='wrapper educationUnderline'><div class='divider div-transparent'></div></div></caption><tr><td class='educationIcon'><i  class='fa fa-calendar' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>European Association of Evolutionary Political Economy Conference<p><p id='CourseDate'>Budapest, Hungary - October 19, 2017 - October 21, 2017</p></td></tr><tr><td class='educationIcon'><i  class='fa fa-calendar' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Young Scholars Conference by the Institute for New Economic Thinking<p><p id='CourseDate'>Budapest, Hungary - October 19, 2016 - October 22, 2016</p></td></tr><tr><td class='educationIcon'><i  class='fa fa-calendar' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Conference on Complex Systems (CCS)<p><p id='CourseDate'>Amsterdam, The Netherlands - September 19, 2016 - September 22, 2016</p></td></tr><tr><td class='educationIcon'><i  class='fa fa-calendar' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Lake Como School of Complex Networks<p><p id='CourseDate'>Como, Italy - May 15, 2017 - May 19, 2017</p></td></tr></table><br><br><table class='EdTable'><caption class='TableCap'>PROFESSIONAL CERTIFICATES<br><div class='wrapper educationUnderline'><div class='divider div-transparent'></div></div></caption><tr><td class='educationIcon'><i  class='fa fa-certificate' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Machine Learning - Coursera online course<p><a id='certificateLink' href='certificates/MachineLearning.pdf' target='_blank'>See course certificate</a></td></tr><tr><td class='educationIcon'><i  class='fa fa-certificate' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Docker Mastery: The Complete Toolset From a Docker Captain<p><a id='certificateLink' href='certificates/docker_certificate.pdf' target='_blank'>See course certificate</a></td></tr><tr><td class='educationIcon'><i  class='fa fa-certificate' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Introduction to Complexity - Santa Fe online course<p><a id='certificateLink' href='certificates/santafe.pdf' target='_blank'>See course certificate</a></td></tr></table><br class='spaceBreak'><br class='spaceBreak'><br class='spaceBreak'><br class='spaceBreak'><br class='spaceBreak'></div>");       
+          $('.educationItem').addClass('clicked')
+          }
+        else if (str === 'blog') {
+          $( ".page .left-col .blogBackground" ).addClass('enabled');
+          $('#mainContainer').replaceWith( "<div id='mainContainer'><div class='right-col'><div class='content'><article><header><h1><a  href='https://towardsdatascience.com/the-master-data-scientist-5b9132d271c0' target='_blank'>The Master-Data Scientist</a></h1><div class='meta'><div class='date'>04 August 2018</div><div class='author'>written by <a href='https://twitter.com/Tamer_Khraisha' target='_blank'>Tamer Khraisha</a><div></div></header><img src='https://miro.medium.com/fit/c/1400/420/1*aK_PcqA4wVfsNAVjPmQbrA.jpeg'><div class='teaser'><div >The amount of available data and the need for specialists in data analysis, predictive analytics and machine learning have been increasing very fast. For this reason, an increasing number of people has offered themselves to the markets as data scientists. The question here is, what is really a data scientist? </div><p><a href='https://towardsdatascience.com/the-master-data-scientist-5b9132d271c0' target='_blank'>Read more &rarr;</a></p></div><footer class='articleFooter'><div class='category'>Opinion</div><div class='reading-time'>15 min &ndash; 3575 words</div></footer></article><article><header><h1><a  href='https://towardsdatascience.com/the-master-data-scientist-5b9132d271c0' target='_blank'>The Master-Data Scientist</a></h1><div class='meta'><div class='date'>04 August 2018</div><div class='author'>written by <a href='https://twitter.com/Tamer_Khraisha' target='_blank'>Tamer Khraisha</a><div></div></header><img src='https://miro.medium.com/fit/c/1400/420/1*aK_PcqA4wVfsNAVjPmQbrA.jpeg' width='950'><div class='teaser'><div >The amount of available data and the need for specialists in data analysis, predictive analytics and machine learning have been increasing very fast. For this reason, an increasing number of people has offered themselves to the markets as data scientists. The question here is, what is really a data scientist? </div><p><a href='https://towardsdatascience.com/the-master-data-scientist-5b9132d271c0' target='_blank'>Read more &rarr;</a></p></div><footer><div class='category'>Opinion</div><div class='reading-time'>15 min &ndash; 3575 words</div></footer></article></div></div></div>");       
+          $('.blogItem').addClass('clicked')
+        }
+        else{
+          $('#mainContainer').replaceWith( "<h2>I am random</h2>" );
+        }
+}
+    </script>
+
     </div>
 
 </body>

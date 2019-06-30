@@ -75,12 +75,12 @@
 }
 .homeHeading {
 
-	font-family: 'Mouse Memoirs', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif !important;
 	font-size: 2.1vw;
 	text-indent:15px;
 	margin-right:3vw;
 	margin-left:2.5vw;
-	color:rgb(136, 132, 132);
+	color:rgb(77, 74, 74);
 }
 
 /* Buttons at the center */
@@ -521,17 +521,17 @@ div.tab button.active {
 	font-family:"Open Sans Condensed",  sans-serif;
 }
 	
-footer{font-size:50px;color:#999;border-top:1px solid #eee;padding-top:5px;font-family:open sans condensed}
+.articleFooter{font-size:50px;color:#999;border-top:1px solid #eee;padding-top:5px;font-family:open sans condensed}
 
-footer .category{float:left;text-transform:uppercase;font-weight:600}
+.articleFooter .category{float:left;text-transform:uppercase;font-weight:600}
 
-footer .reading-time{float:right}
+.articleFooter .reading-time{float:right}
 
-footer:after{content:"";display:block;clear:both}
+.articleFooter:after{content:"";display:block;clear:both}
 
-footer{width:100%;padding:15px 30px;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;color:#999;font-size:12px;position:fixed;bottom:0;background-color:#eee;}
+.foot{width:100%;padding:15px 30px;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;color:#999;font-size:12px;position:fixed;bottom:0;background-color:#eee;}
 
-footer:before{height:40px;width:100%;position:absolute;content:"";top:-40px;left:0;background:linear-gradient(rgba(238,238,238,0),#eeeeee)}
+.foot:before{height:40px;width:100%;position:absolute;content:"";top:-40px;left:0;background:linear-gradient(rgba(238,238,238,0),#eeeeee)}
 
 
 

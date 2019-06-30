@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+
 .red .section-color{color:#e74c3c}
 
 .red .mobile-nav ul li a:hover{background:rgba(231,76,60,0.3)}
@@ -7,9 +9,8 @@
 
 .red .page .toggle-mobile-nav:hover{background-color:#a82315}
 
-.red .page .left-col .avatar{border:0.5vh solid #e74c3c; opacity:0.75}
+.red .page .left-col .avatar{border:0.5vh solid #e74c3c; opacity:0.90}
 
-.red .page .left-col .avatar:hover{border:5px solid #a82315}
 
 .red .page .left-col nav ul li a {
     background-color: #e74c3c;
@@ -23,7 +24,9 @@
 
 .red .page .left-col .phrases h1 a:hover{color:#e74c3c}
 
-.red .page .right-col a{color:#e74c3c}
+.red .page .right-col h1 { text-align: left;}
+
+.red .page .right-col h1 a{font-size:2vw;color:rgb(116, 114, 114);font-family: 'acme', cursive !important;font-weight:700}
 
 .red .page .right-col a:hover{color:#a82315}
 
