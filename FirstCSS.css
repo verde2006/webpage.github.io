@@ -56,24 +56,23 @@ a{text-decoration:none;transition:color 0.5s ease;-o-transition:color 0.5s ease;
 
 .page .right-col .content{width:100%;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
 
-.page .right-col .content article{width:80%;background:rgb(255, 255, 255);border:1px solid rgba(0, 0, 0, 0.1);border-radius:5px;margin-bottom:46px;margin:46px auto;padding:20px;box-shadow:0 1px 4px rgba(0, 0, 0, 0.1)}
+.page .right-col .content article{width:75%;background:rgb(255, 255, 255);border:1px solid rgba(0, 0, 0, 0.1);border-radius:5px;margin-bottom:46px;margin:46px auto;padding:20px;box-shadow:0 1px 4px rgba(0, 0, 0, 0.1)}
 
 .page .right-col .content article header h1{font-family:"Open Sans Condensed", sans-serif; color:black;font-size:40px;font-weight:300;line-height:40px;padding-bottom:5px}
 
-.page .right-col .content article header .meta{font-size:12px;color:#999;border-bottom:1px solid #eee;margin-bottom:15px;padding-bottom:20px}
+.page .right-col .content article header .meta{font-size:0.5vw !important;color:#999;border-bottom:1px solid #eee;margin-bottom:17px;padding-bottom:20px}
 
-.page .right-col .content article header .meta .date{float:right}
+.page .right-col .content article header .meta .date{float:right; font-size:0.6vw !important}
 
-.page .right-col .content article header .meta .author{float:left}
+.page .right-col .content article header .meta .author{float:left; font-size:0.6vw !important}
 
 .page .right-col .content article header .meta .author a{color:#D34836}
 
-.page .right-col .content article img {width:100% !important; max-height:200px !important}
+.page .right-col .content article img {width:100% !important; max-height:300px !important}
 
-.page .right-col .content article .teaser{margin-bottom:20px}
+.page .right-col .content article .teaser{margin-bottom:20px; text-align: justify}
 
-
-.page .right-col .content article main h2{font-size:20px;text-transform:uppercase;font-weight:600;padding:10px 0}
+.page .right-col .content article main h2{font-size:0.5vw;text-transform:uppercase;font-weight:600;padding:10px 0}
 
 .page .right-col .content article main p{padding-bottom:20px}
 
@@ -126,6 +125,10 @@ a{text-decoration:none;transition:color 0.5s ease;-o-transition:color 0.5s ease;
 .page .right-col .content article .articleFooter .reading-time{float:right !important}
 
 .page .right-col .content article .articleFooter:after{content:"" !important;display:block !important;clear:both !important}
+
+.page .right-col .content article .readMore {text-align:left;color:#D34836}
+
+.page .right-col .content article .readMore a {color:#D34836 !important}
 
 .page .right-col .pagination{text-align:center;margin-bottom:60px}
 

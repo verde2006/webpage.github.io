@@ -55,6 +55,7 @@
 	.page .right-col{width:100%;height:auto;left:0;position:relative}
 	
 	.page .right-col .content{padding:20px;width:100%}
+
 	
 	.page .right-col .content article{margin-bottom:34px}
 	
@@ -89,8 +90,13 @@
 	}
 	
 	
+	@media screen and (min-width: 2000px){
 	
-	
+		.red .page .right-col h1 a{font-size:1.2vw}
+		
+		}	
+
+
 	
 	
 	

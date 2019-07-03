@@ -316,7 +316,8 @@ img{
     list-style:none;
     margin:0;
     padding:0;
-    text-align:center;
+	text-align:center;
+	margin-top:-20px;
 }
 .nav2 li{
     display:inline;
@@ -536,12 +537,12 @@ div.tab button.active {
 
 
 .foot{
-font-size:20px;
+font-size:1.2vw;
 
 }
 .heart {
   content: '&#9829';
-  font-size:40px;
+  font-size:0.5vw;
 }
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 

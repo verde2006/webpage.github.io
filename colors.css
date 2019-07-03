@@ -26,9 +26,9 @@
 
 .red .page .right-col h1 { text-align: left;}
 
-.red .page .right-col h1 a{font-size:2vw;color:rgb(116, 114, 114);font-family: 'acme', cursive !important;font-weight:700}
+.red .page .right-col h1 a{font-size:1.5vw;color:rgb(116, 114, 114);font-family: 'acme', cursive !important;font-weight:700}
 
-.red .page .right-col a:hover{color:#a82315}
+.red .page .right-col a:hover{color:#D34836}
 
 .red .page .right-col .content article header h1{color:#e74c3c}
 
