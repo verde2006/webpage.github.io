@@ -1,7 +1,9 @@
 /*This is the official css file for the website*/
-@import url('https://fonts.googleapis.com/css?family=Mouse+Memoirs&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Mouse+Memoirs|Open+Sans+Condensed:300&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Overlock&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Lato:300&display=swap');
+
+html,body {
+ font-family:'Lato' !important;
+}
 
 .hide {
   display: none;
@@ -61,21 +63,19 @@
 
 
 #Summary {
-	font-family:'Open Sans Condensed', sans-serif !important;
+	font-family:'Lato', sans-serif !important;
 	text-indent:20px;
-	font-size:1.35vw;
+	font-size:1.25vw;
 	margin-right:3vw;
 	margin-left:2.5vw;
-	margin-top:1vw;
+	margin-top:0.5vw;
 	text-align: justify;
 }
 
-#firstHeading{
-	margin-top:0.9vh;
-}
+
 .homeHeading {
 
-	font-family: 'Open Sans Condensed', sans-serif !important;
+	font-family: 'Lato', sans-serif !important;
 	font-size: 2.1vw;
 	text-indent:15px;
 	margin-right:3vw;
@@ -99,7 +99,7 @@
 .btn6, .btn6:link, .btn6:visited {
   padding: 13px 0;
   border: 1px solid #333;
-  font-family:'Open Sans Condensed';
+  font-family:'Lato';
   text-decoration:none;
   color: white;
   font-weight: 700;
@@ -298,7 +298,7 @@ img{
 }
 
 #notice {
-	font-family:'Open Sans Condensed';
+	font-family:'Lato';
 	font-size:1.4em;
 	color:darkred;
 	text-decoration: underline;
@@ -317,16 +317,16 @@ img{
     margin:0;
     padding:0;
 	text-align:center;
-	margin-top:-20px;
 }
 .nav2 li{
     display:inline;
 }
 .nav2 a{
     display:inline-block;
-    font-family:'Open Sans Condensed',cursive; 
-    font-size:3.2vw;
-    padding: 1.4vw;
+    font-family:'Lato',cursive; 
+	font-size:1.9vw;
+	text-transform: uppercase;
+    padding: 1vw;
     text-decoration: none;
 
 }
@@ -375,7 +375,7 @@ div.tab button {
     display: block;
     background-color: #ccc;
     color: black;
-    font-family:"Open Sans Condensed",cursive; 
+    font-family:"Lato",cursive; 
     padding: 22px 16px;
     width: 17vw;
     border: none;
@@ -418,7 +418,7 @@ div.tab button.active {
 
 .tabcontent h3 {
 	color: black; 
-	font-family: "Open Sans Condensed",cursive; 
+	font-family: "Lato",cursive; 
 	font-size: 2vw;
 	text-align:center;
 	font-weight: normal;
@@ -427,7 +427,7 @@ div.tab button.active {
 .tabcontent p {
 	color: black; 
 	font-size: 1.2vw; 
-	font-family: "Open Sans Condensed", serif; 
+	font-family: "Lato", serif; 
 	line-height: 1.8vw; 
 	text-align: justify; 
 	text-shadow: 0 1px 1px #fff;
@@ -443,8 +443,8 @@ div.tab button.active {
 
 .experienceTable {
   border-collapse: separate;
-  border-spacing: 55px 5px;
-  width:95%;
+  width:90%;
+  margin-left:7%;
 }
 
 /*THE TABLE IN EDUCATION SECTION*/
@@ -469,21 +469,22 @@ div.tab button.active {
 
 .jobtitle {
 	color:black;
-	font-size:1.5vw;
-	font-family:'Open Sans Condensed', sans-serif;
+	font-size:1.2vw;
+	font-family:'Lato', sans-serif;
 	font-weight:20px;
-	margin:0;
+	margin-top:15px;
+	margin-bottom:15px;
 }
 
 .jobdescription{
 	color:black;
 	font-size:1.2vw;
-	font-family:'Open Sans Condensed', sans-serif;
+	font-family:'Lato', sans-serif;
 	margin:0;
 }
 
 .joblist{
-	font-family:'Open Sans Condensed', sans-serif;
+	font-family:'Lato', sans-serif;
 	font-size:1.3em;
 
 }
@@ -491,38 +492,38 @@ div.tab button.active {
 #CourseName {
 	color:#cc0000;
 	font-size:1.2vw;
-	font-family:'Open Sans Condensed', sans-serif;
+	font-family:'Lato', sans-serif;
 	margin-top:1vw;
 }
 
 #certificateLink{
   color:rgb(73, 152, 184);
 	font-size:1.1vw;
-	font-family:"Open Sans Condensed",  sans-serif;
+	font-family:"Lato",  sans-serif;
 	margin:0; 
 }
 
 #UniversityName{
 	color:black;
 	font-size:1.1vw;
-	font-family:"Open Sans Condensed",  sans-serif;
+	font-family:"Lato",  sans-serif;
 	margin:0;
 }
 
 #DepartmentName{
 	color:black;
 	font-size:1.1vw;
-	font-family:"Open Sans Condensed",  sans-serif;
+	font-family:"Lato",  sans-serif;
 	margin:0;  
 }
 
 #CourseDate{
 	color:black;
 	font-size:1.2em;
-	font-family:"Open Sans Condensed",  sans-serif;
+	font-family:"Lato",  sans-serif;
 }
 	
-.articleFooter{font-size:50px;color:#999;border-top:1px solid #eee;padding-top:5px;font-family:open sans condensed}
+.articleFooter{color:#999;border-top:1px solid #eee;padding-top:5px;}
 
 .articleFooter .category{float:left;text-transform:uppercase;font-weight:600}
 
@@ -530,16 +531,31 @@ div.tab button.active {
 
 .articleFooter:after{content:"";display:block;clear:both}
 
-.foot{width:100%;padding:15px 30px;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;color:#999;font-size:12px;position:fixed;bottom:0;background-color:#eee;}
+.foot{
+	width:100%;
+	padding:15px 30px;
+	box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	color:#999;
+	position:fixed;
+	bottom:0;
+	background-color:#eee;}
 
 .foot:before{height:40px;width:100%;position:absolute;content:"";top:-40px;left:0;background:linear-gradient(rgba(238,238,238,0),#eeeeee)}
 
 
 
 .foot{
-font-size:1.2vw;
+font-size:1vw;
 
 }
+
+.foot p{
+	display: inline;
+	}
 .heart {
   content: '&#9829';
   font-size:0.5vw;
@@ -564,16 +580,15 @@ font-size:1.2vw;
 
 .EducationType{
     font-size:2vw;
-    font-family:'Open Sans Condensed','arial';
+    font-family:'Lato','arial';
     text-align:center;
 }
 
 
 .TableCap{
-    font-size:2vw;
-    font-family: 'Open Sans Condensed';
+    font-size:1.5vw;
+    font-family: 'Lato';
     color: black;
-
 }
 
 hr {
@@ -602,14 +617,17 @@ hr {
 .company a{
   color:rgb(73, 152, 184);
 }
+.company a:hover{
+	color: #e74c3c;
+}
 .company, .companylocation {
 	font-size:1.1vw;
-    font-family: 'Open Sans Condensed';
+    font-family: 'Lato';
     color: black;
 }
 .jobDuration{
 	font-size:1.1vw;
-    font-family: 'Open Sans Condensed';
+    font-family: 'Lato';
 }
 
 .educationIcon i{

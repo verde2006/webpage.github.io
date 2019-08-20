@@ -104,7 +104,7 @@ var positionLabelText = function(text, pseudonode, fillColor) {
 // instead of inlined to keep the code reasonably
 // easy to read.
 
-d3.json('data.json', function(error, data) {
+d3.json('../data/data.json', function(error, data) {
 
     // Find the graph nodes from the data set. Each
     // trait is a separate node.

@@ -1,13 +1,13 @@
 .checkmarklist {
   margin-bottom: 10px;
   list-style-type: none;
-  font-size:1.27vw;
-  font-family: "Open Sans Condensed";
+  font-size:1.1vw;
+  font-family: "Lato";
 }
 .checkmarklist:before {
   font-family: FontAwesome;
   content: '\f00c';
-  font-size:1vw;
+  font-size:0.8vw;
   color: white;
   background-color: #e74c3c;
   display: inline-block;

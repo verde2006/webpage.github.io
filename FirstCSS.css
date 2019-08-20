@@ -1,22 +1,24 @@
 @charset "UTF-8";
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
-
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700);
-
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
-
-@import url(http://fonts.googleapis.com/css?family=Oswald:300);
-
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
 [class*="entypo-"]:before{font-family:'entypo', sans-serif}*{margin:0;padding:0;border:0;transform:translateZ(0deg);
 
 -webkit-transform:translateZ(0deg)}
 
+@-moz-document url-prefix() {
+	body {
+	  font-weight: lighter !important;
+	}
+  }
+  html {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400;
+  }
 html,body{height:100%;-webkit-font-smoothing:antialiased}
 
-body{font-family:'Roboto', sans-serif;background-color:white;font-family:"Open Sans Condensed"}
+body{background-color:white;font-family:"Lato"}
 
 a{text-decoration:none;transition:color 0.5s ease;-o-transition:color 0.5s ease;-ms-transition:color 0.5s ease;-moz-transition:color 0.5s ease;-webkit-transition:color 0.5s ease}
 
@@ -36,9 +38,9 @@ a{text-decoration:none;transition:color 0.5s ease;-o-transition:color 0.5s ease;
 
 .page .left-col{width:30%;position:fixed;left:0;top:0;height:100%;;box-shadow:inset -15px 0px 15px -15px #000;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
 
-.page .left-col .avatar{width:30%;background-image:url(images/tamer.jpg) !important ;background-size:cover;background-position:50% 50%;border-radius:50%;margin:60px auto 30px auto;display:block;transition:border 0.5s ease;-o-transition:border 0.5s ease;-ms-transition:border 0.5s ease;-moz-transition:border 0.5s ease;-webkit-transition:border 0.5s ease}
+.page .left-col .avatar{width:30% !important;height:17% !important;background-image:url(images/tamer.jpg) !important ;background-size:cover;background-position:50% 50%;border-radius:50%;margin:50px auto 30px auto;display:block;transition:border 0.5s ease;-o-transition:border 0.5s ease;-ms-transition:border 0.5s ease;-moz-transition:border 0.5s ease;-webkit-transition:border 0.5s ease}
 
-.page .left-col .about{font-family:"Open Sans Condensed";width:50%;height:auto;margin:0 auto 30px auto;color:#fff;font-size:20px;background:rgba(255,255,255,0.8);border-radius:0px;padding:10px;text-align:center;color:#333;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+.page .left-col .about{font-family:"Lato";width:50%;height:auto;margin:0 auto 30px auto;color:#fff;font-size:20px;background:rgba(255,255,255,0.8);border-radius:0px;padding:10px;text-align:center;color:#333;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
 
 .page .left-col nav{width:50%;height:auto;margin:0 auto 30px auto}
 
@@ -48,7 +50,7 @@ a{text-decoration:none;transition:color 0.5s ease;-o-transition:color 0.5s ease;
 
 .page .left-col .phrases{width:100%;height:6vw;position:absolute;bottom:60px;text-align:center;overflow:hidden;background:rgba(0,0,0,0.5);white-space:nowrap;padding:15px 0}
 
-.page .left-col .phrases h1{color:#fff;font-size:2.3vw;font-weight:300;width:100%;display:inline-block;font-family:'Roboto' !important}
+.page .left-col .phrases h1{color:#fff;font-size:2.3vw;font-weight:300;width:100%;display:inline-block;font-family:'Lato' !important}
 
 .page .left-col .phrases h1 a{color:#fff;font-weight:700;transition:color 0.5s ease;-o-transition:color 0.5s ease;-ms-transition:color 0.5s ease;-moz-transition:color 0.5s ease;-webkit-transition:color 0.5s ease}
 
@@ -58,7 +60,7 @@ a{text-decoration:none;transition:color 0.5s ease;-o-transition:color 0.5s ease;
 
 .page .right-col .content article{width:75%;background:rgb(255, 255, 255);border:1px solid rgba(0, 0, 0, 0.1);border-radius:5px;margin-bottom:46px;margin:46px auto;padding:20px;box-shadow:0 1px 4px rgba(0, 0, 0, 0.1)}
 
-.page .right-col .content article header h1{font-family:"Open Sans Condensed", sans-serif; color:black;font-size:40px;font-weight:300;line-height:40px;padding-bottom:5px}
+.page .right-col .content article header h1{font-family:"Lato", sans-serif; color:black;font-size:40px;font-weight:300;line-height:40px;padding-bottom:5px}
 
 .page .right-col .content article header .meta{font-size:0.5vw !important;color:#999;border-bottom:1px solid #eee;margin-bottom:17px;padding-bottom:20px}
 

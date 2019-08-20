@@ -4,49 +4,24 @@
 main {
 	padding: 0px;
 	margin: 0px;
-
 	height: 100%;
-
 	text-align: center;
-
 	margin: 0 auto;
-
-	font: 20px "Open Sans", Helvetica, Arial, sans-serif;
-
 }
-
-
-
 main p{
-
 	padding: 0px;
 	margin: 0px;
-	
-
 }
 
-@font-face{
-
-	font-family: 'Fabrica';
-	src: url('Fabrica.otf');
-
-}
-
-/*MAIN*/
 
 main{
-
 	display: table;
-
 	width:80%;
 	text-align: center;
-
-
 	background-color: white;
 }
 
 main h2{
-
 	display: inline-block;
 	margin: 50px auto 0px auto;
 	padding: 0 0.3em 0.3em 0.3em;
@@ -57,5 +32,6 @@ main h2{
 	color: black;
 	letter-spacing: 2px;
 	text-shadow: 0px 1px 0px #ffffff;
-
 }
+
+

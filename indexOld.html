@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html>
-<meta charset="UTF-8">
 
 <head>
   <title>Tamer Khraisha | Personal Webpage</title>
@@ -11,8 +10,7 @@
   <link href="css/quoteStyle.css" rel="stylesheet">
   <link href="css/phraseSlider.css" rel="stylesheet">
   <link href="css/blogTimeLine.css" rel="stylesheet">
-  <link href="css/twoScreensCSS.css" rel="stylesheet">
-  <link href="researchCSS.css" rel="stylesheet" >
+  <link href="researchCSS.css" rel="stylesheet" media="all">
   <link href="Medias.css" rel="stylesheet">
   <link href="popup.css" rel="stylesheet">
   <link rel="stylesheet" href="css2/style.css">
@@ -35,10 +33,6 @@
   <script src="https://d3js.org/d3.v5.js"></script>
   <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
   <script type="text/javascript" src="scripts/skillsData.js"></script>
-  <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
-<script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
-<script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <style>    
     .text-block {
       position: absolute;
@@ -108,48 +102,17 @@ opacity:0;
 .div-transparent{
   margin-top:15px
 }
-
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(http://smallenvelop.com/demo/simple-pre-loader/images/loader-64x/Preloader_3.gif) center no-repeat #fff;
-}
-.hideClass{
-  display:none
-}
     </style>
 </head>
 
 <body class="red">
-
-<div class="se-pre-con"></div>
-
-  <div id="large-header" class="large-header screen">
-  <canvas id="demo-canvas"></canvas>
-    <h1 >TAMER KHRAISHA <br><span class="thin">NETWORK AND DATA SCIENTIST</span>
-    
-    </h1>
-            <div id="section07" class="demo">
-  <a  id="hulk" href="#bottom"><span></span><span></span><span></span>Explore</a>
-</div>
-    </div>
-
-<div class="upperScreen hideClass">
-
-
   <section class="page">
     <aside class="left-col">
         <img class="experienceBackground"  src="images/background4.jpg" />
         <img class="skillsBackground"  src="images/background6.jpg" />
         <img class="researchBackground"  src="images/papers.jpeg" />
         <img class="educationBackground"  src="images/books.jpeg" />
-        <img class="blogBackground"  src="images/background9.jpg" />
+        <img class="blogBackground"  src="images/background11.jpg" />
         <img class="aboutBackground" src="images/background.jpg" />
       
       <a class="avatar"></a>
@@ -165,8 +128,8 @@ opacity:0;
       </div> 
       
       <br>
-<div id="buttonContainer">
-    <button class="btn btn--border"><i  style="margin-right: 6px" class="fas fa-envelope"></i><a  target="_blank" href = "mailto: tamer.khraisha2@gmail.com">CONTACT ME</a><span></span></button><br id="buttonLineBreak">
+<div>
+    <button class="btn btn--border"><i  style="margin-right: 6px" class="fas fa-envelope"></i><a  target="_blank" href = "mailto: tamer.khraisha2@gmail.com">CONTACT ME</a><span></span></button><br>
   <button class="btn btn--swap"><i style="margin-right: 6px" class="fas fa-download"></i><a target="_blank" href="files/curriculum.pdf">CURRICULUM VITAE<span>DOWNLOAD MY CV</span></a></button>
   
 </div>
@@ -295,194 +258,6 @@ opacity:0;
 
 
     </div>
-    </div>
-<script>
-(function() {
-
-    var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
-
-    // Main
-    initHeader();
-    initAnimation();
-    addListeners();
-
-    function initHeader() {
-        width = window.innerWidth;
-        height = window.innerHeight;
-        target = {x: width/2, y: height/2};
-
-        largeHeader = document.getElementById('large-header');
-        largeHeader.style.height = height+'px';
-
-        canvas = document.getElementById('demo-canvas');
-        canvas.width = width;
-        canvas.height = height;
-        ctx = canvas.getContext('2d');
-
-        // create points
-        points = [];
-        for(var x = 0; x < width; x = x + width/70) {
-            for(var y = 0; y < height; y = y + height/20) {
-                var px = x + Math.random()*width/20;
-                var py = y + Math.random()*height/20;
-                var p = {x: px, originX: px, y: py, originY: py };
-                points.push(p);
-            }
-        }
-
-        // for each point find the 5 closest points
-        for(var i = 0; i < points.length; i++) {
-            var closest = [];
-            var p1 = points[i];
-            for(var j = 0; j < points.length; j++) {
-                var p2 = points[j]
-                if(!(p1 == p2)) {
-                    var placed = false;
-                    for(var k = 0; k < 5; k++) {
-                        if(!placed) {
-                            if(closest[k] == undefined) {
-                                closest[k] = p2;
-                                placed = true;
-                            }
-                        }
-                    }
-
-                    for(var k = 0; k < 5; k++) {
-                        if(!placed) {
-                            if(getDistance(p1, p2) < getDistance(p1, closest[k])) {
-                                closest[k] = p2;
-                                placed = true;
-                            }
-                        }
-                    }
-                }
-            }
-            p1.closest = closest;
-        }
-
-        // assign a circle to each point
-        for(var i in points) {
-            var c = new Circle(points[i], 2+Math.random()*2, 'rgba(455,455,455,0.6)');
-            points[i].circle = c;
-        }
-    }
-
-    // Event handling
-    function addListeners() {
-        if(!('ontouchstart' in window)) {
-            window.addEventListener('mousemove', mouseMove);
-        }
-        window.addEventListener('scroll', scrollCheck);
-        window.addEventListener('resize', resize);
-    }
-
-    function mouseMove(e) {
-        var posx = posy = 0;
-        if (e.pageX || e.pageY) {
-            posx = e.pageX;
-            posy = e.pageY;
-        }
-        else if (e.clientX || e.clientY)    {
-            posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
-            posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
-        }
-        target.x = posx;
-        target.y = posy;
-    }
-
-    function scrollCheck() {
-        if(document.body.scrollTop > height) animateHeader = false;
-        else animateHeader = true;
-    }
-
-    function resize() {
-        width = window.innerWidth;
-        height = window.innerHeight;
-        largeHeader.style.height = height+'px';
-        canvas.width = width;
-        canvas.height = height;
-    }
-
-    // animation
-    function initAnimation() {
-        animate();
-        for(var i in points) {
-            shiftPoint(points[i]);
-        }
-    }
-
-    function animate() {
-        if(animateHeader) {
-            ctx.clearRect(0,0,width,height);
-            for(var i in points) {
-                // detect points in range
-                if(Math.abs(getDistance(target, points[i])) < 4000) {
-                    points[i].active = 0.3;
-                    points[i].circle.active = 0.6;
-                } else if(Math.abs(getDistance(target, points[i])) < 20000) {
-                    points[i].active = 0.1;
-                    points[i].circle.active = 0.3;
-                } else if(Math.abs(getDistance(target, points[i])) < 80000) {
-                    points[i].active = 0.1;
-                    points[i].circle.active = 0.1;
-                } else {
-                    points[i].active = 0;
-                    points[i].circle.active = 0;
-                }
-
-                drawLines(points[i]);
-                points[i].circle.draw();
-            }
-        }
-        requestAnimationFrame(animate);
-    }
-
-    function shiftPoint(p) {
-        TweenLite.to(p, 1+1*Math.random(), {x:p.originX-150+Math.random()*200,
-            y: p.originY-50+Math.random()*50, ease:Circ.easeInOut,
-            onComplete: function() {
-                shiftPoint(p);
-            }});
-    }
-
-    // Canvas manipulation
-    function drawLines(p) {
-        if(!p.active) return;
-        for(var i in p.closest) {
-            ctx.beginPath();
-            ctx.moveTo(p.x, p.y);
-            ctx.lineTo(p.closest[i].x, p.closest[i].y);
-            ctx.strokeStyle = 'rgba(500,500,249,'+ p.active+')';
-            ctx.stroke();
-        }
-    }
-
-    function Circle(pos,rad,color) {
-        var _this = this;
-
-        // constructor
-        (function() {
-            _this.pos = pos || null;
-            _this.radius = rad || null;
-            _this.color = color || null;
-        })();
-
-        this.draw = function() {
-            if(!_this.active) return;
-            ctx.beginPath();
-            ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
-            ctx.fillStyle = 'rgba(500,500,500,'+ _this.active+')';
-            ctx.fill();
-        };
-    }
-
-    // Util
-    function getDistance(p1, p2) {
-        return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
-    }
-    
-})();
-</script>
     <script>
       // visualizations
       (function () {
@@ -667,12 +442,7 @@ opacity:0;
 });
    
     </script>
- <script>
-$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");
-	});
-</script>
+ 
     <script>
 
       const blogPost1 = "<article><header><h1><a href='https://towardsdatascience.com/the-master-data-scientist-5b9132d271c0' target='_blank'>The Master-Data Scientist</a></h1><div class='meta'><div class='date'>04 August 2018</div><div class='author'>Written by <a href='https://twitter.com/Tamer_Khraisha' target='_blank'>Tamer Khraisha</a><div></div></header><img src='https://miro.medium.com/fit/c/1400/420/1*aK_PcqA4wVfsNAVjPmQbrA.jpeg'><div class='teaser'><div >The amount of available data and the need for specialists in data analysis, predictive analytics and machine learning have been increasing very fast. For this reason, an increasing number of people has offered themselves to the markets as data scientists. The question here is, what is really a data scientist? </div><p class='readMore'><a href='https://towardsdatascience.com/the-master-data-scientist-5b9132d271c0' target='_blank'>Read more &rarr;</a></p></div><footer class='articleFooter'><div class='category'>Opinion</div><div class='reading-time'>15 min &ndash; 3575 words</div></footer></article>"
@@ -702,7 +472,7 @@ $(window).load(function() {
         else if (str === 'about'){
 
           $( ".page .left-col .aboutBackground" ).addClass('enabled');
-          $('#mainContainer').replaceWith( "<div id='mainContainer'><br id='break'><br id='break'><div class='mySummary'><p id='Summary'>- ABOUT ME</p><br><p id='Summary'>My name is Tamer Khraisha and I am originally from the Middle East. I have been living in Europe for the past 12 years, and currently, I am based in Budapest, Hungary. I did my undergraduate studies in finance and economics, which constitute my primary domain of knowledge. After that, I earned a Ph.D. cum laude in <span><a class='netSci' href='#popup1'>Network Science </a></span>from the Department of Network and Data Science at the Central European University in Budapest. During my Ph.D., I worked on the problem of collective technological innovation as well as on a variety of computational and data-driven projects.</p><div id='popup1' class='overlay'><div class='popup'><a class='close' href='#'>&times;</a><br><h2>WHAT IS NETWORK SCIENCE?</h2><div class='content'><br><img src='https://www.universiteitleiden.nl/binaries/content/gallery/ul2/main-images/science/liacs/network.png'/><p> Network science is an interdisciplinary field of research that leverages the increasing availability ofnetwork data to investigate a wide range of complex phenomena such as collective social behavior,technological development, financial stability, biological interactions, and many more. Network dataconsists of many units known as nodes and relationships between these nodes known as links. Nodescan be persons, organizations, URLs, or proteins. Links can represent relationships such as friendshipbetween persons, technological transfers between firms, hyperlinks between websites, and chemical interactions between proteins.Network science employs an extensive array of analytical methods and data science techniques borrowed fromsociology, mathematics, physics, computer science, and economics.</p></div></div></div><br><p id='Summary'>- MY CURRENT JOB</p><br><p id='Summary'>For the past two years, I have been working as a full-time software and data developer at Alphacruncher in Budapest. At Alphacruncher, I work on a variety of tasks including the automation of Extract, Transform, Load (ETL) jobs, documenting and implementing techniques for filtering errors and biases in datasets, writing complex queries for generating SQL views and filtering datasets, matching datasets between different sources, and developing the front-end UI for the data management application DataHub.  I have worked with well-known financial datasets such as TAQ, CRSP, COMPUSTAT, IVYDB OptionMetrics, RavenPack, DealScan, and others.</p><br><p id='Summary'>- MY CAREER GOALS</p><br><p id='Summary'>In the medium-long run, I will be pursuing a career which combines scientific research with industrialapplications. I want to develop data products derived from the results of scientific analysis of large and interesting datasets. I am also interested in research and applications related to the field oftechnological innovation which I explored during my PhD studies.</p><br><p id='Summary'>- SOME PHILOSOPHY</p><br><p id='Summary'>I believe in the power of knowledge sharing as a key to solve nowadays complexproblems. And although I like facts and data, I believe in the need for philosophical thinking and human judegment in order to understand our complex systems. Finally, I am a strong advocate of the role of good institutions in driving growthand achieving human progress and prosperity.</p></div><br><br><br class='spaceBreak'><br class='spaceBreak'></div>" );
+          $('#mainContainer').replaceWith( "<div id='mainContainer'><br id='break'><br id='break'><div class='mySummary'><p id='Summary'>- ABOUT ME</p><br><p id='Summary'>My name is Tamer Khraisha and I am originally from the Middle East. I have been living in Europe for the past 12 years, and currently, I am based in Budapest, Hungary. I did my undergraduate studies in finance and economics, which constitute my primary domain of knowledge. After that, I earned a Ph.D. cum laude in <span><a class='netSci' href='#popup1'>Network Science</a></span>from the Department of Network and Data Science at the Central European University in Budapest. During my Ph.D., I worked on the problem of collective technological innovation as well as on a variety of computational and data-driven projects.</p><div id='popup1' class='overlay'><div class='popup'><a class='close' href='#'>&times;</a><br><h2>WHAT IS NETWORK SCIENCE?</h2><div class='content'><br><img src='https://www.universiteitleiden.nl/binaries/content/gallery/ul2/main-images/science/liacs/network.png'/><p> Network science is an interdisciplinary field of research that leverages the increasing availability ofnetwork data to investigate a wide range of complex phenomena such as collective social behavior,technological development, financial stability, biological interactions, and many more. Network dataconsists of many units known as nodes and relationships between these nodes known as links. Nodescan be persons, organizations, URLs, or proteins. Links can represent relationships such as friendshipbetween persons, technological transfers between firms, hyperlinks between websites, and chemical interactions between proteins.Network science employs an extensive array of analytical methods and data science techniques borrowed fromsociology, mathematics, physics, computer science, and economics.</p></div></div></div><br><p id='Summary'>- MY CURRENT JOB</p><br><p id='Summary'>For the past two years, I have been working as a full-time software developer and data engineer at Alphacruncher in Budapest. At Alphacruncher, I work on a variety of tasks including the automation of Extract, Transform, Load (ETL) jobs, documenting and implementing techniques for filtering errors and biases in datasets, writing complex queries for generating SQL views and data filtering, matching datasets between different sources, and developing the front-end UI for a data management application.  I have worked with well-known financial datasets such as TAQ, CRSP, COMPUSTAT, IVYDB OptionMetrics, RavenPack, DealScan, and others.</p><br><p id='Summary'>- MY CAREER GOALS</p><br><p id='Summary'>In the medium-long run, I will be pursuing a career which combines scientific research with industrialapplications. I have a particular interest in the topic of fraud detection and would be interested to work anddo research in this field. I am also interested in research and applications related to the field oftechnological innovation which I explored during my PhD studies.</p><br><p id='Summary'>- MY HOBBIES</p><br><p id='Summary'>I believe in the power of knowledge sharing as an important factor in solving nowadays complexproblems. I share some of my articles and ideas on my blog which you can reach from the above navigation bar.</p></div><br><br><br class='spaceBreak'><br class='spaceBreak'></div>" );
           $('.nav2 .clicked').removeClass('clicked')
           $('.aboutItem').addClass('clicked')
         }
@@ -728,25 +498,12 @@ $(window).load(function() {
         else if (str === 'blog') {
           $( ".page .left-col .blogBackground" ).addClass('enabled');
 
-          $('#mainContainer').replaceWith( "<div id='mainContainer'><section class='timeline'><div><div class='timeline-item'><div class='timeline-img'></div><div class='timeline-content timeline-card js--fadeInRight'><div id='post1' class='timeline-img-header'><h2>The Master-Data Scientist</h2></div><div class='date'>MEDIUM ARTICLE</div><p class='author'>By Tamer Khraisha</p><p>The amount of available data and the need for specialists in data analysis, predictive analytics and machine learning have been increasing very fast. For this reason, an increasing number of people has offered themselves to the markets as data scientists. The question here is, what is really a data scientist?</p><a class='bnt-more' href='https://towardsdatascience.com/the-master-data-scientist-5b9132d271c0' target='_blank'>Read more &rarr;</a></div></div> <div class='timeline-item'><div class='timeline-img'></div><div class='timeline-content timeline-card js--fadeInRight'><div id='post2' class='timeline-img-header'><h2>Visualization of the Syndicated Lending Market</h2></div><div class='date'>VISUALIZATION</div><p class='author'>By Tamer Khraisha</p><p>Using d3, I create an interactive visualization of the share of many banks in one financial market called Syndicated lending.</p><a class='bnt-more' href='blogPosts/Post11.html' target='_blank'>Read more &rarr;</a></div></div>  <div class='timeline-item'><div class='timeline-img'></div><div class='timeline-content timeline-card js--fadeInRight'><div id='post3' class='timeline-img-header'><h2>Interactive Visualization of The Network of Associations Between Personality Traits</h2></div><div class='date'>VISUALIZATION</div><p class='author'>By Tamer Khraisha and Srebrenka Letina</p><p>Using d3, I create an interactive visualization of the network created by connecting different personality traits using linear associations.</p><a class='bnt-more' href='blogPosts/Post10.html' target='_blank'>Read more &rarr;</a></div></div>   <div class='timeline-item'><div class='timeline-img'></div><div class='timeline-content timeline-card js--fadeInRight'><div id='post4' class='timeline-img-header'><h2>Visualizing Graph-Related Attributes of a Financial Network</h2></div><div class='date'>VISUALIZATION</div><p class='author'>By Tamer Khraisha</p><p>Using d3, I visualize the temporal evolution of 24 network attributes of an international Financial Network.</p><a class='bnt-more' href='blogPosts/Post9.html' target='_blank'>Read more &rarr;</a></div></div> <div class='timeline-item'><div class='timeline-img'></div><div class='timeline-content timeline-card js--fadeInRight'><div id='post5' class='timeline-img-header'><h2>Visualizing the Temporal Evolution of The Weapon Trade Network</h2></div><div class='date'>VISUALIZATION</div><p class='author'>By Tamer Khraisha</p><p>Using d3, I visualize the temporal evolution of 24 network attributes of an international Financial Network.</p><a class='bnt-more' href='blogPosts/Post8.html' target='_blank'>Read more &rarr;</a></div></div></div></section><br><br><br></div>");       
+          $('#mainContainer').replaceWith( "<div id='mainContainer'><section class='timeline'><div><div class='timeline-item'><div class='timeline-img'></div><div class='timeline-content timeline-card js--fadeInRight'><div id='post1' class='timeline-img-header'><h2>The Master-Data Scientist</h2></div><div class='date'>MEDIUM ARTICLE</div><p class='author'>By Tamer Khraisha</p><p>The amount of available data and the need for specialists in data analysis, predictive analytics and machine learning have been increasing very fast. For this reason, an increasing number of people has offered themselves to the markets as data scientists. The question here is, what is really a data scientist?</p><a class='bnt-more' href='javascript:void(0)'>Read more &rarr;</a></div></div> <div class='timeline-item'><div class='timeline-img'></div><div class='timeline-content timeline-card js--fadeInRight'><div id='post2' class='timeline-img-header'><h2>Visualization of the Syndicated Lending Market</h2></div><div class='date'>VISUALIZATION</div><p class='author'>By Tamer Khraisha</p><p>Using d3, I create an interactive visualization of the share of many banks in one financial market called Syndicated lending.</p><a class='bnt-more' href='javascript:void(0)'>Read more &rarr;</a></div></div>  <div class='timeline-item'><div class='timeline-img'></div><div class='timeline-content timeline-card js--fadeInRight'><div id='post3' class='timeline-img-header'><h2>Interactive Visualization of The Network of Associations Between Personality Traits</h2></div><div class='date'>VISUALIZATION</div><p class='author'>By Tamer Khraisha and Srebrenka Letina</p><p>Using d3, I create an interactive visualization of the network created by connecting different personality traits using linear associations.</p><a class='bnt-more' href='javascript:void(0)'>Read more &rarr;</a></div></div>   <div class='timeline-item'><div class='timeline-img'></div><div class='timeline-content timeline-card js--fadeInRight'><div id='post4' class='timeline-img-header'><h2>Visualizing Graph-Related Attributes of a Financial Network</h2></div><div class='date'>MEDIUM ARTICLE</div><p class='author'>By Tamer Khraisha</p><p>Using d3, I visualize the temporal evolution of 24 network attributes of an international Financial Network.</p><a class='bnt-more' href='javascript:void(0)'>Read more &rarr;</a></div></div> <div class='timeline-item'><div class='timeline-img'></div><div class='timeline-content timeline-card js--fadeInRight'><div id='post5' class='timeline-img-header'><h2>Visualizing Graph-Related Attributes of a Financial Network</h2></div><div class='date'>MEDIUM ARTICLE</div><p class='author'>By Tamer Khraisha</p><p>Using d3, I visualize the temporal evolution of 24 network attributes of an international Financial Network.</p><a class='bnt-more' href='javascript:void(0)'>Read more &rarr;</a></div></div></div></section><br><br><br></div>");       
           $('.blogItem').addClass('clicked')
         }
 }
     </script>
-<script>
-$("#hulk").click(function(){
-        $('.upperScreen').removeClass('hideClass');
-        $('html, body').animate({scrollTop:$('.upperScreen').offset().top}, {duration: 1700});
-        $("#large-header").fadeOut(1700)
-        $("#large-header").animate({"display":"none"}, 1700);
-        return false;
-    });
-var scrollToBottom = function() {
-  window.scrollTo(0, document.body.scrollHeight);
-}
-var delay = 2000;
-var intervalID = setInterval(scroll, delay);
-</script>
+
     </div>
 
 </body>

@@ -8,7 +8,6 @@
 	
 	.page .left-col{padding:20px 0}
 	
-	.page .left-col .avatar{width:40%}
 	
 	.page .left-col .about{width:80%}
 	
@@ -38,7 +37,7 @@
 		padding:0 !important;
 	  }
 	
-	.page .left-col .avatar{width:23.3%;margin:0 auto 20px auto;}
+	.page .left-col .avatar{width:23.3%; height:170px !important;margin:0 auto 20px auto;}
 	
 	.page .left-col .about{width:60%;margin-bottom:20px}
 	

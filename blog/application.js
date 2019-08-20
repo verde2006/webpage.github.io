@@ -112,7 +112,6 @@ function getAge() {
 
 // List of all phrases
 var Phrases = new Array(
-  "I go by the<br />name <a href='http://www.tamerkhraisha.com'>Tamer</a>",
   "I am a Ph.D <br />at <a href='https://cns.ceu.edu/' target='_blank'>CNS</a>",
   "I code stuff<br />on <a href='https://github.com/TamerKhraisha' target='_blank'>Github</a>",
   "Follow me<br />on <a href='https://twitter.com/Tamer_Khraisha' target='_blank'>Twitter</a>",
