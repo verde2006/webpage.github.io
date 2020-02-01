@@ -12,11 +12,11 @@
     margin: 50px 0;
   }
   
-  .netSci{
+  .introductionKeyword, .nuvolosLink{
     border-bottom: 1px dotted darkgray;
     color:rgb(37, 86, 114)
   }
-  .netSci:hover{
+  .introductionKeyword:hover{
     color: #e74c3c;
   }
   

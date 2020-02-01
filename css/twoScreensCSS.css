@@ -10,8 +10,9 @@
   z-index: 1;
 }
 .thin{
-  font-size:1.5vw;
-  font-family:lato
+  font-size:1.4vw;
+  font-family:'Lato';
+  font-weight: 300;
 }
 .main-title {
   position: absolute;

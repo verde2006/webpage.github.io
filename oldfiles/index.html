@@ -137,6 +137,7 @@
 <body class="red">
 
   <div id="large-header" class="large-header screen">
+    <canvas id="demo-canvas"></canvas>
     <h1>TAMER KHRAISHA <br><span class="thin">NETWORK AND DATA SCIENTIST</span>
 
     </h1>
@@ -256,7 +257,7 @@
               Europe for the past 12 years, and currently, I am based in Budapest, Hungary. I did my undergraduate
               studies in finance and economics, which constitute my primary domain of knowledge. After that, I earned a
               Ph.D. cum laude in
-              <span><a class="introductionKeyword" href="#popup1">Network Science </a></span>
+              <span><a class="netSci" href="#popup1">Network Science </a></span>
               from the Department of Network and Data Science at the Central European University in Budapest. During my
               Ph.D., I worked on the problem of collective technological innovation as well as on a variety of
               computational and data-driven projects.</p>
@@ -286,8 +287,15 @@
             </div>
             <br>
             <p id="Summary">- MY CURRENT JOB</p><br>
-            <p id="Summary">
-              Since January 2008, I have been working as a software and data developer at Alphacruncher in Budapest. At Alphacruncher, I have been one of the main developers of <a class="introductionKeyword" href="https://nuvolos.cloud/" target="_blank">Nuvolos</a>, a unified cloud-based platform for research and education. In addition to Nuvolos, I have worked on a variety of tasks including the automation of Extract, Transform, Load (ETL) jobs, documenting and implementing techniques for filtering errors and biases in financial datasets, writing complex queries for generating SQL views and filtering datasets, and matching a variety of financial datasets. I have worked with well-known financial datasets such as TAQ, CRSP, COMPUSTAT, IVYDB OptionMetrics, RavenPack, DealScan, and others.
+            <p id="Summary">For the past two years, I have been working as a full-time software and data developer at
+              Alphacruncher in Budapest. At Alphacruncher, my main task has been to develop the UI for DataHub. DataHub
+              is a cloud-based educational and research technology that offers a unified solution that allows you to
+              have with code, files, datasets, and applications working together, in your browser. In addition to
+              DataHub, I have worked on a variety of tasks including the automation of Extract, Transform, Load (ETL)
+              jobs, documenting and implementing techniques for filtering errors and biases in financial datasets,
+              writing complex queries for generating SQL views and filtering datasets, and matching a variety of
+              financial datasets. I have worked with well-known financial datasets such as TAQ, CRSP, COMPUSTAT, IVYDB
+              OptionMetrics, RavenPack, DealScan, and others.
             </p><br>
             <p id="Summary">- MY CAREER GOALS</p><br>
             <p id="Summary">
@@ -298,7 +306,11 @@
               technological innovation which I explored during my PhD studies.
             </p><br>
             <p id="Summary">- SOME PHILOSOPHY</p><br>
-            <p id="Summary">The complexity of human-made systems has always been increasing, but it is fair to say that our understanding of these systems has not kept up with our dependence on them. To cope with complexity, I believe in the power of knowledge sharing, collective problem solving, and evolutionary thinking. In this regard, data and facts are to be considered an essential ingredient. Additionally, I am a strong advocate of the role of robust and inclusive institutions in driving growth and achieving human progress and prosperity.
+            <p id="Summary">Complex systems and networks are everywhere, but it is fair to say that our understanding of
+              such systems has not kept up with our dependence on them. To cope with complexity, I believe in the power
+              of knowledge sharing, collective problem solving, and evolutionary thinking. In this regards, data and
+              facts are to be considered an essential ingredient. Finally, I am a strong advocate of the role of robust
+              and inclusive institutions in driving growth and achieving human progress and prosperity.
             </p>
           </div>
           <br>
@@ -321,17 +333,190 @@
   <script>
     (function () {
 
-      var width, height, largeHeader, target = true;
+      var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
 
       // Main
       initHeader();
+      initAnimation();
+      addListeners();
+
       function initHeader() {
         width = window.innerWidth;
         height = window.innerHeight;
         target = { x: width / 2, y: height / 2 };
+
         largeHeader = document.getElementById('large-header');
         largeHeader.style.height = height + 'px';
+
+        canvas = document.getElementById('demo-canvas');
+        canvas.width = width;
+        canvas.height = height;
+        ctx = canvas.getContext('2d');
+
+        // create points
+        points = [];
+        for (var x = 0; x < width; x = x + width / 70) {
+          for (var y = 0; y < height; y = y + height / 20) {
+            var px = x + Math.random() * width / 20;
+            var py = y + Math.random() * height / 20;
+            var p = { x: px, originX: px, y: py, originY: py };
+            points.push(p);
+          }
+        }
+
+        // for each point find the 5 closest points
+        for (var i = 0; i < points.length; i++) {
+          var closest = [];
+          var p1 = points[i];
+          for (var j = 0; j < points.length; j++) {
+            var p2 = points[j]
+            if (!(p1 == p2)) {
+              var placed = false;
+              for (var k = 0; k < 5; k++) {
+                if (!placed) {
+                  if (closest[k] == undefined) {
+                    closest[k] = p2;
+                    placed = true;
+                  }
+                }
+              }
+
+              for (var k = 0; k < 5; k++) {
+                if (!placed) {
+                  if (getDistance(p1, p2) < getDistance(p1, closest[k])) {
+                    closest[k] = p2;
+                    placed = true;
+                  }
+                }
+              }
+            }
+          }
+          p1.closest = closest;
+        }
+
+        // assign a circle to each point
+        for (var i in points) {
+          var c = new Circle(points[i], 2 + Math.random() * 2, 'rgba(455,455,455,0.6)');
+          points[i].circle = c;
+        }
       }
+
+      // Event handling
+      function addListeners() {
+        if (!('ontouchstart' in window)) {
+          window.addEventListener('mousemove', mouseMove);
+        }
+        window.addEventListener('scroll', scrollCheck);
+        window.addEventListener('resize', resize);
+      }
+
+      function mouseMove(e) {
+        var posx = posy = 0;
+        if (e.pageX || e.pageY) {
+          posx = e.pageX;
+          posy = e.pageY;
+        }
+        else if (e.clientX || e.clientY) {
+          posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+          posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+        }
+        target.x = posx;
+        target.y = posy;
+      }
+
+      function scrollCheck() {
+        if (document.body.scrollTop > height) animateHeader = false;
+        else animateHeader = true;
+      }
+
+      function resize() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        largeHeader.style.height = height + 'px';
+        canvas.width = width;
+        canvas.height = height;
+      }
+
+      // animation
+      function initAnimation() {
+        animate();
+        for (var i in points) {
+          shiftPoint(points[i]);
+        }
+      }
+
+      function animate() {
+        if (animateHeader) {
+          ctx.clearRect(0, 0, width, height);
+          for (var i in points) {
+            // detect points in range
+            if (Math.abs(getDistance(target, points[i])) < 4000) {
+              points[i].active = 0.3;
+              points[i].circle.active = 0.6;
+            } else if (Math.abs(getDistance(target, points[i])) < 20000) {
+              points[i].active = 0.1;
+              points[i].circle.active = 0.3;
+            } else if (Math.abs(getDistance(target, points[i])) < 80000) {
+              points[i].active = 0.1;
+              points[i].circle.active = 0.1;
+            } else {
+              points[i].active = 0;
+              points[i].circle.active = 0;
+            }
+
+            drawLines(points[i]);
+            points[i].circle.draw();
+          }
+        }
+        requestAnimationFrame(animate);
+      }
+
+      function shiftPoint(p) {
+        TweenLite.to(p, 1 + 1 * Math.random(), {
+          x: p.originX - 150 + Math.random() * 200,
+          y: p.originY - 50 + Math.random() * 50, ease: Circ.easeInOut,
+          onComplete: function () {
+            shiftPoint(p);
+          }
+        });
+      }
+
+      // Canvas manipulation
+      function drawLines(p) {
+        if (!p.active) return;
+        for (var i in p.closest) {
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(p.closest[i].x, p.closest[i].y);
+          ctx.strokeStyle = 'rgba(500,500,249,' + p.active + ')';
+          ctx.stroke();
+        }
+      }
+
+      function Circle(pos, rad, color) {
+        var _this = this;
+
+        // constructor
+        (function () {
+          _this.pos = pos || null;
+          _this.radius = rad || null;
+          _this.color = color || null;
+        })();
+
+        this.draw = function () {
+          if (!_this.active) return;
+          ctx.beginPath();
+          ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
+          ctx.fillStyle = 'rgba(500,500,500,' + _this.active + ')';
+          ctx.fill();
+        };
+      }
+
+      // Util
+      function getDistance(p1, p2) {
+        return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
+      }
+
     })();
   </script>
   <script>
@@ -539,6 +724,7 @@
 
     const blogs = blogPost1 + blogPost2 + blogPost3 + blogPost4 + blogPost5
 
+
     function getContent(str) {
       $(".page .left-col img").addClass('disabled');
       $(".page .left-col .enabled").removeClass('enabled');
@@ -546,16 +732,18 @@
       if (str === 'experience') {
         $(".page .left-col .experienceBackground").addClass('enabled')
         $(".page .left-col .experienceBackground a").addClass('clicked')
-        $('#mainContainer').replaceWith("<div id='mainContainer'><br><br><table class='experienceTable'><tr><td><p class='jobtitle'>SOFTWARE AND DATA DEVELOPER</p><p class='company'><a href='http://alphacruncher.com/' target='_blank'>Alphacruncher</a></p><p class='companylocation'>Budapest, Revay koz 4, 1065 (Hungary)</p> <br><div class='box'><div class='box-sm orangeRed'></div><div class='box-sm orange'></div><div class='box-sm yellow '></div><div class='box-sm green '></div><div class='box-sm blue '></div><div class='box-sm hotpink'></div></div><div style='display:block'> <br><p class='jobdescription'>Alphacruncher provides the online, cloud-based platform Nuvolos.Nuvolos is an integrated solution to work with files, SQL data, and applications in asingle, scalable, and reproducible environment.</p><br><ul class='joblist'><li class='checkmarklist'>Developing the UI/UX for Nuvolos using Vue.js and implementing the<i>Material Design Framework</i> using Vuetify.</li><li class='checkmarklist'>Creating metadata for financial data models and supporting onlinedocumentation for datasets sych as TAQ, CRSP, COMPUSTAT, IVYDB OptionMetrics, RavenPack,DealScan, Mergent, and Abel Noser Ancerno.</li><li class='checkmarklist'>Creating interactive web visualizations and dashboards forfinancial datasets using D3.js and Apache Superset.</li><li class='checkmarklist'>Creating a Jquery QueryBuilder application to generate SQL queriesand filters.</li><li class='checkmarklist'>Researching methods employed in the extant literature forfiltering errors and biases in financial datasets offered with citations.</li><li class='checkmarklist'>Writing complex SQL code for implementing the various methods forfiltering and manipulating the datasets.</li><li class='checkmarklist'>Adding new backend functionalities to the Comprehensive KnowledgeArchive Network (CKAN) for data management.</li><li class='checkmarklist'>Creating a Python library for automating the identification andcorrection of date formats in financial datasets.</li><li class='checkmarklist'>Automating Extract, Transform, Load tasks by creating DirectedAcyclic Graphs (DAGS) scripts in Apache Airflow.</li><li class='checkmarklist'>Worked on financial data matching for reproducing datasets used inscientific papers.</li><li class='checkmarklist'>Created a Python application for performing financial eventstudies using Compustat Global.</li><li class='checkmarklist'>Creating dockerized environment for testing web applications usingSelenium.</li></ul></div></td></tr></table></div>")        
+        $('#mainContainer').replaceWith("<div id='mainContainer'><br><br><table  class='experienceTable'>  <tr>    <td>               <p class='jobtitle' >SOFTWARE AND DATA DEVELOPER</p><p class='company'><a href='http://alphacruncher.com/' target='_blank'>Alphacruncher Hungary Kft</a></p>               <p class='companylocation'>Budapest, Revay koz 4, 1065 (Hungary)</p>               <br>               <div class='box'>                <div class='box-sm orangeRed'></div>                <div class='box-sm orange'></div>                <div class='box-sm yellow '></div>                <div class='box-sm green '></div>                <div class='box-sm blue '></div>                <div class='box-sm hotpink'></div>              </div><div style='display:block'>	<br><p class='jobdescription'>Alphacruncher provides an online platform for data management and data-driven education using well-known and large financial datasets.</p><br>	<ul class='joblist'>    <li class='checkmarklist'>Creating metadata for financial data models and supporting online documentation for datasets such as TAQ, CRSP, COMPUSTAT, IVYDB OptionMetrics, RavenPack, DealScan, Mergent, and Abel Noser Ancerno.</li>    <li class='checkmarklist'>Creating interactive web visualizations and dashboards for financial datasets using D3.js and Apache Superset.</li>    <li class='checkmarklist'>Creating a Jquery QueryBuilder application to generate SQL queries and filters.</li>    <li class='checkmarklist'>Substantially contributing  in the development of a Vue.js front-end user interface for interacting with data, code, and computational tools.</li>    <li class='checkmarklist'>Researching methods employed in the extant literature for filtering errors and biases in financial datasets offered with citations.</li>    <li class='checkmarklist'>Writing complex SQL code for implementing the various methods for filtering and manipulating the datasets.</li>    <li class='checkmarklist'>Adding new backend functionalities to the Comprehensive Knowledge Archive Network (CKAN) for data management.</li>    <li class='checkmarklist'>Creating a Python library for automating the identification and correction of date formats in the datasets.</li>    <li class='checkmarklist'>Automating Extract, Transform, Load tasks by creating Directed Acyclic Graphs (DAGS) scripts in Apache Airflow.</li>    <li class='checkmarklist'>Worked on data matching for reproducing datasets used in scientific papers.</li>  <li class='checkmarklist'>Creating dockerized environment for testing web applications using Selenium.</li>	</ul>	</div>		</td>  </tr></table></div>");
         $('.experienceItem').addClass('clicked')
       }
       else if (str === 'about') {
+
         $(".page .left-col .aboutBackground").addClass('enabled');
-        $('#mainContainer').replaceWith("<div id='mainContainer'><br id='break'><br id='break'><div class='mySummary'><p id='Summary'>- ABOUT ME</p><br><p id='Summary'>My name is Tamer Khraisha and I am originally from the Middle East. I have been living in Europe for the past 12 years, and currently, I am based in Budapest, Hungary. I did my undergraduate studies in finance and economics, which constitute my primary domain of knowledge. After that, I earned a Ph.D. cum laude in <span><a class='introductionKeyword' href='#popup1'>Network Science </a></span>from the Department of Network and Data Science at the Central European University in Budapest. During my Ph.D., I worked on the problem of collective technological innovation as well as on a variety of computational and data-driven projects.</p><div id='popup1' class='overlay'><div class='popup'><a class='close' href='#'>&times;</a><br><h2>WHAT IS NETWORK SCIENCE?</h2><div class='content'><br><img src='https://www.universiteitleiden.nl/binaries/content/gallery/ul2/main-images/science/liacs/network.png'/><p> Network science is an interdisciplinary field of research that leverages the increasing availability of network data to investigate a wide range of complex phenomena such as collective social behavior, technological development, financial stability, biological interactions, and many more. Network data consists of units known as nodes, together with relationships between these nodes, known as links. Nodes can be persons, organizations, URLs, or proteins. Links can represent relationships such as friendship between persons, technological transfers between firms, hyperlinks between websites, and chemical interactions between proteins. Network science employs an extensive array of analytical methods and data science techniques borrowed from sociology, mathematics, physics, computer science, and economics.</p></div></div></div><br><p id='Summary'>- MY CURRENT JOB</p><br><p id='Summary'>              Since January 2008, I have been working as a software and data developer at Alphacruncher in Budapest. At Alphacruncher, I have been one of the main developers of <a class='introductionKeyword' href='https://nuvolos.cloud/'' target='_blank'>Nuvolos</a>, a unified cloud-based platform for research and education. In addition to Nuvolos, I have worked on a variety of tasks including the automation of Extract, Transform, Load (ETL) jobs, documenting and implementing techniques for filtering errors and biases in financial datasets, writing complex queries for generating SQL views and filtering datasets, and matching a variety of financial datasets. I have worked with well-known financial datasets such as TAQ, CRSP, COMPUSTAT, IVYDB OptionMetrics, RavenPack, DealScan, and others.</p><br><p id='Summary'>- MY CAREER GOALS</p><br><p id='Summary'>In the medium-long run, I will be pursuing a career which combines scientific research with industrial applications. I want to develop data products derived from the results of scientific analysis of large and interesting datasets. I am also interested in research and applications related to the field oftechnological innovation which I explored during my PhD studies.</p><br><p id='Summary'>- SOME PHILOSOPHY</p><br><p id='Summary'>The complexity of human-made systems has always been increasing, but it is fair to say that our understanding of these systems has not kept up with our dependence on them. To cope with complexity, I believe in the power of knowledge sharing, collective problem solving, and evolutionary thinking. In this regard, data and facts are to be considered an essential ingredient. Additionally, I am a strong advocate of the role of robust and inclusive institutions in driving growth and achieving human progress and prosperity.</p></div><br><br><br class='spaceBreak'><br class='spaceBreak'></div>");
+        $('#mainContainer').replaceWith("<div id='mainContainer'><br id='break'><br id='break'><div class='mySummary'><p id='Summary'>- ABOUT ME</p><br><p id='Summary'>My name is Tamer Khraisha and I am originally from the Middle East. I have been living in Europe for the past 12 years, and currently, I am based in Budapest, Hungary. I did my undergraduate studies in finance and economics, which constitute my primary domain of knowledge. After that, I earned a Ph.D. cum laude in <span><a class='netSci' href='#popup1'>Network Science </a></span>from the Department of Network and Data Science at the Central European University in Budapest. During my Ph.D., I worked on the problem of collective technological innovation as well as on a variety of computational and data-driven projects.</p><div id='popup1' class='overlay'><div class='popup'><a class='close' href='#'>&times;</a><br><h2>WHAT IS NETWORK SCIENCE?</h2><div class='content'><br><img src='https://www.universiteitleiden.nl/binaries/content/gallery/ul2/main-images/science/liacs/network.png'/><p> Network science is an interdisciplinary field of research that leverages the increasing availability ofnetwork data to investigate a wide range of complex phenomena such as collective social behavior,technological development, financial stability, biological interactions, and many more. Network dataconsists of many units known as nodes and relationships between these nodes known as links. Nodescan be persons, organizations, URLs, or proteins. Links can represent relationships such as friendshipbetween persons, technological transfers between firms, hyperlinks between websites, and chemical interactions between proteins.Network science employs an extensive array of analytical methods and data science techniques borrowed fromsociology, mathematics, physics, computer science, and economics.</p></div></div></div><br><p id='Summary'>- MY CURRENT JOB</p><br><p id='Summary'>For the past two years, I have been working as a full-time software and data developer at Alphacruncher in Budapest. At Alphacruncher, I work on a variety of tasks including the automation of Extract, Transform, Load (ETL) jobs, documenting and implementing techniques for filtering errors and biases in datasets, writing complex queries for generating SQL views and filtering datasets, matching datasets between different sources, and developing the front-end UI for the data management application DataHub.  I have worked with well-known financial datasets such as TAQ, CRSP, COMPUSTAT, IVYDB OptionMetrics, RavenPack, DealScan, and others.</p><br><p id='Summary'>- MY CAREER GOALS</p><br><p id='Summary'>In the medium-long run, I will be pursuing a career which combines scientific research with industrialapplications. I want to develop data products derived from the results of scientific analysis of large and interesting datasets. I am also interested in research and applications related to the field oftechnological innovation which I explored during my PhD studies.</p><br><p id='Summary'>- SOME PHILOSOPHY</p><br><p id='Summary'>I believe in the power of knowledge sharing as a key to solve nowadays complexproblems. And although I like facts and data, I believe in the need for philosophical thinking and human judegment in order to understand our complex systems. Finally, I am a strong advocate of the role of good institutions in driving growthand achieving human progress and prosperity.</p></div><br><br><br class='spaceBreak'><br class='spaceBreak'></div>");
         $('.nav2 .clicked').removeClass('clicked')
         $('.aboutItem').addClass('clicked')
       }
       else if (str === 'skills') {
+
         $(".page .left-col .skillsBackground").addClass('enabled');
         $('#mainContainer').replaceWith("<div id='mainContainer'><main><div><h2 id='skills'>Software Skills</h2><br><!--<h2 style='font-size: 1vw'>I like to learn new technologies, software is an art, I believe in best practices. programming is good and I think that everyone should learn it<h2>--><div class='wrapper'><div class='divider div-transparent'></div></div><div id='div1' class='section skills'><div id='skillset' class='column'> </div></div><h2 id='skills'>Analytical Skills</h2><div class='wrapper'><div class='divider div-transparent'></div></div><div id='div2' class='section skills'><div id='skillset2' class='column'> </div></div></div><br><br><br></main></div>");
         $("#div1 #skillset").skillset(object);
@@ -568,12 +756,14 @@
         $('.researchItem').addClass('clicked')
       }
       else if (str === 'education') {
+
         $(".page .left-col .educationBackground").addClass('enabled');
         $('#mainContainer').replaceWith("<div id='mainContainer'><br id='break'><br><br><table class='EdTable'><caption class='TableCap'>UNIVERSITY DEGREES<br><div class='wrapper educationUnderline'><div class='divider div-transparent'></div></div></caption><tr><td class='educationIcon'><i class='fa fa-graduation-cap' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Ph.D in Network Science<p><p id='UniversityName'> Central European University, Budapest (Hungary)</p><p id='DepartmentName'>Department of Network and Data Science</p><p id='CourseDate'>September 2015 - May 2019</p></td></tr><tr><td class='educationIcon'><i class='fa fa-graduation-cap' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Masters in Economics and Economic Policy<p><p id='UniversityName'> University of Bologna, Bologna (Italy)</p><p id='DepartmentName'>School of Economics, Management and Statistics</p><p id='CourseDate'>September 2012 - November 2014</p></td></tr><tr><td class='educationIcon'><i  class='fa fa-graduation-cap' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Bachelor of Science in Financial Economics<p><p id='UniversityName'>University of Bologna, Bologna (Italy)</p><p id='DepartmentName'>School of Economics, Management and Statistics</p><p id='CourseDate'>September 2008 - March 2012</p></td></tr></table><br class='spaceBreak'><table class='EdTable'><caption class='TableCap'>VISITING FELLOWSHIPS<br><div class='wrapper educationUnderline'><div class='divider div-transparent'></div></div></caption><tr><td  class='educationIcon'><i  class='fa fa-university' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>University of Oxford, Oxford (UK)<p><p id='DepartmentName'>Recognized Student at the Institute for New Economic Thinking at the Oxford MartinSchool</p><p id='CourseDate'>January 2017 - April 2017</p></td></tr><tr><td class='educationIcon'><i  class='fa fa-university' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Complexity Science Hub, Vienna (Austria)<p><p id='DepartmentName'>Visiting researcher in complex systems</p><p id='CourseDate'>September 2017 - October 2017</p></td></tr><tr><td class='educationIcon'><i  class='fa fa-university' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Observatory of Complex Systems, Palermo (Italy)<p><p id='DepartmentName'>Visiting researcher in complex systems</p><p id='CourseDate'>June 2017 - July 2017</p></td></tr></table><br class='spaceBreak'><br><br><table class='EdTable'><caption class='TableCap'>CONFERENCES AND SCHOOLS<br><div class='wrapper educationUnderline'><div class='divider div-transparent'></div></div></caption><tr><td class='educationIcon'><i  class='fa fa-calendar' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>European Association of Evolutionary Political Economy Conference<p><p id='CourseDate'>Budapest, Hungary - October 19, 2017 - October 21, 2017</p></td></tr><tr><td class='educationIcon'><i  class='fa fa-calendar' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Young Scholars Conference by the Institute for New Economic Thinking<p><p id='CourseDate'>Budapest, Hungary - October 19, 2016 - October 22, 2016</p></td></tr><tr><td class='educationIcon'><i  class='fa fa-calendar' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Conference on Complex Systems (CCS)<p><p id='CourseDate'>Amsterdam, The Netherlands - September 19, 2016 - September 22, 2016</p></td></tr><tr><td class='educationIcon'><i  class='fa fa-calendar' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Lake Como School of Complex Networks<p><p id='CourseDate'>Como, Italy - May 15, 2017 - May 19, 2017</p></td></tr></table><br><br><table class='EdTable'><caption class='TableCap'>PROFESSIONAL CERTIFICATES<br><div class='wrapper educationUnderline'><div class='divider div-transparent'></div></div></caption><tr><td class='educationIcon'><i  class='fa fa-certificate' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Machine Learning - Coursera online course<p><a id='certificateLink' href='certificates/MachineLearning.pdf' target='_blank'>See course certificate</a></td></tr><tr><td class='educationIcon'><i  class='fa fa-certificate' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Docker Mastery: The Complete Toolset From a Docker Captain<p><a id='certificateLink' href='certificates/docker_certificate.pdf' target='_blank'>See course certificate</a></td></tr><tr><td class='educationIcon'><i  class='fa fa-certificate' aria-hidden='true'></i></td><td class='contentRow'><p id='CourseName'>Introduction to Complexity - Santa Fe online course<p><a id='certificateLink' href='certificates/santafe.pdf' target='_blank'>See course certificate</a></td></tr></table><br class='spaceBreak'><br class='spaceBreak'><br class='spaceBreak'><br class='spaceBreak'><br class='spaceBreak'></div>");
         $('.educationItem').addClass('clicked')
       }
       else if (str === 'blog') {
         $(".page .left-col .blogBackground").addClass('enabled');
+
         $('#mainContainer').replaceWith("<div id='mainContainer'><section class='timeline'><div><div class='timeline-item'><div class='timeline-img'></div><div class='timeline-content timeline-card js--fadeInRight'><div id='post1' class='timeline-img-header'><h2>The Master-Data Scientist</h2></div><div class='date'>MEDIUM ARTICLE</div><p class='author'>By Tamer Khraisha</p><p>The amount of available data and the need for specialists in data analysis, predictive analytics and machine learning have been increasing very fast. For this reason, an increasing number of people has offered themselves to the markets as data scientists. The question here is, what is really a data scientist?</p><a class='bnt-more' href='https://towardsdatascience.com/the-master-data-scientist-5b9132d271c0' target='_blank'>Read more &rarr;</a></div></div> <div class='timeline-item'><div class='timeline-img'></div><div class='timeline-content timeline-card js--fadeInRight'><div id='post2' class='timeline-img-header'><h2>Visualization of the Syndicated Lending Market</h2></div><div class='date'>VISUALIZATION</div><p class='author'>By Tamer Khraisha</p><p>Using d3, I create an interactive visualization of the share of many banks in one financial market called Syndicated lending.</p><a class='bnt-more' href='blogPosts/Post11.html' target='_blank'>Read more &rarr;</a></div></div>  <div class='timeline-item'><div class='timeline-img'></div><div class='timeline-content timeline-card js--fadeInRight'><div id='post3' class='timeline-img-header'><h2>Interactive Visualization of The Network of Associations Between Personality Traits</h2></div><div class='date'>VISUALIZATION</div><p class='author'>By Tamer Khraisha and Srebrenka Letina</p><p>Using d3, I create an interactive visualization of the network created by connecting different personality traits using linear associations.</p><a class='bnt-more' href='blogPosts/Post10.html' target='_blank'>Read more &rarr;</a></div></div>   <div class='timeline-item'><div class='timeline-img'></div><div class='timeline-content timeline-card js--fadeInRight'><div id='post4' class='timeline-img-header'><h2>Visualizing Graph-Related Attributes of a Financial Network</h2></div><div class='date'>VISUALIZATION</div><p class='author'>By Tamer Khraisha</p><p>Using d3, I visualize the temporal evolution of 24 network attributes of an international Financial Network.</p><a class='bnt-more' href='blogPosts/Post9.html' target='_blank'>Read more &rarr;</a></div></div> <div class='timeline-item'><div class='timeline-img'></div><div class='timeline-content timeline-card js--fadeInRight'><div id='post5' class='timeline-img-header'><h2>Visualizing the Temporal Evolution of The Weapon Trade Network</h2></div><div class='date'>VISUALIZATION</div><p class='author'>By Tamer Khraisha</p><p>Using d3, I visualize the temporal evolution of 24 network attributes of an international Financial Network.</p><a class='bnt-more' href='blogPosts/Post8.html' target='_blank'>Read more &rarr;</a></div></div></div></section><br><br><br></div>");
         $('.blogItem').addClass('clicked')
       }
