@@ -7,9 +7,7 @@
 @media screen and (max-width: 1000px){
 	
 	.page .left-col{padding:20px 0}
-	
-	.page .left-col .avatar{width:40%}
-	
+		
 	.page .left-col .about{width:80%}
 	
 	.page .left-col nav{width:80%}

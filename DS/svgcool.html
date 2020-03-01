@@ -10,6 +10,15 @@ font-family: 'Amatic SC', cursive;
 
 }
 
+#wrapper {
+			overflow: hidden;
+			/* will contain if #first is longer than #second */
+      position: relative;
+      width:100%;
+      height:90%;
+      background-color:aqua
+		}
+
 .title{
 font-size:70px;
 font-family: 'Amatic SC', cursive;
@@ -19,14 +28,34 @@ font-family: 'Amatic SC', cursive;
 div{
 text-align:left;
 }
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height:80vh;
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 </style>
  </head>
 
 <body>
 <br>
   <div class="title">SVG is cool</div>
+  <div style="display:relative">
+  <div  class="svg-container">
+    <svg  id='tamer'></svg>
 
-  <svg style="background-color:none" id='tamer' width='1800' height='800' ></svg>
+  </div>
+  </div>
+
   <script>
 
  var rg = d3.range(100,1800,100);
@@ -35,11 +64,14 @@ text-align:left;
 var myArray=['gold','hotpink','tomato','salmon','Crimson','DodgerBlue','gold','gold','GreenYellow','PaleVioletRed','LightSeaGreen','Teal','GoldenRod'];
 
 
-
+var svgContainer = d3.select("#tamer")
+			.attr("viewBox", "0 0 1800 900")
+			.attr("preserveAspectRatio", "xMinYMin meet")
+			.classed("svg-content", true)
 
 for (i=0;i<rg.length;i++){
   
- d3.select("#tamer").append("line")
+  svgContainer.append("line")
          .attr("stroke", 'grey')
          .attr("x1", rg[i])
          .attr('y1',300)
@@ -47,7 +79,7 @@ for (i=0;i<rg.length;i++){
          .attr('y2',600);  
 
   
- d3.select("#tamer").append("circle")
+         svgContainer.append("circle")
          .attr("fill",myArray[Math.floor(Math.random() * myArray.length)] )
          .attr("r", 25)
          .attr('cx',rg[i])
@@ -55,7 +87,7 @@ for (i=0;i<rg.length;i++){
 		.attr('stroke','black')		
 		.attr('stroke-width',2);
   
-  d3.select("#tamer").append("circle")
+  svgContainer.append("circle")
          .attr("fill", myArray[Math.floor(Math.random() * myArray.length)])
          .attr("r", 25)
          .attr('cx',rg[i])

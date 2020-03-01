@@ -141,7 +141,7 @@ div.tab button {display: block;padding: 22px 16px;width: 28vw;font-size: 4vw;lin
 
 .tom2 .skillbar-title {width:110px;font-size:8px;}
 
-.company, .companylocation{ font-size:2vw;font-family: 'Lato';color: black;}
+.company, .companylocation{ font-size:2vw;font-family: 'Lato';color: black;font-weight: 300;}
 
 .jobtitle{font-size:3vw}
 

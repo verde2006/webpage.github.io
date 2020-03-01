@@ -3,6 +3,7 @@
 
 html,body {
  font-family:'Lato' !important;
+ font-weight: 300;
 }
 
 .hide {
@@ -70,6 +71,7 @@ html,body {
 	margin-left:2.5vw;
 	margin-top:0.5vw;
 	text-align: justify;
+	font-weight: 300;
 }
 
 
@@ -81,6 +83,7 @@ html,body {
 	margin-right:3vw;
 	margin-left:2.5vw;
 	color:rgb(77, 74, 74);
+	font-weight: 300;
 }
 
 /* Buttons at the center */
@@ -300,6 +303,7 @@ img{
 #notice {
 	font-family:'Lato';
 	font-size:1.4em;
+	font-weight: 300;
 	color:darkred;
 	text-decoration: underline;
 	text-align:center;
@@ -325,6 +329,7 @@ img{
     display:inline-block;
     font-family:'Lato',cursive; 
 	font-size:1.9vw;
+	font-weight: 300;
 	text-transform: uppercase;
     padding: 1vw;
     text-decoration: none;
@@ -472,6 +477,7 @@ div.tab button.active {
 	font-size:1.2vw;
 	font-family:'Lato', sans-serif;
 	font-weight:20px;
+	font-weight: 300;
 	margin-top:15px;
 	margin-bottom:15px;
 }
@@ -480,12 +486,14 @@ div.tab button.active {
 	color:black;
 	font-size:1.2vw;
 	font-family:'Lato', sans-serif;
+	font-weight: 300;
 	margin:0;
 }
 
 .joblist{
 	font-family:'Lato', sans-serif;
 	font-size:1.3em;
+	font-weight: 300;
 
 }
 
@@ -494,12 +502,14 @@ div.tab button.active {
 	font-size:1.2vw;
 	font-family:'Lato', sans-serif;
 	margin-top:1vw;
+	font-weight: 300;
 }
 
 #certificateLink{
   color:rgb(73, 152, 184);
 	font-size:1.1vw;
 	font-family:"Lato",  sans-serif;
+	font-weight: 300;
 	margin:0; 
 }
 
@@ -507,6 +517,7 @@ div.tab button.active {
 	color:black;
 	font-size:1.1vw;
 	font-family:"Lato",  sans-serif;
+	font-weight: 300;
 	margin:0;
 }
 
@@ -514,6 +525,7 @@ div.tab button.active {
 	color:black;
 	font-size:1.1vw;
 	font-family:"Lato",  sans-serif;
+	font-weight: 300;
 	margin:0;  
 }
 
@@ -521,6 +533,7 @@ div.tab button.active {
 	color:black;
 	font-size:1.2em;
 	font-family:"Lato",  sans-serif;
+	font-weight: 300;
 }
 	
 .articleFooter{color:#999;border-top:1px solid #eee;padding-top:5px;}
@@ -581,14 +594,15 @@ font-size:1vw;
 .EducationType{
     font-size:2vw;
     font-family:'Lato','arial';
-    text-align:center;
+	text-align:center;
+	font-weight: 300;
 }
-
 
 .TableCap{
     font-size:1.5vw;
     font-family: 'Lato';
-    color: black;
+	color: black;
+	font-weight: 300;
 }
 
 hr {
@@ -623,11 +637,13 @@ hr {
 .company, .companylocation {
 	font-size:1.1vw;
     font-family: 'Lato';
-    color: black;
+	color: black;
+	font-weight: 300;
 }
 .jobDuration{
 	font-size:1.1vw;
-    font-family: 'Lato';
+	font-family: 'Lato';
+	font-weight: 300;
 }
 
 .educationIcon i{

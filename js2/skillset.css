@@ -48,6 +48,7 @@ color: #666666;
 .skillName  {
 	font-family: 'Lato', sans-serif;
 	font-size:1.3vw;
+	font-weight: 300;
 }
 
 .skillName svg {
@@ -60,7 +61,8 @@ color: #666666;
 #skills {
 	font-family: 'Lato', sans-serif;
 	font-size:1.5vw;
-	text-transform: uppercase
+	text-transform: uppercase;
+	font-weight: 300;
 }
 
 .icon-info-circled{
@@ -168,6 +170,7 @@ animation: create-bar 0.5s 1;
 }
 .skillset-list li #list-info {
 font-family: 'Lato', cursive;
+font-weight: 300;
 position: absolute;
 bottom: 100px;
 left: 0px;

@@ -1,6 +1,7 @@
 @media screen and (min-width: 1000px){
 	
 	.page .left-col .about{width:70%}
+
 	
 	}
 	
@@ -37,7 +38,7 @@
 		padding:0 !important;
 	  }
 	
-	.page .left-col .avatar{width:23.3%; height:170px !important;margin:0 auto 20px auto;}
+	.page .left-col .avatar{margin:0 auto 20px auto;}
 	
 	.page .left-col .about{width:60%;margin-bottom:20px}
 	
@@ -92,6 +93,8 @@
 	@media screen and (min-width: 2000px){
 	
 		.red .page .right-col h1 a{font-size:1.2vw}
+		.page .left-col .avatar{width:200px !important;height:200px !important}
+
 		
 		}	
 

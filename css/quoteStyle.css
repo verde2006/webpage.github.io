@@ -3,6 +3,7 @@
   font-family: 'Lato', cursive;;
   color:white;
   font-size:1vw;
+  font-weight: 300;
   width:95%;
   text-align: justify;
 }
@@ -15,12 +16,14 @@
   opacity:0.8;
   color:black;
   background-color: white;
-  font-family: 'Lato'
+  font-family: 'Lato';
+  font-weight: 300;
 }
 #speaker{
   color:white;
   font-size:0.8vw;
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
 
 }
 

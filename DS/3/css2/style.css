@@ -5,8 +5,8 @@ body {
 }
 
 #wrapper {
-  height:100%;
-  width:100%;
+  height:100vh;
+  width:100vw;
   text-align: center;
   display: table;
   position:absolute;
@@ -20,7 +20,7 @@ body {
 
 #title h2 {
   color: #fff;
-  font-size: 80px;
+  font-size: 7vh;
   font-family: 'Amatic SC', cursive;
   font-weight:normal;
 
@@ -28,7 +28,14 @@ body {
 
 #title h3 {
   color: #fff;
-  font-size: 45px;
+  font-size: 5vh;
+  font-family: 'Amatic SC', cursive;
+  font-weight:normal;
+}
+
+#title h4 {
+  color: #fff;
+  font-size: 3vh;
   font-family: 'Amatic SC', cursive;
   font-weight:normal;
 }
@@ -38,8 +45,12 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1950px;
-  height: auto; 
+}
+
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 #canvas {

@@ -1,140 +1,161 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Force Layouts - Constraints Relaxation</title>
-    <script type="text/javascript" src="d3/d3.js"></script>
-    <script type="text/javascript" src="d3/d3.geom.js"></script>
-    <script type="text/javascript" src="d3/d3.layout.js"></script>
-    <link type="text/css" rel="stylesheet" href="style.css"/>
-	
-		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-	
-<style>
-#header{
-	font-family: 'Amatic SC', cursive;
-	font-size:70px;
-	text-align:center;
-}
-</style>	
-  </head>
-  <body>
-    <div id="body">
-      <div id="chart"></div>
-      <div id="header">constraints relaxation</div>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Force Layouts - Constraints Relaxation</title>
+  <script type="text/javascript" src="d3/d3.js"></script>
+  <script type="text/javascript" src="d3/d3.geom.js"></script>
+  <script type="text/javascript" src="d3/d3.layout.js"></script>
+  <link type="text/css" rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+  <style>
+    #header {
+      font-family: 'Amatic SC', cursive;
+      font-size: 70px;
+      text-align: center;
+    }
+
+    .svg-container {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      padding-bottom: 100%;
+      vertical-align: top;
+      overflow: hidden;
+    }
+
+    .svg-content {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="body">
+    <div id="chart" id="container" class="svg-container">
     </div>
-    <script type="text/javascript">
+    <div id="header">constraints relaxation</div>
+  </div>
+  <script type="text/javascript">
 
-var w = 1800,
-    h = 1000;
+    var w = 1800,
+      h = 1000;
 
-var svg = d3.select("#chart").append("svg:svg")
-    .attr("width", w)
-    .attr("height", h);
+    var svg = d3.select("#chart")
+      .append("svg:svg")
+      .attr("preserveAspectRatio", "xMinYMin meet")
+      .attr("viewBox", "0 0 1800 1000")
+      .classed("svg-content", true)
 
-svg.append("svg:rect")
-    .attr("width", w)
-    .attr("height", h);
+    svg.append("svg:rect")
+      .attr("width", w)
+      .attr("height", h);
 
-var desired = svg.append("svg:line")
-    .attr("x1", w / 6)
-    .attr("x2", 5 * w / 6)
-    .attr("y1", h / 2)
-    .attr("y2", h / 2)
-    .style("stroke", "#000")
-    .style("stroke-width", "4px")
-    .style("stroke-dasharray", "2,4 0");
-
-svg.append("svg:circle")
-    .attr("r", 20)
-    .attr("cy", h / 2)
-    .attr("cx", w / 6)
-    .style("fill", "#fff")
-    .style("stroke", "#000")
-    .style("stroke-width", "4px")
-    .style("stroke-dasharray", "2,2 0");
-
-svg.append("svg:circle")
-    .attr("r", 20)
-    .attr("cy", h / 2)
-    .attr("cx", 5 * w / 6)
-    .style("fill", "#fff")
-    .style("stroke", "#000")
-    .style("stroke-width", "4px")
-    .style("stroke-dasharray", "2,2 0");
-
-var current = svg.append("svg:line")
-    .attr("x1", w / 3)
-    .attr("x2", 2 * w / 3)
-    .attr("y1", h / 2)
-    .attr("y2", h / 2)
-    .style("stroke", "#000")
-    .style("stroke-width", "4px");
-
-var a = svg.append("svg:g")
-    .attr("transform", "translate(" + w / 3 + "," + h / 2 + ")");
-
-a.append("svg:circle")
-    .style("stroke", "#000")
-    .style("stroke-width", "4px")
-    .attr("r", 20);
-
-a.append("svg:text")
-    .attr("y", 40)
-    .attr("text-anchor", "middle")
-    .attr("dy", ".71em")
-    .style("font-size", "40px")
-	.style("font-family", "Amatic SC")
-    .text("A");
-
-var b = svg.append("svg:g")
-    .attr("transform", "translate(" + 2 * w / 3 + "," + h / 2 + ")");
-
-b.append("svg:circle")
-    .style("stroke", "#000")
-    .style("stroke-width", "4px")
-    .attr("r", 20);
-
-b.append("svg:text")
-    .attr("y", 40)
-    .attr("text-anchor", "middle")
-    .attr("dy", ".71em")
-    .style("font-size", "40px")
-	.style("font-family", "Amatic SC")
-    .text("B");
-
-svg.on("click", function() {
-
-  a.attr("transform", "translate(" + w / 3 + "," + h / 2 + ")")
-    .transition()
-      .duration(1000)
-      .attr("transform", "translate(" + w / 6 + "," + h / 2 + ")")
-    .transition()
-      .delay(3000)
-      .attr("transform", "translate(" + w / 3 + "," + h / 2 + ")");
-
-  b.attr("transform", "translate(" + 2 * w / 3 + "," + h / 2 + ")")
-    .transition()
-      .duration(1000)
-      .attr("transform", "translate(" + 5 * w / 6 + "," + h / 2 + ")")
-    .transition()
-      .delay(3000)
-      .attr("transform", "translate(" + 2 * w / 3 + "," + h / 2 + ")");
-
-  current
-      .attr("x1", w / 3)
-      .attr("x2", 2 * w / 3)
-    .transition()
-      .duration(1000)
+    var desired = svg.append("svg:line")
       .attr("x1", w / 6)
       .attr("x2", 5 * w / 6)
-    .transition()
-      .delay(3000)
-      .attr("x1", w / 3)
-      .attr("x2", 2 * w / 3);
-});
+      .attr("y1", h / 2)
+      .attr("y2", h / 2)
+      .style("stroke", "#000")
+      .style("stroke-width", "4px")
+      .style("stroke-dasharray", "2,4 0");
 
-    </script>
-  </body>
+    svg.append("svg:circle")
+      .attr("r", 20)
+      .attr("cy", h / 2)
+      .attr("cx", w / 6)
+      .style("fill", "#fff")
+      .style("stroke", "#000")
+      .style("stroke-width", "4px")
+      .style("stroke-dasharray", "2,2 0");
+
+    svg.append("svg:circle")
+      .attr("r", 20)
+      .attr("cy", h / 2)
+      .attr("cx", 5 * w / 6)
+      .style("fill", "#fff")
+      .style("stroke", "#000")
+      .style("stroke-width", "4px")
+      .style("stroke-dasharray", "2,2 0");
+
+    var current = svg.append("svg:line")
+      .attr("x1", w / 3)
+      .attr("x2", 2 * w / 3)
+      .attr("y1", h / 2)
+      .attr("y2", h / 2)
+      .style("stroke", "#000")
+      .style("stroke-width", "4px");
+
+    var a = svg.append("svg:g")
+      .attr("transform", "translate(" + w / 3 + "," + h / 2 + ")");
+
+    a.append("svg:circle")
+      .style("stroke", "#000")
+      .style("stroke-width", "4px")
+      .attr("r", 20);
+
+    a.append("svg:text")
+      .attr("y", 40)
+      .attr("text-anchor", "middle")
+      .attr("dy", ".71em")
+      .style("font-size", "40px")
+      .style("font-family", "Amatic SC")
+      .text("A");
+
+    var b = svg.append("svg:g")
+      .attr("transform", "translate(" + 2 * w / 3 + "," + h / 2 + ")");
+
+    b.append("svg:circle")
+      .style("stroke", "#000")
+      .style("stroke-width", "4px")
+      .attr("r", 20);
+
+    b.append("svg:text")
+      .attr("y", 40)
+      .attr("text-anchor", "middle")
+      .attr("dy", ".71em")
+      .style("font-size", "40px")
+      .style("font-family", "Amatic SC")
+      .text("B");
+
+    svg.on("click", function () {
+
+      a.attr("transform", "translate(" + w / 3 + "," + h / 2 + ")")
+        .transition()
+        .duration(1000)
+        .attr("transform", "translate(" + w / 6 + "," + h / 2 + ")")
+        .transition()
+        .delay(3000)
+        .attr("transform", "translate(" + w / 3 + "," + h / 2 + ")");
+
+      b.attr("transform", "translate(" + 2 * w / 3 + "," + h / 2 + ")")
+        .transition()
+        .duration(1000)
+        .attr("transform", "translate(" + 5 * w / 6 + "," + h / 2 + ")")
+        .transition()
+        .delay(3000)
+        .attr("transform", "translate(" + 2 * w / 3 + "," + h / 2 + ")");
+
+      current
+        .attr("x1", w / 3)
+        .attr("x2", 2 * w / 3)
+        .transition()
+        .duration(1000)
+        .attr("x1", w / 6)
+        .attr("x2", 5 * w / 6)
+        .transition()
+        .delay(3000)
+        .attr("x1", w / 3)
+        .attr("x2", 2 * w / 3);
+    });
+
+  </script>
+</body>
+
 </html>

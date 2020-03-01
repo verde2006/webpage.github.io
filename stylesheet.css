@@ -49,6 +49,7 @@ body {
 }
 #Summary {
 	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 	text-indent:20px;
 	font-size:1.7vw;
 	margin-right:30px;
@@ -89,6 +90,7 @@ li a {
   color: black;
   text-align: center;
   font-family:'Lato';
+  font-weight: 300;
   font-size:5vw;
   padding: 16px;
   text-decoration: none;
@@ -413,6 +415,7 @@ img{
 #notice {
 	font-family:'Lato';
 	font-size:1.4em;
+	font-weight: 300;
 	color:darkred;
 	text-decoration: underline;
 	text-align:center;
@@ -438,6 +441,7 @@ img{
 	color:#d54d7b;
 	font-size:2em;
 	font-family:'Lato';
+	font-weight: 300;
 	margin:0;
 }
 
@@ -445,6 +449,7 @@ img{
 	color:black;
 	font-size:1.5em;
 	font-family:'Lato';
+	font-weight: 300;
 	margin:0;
 	font-weight:bold;
 }
@@ -453,6 +458,7 @@ img{
 	color:black;
 	font-size:1.5em;
 	font-family:'Lato';
+	font-weight: 300;
 	margin:0;
 }
 
