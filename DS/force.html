@@ -16,14 +16,29 @@
 	font-size:70px;
 	text-align:center;
 }
+.svg-container {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      padding-bottom: 100%;
+      vertical-align: top;
+      overflow: hidden;
+    }
+
+    .svg-content {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
 </style>
 
   </head>
   
   <body>
     <div id="body">
-      <div id="chart"></div>
-      <div id="header">
+      <div id="chart" id="container" class="svg-container">
+      </div>      <div id="header">
         Use the force, Luke!
       </div>
     </div>
@@ -39,8 +54,11 @@ var force = d3.layout.force()
 	.distance(90)
 	.charge(-120);
 
-var svg = d3.select("#chart").append("svg:svg")
-    .classed("svg-content", true);
+  var svg = d3.select("#chart")
+      .append("svg:svg")
+      .attr("preserveAspectRatio", "xMinYMin meet")
+      .attr("viewBox", "0 0 1800 1000")
+      .classed("svg-content", true)
 
 svg.append("svg:rect")
     .attr("width", w)
